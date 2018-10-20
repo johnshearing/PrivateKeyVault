@@ -1,5 +1,5 @@
 # PrivateKeyVault
-Make Instructions: Airgapped raspberry pi computer for working with blockchains featuring LUKS full disk encryption and using qr-codes to pass encrypted files and offline transaction instructions across the airgap
+Make Instructions: Airgapped raspberry pi computer for working with blockchains featuring LUKS full disk encryption and using qr-codes to pass encrypted files and offline transaction across the airgap
 
 ## The Private Key Vault - Instructions for setting up a raspberry pi with touch screen and camera installed as an optically isolated digital wallet for Ethereum offline transactions.  
 
