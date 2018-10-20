@@ -1,17 +1,19 @@
-# PrivateKeyVault
-Make Instructions: Airgapped raspberry pi computer for working with blockchains featuring LUKS full disk encryption and using qr-codes to pass encrypted files and offline transaction across the airgap
-
-## The Private Key Vault - Instructions for setting up a raspberry pi with touch screen and camera installed as an optically isolated digital wallet for Ethereum offline transactions.  
+# PrivateKeyVault - Make Instructions  
+## Airgapped raspberry pi computer with touch screen and camera installed for working with blockchains featuring LUKS full disk encryption and using qr-codes to pass encrypted files and offline transactions across the airgap  
 
 ![firedup](https://user-images.githubusercontent.com/22293905/47251961-1ca2e880-d40a-11e8-980b-1c1291b53750.jpg)  
-
+Does anything a regular computer does.  
 
 ![guts](https://user-images.githubusercontent.com/22293905/47251984-a0f56b80-d40a-11e8-91e9-fa3d39a401b2.jpg)
+Computer and keyboard store in tamper resistant case.  
 
-![passingqr_code1](https://user-images.githubusercontent.com/22293905/47252011-224cfe00-d40b-11e8-982e-4090d7224859.jpg)
+![passingqr_code1](https://user-images.githubusercontent.com/22293905/47252011-224cfe00-d40b-11e8-982e-4090d7224859.jpg)  
+Case facilitates transfer of files and transaction instructions using a parade of qr-codes flashed across the screen and received by the phone's camera. The device has no WiFi or BlueTooth and it is never connected to another computer. Not by cable or by anyother means.  
 
-This is the start of fully open source documentation of the physical build and all the software.  
-Disk images are forthcoming but you don't need them. You can build from scratch using these instructions.  
+This is the fully open source documentation of the physical build and all the software.  
+Disk images are forthcoming but you don't need them. You can build from scratch using these instructions.
+
+CorelDraw files are included for laser cutting the case.  
 
 There are two versions:
 * The first version ([working prototype already built](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A)) uses an aluminum case and is about the size of a brick. It has a touchscreen on one side, a camera on the back, and a printer on the side. It is battery powered or powered by AC. The unit is selfcontained. Everything required to make keypairs, print keypairs, and make encrypted transaction instructions is built into the machine. So there is never a need to show your private keys to any other device. There are no cable jacks (except for DC power to charge battery), no WiFi, No Bluetooth - just a camera and a touch screen for input and QR-Codes displayed on the screen for output. Account numbers are scanned in through the camera in the form of qr-code or entered manually through the touch screen. Encrypted transaction instructions are displayed on the touch screen in the form of qr-code to be scanned into a smartphone. A smartphone snaps a picture of the encrypted qr-code instructions and broadcasts those instructions to the Ethereum blockchain. It is easy and quick to use but is also as safe as any cold storage method because all work with the private keys are done on this air-gapped machine and never shown to any other device. And because you never plug into a computer as is required with other hardware wallets, you never have to worry about key loggers, remote viewing or remote control, nor do you need to worry about unknowingly transacting with a phony website pretending to be the wallet you normally use. The PrivateKeyVault is fully compatible with LUKS full disk encryption and instructions are provided below. So the Vault can be used to store all your sensitive files and all your secret passwords. Images can be made to backup the LUKS encrypted partition without risk of it being read as long as a strong password is used. Finally, GPG comes installed with the Raspbian OS so the PrivateKeyVault can be used for secure encrypted messaging and for digitally signing documents.  
