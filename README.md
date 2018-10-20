@@ -19,7 +19,7 @@ Use it to:
 Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with.  
 
 ![passingqr_code1](https://user-images.githubusercontent.com/22293905/47252011-224cfe00-d40b-11e8-982e-4090d7224859.jpg)  
-Case transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen and received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means.  
+Transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen and received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means.  
 
 This is the fully open source documentation of the physical build and all the software.  
 Disk images are forthcoming but you don't need them. You can build from scratch using these instructions.
