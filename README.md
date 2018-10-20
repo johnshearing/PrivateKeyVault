@@ -5,7 +5,10 @@ Make Instructions: Airgapped raspberry pi computer for working with blockchains 
 
 ![firedup](https://user-images.githubusercontent.com/22293905/47251961-1ca2e880-d40a-11e8-980b-1c1291b53750.jpg)  
 
+
 ![guts](https://user-images.githubusercontent.com/22293905/47251984-a0f56b80-d40a-11e8-91e9-fa3d39a401b2.jpg)
+
+![passingqr_code1](https://user-images.githubusercontent.com/22293905/47252011-224cfe00-d40b-11e8-982e-4090d7224859.jpg)
 
 This is the start of fully open source documentation of the physical build and all the software.  
 Disk images are forthcoming but you don't need them. You can build from scratch using these instructions.  
