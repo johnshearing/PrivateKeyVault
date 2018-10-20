@@ -3,6 +3,8 @@ Make Instructions: Airgapped raspberry pi computer for working with blockchains 
 
 ## The Private Key Vault - Instructions for setting up a raspberry pi with touch screen and camera installed as an optically isolated digital wallet for Ethereum offline transactions.  
 
+![firedup](https://user-images.githubusercontent.com/22293905/47251961-1ca2e880-d40a-11e8-980b-1c1291b53750.jpg)
+
 This is the start of fully open source documentation of the physical build and all the software.  
 Disk images are forthcoming but you don't need them. You can build from scratch using these instructions.  
 
