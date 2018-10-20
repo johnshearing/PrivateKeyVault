@@ -2,13 +2,24 @@
 ## Airgapped raspberry pi computer with touch screen and camera installed for working with blockchains featuring LUKS full disk encryption and using qr-codes to pass encrypted files and offline transactions across the airgap  
 
 ![firedup](https://user-images.githubusercontent.com/22293905/47251961-1ca2e880-d40a-11e8-980b-1c1291b53750.jpg)  
-Does anything a regular computer does.  
+Does anything a regular computer does and more.  
+
+Full disk encryption keeps your private keys and personal information safe in case the device is stolen.  
+
+Easily clone the SD card with all the encryption intact using only the Private Key Vault.   
+
+Use it to:  
+* Securely move assets on the Ethereum blockchain without exposing your private keys to any other device.  
+* Securely Read, write, and send GPG encrypted messages across the airgap using qr-codes.  
+* Digitally sign documents.  
+* Write and deploy smart contracts. 
+* Crypto-Journalism: Create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonomus if he or she so choses. 
 
 ![guts](https://user-images.githubusercontent.com/22293905/47251984-a0f56b80-d40a-11e8-91e9-fa3d39a401b2.jpg)
-Computer and keyboard store in tamper resistant case.  
+Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with.  
 
 ![passingqr_code1](https://user-images.githubusercontent.com/22293905/47252011-224cfe00-d40b-11e8-982e-4090d7224859.jpg)  
-Case facilitates transfer of files and transaction instructions using a parade of qr-codes flashed across the screen and received by the phone's camera. The device has no WiFi or BlueTooth and it is never connected to another computer. Not by cable or by anyother means.  
+Case transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen and received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means.  
 
 This is the fully open source documentation of the physical build and all the software.  
 Disk images are forthcoming but you don't need them. You can build from scratch using these instructions.
