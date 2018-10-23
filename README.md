@@ -1,9 +1,7 @@
 # PrivateKeyVault - Make Instructions  
 ## Airgapped raspberry pi computer with touch screen and camera installed for working with blockchains featuring LUKS full disk encryption and using qr-codes to pass encrypted files and offline transactions across the airgap  
 
-![firedup](https://user-images.githubusercontent.com/22293905/47251961-1ca2e880-d40a-11e8-980b-1c1291b53750.jpg)  
-
-![Laptop mode](/images/ReadmeImages/FiredUp.jpg)
+ ![Laptop mode](/images/ReadmeImages/FiredUp.jpg)
 Does anything a regular computer does and more.  
 
 Full disk encryption keeps your private keys and personal information safe in case the device is stolen.  
@@ -17,10 +15,10 @@ Use it to:
 * Write and deploy smart contracts. 
 * Crypto-Journalism: Create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonomus if he or she so choses. 
 
-![guts](https://user-images.githubusercontent.com/22293905/47251984-a0f56b80-d40a-11e8-91e9-fa3d39a401b2.jpg)
+![Packed up](/images/ReadmeImages/Guts.jpg)
 Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with.  
 
-![passingqr_code1](https://user-images.githubusercontent.com/22293905/47252011-224cfe00-d40b-11e8-982e-4090d7224859.jpg)  
+![Exchanging Files by Flashing QR_Codes](/images/ReadmeImages/PassingQR_Code1.jpg)
 Transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen and received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means.  
 
 This is the fully open source documentation of the physical build and all the software.  
