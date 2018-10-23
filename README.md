@@ -2,6 +2,8 @@
 ## Airgapped raspberry pi computer with touch screen and camera installed for working with blockchains featuring LUKS full disk encryption and using qr-codes to pass encrypted files and offline transactions across the airgap  
 
 ![firedup](https://user-images.githubusercontent.com/22293905/47251961-1ca2e880-d40a-11e8-980b-1c1291b53750.jpg)  
+
+![Laptop mode](/images/ReadmeImages/FiredUp.jpg)
 Does anything a regular computer does and more.  
 
 Full disk encryption keeps your private keys and personal information safe in case the device is stolen.  
