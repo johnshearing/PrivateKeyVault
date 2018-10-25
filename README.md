@@ -15,13 +15,16 @@ Use it to:
 * Digitally sign documents.  
 * Write and deploy smart contracts. 
 * Crypto-Journalism: Create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonomus if he or she so choses.  
-<hr>
+<hr>  
+
 <img src="/images/ReadmeImages/Guts.jpg">  
 Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with. This mitigates a Maid in the Middle attack.  
-<hr>
+<hr>  
+
 <img src="/images/ReadmeImages/PassingQR_Code1.jpg">  
 Transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen and received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means. All data moving in or out of the device stands for your inspection and approval before crossing the airgap.
 <hr>  
+
 This is the fully open source documentation of the physical build and all the software.  
 Disk images are forthcoming but you don't need them.  
 You can build from scratch using these instructions.  
