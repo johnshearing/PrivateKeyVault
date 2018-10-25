@@ -1,4 +1,4 @@
-## CorelDraw Files for Cutting the Transparent Case for the PrivateKeyVault  
+## CorelDraw Files for Laser Cutting Transparent Case for the PrivateKeyVault  
 The files assume acrylic material .115 inch thick.  
 The files also assume that the kerf cut by the laser will be .007 inch wide.  
 The each drawing makes half the parts necessary for the box.  
