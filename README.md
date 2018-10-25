@@ -22,7 +22,7 @@ Computer and keyboard store in a transparent tamper resistant case which can not
 <hr>  
 
 <img src="/images/ReadmeImages/PassingDataToPhone.jpg">  
-Transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen and received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means. All data moving in or out of the device stands for your inspection and approval before crossing the airgap.
+Transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen which are received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means. All data moving in or out of the device stands for inspection and approval before crossing the airgap.
 <hr>  
 
 This is the fully open source documentation of the physical build and all the software.  
