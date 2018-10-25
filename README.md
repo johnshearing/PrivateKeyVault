@@ -15,7 +15,7 @@ Use it to:
 * Digitally sign documents.  
 * Write and deploy smart contracts. 
 * Crypto-Journalism: Create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonomus if he or she so choses.  
-
+<hr>
 
 
 <img src="/images/ReadmeImages/Guts.jpg">  
