@@ -48,10 +48,21 @@ This is all open source so anyone can use this information for free.
 Now that the public can set up their own accounts on a super secure device in their own homes or businesses when they are alone, there is never any doubt that only they can command their accounts and that their accounts are safe from hackers and thieves.  
 
 By improving security, I hope this device will facilitate wide scale adoption of blockchain technology    
- 
 
-The items you will need are as follows. To get started, you will need a raspberry pi 2 board, the official raspberry pi 7 inch touchscreen, a laser cut case, the official raspberry pi camera, a 16 G-bite SD card, an ethernet cable, a 
-WiFi dongle, a new clean 32Mb thumbdrive, and a power adapter.  
+## Contents  
+[Parts List]()
+
+#### Parts List  
+The items you will need are as follows. 
+* Raspberry pi 2 board  
+* Official raspberry pi 7 inch touchscreen  
+* Laser cut case  
+* Official raspberry pi camera   
+* 16 G-bite SD card  
+* Ethernet cable  
+* WiFi dongle  
+* 32Mb thumbdrive   
+* Wall outlet type AC to DC power supply
  
 If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
 Hooray Open Source!  
