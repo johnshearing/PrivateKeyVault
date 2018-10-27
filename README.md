@@ -50,9 +50,10 @@ Now that the public can set up their own accounts on a super secure device in th
 By improving security, I hope this device will facilitate wide scale adoption of blockchain technology    
 
 ## Contents   
-[Physically Building the PrivateKeyVault]()
+[Physically Building the PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#physically-building-the-privatekeyvault)  
 * [Parts List](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md#parts-list)  
 * [Laser Cutting the Transparent Case](https://github.com/johnshearing/PrivateKeyVault#laser-cutting-the-transparent-case)  
+
 [Installing the OS and Setting Up Basic Functionality](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
 * [Write the image to the SD Card](https://github.com/johnshearing/PrivateKeyVault#write-the-image-to-the-sd-card)  
 * [Booting the Pi For the First Time](https://github.com/johnshearing/PrivateKeyVault#booting-the-pi-for-the-first-time)  
