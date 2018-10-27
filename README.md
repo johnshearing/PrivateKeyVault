@@ -50,8 +50,10 @@ Now that the public can set up their own accounts on a super secure device in th
 By improving security, I hope this device will facilitate wide scale adoption of blockchain technology    
 
 ## Contents   
-[Installing the OS and Setting Up Basic Functionality](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
+[Physically Building the PrivateKeyVault]()
 * [Parts List](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md#parts-list)  
+* [Laser Cutting the Transparent Case]()
+[Installing the OS and Setting Up Basic Functionality](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
 * [Write the image to the SD Card](https://github.com/johnshearing/PrivateKeyVault#write-the-image-to-the-sd-card)  
 * [Booting the Pi For the First Time](https://github.com/johnshearing/PrivateKeyVault#booting-the-pi-for-the-first-time)  
 * [Chose interfacing options, Expand File System](https://github.com/johnshearing/PrivateKeyVault#chose-interfacing-options-expand-file-system)  
@@ -68,7 +70,9 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Install a button on the Application Launch Bar to start the zbarcam QR-Code reader](https://github.com/johnshearing/PrivateKeyVault#install-a-button-on-the-application-launch-bar-to-start-the-zbarcam-qr-code-reader)  
 * [Put another button on the Application Launch Bar to kill the zbarcam process](https://github.com/johnshearing/PrivateKeyVault#put-another-button-on-the-application-launch-bar-to-kill-the-zbarcam-process)  
 
-### Installing the OS and Setting Up Basic Functionality.  
+### Physically Building the PrivateKeyVault  
+If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
+Hooray Open Source!  
 
 #### Parts List  
 The items you will need are as follows. 
@@ -80,10 +84,12 @@ The items you will need are as follows.
 * Ethernet cable  
 * WiFi dongle  
 * 32Mb thumbdrive   
-* Wall outlet type AC to DC power supply
- 
-If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
-Hooray Open Source!  
+* Wall outlet type AC to DC power supply  
+
+#### Laser Cutting the Transparent Case  
+[CorelDraw files are for laser cutting the case are found here](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)  
+
+### Installing the OS and Setting Up Basic Functionality.  
 
 The following is the written tutorial from which these notes are made.  
 [Setup Headless, Security, WiFi, VNC, Camera, and Much More](http://thezanshow.com/electronics-tutorials/raspberry-pi)
