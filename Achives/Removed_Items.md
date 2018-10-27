@@ -1,4 +1,6 @@
-
+Most of the sections in this document are for setting up the original prototype of the PrivateKeyVault.
+I abandoned that version because a keyboard is required in order to have full disk encryption of the SD card.
+The original version only has a virtual onscreen keyboard.
 
 #### Graceful Shutdown on Low Battery While not Plugged In or If User Presses Power Button without Initiating Shutdown at Main Menu  
 First I need to measure the current:  
@@ -192,3 +194,88 @@ Execute the following command in the pi's terminal window:
 
 Reboot the pi and then right click on the Application Launch Bar so that you can edit its properties in the same way that was shown for the Florence virtual keyboard above.  
 Select your new desktop item (It can be found in accessories) and place it onto the Application Launch Bar. 
+
+
+#### INSTALL PRINTER  
+Source:
+[Pi camera project](https://learn.adafruit.com/instant-camera-using-raspberry-pi-and-thermal-printer?view=all)  
+
+First we’ll install printer support (CUPS — the Common UNIX Printing System) and some related development tools…  
+Execute the following lines one at a time in the pi's terminal window
+`sudo apt-get update`  
+`sudo apt-get install git cups wiringpi build-essential libcups2-dev libcupsimage2-dev`  
+
+
+
+Then install the raster filter for CUPS. This processes bitmap images into the thermal printer’s native format…  
+Execute the following lines one at a time in the pi's terminal window.  
+`cd`  
+`git clone https://github.com/adafruit/zj-58`  
+`cd zj-58`  
+`make`  
+`sudo ./install`  
+
+Your thermal printer may have arrived with a test page in the box or the paper bay. If not, or if you threw that away, you can generate a new one by installing a roll of paper and holding the feed button (on printers that have one) while connecting power, or tapping the button on the back of the “Nano” printer or the “Printer Guts.”  
+
+Look for the baud rate that’s printed near the bottom of the page.  
+This is typically either 9600 or 19200 baud. Mine is 9600
+This is important…you’ll need to know the correct value for your printer.  
+
+The printer doesn’t need to be connected yet.  
+We can prepare the system the same regardless.  
+To add the printer to the CUPS system and set it as the default, we’ll be typing two lines similar to the following (but not necessarily identical…read on)…  
+
+`sudo lpadmin -p ZJ-58 -E -v serial:/dev/ttyAMA0?baud=9600 -m zjiang/ZJ-58.ppd`  
+`sudo lpoptions -d ZJ-58`  
+
+On the first line, change the “baud” value to 9600 or 19200 as required for your printer.  
+For a USB receipt printer, change the device name to /dev/ttyUSB0  
+**For all other (TTL) printers, use /dev/ttyAMA0 for the device name.**   
+This is my printer is the Nano and the baud rate is 9600 so the line of code above does not change.  
+The rest of the line should be typed exactly as it appears above.   
+Likewise for the second line, which needs no changes.  
+
+
+
+Source:
+[Networked Thermal Printer using Raspberry Pi and CUPS](https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi?view=all)  
+
+Plug the printer into the pi  
+
+Run the following commands at the terminal window:
+`sudo chmod 777 /dev/serial0`  
+`sudo stty -F /dev/serial0 9600`  
+`sudo echo -e "This is a test.\\n\\n\\n" > /dev/serial0`  
+The printer should print "This is a test."  
+
+Execute the following commands 
+`sudo apt-get update`  
+`sudo apt-get install libcups2-dev libcupsimage2-dev git build-essential cups system-config-printer`  
+
+Then install the raster filter for CUPS. This processes bitmap images into the thermal printer’s native format…  
+Execute the following lines one at a time in the pi's terminal window.  
+`cd`  
+`git clone https://github.com/adafruit/zj-58`  
+`cd zj-58`  
+`make`  
+`sudo ./install`  
+
+On the pi's main menu, go to **Print Settings**  
+Select the desired printer and then unlock the screen by clicking on the **Lock** icon and entering your password  
+Now select properties from the local menu.  
+Enter the following in the **Device URI** field:   
+`serial:/dev/serial0?baud=19200`  
+Change the other properties as desired  
+
+Now execute the following command at the pi's terminal window    
+`echo "This is a test." | lpr`  
+The printer will print "This is a test."  
+
+The following command will print a picture:  
+`lpr -o fit-to-page /usr/share/raspberrypi-artwork/raspberry-pi-logo.png`  
+
+The following command will print a text file:  
+This command can be used to print out a keystore file which is a password protected paper wallet.  
+`lp -o cpi=8 filename`  
+
+[Here are some command line options for the printer.](https://www.cups.org/doc/options.html)
