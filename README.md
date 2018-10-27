@@ -44,8 +44,7 @@ If you are really industrious, you can set up a factory and start your own busin
 This is all open source so anyone can use this information for free.  
 Now that the public can set up their own accounts on a super secure device in their own homes or businesses when they are alone, there is never any doubt that only they can command their accounts and that their accounts are safe from hackers and thieves.  
 
-I hope this device will remove the biggest impediment to wide scale adoption of blockchain technology 
-**Security**  
+By improving security, I hope this device will facilitate wide scale adoption of blockchain technology    
  
 
 The items you will need are as follows. To get started, you will need a raspberry pi 2 board, the official raspberry pi 7 inch touchscreen, a laser cut case, the official raspberry pi camera, a 16 G-bite SD card, an ethernet cable, a 
@@ -67,8 +66,8 @@ Make a folder and name it perhaps **PiSetup**
 
 [Download 7-zip found here](http://www.7-zip.org/) to **PiSetup**and install it.  
 
-[Download Raspinan Jessie with Pixel found here](https://www.raspberrypi.org/downloads/raspbian/) to **PiSetup**   
-**Do not** download Stretch (the latest version of raspbian). As of this writting. I have not yet heard of anyone achiving LUKS full disk encryption when using Stretch as the operating system without using a second Linux computer to do the encryption.   
+[Download Raspbian Jessie with Pixel found here](https://www.raspberrypi.org/downloads/raspbian/) to **PiSetup**   
+**Do not** download Stretch (the latest version of raspbian). As of this writing. I have not yet heard of anyone achiving LUKS full disk encryption when using Stretch as the operating system without using a second Linux computer to do the encryption.   
 
 If you want to, you can use the Win32 Disk Imager to check that the SHA1 hash of your zip file is the same as the SHA1 hash listed on the raspberry pi website (this is the easiest option). Or you can use NodeJS at the command line to check that the downloaded zip file has not been tampered with. This takes a bit more time but it is good to have two completely different methods to hash a file.  
 Assuming NodeJS is installed - Open your favorite command line interpreter. I use PowerShell.  
@@ -123,8 +122,8 @@ Look up Hasha on NPM to learn about other ways to use this utility.
 
 ### Write the image to the SD Card  
 
-Purchase the higest quality SD card that you can afford.  
-I can not make a recommendation execept to say do some research online.  
+Purchase the highest quality SD card that you can afford.  
+I can not make a recommendation except to say do some research online.  
 
 Ensure that the write protection switch on the SD card adaptor is set to allow writing to the SD card.  
 
@@ -178,7 +177,7 @@ Get the IP address of your pi by taping on the Networking icon near the upper ri
 Double click on **VNC-Viewer-6.1.1-Windows-64bit.exe** in the **PiSetup** folder on your computer.  
 Enter the IP address of your pi into the VNC window on your PC and press **Enter** on the keyboard.  
 Your remote VNC session will start.  
-Remember you can find out your Ethernet IP address by clicking the WiFi icon one or more times slowly until it shows up. The IP address for the Ethernet connection will be labeled **eth0**. This is the one you want to enter into the VNC dialog box on your computer. The IP address associated with your WiFi dongle will be labled **wlan0**. This is for access to the Internet - it is not used for connecting to your computer.  
+Remember you can find out your Ethernet IP address by clicking the WiFi icon one or more times slowly until it shows up. The IP address for the Ethernet connection will be labeled **eth0**. This is the one you want to enter into the VNC dialog box on your computer. The IP address associated with your WiFi dongle will be labeled **wlan0**. This is for access to the Internet - it is not used for connecting to your computer.  
 
 You may get some security questions the first time you login with VNC because the VNC client has never seen that host before. Select responses that indicate that you trust the pi and you will be allowed to continue.  
 
@@ -200,11 +199,11 @@ If you are still having trouble you can check that your WiFi hub is broadcasting
 Click on the icon.  
 After a few seconds your wireless router will appear in a dropdown list.  
 Click on the list item representing your router.  
-A dialoge box will appear asking for your router's password.  
+A dialog box will appear asking for your router's password.  
 Enter the password and the pi will connect to the Internet through your router.  
 It will now be possible to use the browser and to download files from the Internet.   
 
-Now start an new VNC session between this computer and your raspberry pi via Ethernet cable.  
+Now start a new VNC session between this computer and your raspberry pi via Ethernet cable.  
 This will allow you to copy and paste commands from this document into the raspberry pi's command line interpreter.  
 
 #### Purge Wolfram
@@ -258,19 +257,19 @@ The icon looks like a folder. Click on that.
 Next navigate to the downloads folder.  
 You will see an icon that reads **MyEtherWalletOffline-master.zip**  
 Double click on that.  
-An application called called Xarchiver will open.  
+An application called Xarchiver will open.  
 Xarchiver looks a lot like a file manager.  
 We will use Xarchiver to extract files from the ZIP file we just downloaded.  
 Click on the **Action** menu option.  
 Then click on the **Extract** menu item.  
 A dialog box will open entitled **Extract Files**  
-Click on the button on the bottom right labled **Extract**  
-Wait a few seconds for the Xarchiver to extract the file and then close the Xarchiver applicaiton.  
+Click on the button on the bottom right labeled **Extract**  
+Wait a few seconds for the Xarchiver to extract the file and then close the Xarchiver applicaition.  
 
 You will now see a new folder next to the zip file that you downloaded.  
-This new folder is labled **MyEtherWalletOffline-master**  
+This new folder is labeled **MyEtherWalletOffline-master**  
 Double click on this new folder to open it.  
-Now you will see a folder labled **dist**.  
+Now you will see a folder labeled **dist**.  
 We are going to rename this folder **MEW**.  
 Click once on the **dist** folder just to highlight it.  
 Then open the **Edit** menu at the upper left and select the **Rename** menu option.  
@@ -292,7 +291,7 @@ If you change anything inside the MEW folder it my break the application.
 
 #### Change the Chrome Browser Settings So That MyEtherWallet Will Run When Chrome Starts.  
 Open the **Chrome** browser by clicking the second icon from the top left on the **Start Bar**.  
-The icon is round and blue and with lines of lattitude and Longitude. It looks like a globe.  
+The icon is round and blue and with lines of latitude and Longitude. It looks like a globe.  
 Click on that to open the browser.   
 
 Click the browser control icon at the right - it's the vertical ellipsis. It's three dots arranged vertically.  
@@ -316,7 +315,7 @@ This section is only for developers and users who do not want to use my customiz
 
 Read everything on that page and then click on the link near the top of the readme file entitled **Download the Latest Release**   
 
-Developers will download the source code to their computers and will follow the developers instructions on that webpage.  
+Developers will download the source code to their computers and will follow the developer's instructions on that webpage.  
 ```
 Here is the gist of it from Taylor at MEW:  
 clone the repo  
@@ -336,7 +335,7 @@ Leave them undisturbed.
 
 I find that the easiest way to install MEW on the pi is to use the pi's browser and go to MyEtherWallet.com.  
 Then scroll to the bottom of the webpage and click on the link entitled **Latest Release**  
-Download the distribution zip file and then move the whole zip file into an folder which I name **MEW**.  
+Download the distribution zip file and then move the whole zip file into a folder which I name **MEW**.  
 Then unzip the file into this same folder.  
 
 Be very careful when going to MyEtherWallet.com that you type the WebAddress in yourself or use one of your own bookmarks. If you use someone else's link then you will find yourself at a counterfeit website that will steal your private keys and take all your ether. Remember it's myetherwallet.com not .org, not .net or dot anything else. Also, there have been counterfeit websites that use the numeral 1 instead of the letter l in URL. Using this site will cause you to lose all your ether. For these reasons you should always type the URL into your browser yourself, or use one of your own bookmarks.  
@@ -413,7 +412,7 @@ zbarcam --nodisplay --raw --quiet -Sdisable -Sqrcode.enable --verbose --prescale
 
 ```
 
-Next, Grant read, write, and execute permissions to every one.  
+Next, Grant read, write, and execute permissions to everyone.  
 Execute the following command in the pi's terminal window:  
 `sudo chmod 777 /home/pi/ld_qr_reader.sh`  
 
@@ -599,7 +598,7 @@ Enter the following in the **Device URI** field:
 `serial:/dev/serial0?baud=19200`  
 Change the other properties as desired  
 
-Now execute the following command at the pi's termial window    
+Now execute the following command at the pi's terminal window    
 `echo "This is a test." | lpr`  
 The printer will print "This is a test."  
 
@@ -764,12 +763,12 @@ Press `CTRL + X` to quit Nano.
 We will see how to use this program shortly.  
 
 #### Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code  
-Since the PrivateKeyVault does not connect to any other devices there must be a way to transfer text and files into and out of the device in some transparent maner that gives the user complete control and the ability to inspect what information is moving in and out of the device at every stage of the transfer. The following 4 minute video gives a general idea of how QR-Code is used to transfer information into and out of the PrivateKeyVault. It is also a full demonstration of how to securely send ether on the Ethereum block chain. To see the video [click here](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) to go to my YouTube channel and then click on the video entitled **Private Key Vault: an Air Gapped Computer For Ethereum Transactions**  
+Since the PrivateKeyVault does not connect to any other devices there must be a way to transfer text and files into and out of the device in some transparent manner that gives the user complete control and the ability to inspect what information is moving in and out of the device at every stage of the transfer. The following 4 minute video gives a general idea of how QR-Code is used to transfer information into and out of the PrivateKeyVault. It is also a full demonstration of how to securely send ether on the Ethereum block chain. To see the video [click here](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) to go to my YouTube channel and then click on the video entitled **Private Key Vault: an Air Gapped Computer For Ethereum Transactions**  
 
-Now we will see how to move text typed in at the command line editor and also large files into and out of the PrivateKeyVault using QR-Code. The following instructions were made from information aquired from the following videos:  
+Now we will see how to move text typed in at the command line editor and also large files into and out of the PrivateKeyVault using QR-Code. The following instructions were made from information acquired from the following videos:  
 These videos are made for security experts and penetration testers.  
 These people, who work within the law, are hired to test network security by stealing information.  
-They then return the informaton and report on security weaknesses.  
+They then return the information and report on security weaknesses.  
 We are not doing any of that.  
 We are only using QR-Codes to optically transfer files into and out of the PrivateKeyVault while maintaining the airgap.  
 [Alternative Sneaker Nets; Optics, Hak5 1506.1](https://youtu.be/Tr0v3DZVQ-k)  
@@ -896,7 +895,7 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
   *   
   * Next Bob will be prompted to select the length of the keys.  
   * The larger the key size, the harder the encryption is to crack assuming you have a strong password.  
-  * Unfortunately, larger keysizes take longer to generate and to use.  
+  * Unfortunately, larger key sizes take longer to generate and to use.  
   * The default (2048) is a good compromise.  
   * Select the default for Bob.  
   *   
@@ -940,7 +939,7 @@ The **sec** line shows the key size : 2048, the key type : r for RSA, the Unique
 The UniqueID is used in GPG commands to refer to that specific private key.  
 The **uid** line shows Bob's real name, Bob's comment, and Bob's email address.  
 The email address can also be used to uniquely identify Bob's keys when making gpg commands.  
-The **ssb** line shows the size, type, and unique identifyer of Bob's subkey.  
+The **ssb** line shows the size, type, and unique identifier of Bob's subkey.  
 Subkeys are cool because you can have as many subkeys associated with your private key as you want but you can revoke them individually without harming your ability to use your other subkeys or the originating private key.  
 
 If you want to see what Bob's private key actually looks like the execute the following command:  
@@ -981,10 +980,10 @@ pub   2048R/6E477330 2018-04-15
 uid       [ultimate] Bob (Bob's comment) <bob@gmail.com>
 sub   2048R/0199AA57 2018-04-15
 ```  
-If the email address were ommited from the command then fingerprints for all public keys would be shown.  
-That shows one way that UniqueIds are used to specify a particular key when making GPG commands.  
+If the email address were omitted from the command then fingerprints for all public keys would be shown.  
+That shows one way that Unique IDs are used to specify a particular key when making GPG commands.  
 The finger print is used to verify that a public key which Alice receives from Bob has not been switched out by Mallory.  
-If Mallory manages to intercept Bobs public key on it's way to Alice and replaces it with his own, then Mallory will be able to decrypt Alices secret message instead of Bob. You will see how a finger print is used to prevent this right after we see how Bob sends his private key to Alice.  
+If Mallory manages to intercept Bob's public key on it's way to Alice and replaces it with his own, then Mallory will be able to decrypt Alice's secret message instead of Bob. You will see how a finger print is used to prevent this right after we see how Bob sends his private key to Alice.  
 
 Now Bob needs to get his public key to Alice.  
 * First Bob needs to get his public key out of the public keyring file and into a file of it's own so he can send it to Alice.  
@@ -1045,13 +1044,13 @@ T4AB3pe9QWtei872ZUpnb2AT
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-Now we will see how to get this public key file out of Bob's PrivateKeyVault, email it to Alice, and get it into her Vault without ever connecting the Vaults to any other devices. They will not be using a thumbdrive, no WiFi, no Bluetooth, no ethernet cable, no USB cable - no connections of any kind to other devices. By preserving the airgap during the transfer process we prevent Mallory from gaining access to the PrivateKeyVaults. So he can not use spyware to read how Alice makes her cakes so super moist and delicious.  
+Now we will see how to get this public key file out of Bob's PrivateKeyVault, email it to Alice, and get it into her Vault without ever connecting the Vaults to any other devices. They will not be using a thumbdrive, no WiFi, no Bluetooth, no ethernet cable, no USB cable - no connections of any kind to other devices. By preserving the airgap during the transfer process we prevent Mallory from gaining access to the PrivateKeyVaults. So he cannot use spyware to read how Alice makes her cakes so super moist and delicious.  
 * To do all this we will start by outputing an entire text file to the touch screen in the form of QR-Codes.  
   * The following command will display several QR-codes sequentially on the touchscreen.  
   * There will be one QR-Code for each line in the file.  
   * Execute the following line of code:    
   * `base64 bob@gmail.com_pubkey.asc | while read r; do echo $r | qrencode -t ANSIUTF8; sleep .3; done`  
-  * You should see several QR-Codes displayed sequencially on your touch screen.  
+  * You should see several QR-Codes displayed sequentially on your touch screen.  
   * The part of the command that reads `sleep .3` means display each QR-Code for .3 seconds.  
   * You can change this value if you want.  
   * You can substitute the name of any text file for `bob@gmail.com_pubkey.asc` in the command above.  
@@ -1062,7 +1061,7 @@ Now we will see how to get this public key file out of Bob's PrivateKeyVault, em
   * Press `Ctrl C` if you want to stop the parade of QR-Codes before the program is finished displaying all the lines in the file.  
 * OK, so we displayed Bob's public key file as a parade of QR-Codes but how do we get this to Alice?  
   * Run the above command again but this time use your smartphone to make a video of the QR-Code parade. 
-  * Email the video to Alice or email it to yourself for this demonstration. Actually, you don't need to email the video at all for the purposes of this demonstation - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can send it to someone with another PrivateKeyVault who can import it without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
+  * Email the video to Alice or email it to yourself for this demonstration. Actually, you don't need to email the video at all for the purposes of this demonstration - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can send it to someone with another PrivateKeyVault who can import it without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
   
 Now we will be playing the part of Alice.  
 * Alice has just received Bob's video on her smart phone.  
@@ -1127,7 +1126,7 @@ Learn more about GPG:
 Encrypted messaging comes with the raspbian OS. So you have it already.  
 To use it, use the command line tool `gpg` or `gpg2`  
 To read about these tools on your raspberry pi execute the command `man gpg` or `man gpg2`  
-The folowing links are good online resources on how to use gpg:  
+The following links are good online resources on how to use gpg:  
 [Super Short Quick Start Document](https://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)  
 [30 Minute QuickStart - YouTube](https://youtu.be/ZSa-d_9O5DA)  
 [In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
@@ -1224,7 +1223,7 @@ Never store your password on any electronic device.
 `sudo date -s 2017-02-05 15:30:0`
 
 #### Destroying all information on the SD card  
-It is not possible to securely wipe an SD card. So never think you can delete private keys using any method and then safely insert the pi's SD card into another device to download software updates or other information. When software updates are required, ensure that you have written down your private keys several times to insure against sloppy handwriting and losing the paper. Store the hand written private keys in different places so that the keys will not be lost incase of fire or flood. Then destroy the SD card with a hot flame and then smash it into pieces. Then download any required software to a new SD card and reenter your private keys. Refusing to put your SD card into other devices or connect to other devices in any way is the only way to ensure that no one will get your private keys.
+It is not possible to securely wipe an SD card. So never think you can delete private keys using any method and then safely insert the pi's SD card into another device to download software updates or other information. When software updates are required, ensure that you have written down your private keys several times to insure against sloppy handwriting and losing the paper. Store the hand written private keys in different places so that the keys will not be lost in case of fire or flood. Then destroy the SD card with a hot flame and then smash it into pieces. Then download any required software to a new SD card and reenter your private keys. Refusing to put your SD card into other devices or connect to other devices in any way is the only way to ensure that no one will get your private keys.
 
 #### Setup LUKS Full Disk Encryption  
 The following is the written tutorial from which these notes are made.  
@@ -1545,13 +1544,13 @@ That looks nicer.
 You’ll need to run `cryptsetup luksOpen /dev/mmcblk0p2 sdcard` on every boot from now on.  
 Type the command above carefully and check your work before pressing the Enter button.  
 Enter the strong password you created when prompted.  
-**WTF Nothing happend!**  
+**WTF Nothing happened!**  
 **That's because you are not done yet**   
 Now type `exit` and press the enter button.  
 **The pi should boot up as normal.**  
 
 Wow! that was a big pain in the ass.  
-But all your private information is now safe from even the most aggressive criminals and oppressive goverments.  
+But all your private information is now safe from even the most aggressive criminals and oppressive governments.  
 The only way to get the information on your device now is to force you to hand it over or to trick you in to revealing your password. They can also catch you at a time when you are using the device and take it from you before you have a chance to turn it off.  
 
 #### Create your private key  
@@ -1585,7 +1584,7 @@ The console will return your public address.
 So now you have a public/private key pair and think they work together. But if you are wrong, you could send your ether to your new public address and then have no way to get your ether out when you want it. Then you would be F--ked. This has happened to several people. So send a very little bit of ether to the public address and test that you can move some of it out again with your private key. Moving ether out of an account is the only way to be sure that public/private keys work together properly.  
 
 **Warning About Quantum Computers**
-Right now quantum computers are not wide spread so they are not much of a concern at this moment. In the future however, it would be impossible to for a quantum computer to get you private key with only the public address as input. This is because there is a difference between the public address and the public key. The public address is a truncated version of the public key - several charecters are missing. It might however be possible for a quantum computer to figure out your private key given your public key. The public key however is not revealed to the public until the first transaction appears on the block chain. So if quantum computers are a concern then it actually makes sense to never test the private key / public address pair. Instead you would generate the public address from the private key but never make a transaction until you are ready to clear out the account. So you lose the ability to test that the private key can be used to move funds from the public address but you never expose the public key to quantum computers until it's too late to be of any use. One way to safely test that you can use the private key to access funds at the corresponding public address would be to test this on a private copy of the blockchain.
+Right now quantum computers are not wide spread so they are not much of a concern at this moment. In the future however, it would be impossible to for a quantum computer to get you private key with only the public address as input. This is because there is a difference between the public address and the public key. The public address is a truncated version of the public key - several characters are missing. It might however be possible for a quantum computer to figure out your private key given your public key. The public key however is not revealed to the public until the first transaction appears on the block chain. So if quantum computers are a concern then it actually makes sense to never test the private key / public address pair. Instead you would generate the public address from the private key but never make a transaction until you are ready to clear out the account. So you lose the ability to test that the private key can be used to move funds from the public address but you never expose the public key to quantum computers until it's too late to be of any use. One way to safely test that you can use the private key to access funds at the corresponding public address would be to test this on a private copy of the blockchain.
 
 #### Generate a Keystore File from a private key.  
 This can be done using the custom version of MyEtherWallet which is already loaded on you pi if you have been following along.  
@@ -1604,13 +1603,13 @@ Execute the following command:
 `node`  
 Now you are interacting with NodeJS not with your command line utility  
 
-Open the etereumjs-wallet library.  
+Open the ethereumjs-wallet library.  
 Execute the following command:  
 `var Wallet = require('ethereumjs-wallet')`  
 
 Put your private in into a JavaScript buffer and name the buffer "key" 
 Execute the following command substituting your own private key for the first parameter of course:  
-`var key = Buffer.from('efca4...Enter you 64 charater private key...5378', 'hex')`  
+`var key = Buffer.from('efca4...Enter you 64 character private key...5378', 'hex')`  
 Notice that the **0x** is not included in the 64 character private key.  
 
 Create an object in memory that will be used to create the keystore file and name this object "wallet".  
@@ -1626,9 +1625,9 @@ The output displayed will be in json format and will look something like the fol
 ```
 '{"version":3,"id":"467233bf-45ec-423b-9548-bdc4a42aa099","address":"b14ab53e38da1c172f877dbc6d65e4a1b0474c3c","crypto":{"ciphertext":"17886b7ff355219dd20900543b9592fcd4dc6fe7d8f776f1a4d1c63993112181","cipherparams":{"iv":"434e4e71d2013a2d84e86a6e89efbb0b"},"cipher":"aes-128-ctr","kdf":"scrypt","kdfparams":{"dklen":32,"salt":"7a785ab75fa906734788d85ff43a2c8e704af41881dd50a2d52abe08092f07ec","n":1024,"r":8,"p":1},"mac":"98d9a76960dcef22a5fd28a6bf47e5c68a71b30bcf353eccbf5a6555abec78a1"}}'  
 ```
-This is the keystore text. You need to put this in a file **without the begining and ending single quotes** in order to use it.  
+This is the keystore text. You need to put this in a file **without the beginning and ending single quotes** in order to use it.  
 
-Copy the entire output onto the clipboard **except for the begining single quote and the ending single quote**. Do not copy these when copying the rest of the output onto the clipboard.  
+Copy the entire output onto the clipboard **except for the beginning single quote and the ending single quote**. Do not copy these when copying the rest of the output onto the clipboard.  
 
 Now paste the contents of the clipboard into a new file and name the file anything you want.  
 
@@ -1645,7 +1644,7 @@ The whole thing could be put in a script as shown below if you prefer.
 (Here is a link to the Node Package required)[https://github.com/ethereumjs/ethereumjs-wallet]  
 You already installed this package if you have been following along.  
 
-Since writing this section I have actually built this fuctionality into MyEtherWallet.  
+Since writing this section I have actually built this functionality into MyEtherWallet.  
 So now it is possible to create a keystore file from a private key without leaving the MyEtherWallet application.  
 
 
@@ -1654,16 +1653,16 @@ It is of course possible to use Win 32 Disk Imager to clone your SD card for bac
 No one would be able to read the data from the image created.  
 But now that you have private keys on the encrypted partition, putting your SD card into an Internet device is dangerous business.  
 The attack vector is called The Evil Maid Attack also known as The Maid In The Middle Attack.  
-The attack is carried out by slipping malicious code such as a keylogger into the boot partition of the image now stored on your PC.  
+The attack is carried out by slipping malicious code such as a key logger into the boot partition of the image now stored on your PC.  
 Attackers might just as easily put the key logger directly onto the boot partition of the SD card up while it is being imaged on your PC. This can be done by remote control if your PC is connected to the Internet or the attack can happen any time you stick an SD card into your PC if the PC is already infected with malware.  
-So if you restore the image and attempt to use it, or if your original SD card has been tampered with then your password will be caputured by the key logger and stored in a file on the boot partition for later use by criminals.  
+So if you restore the image and attempt to use it, or if your original SD card has been tampered with then your password will be captured by the key logger and stored in a file on the boot partition for later use by criminals.  
 
 The point is, (assuming a strong password) anyone who gets physical access to your SD card can not read it unless you supply the password. The Evil Maid Attack is one way to get you to supply the password without you knowing it.  
 
-We will talk more about the Evil Maid Attack in the the next section.  
-The important point to remember here is that we need to make back up copies of the encrypted SD card without putting the card into an Internet connected device. The following explains how to accomplish this.  
+We will talk more about the Evil Maid Attack in the next section.  
+The important point to remember here is that we need to make backup copies of the encrypted SD card without putting the card into an Internet connected device. The following explains how to accomplish this.  
 
-Before we get started make sure that all the important information on your encrypted SD card is written down or stored safely somewhere. If anything goes wrong during the cloning process which destroys your cards then you will still have your private keys written down. If you fail to take this precaution then you might loose all your crypto-currency and all the personal information that was stored on your encrypted SD card.  
+Before we get started make sure that all the important information on your encrypted SD card is written down or stored safely somewhere. If anything goes wrong during the cloning process which destroys your cards then you will still have your private keys written down. If you fail to take this precaution then you might lose all your crypto-currency and all the personal information that was stored on your encrypted SD card.  
  
 Ok, let's get started:  
 Get two SD card to USB adaptors.  
@@ -1682,7 +1681,7 @@ Don't plug the adaptor into the hub yet.
 Mark this card so that you can see clearly that this is the encrypted card which holds your important data.  
 
 The third SD card is blank. It will become and exact copy of the second card.  
-If there is any data on this card it will overwritten with data from the ecrypted card that you are cloning.  
+If there is any data on this card it will overwritten with data from the encrypted card that you are cloning.  
 This card should be formatted before proceeding.  
 Insert the formatted card into an SD card to USB adaptor.  
 Don't plug it into the hub yet.  
@@ -1735,12 +1734,12 @@ dd in the following command is the name of the command.
 if= in the following command specifies the input file (the SD card you wish to read from).  
 of= in the following command specifies the output file (the SD card you wish to write to).  
 `sudo dd if=/dev/sda of=/dev/sdb`  
-This command will take several hours to run with out giving any sign that it is working at all.  
+This command will take several hours to run without giving any sign that it is working at all.  
 **Don't worry - everything is fine**  
 Have a long nap. when you wake up you will see output on the console from the dd command telling you:  
 how many records in,  
 how many records out,  
-and how many bytes were coppied.  
+and how many bytes were copied.  
 
 My SD card to USB adaptor has a little red LED light which flashes when the card is being accessed. These lights flashed during the entire copy process indicating that something was happening and that the command was working.  
 That was some comfort during the copy process.  
@@ -1751,7 +1750,7 @@ If you want to check that the two SD cards are exactly the same and that the cop
 These commands take a long time to run and will not show any sign on the screen that they are working.  
 If your SD card to USB adaptor is like mine however, lights will flash while the command is running.  
 So when running these commands don't think that your pi is hung.  
-Just wait patiently and you will be rewarded with a hexidecimal number when the command is finished running.  
+Just wait patiently and you will be rewarded with a hexadecimal number when the command is finished running.  
 This number is a unique hash of the contents on the SD card it is checking.  
 After the first command is finished running then run the second command.  
 If the number from the second command matches the number from the first command then you can be sure that the clone is exactly like the original.  
@@ -1767,13 +1766,13 @@ Finally, it would be a good idea to try both SD cards to be sure that they work 
 
 #### Preventing the Evil Maid Attack
 Keep your cloned sd card in a secure location.  
-If someone steals your card it's not a problem (the card is encrypted) but if they put a keylogger on the boot partition without you knowing about it, then you will be giving away your password when you try to use it.  
+If someone steals your card it's not a problem (the card is encrypted) but if they put a key logger on the boot partition without you knowing about it, then you will be giving away your password when you try to use it.  
 So while you are not worried about theft, tampering is a big concern.  
 In order know if your card has been tampered with, use sparkly nail polish.  
 This is nail polish with glitter mixed in.  
 Yes that's right, security experts use sparkly nail polish to tell if their sd cards have been tampered with.  
 Just put the sd card in a small box and paint the seams of the box with sparkly nail polish.  
-Then take several picturs of the box.  
+Then take several pictures of the box.  
 If anyone tries to open the box it will cause the nail polish to break off.  
 And if they paint the seams again it will not look the same because sparkly nail polish goes on differently every time you put it on.  
 Simply compare your box with the photos you took when you sealed it up.  
@@ -1782,7 +1781,7 @@ In that case do not use the SD card but rather mark it as compromised.
 Do not use this card unless you have no other choice and then only with extreme caution.  
 
 Take the same precautions with your PrivateKeyVault.  
-If attackers steal your Pi with the encrypted SD card aboard then they could place a keylogger anywhere they want without you knowing about it. They could put it on the SD card or at any place in the hardware such as the keyboard, the pi itself, the camera, just about anywhere. So the PrivateKeyVault should be wrapped in paper or put in a box, and sealed with sparkly nail polish to make it evident should the device be tampered with.  
+If attackers steal your Pi with the encrypted SD card aboard then they could place a key logger anywhere they want without you knowing about it. They could put it on the SD card or at any place in the hardware such as the keyboard, the pi itself, the camera, just about anywhere. So the PrivateKeyVault should be wrapped in paper or put in a box, and sealed with sparkly nail polish to make it evident should the device be tampered with.  
 
 ## Conclusion:  
 QR-Code functionality airgaps the PrivateKeyVault.  
@@ -1815,7 +1814,7 @@ Make one button show up at a time for scan start and scan stop such that scan st
 
 Stop scan process after a good scan.  
 
-Put up a window showing what the camera sees while the scan process is running and make the window disapear when the scan stops either because a good scan has been achived or because the user stopped the scan. This will help the user understand if there is too much glare to get a good scan or if the focal distance is not correct.  
+Put up a window showing what the camera sees while the scan process is running and make the window disappear when the scan stops either because a good scan has been achieved or because the user stopped the scan. This will help the user understand if there is too much glare to get a good scan or if the focal distance is not correct.  
 
 Install Buttons on the Application Launch Bar to Enable and Disable Two Finger Right Click Functionality.  
 For now, enable by executing the following command at the terminal window.  
@@ -1827,7 +1826,7 @@ Set up a timer to logout the user after a period of inactivity.
 
 Add GUI GPG Utility for file encryption. 
 This is to protect any files that have private keys or other sensitive information without having to encrypt the whole drive.  
-Even though the whole drive is to be encrypted it makes sense to have encryption at the file level too in case the user walks away from the device while it is running. File encryption will not protect an SD card from forensic analysis but it will protect the data from someone poking around on an open device. The problem is that the source file used to make the encrypted file can not be removed from the SD card using the shred command so the data could be recovered in a labratory. This is why full disk encryption is required to secure data on the device. For this reason I have added the ability to create encrypted KeyStore files using MyEtherWallet. If KeyStore files are used to hold private keys then there is no reason to keep unencrypted private keys on the device.
+Even though the whole drive is to be encrypted it makes sense to have encryption at the file level too in case the user walks away from the device while it is running. File encryption will not protect an SD card from forensic analysis but it will protect the data from someone poking around on an open device. The problem is that the source file used to make the encrypted file cannot be removed from the SD card using the shred command so the data could be recovered in a laboratory. This is why full disk encryption is required to secure data on the device. For this reason I have added the ability to create encrypted KeyStore files using MyEtherWallet. If KeyStore files are used to hold private keys then there is no reason to keep unencrypted private keys on the device.
 
 #### Changes to MyEtherWallet  
 
@@ -1845,14 +1844,14 @@ Maybe even something that allows the exchange of encrypted messages on the block
 This should not be too costly if only encrypted private keys are being exchanged this way.
 In this way, an email account is not even required - only access to MEW online some other means of interacting with smart contracts in order to get the encrypted message and convert it to a QR-Code scanning into the PrivateKeyVault.     
 
-Add a native way to associate a photograph with a with public addresses for use as an additional blockie. This will prevent sending ether to the wrong address when selecting public addresses from lists or better from a database on the pi.  
+Add a native way to associate a photograph with a public addresses for use as an additional blockie. This will prevent sending ether to the wrong address when selecting public addresses from lists or better from a database on the pi.  
 Doing this defeats an attack where different addresses might produce similar looking blockies. But the biggest advantage will be to keep users from getting confused between different accounts that they normally use. I understand that accounts can now be associated with human friendly names but not every account will have this so overall, I think this will be well worth doing.
 
 Add database functionality to handle public addresses and associated Photo-blockies.  
 
 Add a native onscreen virtual keyboard using AngularJS although Florence works ok for now. The keyboard should be Hex or alphanumeric where appropriate, should have cut and paste buttons, database functionality, QR-Code read start and stop buttons, QR-Code generate buttons, OCR controls where appropriate and should pop open when stepping onto a data entry field. MEW should position the data entry field at the top of the screen and the virtual keyboard should position itself underneath the data entry field. This will save on screen clutter which is a big problem with a small screen.  
 
-When tabing - MEW should move to the next field, position it at the top of the screen and open the virtual keyboard with the appropriate layout for that field.  
+When tabbing - MEW should move to the next field, position it at the top of the screen and open the virtual keyboard with the appropriate layout for that field.  
 
 Make the user aware of how the gas price works and make the field match the Gas Price slider.   
   
@@ -1909,7 +1908,7 @@ Check History file and the node history file as well.
 `grep -r -s "Enter private key here without 0x in front"`  
 or perhaps try  
 `sudo grep -r -s "Enter private key here without 0x in front"`  
-The -r is for recursive and -s supresses error messages.  
+The -r is for recursive and -s suppresses error messages.  
 
 Bash command to search SD Card for instances of private key using grep and a way to delete or overwrite those files.  
 `grep -lrIZ foo . | xargs -0 rm -f --`  
