@@ -1,7 +1,8 @@
 # PrivateKeyVault - Make Instructions  
-## Airgapped raspberry pi computer for working with blockchains 
-## Has touch screen and camera installed 
-## Featuring LUKS full disk encryption and using qr-codes to pass encrypted files and offline transactions across the airgap  
+## Airgapped raspberry pi computer for working with blockchains  
+## Has touch screen and camera installed  
+## Featuring LUKS full disk encryption  
+## using qr-codes to pass encrypted files and offline transactions across the airgap  
 
 <img src="/images/ReadmeImages/FiredUp.jpg">  
 Does anything a regular computer does and more.  
