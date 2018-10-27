@@ -15,7 +15,7 @@ So there is never a need to put your SD card into any other device.
 Use it to:  
 * Securely move assets on the Ethereum blockchain without exposing your private keys to any other device.  
 * A secure client for the Cardano blockchain is coming soon.  
-* Securely Read, Write, and Send GPG encrypted messages across the airgap to a smartphone using qr-codes.  
+* Securely Read, Write, and Send GPG encrypted files across the airgap to a smartphone using qr-codes.  
 * Digitally sign documents.  
 * Write and deploy smart contracts. 
 * Crypto-Journalism: Create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonomus if he or she so choses.  
