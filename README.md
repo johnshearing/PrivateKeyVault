@@ -61,10 +61,13 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Purge Wolfram](https://github.com/johnshearing/PrivateKeyVault#purge-wolfram)  
 * [Screen lockers are a Security Risk](https://github.com/johnshearing/PrivateKeyVault#screen-lockers-are-a-security-risk)  
 * [Screen Blanking is a Security Risk](https://github.com/johnshearing/PrivateKeyVault#screen-blanking-is-a-security-risk)  
-* [Prevent Xsession and Display Power Management from Blanking the Screen](Prevent Xsession and Display Power Management from Blanking the Screen)  
+* [Prevent Xsession and Display Power Management from Blanking the Screen](https://github.com/johnshearing/PrivateKeyVault#prevent-xsession-and-display-power-management-from-blanking-the-screen)  
 * [Using xset to working with Xsession and DPMS at runtime](https://github.com/johnshearing/PrivateKeyVault#using-xset-to-working-with-xsession-and-dpms-at-runtime)  
 * [Setup This Custom Version of MyEtherWallet On Your Pi Which Has Been Optimized For This Project](https://github.com/johnshearing/PrivateKeyVault#setup-this-custom-version-of-myetherwallet-on-your-pi-which-has-been-optimized-for-this-project)  
 * [Install the Camera and QR-Code reader](https://github.com/johnshearing/PrivateKeyVault#install-the-camera-and-qr-code-reader)  
+* [Install a button on the Application Launch Bar to start the zbarcam QR-Code reader](https://github.com/johnshearing/PrivateKeyVault#install-a-button-on-the-application-launch-bar-to-start-the-zbarcam-qr-code-reader)  
+* [Put another button on the Application Launch Bar to kill the zbarcam process](https://github.com/johnshearing/PrivateKeyVault#put-another-button-on-the-application-launch-bar-to-kill-the-zbarcam-process)  
+
 
 #### Parts List  
 The items you will need are as follows. 
