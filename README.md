@@ -53,8 +53,18 @@ By improving security, I hope this device will facilitate wide scale adoption of
 [Parts List](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md#parts-list)  
 [Installing the OS and Setting Up Basic Functionality](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
 * [Write the image to the SD Card](https://github.com/johnshearing/PrivateKeyVault#write-the-image-to-the-sd-card)  
-* [Booting the Pi For the First Time](https://github.com/johnshearing/PrivateKeyVault#booting-the-pi-for-the-first-time)
-
+* [Booting the Pi For the First Time](https://github.com/johnshearing/PrivateKeyVault#booting-the-pi-for-the-first-time)  
+* [Chose interfacing options, Expand File System](https://github.com/johnshearing/PrivateKeyVault#chose-interfacing-options-expand-file-system)  
+* [Setting up VNC](https://github.com/johnshearing/PrivateKeyVault#setting-up-vnc)  
+* [Switch to American keyboard layout if you are American](https://github.com/johnshearing/PrivateKeyVault#switch-to-american-keyboard-layout-if-you-are-american)  
+* [Setup WiFi](https://github.com/johnshearing/PrivateKeyVault#setup-wifi)  
+* [Purge Wolfram](https://github.com/johnshearing/PrivateKeyVault#purge-wolfram)  
+* [Screen lockers are a Security Risk](https://github.com/johnshearing/PrivateKeyVault#screen-lockers-are-a-security-risk)  
+* [Screen Blanking is a Security Risk](https://github.com/johnshearing/PrivateKeyVault#screen-blanking-is-a-security-risk)  
+* [Prevent Xsession and Display Power Management from Blanking the Screen](Prevent Xsession and Display Power Management from Blanking the Screen)  
+* [Using xset to working with Xsession and DPMS at runtime](https://github.com/johnshearing/PrivateKeyVault#using-xset-to-working-with-xsession-and-dpms-at-runtime)  
+* [Setup This Custom Version of MyEtherWallet On Your Pi Which Has Been Optimized For This Project](https://github.com/johnshearing/PrivateKeyVault#setup-this-custom-version-of-myetherwallet-on-your-pi-which-has-been-optimized-for-this-project)  
+* [Install the Camera and QR-Code reader](https://github.com/johnshearing/PrivateKeyVault#install-the-camera-and-qr-code-reader)  
 
 #### Parts List  
 The items you will need are as follows. 
