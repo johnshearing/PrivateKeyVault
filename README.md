@@ -52,6 +52,8 @@ By improving security, I hope this device will facilitate wide scale adoption of
 ## Contents  
 [Parts List](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md#parts-list)  
 [Installing the OS and Setting Up Basic Functionality](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
+* [Write the image to the SD Card](https://github.com/johnshearing/PrivateKeyVault#write-the-image-to-the-sd-card)  
+* [Booting the Pi For the First Time](https://github.com/johnshearing/PrivateKeyVault#booting-the-pi-for-the-first-time)
 
 
 #### Parts List  
@@ -69,7 +71,7 @@ The items you will need are as follows.
 If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
 Hooray Open Source!  
 
-#### Installing the OS and Setting Up Basic Functionality.  
+### Installing the OS and Setting Up Basic Functionality.  
 The following is the written tutorial from which these notes are made.  
 [Setup Headless, Security, WiFi, VNC, Camera, and Much More](http://thezanshow.com/electronics-tutorials/raspberry-pi)
 
@@ -136,7 +138,7 @@ If you are satisfied that the hash matches what is published then continue.
 
 Look up Hasha on NPM to learn about other ways to use this utility.  
 
-### Write the image to the SD Card  
+#### Write the image to the SD Card  
 
 Purchase the highest quality SD card that you can afford.  
 I can not make a recommendation except to say do some research online.  
@@ -303,7 +305,7 @@ You will not need these anymore.
 To delete a file or folder - click on the item and then under the Edit Menu click Remove.  
 
 **Do not change anything inside the MEW folder**  
-If you change anything inside the MEW folder it my break the application.  
+If you change anything inside the MEW folder it may break the application.  
 
 #### Change the Chrome Browser Settings So That MyEtherWallet Will Run When Chrome Starts.  
 Open the **Chrome** browser by clicking the second icon from the top left on the **Start Bar**.  
@@ -541,92 +543,6 @@ Select your new desktop item (It can be found in accessories) and place it onto 
 
 At some point in the future it might fun to have the buttons which turn on and off the QR-Code scanner behave like radio buttons where the active button is depressed.    
 [This article covers changing the Application Launch Bar programaticlly](https://unix.stackexchange.com/questions/177386/how-can-i-add-applications-to-the-lxpanel-application-launch-bar-via-cli)   
-
-
-#### INSTALL PRINTER  
-Source:
-[Pi camera project](https://learn.adafruit.com/instant-camera-using-raspberry-pi-and-thermal-printer?view=all)  
-
-First we’ll install printer support (CUPS — the Common UNIX Printing System) and some related development tools…  
-Execute the following lines one at a time in the pi's terminal window
-`sudo apt-get update`  
-`sudo apt-get install git cups wiringpi build-essential libcups2-dev libcupsimage2-dev`  
-
-
-
-Then install the raster filter for CUPS. This processes bitmap images into the thermal printer’s native format…  
-Execute the following lines one at a time in the pi's terminal window.  
-`cd`  
-`git clone https://github.com/adafruit/zj-58`  
-`cd zj-58`  
-`make`  
-`sudo ./install`  
-
-Your thermal printer may have arrived with a test page in the box or the paper bay. If not, or if you threw that away, you can generate a new one by installing a roll of paper and holding the feed button (on printers that have one) while connecting power, or tapping the button on the back of the “Nano” printer or the “Printer Guts.”  
-
-Look for the baud rate that’s printed near the bottom of the page.  
-This is typically either 9600 or 19200 baud. Mine is 9600
-This is important…you’ll need to know the correct value for your printer.  
-
-The printer doesn’t need to be connected yet.  
-We can prepare the system the same regardless.  
-To add the printer to the CUPS system and set it as the default, we’ll be typing two lines similar to the following (but not necessarily identical…read on)…  
-
-`sudo lpadmin -p ZJ-58 -E -v serial:/dev/ttyAMA0?baud=9600 -m zjiang/ZJ-58.ppd`  
-`sudo lpoptions -d ZJ-58`  
-
-On the first line, change the “baud” value to 9600 or 19200 as required for your printer.  
-For a USB receipt printer, change the device name to /dev/ttyUSB0  
-**For all other (TTL) printers, use /dev/ttyAMA0 for the device name.**   
-This is my printer is the Nano and the baud rate is 9600 so the line of code above does not change.  
-The rest of the line should be typed exactly as it appears above.   
-Likewise for the second line, which needs no changes.  
-
-
-
-Source:
-[Networked Thermal Printer using Raspberry Pi and CUPS](https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi?view=all)  
-
-Plug the printer into the pi  
-
-Run the following commands at the terminal window:
-`sudo chmod 777 /dev/serial0`  
-`sudo stty -F /dev/serial0 9600`  
-`sudo echo -e "This is a test.\\n\\n\\n" > /dev/serial0`  
-The printer should print "This is a test."  
-
-Execute the following commands 
-`sudo apt-get update`  
-`sudo apt-get install libcups2-dev libcupsimage2-dev git build-essential cups system-config-printer`  
-
-Then install the raster filter for CUPS. This processes bitmap images into the thermal printer’s native format…  
-Execute the following lines one at a time in the pi's terminal window.  
-`cd`  
-`git clone https://github.com/adafruit/zj-58`  
-`cd zj-58`  
-`make`  
-`sudo ./install`  
-
-On the pi's main menu, go to **Print Settings**  
-Select the desired printer and then unlock the screen by clicking on the **Lock** icon and entering your password  
-Now select properties from the local menu.  
-Enter the following in the **Device URI** field:   
-`serial:/dev/serial0?baud=19200`  
-Change the other properties as desired  
-
-Now execute the following command at the pi's terminal window    
-`echo "This is a test." | lpr`  
-The printer will print "This is a test."  
-
-The following command will print a picture:  
-`lpr -o fit-to-page /usr/share/raspberrypi-artwork/raspberry-pi-logo.png`  
-
-The following command will print a text file:  
-This command can be used to print out a keystore file which is a password protected paper wallet.  
-`lp -o cpi=8 filename`  
-
-[Here are some command line options for the printer.](https://www.cups.org/doc/options.html)
-
 
 #### ENABLE RIGHT CLICK  
 
