@@ -50,7 +50,9 @@ Now that the public can set up their own accounts on a super secure device in th
 By improving security, I hope this device will facilitate wide scale adoption of blockchain technology    
 
 ## Contents  
-[Parts List]()
+[Parts List](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md#parts-list)  
+[Installing the OS and Setting Up Basic Functionality](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
+
 
 #### Parts List  
 The items you will need are as follows. 
@@ -80,7 +82,7 @@ Make a folder and name it perhaps **PiSetup**
 
 [Download 7-zip found here](http://www.7-zip.org/) to **PiSetup**and install it.  
 
-[Download Raspbian Jessie with Pixel found here](https://www.raspberrypi.org/downloads/raspbian/) to **PiSetup**   
+[Download Raspbian Jessie with Pixel found here](https://downloads.raspberrypi.org/raspbian/images/raspbian-2017-07-05/) to **PiSetup**  
 **Do not** download Stretch (the latest version of raspbian). As of this writing. I have not yet heard of anyone achiving LUKS full disk encryption when using Stretch as the operating system without using a second Linux computer to do the encryption.   
 
 If you want to, you can use the Win32 Disk Imager to check that the SHA1 hash of your zip file is the same as the SHA1 hash listed on the raspberry pi website (this is the easiest option). Or you can use NodeJS at the command line to check that the downloaded zip file has not been tampered with. This takes a bit more time but it is good to have two completely different methods to hash a file.  
