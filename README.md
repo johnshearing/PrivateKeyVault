@@ -1,4 +1,4 @@
-# PrivateKeyVault - Make Instructions  
+# PrivateKeyVault - [Make Instructions](https://github.com/johnshearing/PrivateKeyVault#contents)  
 ### Airgapped raspberry pi computer with touch screen and camera  
 ### Featuring LUKS full disk encryption  
 ### For secure offline blockchain transactions and for secure encrypted messaging     
@@ -70,6 +70,12 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Install the Camera and QR-Code reader](https://github.com/johnshearing/PrivateKeyVault#install-the-camera-and-qr-code-reader)  
 * [Install a button on the Application Launch Bar to start the zbarcam QR-Code reader](https://github.com/johnshearing/PrivateKeyVault#install-a-button-on-the-application-launch-bar-to-start-the-zbarcam-qr-code-reader)  
 * [Put another button on the Application Launch Bar to kill the zbarcam process](https://github.com/johnshearing/PrivateKeyVault#put-another-button-on-the-application-launch-bar-to-kill-the-zbarcam-process)  
+* [Enable Right Click](https://github.com/johnshearing/PrivateKeyVault#enable-right-click)  
+* [Install Nodejs and NPM](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm)  
+* [Install the npm packages required for working with Ethereum](https://github.com/johnshearing/PrivateKeyVault#install-the-npm-packages-required-for-working-with-ethereum)  
+* [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
+* [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
+* []()  
 
 ### Physically Building the PrivateKeyVault  
 If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
