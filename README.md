@@ -1112,58 +1112,6 @@ You will need to refer to them from time to time.
 Click the **Raw** button near the upper right of this web page and copy all the text from there - otherwise you will not have access to all the URLs in the document.  
 Then using VNC, paste them into a text document on your pi.  
  
-#### How to Make an image of the SD card in it's current state  
-If your SD card becomes corrupted you will need to bring your pi back to the state it is in now.  
-[The source of information for this step is found here](http://lifehacker.com/how-to-clone-your-raspberry-pi-sd-card-for-super-easy-r-1261113524)  
-
-Get everything set up just the way you want it on your Raspberry Pi.  
-Then shut down the Pi and remove the SD card.  
-Insert the SD card into your computer.  
-Start up Win32DiskImager (See source article if you're on OS X or Linux).  
-In the "Image File" box, enter the path of your soon-to-be image file. For example, I put mine in `C:\Users\John\Pi_Backups\20170730_Pi.img`  
-
-Under the "Device" box, select your SD card.  
-Click the "Read" button to create the image file from your card.  
-When it's done creating the image file, you can eject your SD card and put it back in your Raspberry Pi.  
-Keep that IMG file in a safe place.   
-
-#### How To Restore Your SD Card From an Image
-Now, if anything ever goes wrong with your Pi, you can restore your fully-set-up image using the following instructions:  
-Insert the SD card back into your computer.    
-Use **diskpart** to partition and format your SD card.  
-[Here is a YouTube vid that shows how to use diskpart](https://www.youtube.com/watch?v=8TQ1RpToSsk)    
-Here are the steps you need to follow:  
-* Insert the empty SD card into your PC.  
-* Open your favorite command line interpreter - I use PowerShell or Command Prompt.  
-* Execute the following:  
-  * `diskpart`  
-* Execute the following:  
-  * `list disk`  
-* Be very careful to select the correct disk in the next step. Look carefully at the size of the disk for a clue.  
-* Execute the following:  
-  * `select disk (Put the appropriate number of the disk here)`  
-* If the disk shows up in the list as **Offline** then execute the following:  
-  * `online disk`  
-* Execute the following:  
-  * `attributes disk clear readonly`  
-* If you are sure you have selected the correct disk and you want to erase it's contents then execute the following  :
-  * `clean`  
-* Execute the following command:  
-  * `create partition primary`  
-* Execute the following command:  
-  * `select partition 1`  
-* Execute the following command:  
-  * `active`  
-* Execute the following command:  
-  * `format fs=ntfs label=Whatever_I_Want quick`  
-  * If you don't use the key word **quick** it will take forever to complete the formatting process.  
-
-Now open Win32DiskImager again and browse for your image file.  
-Select your device from the Device dropdown. **SELECT CAREFULLY**  
-This time, click "Write" to write the image to the SD card.  
-When it finishes, eject the SD card and re-insert it into your Raspberry Pi.  
-When you boot it up, it should be in the exact same state it was in when you first cloned the SD card.  
-
 ## Airgapping Your PrivateKeyVault  
 **You are about to start working with Private Keys  
 Pull out the WiFi Dongle,  
