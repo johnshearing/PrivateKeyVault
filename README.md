@@ -75,7 +75,8 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Install the npm packages required for working with Ethereum](https://github.com/johnshearing/PrivateKeyVault#install-the-npm-packages-required-for-working-with-ethereum)  
 * [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
 * [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
-* []()  
+* [Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code](https://github.com/johnshearing/PrivateKeyVault#getting-text-and-files-into-and-out-of-the-privatekeyvault-using-qr-code)  
+
 
 ### Physically Building the PrivateKeyVault  
 If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
@@ -723,7 +724,8 @@ We will see how to use this program shortly.
 #### Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code  
 Since the PrivateKeyVault does not connect to any other devices there must be a way to transfer text and files into and out of the device in some transparent manner that gives the user complete control and the ability to inspect what information is moving in and out of the device at every stage of the transfer. The following 4 minute video gives a general idea of how QR-Code is used to transfer information into and out of the PrivateKeyVault. It is also a full demonstration of how to securely send ether on the Ethereum block chain. To see the video [click here](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) to go to my YouTube channel and then click on the video entitled **Private Key Vault: an Air Gapped Computer For Ethereum Transactions**  
 
-Now we will see how to move text typed in at the command line editor and also large files into and out of the PrivateKeyVault using QR-Code. The following instructions were made from information acquired from the following videos:  
+Now we will see how to move text typed in at the command line editor and also large files into and out of the PrivateKeyVault using QR-Code. The following instructions were made from information acquired from the following videos  
+You can view these if you are interested in seeing where the idea came from.  
 These videos are made for security experts and penetration testers.  
 These people, who work within the law, are hired to test network security by stealing information.  
 They then return the information and report on security weaknesses.  
@@ -803,6 +805,9 @@ The companion video can be found here.
 [Raspberry Pi 2 and OpenCV 3 Tutorial Part 1](https://www.youtube.com/watch?v=6j-Wy9j0TCs)  
 There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file.
 
+### Using Your PrivateKeyVault  
+
+#### Sending an Encrypted Message  
 Now lets try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
 Execute the following command at the terminal window:  
