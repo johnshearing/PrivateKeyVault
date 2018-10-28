@@ -83,6 +83,8 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [How to Make an image of the SD card in it's current state](https://github.com/johnshearing/PrivateKeyVault#how-to-make-an-image-of-the-sd-card-in-its-current-state)  
 * [How To Restore Your SD Card From an Image](https://github.com/johnshearing/PrivateKeyVault#how-to-restore-your-sd-card-from-an-image)   
 * [You are about to start working with Private Keys](https://github.com/johnshearing/PrivateKeyVault#you-are-about-to-start-working-with-private-keys)  
+* [Lock Down Your Pi](https://github.com/johnshearing/PrivateKeyVault#lock-down-your-pi)  
+* []()  
 
 ### Physically Building the PrivateKeyVault  
 If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
@@ -1186,18 +1188,19 @@ Not with Video Out,
 Not with Audio Out,   
 Not with anything**    
 
+**Never have a mobile phone, computer or any electronic device near your pi when typing in or displaying your private key**   
+A malware infected device can read what is on any computer display and can read keystrokes as well simply by listening to the radio signature of those processes.   
+Google "Tempest Certification" to learn more about this.   
+
+**Be cognizant of cameras around you when working with your private keys.**  
+Including the cameras in your own phone and your own computer.  
+Crazy people put a blanket over themselves, their pi, and scraps of paper containing private keys when working with private keys.   **Maybe not so crazy if you can not afford to have your cyptocurency stolen**
+
 #### Lock Down Your Pi  
 
 Open the terminal window and execute the following command: 
 `sudo raspi-config` 
-Under **Interfacing Options**, disable SSH and VNC.    
-
-#### Never plug anything into your pi  
-Not a USB device, Not a memory device, Not a cable of any type, Not a keyboard or a mouse, Not a WiFi device, Not a BlueTooth device, Not anything.  
-
-#### Never have a mobile phone, computer or any electronic device near your pi when typing in or displaying your private key. A malware infected device can read what is on any computer display and can read keystrokes as well simply by listening to the radio signature of those processes. Google "Tempest Certification" to learn more about this. Eventually I hope to make a Tempest Certified version of this device.  
-
-#### Be cognizant of cameras around you when working with your private keys. Especially the cameras in your own phone and your own computer. Crazy people put a blanket over themselves, their pi, and scraps of paper containing private keys when working with private keys. **maybe not so crazy**
+Under **Interfacing Options**, disable SSH and VNC.      
 
 #### Change your password and user-name.  
 [Directions for changing the user-name can be found here](https://www.modmypi.com/blog/how-to-change-the-default-account-username-and-password)  
