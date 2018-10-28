@@ -82,7 +82,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Lock Down Your Pi](https://github.com/johnshearing/PrivateKeyVault#lock-down-your-pi)  
 * [Change your password and user-name](https://github.com/johnshearing/PrivateKeyVault#change-your-password-and-user-name)  
 * [Setting time without and Internet connection](https://github.com/johnshearing/PrivateKeyVault#setting-time-without-and-internet-connection)  
-* [Destroying all information on the SD card](https://github.com/johnshearing/PrivateKeyVault#destroying-all-information-on-the-sd-card)  
+* [Deleting information on the SD card](https://github.com/johnshearing/PrivateKeyVault#destroying-all-information-on-the-sd-card)  
 
 [Using Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#using-your-privatekeyvault)  
 * [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
@@ -816,6 +816,122 @@ The companion video can be found here.
 [Raspberry Pi 2 and OpenCV 3 Tutorial Part 1](https://www.youtube.com/watch?v=6j-Wy9j0TCs)  
 There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file.  
 
+#### Cloning Your Encrypted SD card Using Only the Raspberry Pi  
+It is of course possible to use Win 32 Disk Imager to clone your SD card for back up purposes.  
+No one would be able to read the data from the image created.  
+But now that you have private keys on the encrypted partition, putting your SD card into an Internet device is dangerous business.  
+The attack vector is called The Evil Maid Attack also known as The Maid In The Middle Attack.  
+The attack is carried out by slipping malicious code such as a key logger into the boot partition of the image now stored on your PC.  
+Attackers might just as easily put the key logger directly onto the boot partition of the SD card up while it is being imaged on your PC. This can be done by remote control if your PC is connected to the Internet or the attack can happen any time you stick an SD card into your PC if the PC is already infected with malware.  
+So if you restore the image and attempt to use it, or if your original SD card has been tampered with then your password will be captured by the key logger and stored in a file on the boot partition for later use by criminals.  
+
+The point is, (assuming a strong password) anyone who gets physical access to your SD card can not read it unless you supply the password. The Evil Maid Attack is one way to get you to supply the password without you knowing it.  
+
+We will talk more about the Evil Maid Attack in the next section.  
+The important point to remember here is that we need to make backup copies of the encrypted SD card without putting the card into an Internet connected device. The following explains how to accomplish this.  
+
+Before we get started make sure that all the important information on your encrypted SD card is written down or stored safely somewhere. If anything goes wrong during the cloning process which destroys your cards then you will still have your private keys written down. If you fail to take this precaution then you might lose all your crypto-currency and all the personal information that was stored on your encrypted SD card.  
+ 
+Ok, let's get started:  
+Get two SD card to USB adaptors.  
+Get a USB hub. This plugs in to one of your USB ports on the pi but gives you 4 more places to plug in USB devices.  
+The reason you need the hub is because the SD card to USB adaptors are too big to fit directly into the closely stacked USB ports on the raspberry pi itself.  
+
+Now you will need three SD cards.  
+The first SD card will contain a trusted install of Jessie but does not have to be encrypted.  
+You will put this into the raspberry pi's SD card slot.  
+This will run the raspberry operating system pi during the copy process.  
+Plug in the USB hub and turn on the raspberry pi.  
+
+The second card is the encrypted SD card that you wish to clone.  
+It will go into an SD to USB adaptor and this will in turn get plugged into the hub which should already be plugged into the running raspberry pi. 
+Don't plug the adaptor into the hub yet. 
+Mark this card so that you can see clearly that this is the encrypted card which holds your important data.  
+
+The third SD card is blank. It will become and exact copy of the second card.  
+If there is any data on this card it will overwritten with data from the encrypted card that you are cloning.  
+This card should be formatted before proceeding.  
+Insert the formatted card into an SD card to USB adaptor.  
+Don't plug it into the hub yet.  
+
+Open the terminal window on your pi.  
+run the following command:  
+`lsblk`  
+You should see the SD card which is in the pi's SC card slot listed as **mmcblk0**  
+The root partition will be listed below that as **mmcblk0p2**  
+And the boot partition will be listed below that as **mmcblk0p1**  
+
+Now insert the card you wish to clone into the adaptor and then insert the adaptor into the hub.  
+Just to be very clear, we are talking about your encrypted card with all your private keys.  
+You want to plug this one into the hub first.  
+This matters a lot.  
+You will be very sad if you do not plug this card into your pi first before plugging in the blank card.  
+After you insert the adaptor into the machine you may be prompted by the pi to enter a password or it may invite you to see the contents of the SD card using the file manager.  
+Ignore these offers if they appear by pressing the cancel button.  
+
+Now run the `lsblk` command again.  
+You should now see your encrypted card show up as **sda** with two partitions sda1 and sda2 showing up underneath.  
+Remember that the raspbery pi calls your encrypted card **sda**
+
+Now insert the empty card into the adaptor and then insert the adaptor into the hub.  
+Run the `lsblk` command for a third time.  
+You should still see the first two cards but now the empty card shows up as **sdb** and the partitions show up underneath as sdb1 and sdb2.  
+Remember that the raspberry pi calls your empty card **sdb**  
+
+You probably see the pattern.  
+The first card you insert into the hub will be called **sda** and the second card you insert into the hub will be known as **sdb**.  
+So be careful about which card you insert first and which card you insert second.  
+
+Before we are ready to do the actual cloning we must first be sure the SD cards are not mounted.  
+To do this, just press the eject button in the upper right corner of the pi's touch screen.  
+If any cards show up in the pulldown list then press on these to unmount them.  
+You will get a message saying that it is safe to remove the media.  
+Don't actually remove the cards from the pi.  
+If you did then it would be impossible to clone them.  
+We just want to unmount them which means to disassociate the cards from the pi's file system.  
+Leave the cards in the pi.  
+Cards in the list which are grayed out are already unmounted.  
+Some cards may not even show up in the list because they are impossible to mount in the first place.  
+That's fine.  
+
+
+Now we are ready to copy all the information from the encrypted card to the blank card.  
+Run the following command in the pi's terminal window.  
+Careful - the following command assumes that the encrypted card with all your precious data is known to the pi as **sda**.  
+dd in the following command is the name of the command.  
+if= in the following command specifies the input file (the SD card you wish to read from).  
+of= in the following command specifies the output file (the SD card you wish to write to).  
+`sudo dd if=/dev/sda of=/dev/sdb`  
+This command will take several hours to run without giving any sign that it is working at all.  
+**Don't worry - everything is fine**  
+Have a long nap. when you wake up you will see output on the console from the dd command telling you:  
+how many records in,  
+how many records out,  
+and how many bytes were copied.  
+
+My SD card to USB adaptor has a little red LED light which flashes when the card is being accessed. These lights flashed during the entire copy process indicating that something was happening and that the command was working.  
+That was some comfort during the copy process.  
+
+That's it! now sdb is a clone of sda.  
+
+If you want to check that the two SD cards are exactly the same and that the copy process worked properly then you can execute the following commands one at a time.  
+These commands take a long time to run and will not show any sign on the screen that they are working.  
+If your SD card to USB adaptor is like mine however, lights will flash while the command is running.  
+So when running these commands don't think that your pi is hung.  
+Just wait patiently and you will be rewarded with a hexadecimal number when the command is finished running.  
+This number is a unique hash of the contents on the SD card it is checking.  
+After the first command is finished running then run the second command.  
+If the number from the second command matches the number from the first command then you can be sure that the clone is exactly like the original.  
+Here is the first command:  
+`sudo dd if=/dev/sda | sha1sum`  
+The command above is getting the sha1sum of the original encrypted SD card.  
+Here is the second command:  
+`sudo dd if=/dev/sdb | sha1sum`  
+You probably guessed that the above command is getting the sha1sum of the newly cloned SD card.  
+If the two numbers on the screen match then the contents of two cards are the same.  
+
+Finally, it would be a good idea to try both SD cards to be sure that they work properly and that both of them can be used to access your secrets.  
+
 ### Security  
 #### Airgapping Your PrivateKeyVault  
 You are about to start working with Private Keys.  
@@ -865,9 +981,11 @@ Never store your password on any electronic device.
 #### Setting time without and Internet connection
 `sudo date -s 2017-02-05 15:30:0`
 
-#### Destroying all information on the SD card  
+#### Deleting information on the SD card  
 It is not possible to securely wipe an SD card.  
-So never think you can delete private keys using any method. 
+It is not possible to securely delete information on an SD card.  
+Any information deleted from an SD card can be easily recovered in a very simple computer lab.
+So never think you can delete private keys using any method.  
 The only way to delete data on an SD card is to destroy the card with a hot flame and then smash it into pieces.  
 
 ### Using Your PrivateKeyVault  
@@ -1586,122 +1704,6 @@ You already installed this package if you have been following along.
 Since writing this section I have actually built this functionality into MyEtherWallet.  
 So now it is possible to create a keystore file from a private key without leaving the MyEtherWallet application.  
 
-
-#### Cloning Your Encrypted SD card Using Only the Raspberry Pi  
-It is of course possible to use Win 32 Disk Imager to clone your SD card for back up purposes.  
-No one would be able to read the data from the image created.  
-But now that you have private keys on the encrypted partition, putting your SD card into an Internet device is dangerous business.  
-The attack vector is called The Evil Maid Attack also known as The Maid In The Middle Attack.  
-The attack is carried out by slipping malicious code such as a key logger into the boot partition of the image now stored on your PC.  
-Attackers might just as easily put the key logger directly onto the boot partition of the SD card up while it is being imaged on your PC. This can be done by remote control if your PC is connected to the Internet or the attack can happen any time you stick an SD card into your PC if the PC is already infected with malware.  
-So if you restore the image and attempt to use it, or if your original SD card has been tampered with then your password will be captured by the key logger and stored in a file on the boot partition for later use by criminals.  
-
-The point is, (assuming a strong password) anyone who gets physical access to your SD card can not read it unless you supply the password. The Evil Maid Attack is one way to get you to supply the password without you knowing it.  
-
-We will talk more about the Evil Maid Attack in the next section.  
-The important point to remember here is that we need to make backup copies of the encrypted SD card without putting the card into an Internet connected device. The following explains how to accomplish this.  
-
-Before we get started make sure that all the important information on your encrypted SD card is written down or stored safely somewhere. If anything goes wrong during the cloning process which destroys your cards then you will still have your private keys written down. If you fail to take this precaution then you might lose all your crypto-currency and all the personal information that was stored on your encrypted SD card.  
- 
-Ok, let's get started:  
-Get two SD card to USB adaptors.  
-Get a USB hub. This plugs in to one of your USB ports on the pi but gives you 4 more places to plug in USB devices.  
-The reason you need the hub is because the SD card to USB adaptors are too big to fit directly into the closely stacked USB ports on the raspberry pi itself.  
-
-Now you will need three SD cards.  
-The first SD card will contain a trusted install of Jessie but does not have to be encrypted.  
-You will put this into the raspberry pi's SD card slot.  
-This will run the raspberry operating system pi during the copy process.  
-Plug in the USB hub and turn on the raspberry pi.  
-
-The second card is the encrypted SD card that you wish to clone.  
-It will go into an SD to USB adaptor and this will in turn get plugged into the hub which should already be plugged into the running raspberry pi. 
-Don't plug the adaptor into the hub yet. 
-Mark this card so that you can see clearly that this is the encrypted card which holds your important data.  
-
-The third SD card is blank. It will become and exact copy of the second card.  
-If there is any data on this card it will overwritten with data from the encrypted card that you are cloning.  
-This card should be formatted before proceeding.  
-Insert the formatted card into an SD card to USB adaptor.  
-Don't plug it into the hub yet.  
-
-Open the terminal window on your pi.  
-run the following command:  
-`lsblk`  
-You should see the SD card which is in the pi's SC card slot listed as **mmcblk0**  
-The root partition will be listed below that as **mmcblk0p2**  
-And the boot partition will be listed below that as **mmcblk0p1**  
-
-Now insert the card you wish to clone into the adaptor and then insert the adaptor into the hub.  
-Just to be very clear, we are talking about your encrypted card with all your private keys.  
-You want to plug this one into the hub first.  
-This matters a lot.  
-You will be very sad if you do not plug this card into your pi first before plugging in the blank card.  
-After you insert the adaptor into the machine you may be prompted by the pi to enter a password or it may invite you to see the contents of the SD card using the file manager.  
-Ignore these offers if they appear by pressing the cancel button.  
-
-Now run the `lsblk` command again.  
-You should now see your encrypted card show up as **sda** with two partitions sda1 and sda2 showing up underneath.  
-Remember that the raspbery pi calls your encrypted card **sda**
-
-Now insert the empty card into the adaptor and then insert the adaptor into the hub.  
-Run the `lsblk` command for a third time.  
-You should still see the first two cards but now the empty card shows up as **sdb** and the partitions show up underneath as sdb1 and sdb2.  
-Remember that the raspberry pi calls your empty card **sdb**  
-
-You probably see the pattern.  
-The first card you insert into the hub will be called **sda** and the second card you insert into the hub will be known as **sdb**.  
-So be careful about which card you insert first and which card you insert second.  
-
-Before we are ready to do the actual cloning we must first be sure the SD cards are not mounted.  
-To do this, just press the eject button in the upper right corner of the pi's touch screen.  
-If any cards show up in the pulldown list then press on these to unmount them.  
-You will get a message saying that it is safe to remove the media.  
-Don't actually remove the cards from the pi.  
-If you did then it would be impossible to clone them.  
-We just want to unmount them which means to disassociate the cards from the pi's file system.  
-Leave the cards in the pi.  
-Cards in the list which are grayed out are already unmounted.  
-Some cards may not even show up in the list because they are impossible to mount in the first place.  
-That's fine.  
-
-
-Now we are ready to copy all the information from the encrypted card to the blank card.  
-Run the following command in the pi's terminal window.  
-Careful - the following command assumes that the encrypted card with all your precious data is known to the pi as **sda**.  
-dd in the following command is the name of the command.  
-if= in the following command specifies the input file (the SD card you wish to read from).  
-of= in the following command specifies the output file (the SD card you wish to write to).  
-`sudo dd if=/dev/sda of=/dev/sdb`  
-This command will take several hours to run without giving any sign that it is working at all.  
-**Don't worry - everything is fine**  
-Have a long nap. when you wake up you will see output on the console from the dd command telling you:  
-how many records in,  
-how many records out,  
-and how many bytes were copied.  
-
-My SD card to USB adaptor has a little red LED light which flashes when the card is being accessed. These lights flashed during the entire copy process indicating that something was happening and that the command was working.  
-That was some comfort during the copy process.  
-
-That's it! now sdb is a clone of sda.  
-
-If you want to check that the two SD cards are exactly the same and that the copy process worked properly then you can execute the following commands one at a time.  
-These commands take a long time to run and will not show any sign on the screen that they are working.  
-If your SD card to USB adaptor is like mine however, lights will flash while the command is running.  
-So when running these commands don't think that your pi is hung.  
-Just wait patiently and you will be rewarded with a hexadecimal number when the command is finished running.  
-This number is a unique hash of the contents on the SD card it is checking.  
-After the first command is finished running then run the second command.  
-If the number from the second command matches the number from the first command then you can be sure that the clone is exactly like the original.  
-Here is the first command:  
-`sudo dd if=/dev/sda | sha1sum`  
-The command above is getting the sha1sum of the original encrypted SD card.  
-Here is the second command:  
-`sudo dd if=/dev/sdb | sha1sum`  
-You probably guessed that the above command is getting the sha1sum of the newly cloned SD card.  
-If the two numbers on the screen match then the contents of two cards are the same.  
-
-Finally, it would be a good idea to try both SD cards to be sure that they work properly and that both of them can be used to access your secrets.  
 
 #### Preventing the Evil Maid Attack
 Keep your cloned sd card in a secure location.  
