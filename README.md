@@ -82,7 +82,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [General Information About Encrypted Messaging](https://github.com/johnshearing/PrivateKeyVault#general-information-about-encrypted-messaging)  
 * [How to Make an image of the SD card in it's current state](https://github.com/johnshearing/PrivateKeyVault#how-to-make-an-image-of-the-sd-card-in-its-current-state)  
 * [How To Restore Your SD Card From an Image](https://github.com/johnshearing/PrivateKeyVault#how-to-restore-your-sd-card-from-an-image)   
-* [You are about to start working with Private Keys](https://github.com/johnshearing/PrivateKeyVault#you-are-about-to-start-working-with-private-keys)  
+* [Airgapping Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#airgapping-your-privatekeyvault)    
 * [Lock Down Your Pi](https://github.com/johnshearing/PrivateKeyVault#lock-down-your-pi)  
 * []()  
 
