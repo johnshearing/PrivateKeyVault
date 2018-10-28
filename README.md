@@ -77,7 +77,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
 * [Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code](https://github.com/johnshearing/PrivateKeyVault#getting-text-and-files-into-and-out-of-the-privatekeyvault-using-qr-code)  
 
-[Security]()
+[Security](https://github.com/johnshearing/PrivateKeyVault#security)  
 * [Airgapping Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#airgapping-your-privatekeyvault)    
 * [Lock Down Your Pi](https://github.com/johnshearing/PrivateKeyVault#lock-down-your-pi)  
 * []() 
@@ -1117,7 +1117,7 @@ Then using VNC, paste them into a text document on your pi.
 
 ### Security  
 #### Airgapping Your PrivateKeyVault  
-**You are about to start working with Private Keys  
+You are about to start working with Private Keys.  
 Pull out the WiFi Dongle,  
 Pull out the Ethernet Cable,   
 Stop using Thumbdrives, and   
@@ -1138,7 +1138,7 @@ Not with GPIO,
 Not with USB,   
 Not with Video Out,   
 Not with Audio Out,   
-Not with anything**    
+Not with anything      
 
 **Never have a mobile phone, computer or any electronic device near your pi when typing in or displaying your private key**   
 A malware infected device can read what is on any computer display and can read keystrokes as well simply by listening to the radio signature of those processes.   
