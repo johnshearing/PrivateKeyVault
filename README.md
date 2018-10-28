@@ -76,6 +76,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
 * [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
 * [Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code](https://github.com/johnshearing/PrivateKeyVault#getting-text-and-files-into-and-out-of-the-privatekeyvault-using-qr-code)  
+* [Cloning Your Encrypted SD card Using Only the Raspberry Pi](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi)  
 
 [Security](https://github.com/johnshearing/PrivateKeyVault#security)  
 * [Airgapping Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#airgapping-your-privatekeyvault)    
