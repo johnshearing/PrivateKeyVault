@@ -77,6 +77,12 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
 * [Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code](https://github.com/johnshearing/PrivateKeyVault#getting-text-and-files-into-and-out-of-the-privatekeyvault-using-qr-code)  
 
+[Using Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#using-your-privatekeyvault)  
+* [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
+* [You are about to start working with Private Keys](https://github.com/johnshearing/PrivateKeyVault#you-are-about-to-start-working-with-private-keys)  
+* [How to Make an image of the SD card in it's current state](https://github.com/johnshearing/PrivateKeyVault#how-to-make-an-image-of-the-sd-card-in-its-current-state)  
+* []()  
+
 
 ### Physically Building the PrivateKeyVault  
 If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
@@ -1107,8 +1113,7 @@ We will go over how to use all this in video tutorials.
 You will need to refer to them from time to time.
 Click the **Raw** button near the upper right of this web page and copy all the text from there - otherwise you will not have access to all the URLs in the document.  
 Then using VNC, paste them into a text document on your pi.  
-
-#### Back up your SD Card  
+ 
 #### How to Make an image of the SD card in it's current state  
 If your SD card becomes corrupted you will need to bring your pi back to the state it is in now.  
 [The source of information for this step is found here](http://lifehacker.com/how-to-clone-your-raspberry-pi-sd-card-for-super-easy-r-1261113524)  
@@ -1124,7 +1129,7 @@ Click the "Read" button to create the image file from your card.
 When it's done creating the image file, you can eject your SD card and put it back in your Raspberry Pi.  
 Keep that IMG file in a safe place.   
 
-#### How To Restore Your SD Card From a Backup
+#### How To Restore Your SD Card From an Image
 Now, if anything ever goes wrong with your Pi, you can restore your fully-set-up image using the following instructions:  
 Insert the SD card back into your computer.    
 Use **diskpart** to partition and format your SD card.  
