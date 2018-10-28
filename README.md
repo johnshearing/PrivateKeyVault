@@ -80,9 +80,9 @@ By improving security, I hope this device will facilitate wide scale adoption of
 [Security](https://github.com/johnshearing/PrivateKeyVault#security)  
 * [Airgapping Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#airgapping-your-privatekeyvault)    
 * [Lock Down Your Pi](https://github.com/johnshearing/PrivateKeyVault#lock-down-your-pi)  
-* []() 
-
-
+* [Change your password and user-name](https://github.com/johnshearing/PrivateKeyVault#change-your-password-and-user-name)  
+* [Setting time without and Internet connection](https://github.com/johnshearing/PrivateKeyVault#setting-time-without-and-internet-connection)  
+* [Destroying all information on the SD card](https://github.com/johnshearing/PrivateKeyVault#destroying-all-information-on-the-sd-card)  
 
 [Using Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#using-your-privatekeyvault)  
 * [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
@@ -814,7 +814,61 @@ Instructions for installing OpenCV 3 can be found at the link below:
 
 The companion video can be found here.  
 [Raspberry Pi 2 and OpenCV 3 Tutorial Part 1](https://www.youtube.com/watch?v=6j-Wy9j0TCs)  
-There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file.
+There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file.  
+
+### Security  
+#### Airgapping Your PrivateKeyVault  
+You are about to start working with Private Keys.  
+Pull out the WiFi Dongle,  
+Pull out the Ethernet Cable,   
+Stop using Thumbdrives, and   
+Never connect to anything ever again.  
+Not to a computer,   
+Not to the Internet,   
+Not to a TV,   
+Not to an external computer screen,  
+Not to a Phone,   
+Not to a printer,   
+Not to another pi,   
+Not to anything.    
+Not with WiFi,   
+Not with Bluetooth,   
+Not with Ethernet,   
+Not with HDMI,   
+Not with GPIO,   
+Not with USB,   
+Not with Video Out,   
+Not with Audio Out,   
+Not with anything      
+
+**Never have a mobile phone, computer or any electronic device near your pi when typing in or displaying your private key**   
+A malware infected device can read what is on any computer display and can read keystrokes as well simply by listening to the radio signature of those processes.   
+Google "Tempest Certification" to learn more about this.   
+
+**Be cognizant of cameras around you when working with your private keys.**  
+This includes the cameras in **your own phone** and **your own computer**.  
+Any smartphone or computer capable of connecting to the Internet can be remotely controlled.  
+These can easily be used to spy on their owners.  
+Small cameras can be placed anywhere.  
+**If you can not afford to have your cyptocurrency stolen then cover yourself and your PrivateKeyVault with blanket when working with private keys.**  
+
+#### Lock Down Your Pi  
+
+Open the terminal window and execute the following command: 
+`sudo raspi-config` 
+Under **Interfacing Options**, disable SSH and VNC.      
+
+#### Change your password and user-name.  
+[Directions for changing the user-name can be found here](https://www.modmypi.com/blog/how-to-change-the-default-account-username-and-password)  
+Never store your password on any electronic device.  
+
+#### Setting time without and Internet connection
+`sudo date -s 2017-02-05 15:30:0`
+
+#### Destroying all information on the SD card  
+It is not possible to securely wipe an SD card.  
+So never think you can delete private keys using any method. 
+The only way to delete data on an SD card is to destroy the card with a hot flame and then smash it into pieces.  
 
 ### Using Your PrivateKeyVault  
 
@@ -1109,63 +1163,6 @@ The following links are good online resources on how to use gpg:
 Digital Signatures are provided by MyEtherWallet as well as by GPG.  
 We will go over how to use all this in video tutorials.  
 [Check my YouTube channel for my video tutorials as they are produced.](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A)  
-
-#### Copy all these notes over to the pi before pulling the plug on the Internet.
-You will need to refer to them from time to time.
-Click the **Raw** button near the upper right of this web page and copy all the text from there - otherwise you will not have access to all the URLs in the document.  
-Then using VNC, paste them into a text document on your pi.  
-
-### Security  
-#### Airgapping Your PrivateKeyVault  
-You are about to start working with Private Keys.  
-Pull out the WiFi Dongle,  
-Pull out the Ethernet Cable,   
-Stop using Thumbdrives, and   
-Never connect to anything ever again.  
-Not to a computer,   
-Not to the Internet,   
-Not to a TV,   
-Not to an external computer screen,  
-Not to a Phone,   
-Not to a printer,   
-Not to another pi,   
-Not to anything.    
-Not with WiFi,   
-Not with Bluetooth,   
-Not with Ethernet,   
-Not with HDMI,   
-Not with GPIO,   
-Not with USB,   
-Not with Video Out,   
-Not with Audio Out,   
-Not with anything      
-
-**Never have a mobile phone, computer or any electronic device near your pi when typing in or displaying your private key**   
-A malware infected device can read what is on any computer display and can read keystrokes as well simply by listening to the radio signature of those processes.   
-Google "Tempest Certification" to learn more about this.   
-
-**Be cognizant of cameras around you when working with your private keys.**  
-This includes the cameras in **your own phone** and **your own computer**.  
-Any smartphone or computer capable of connecting to the Internet can be remotely controlled.  
-These can easily be used to spy on their owners.  
-Small cameras can be placed anywhere.  
-**If you can not afford to have your cyptocurrency stolen then cover yourself and your PrivateKeyVault with blanket when working with private keys.**  
-
-#### Lock Down Your Pi  
-
-Open the terminal window and execute the following command: 
-`sudo raspi-config` 
-Under **Interfacing Options**, disable SSH and VNC.      
-
-#### Change your password and user-name.  
-[Directions for changing the user-name can be found here](https://www.modmypi.com/blog/how-to-change-the-default-account-username-and-password)  
-Never store your password on any electronic device.  
-
-#### Setting time without and Internet connection
-`sudo date -s 2017-02-05 15:30:0`
-
-#### Destroying all information on the SD card  
-It is not possible to securely wipe an SD card. So never think you can delete private keys using any method and then safely insert the pi's SD card into another device to download software updates or other information. When software updates are required, ensure that you have written down your private keys several times to insure against sloppy handwriting and losing the paper. Store the hand written private keys in different places so that the keys will not be lost in case of fire or flood. Then destroy the SD card with a hot flame and then smash it into pieces. Then download any required software to a new SD card and reenter your private keys. Refusing to put your SD card into other devices or connect to other devices in any way is the only way to ensure that no one will get your private keys.
 
 #### Setup LUKS Full Disk Encryption  
 The following is the written tutorial from which these notes are made.  
