@@ -1193,8 +1193,11 @@ A malware infected device can read what is on any computer display and can read 
 Google "Tempest Certification" to learn more about this.   
 
 **Be cognizant of cameras around you when working with your private keys.**  
-Including the cameras in your own phone and your own computer.  
-Crazy people put a blanket over themselves, their pi, and scraps of paper containing private keys when working with private keys.   **Maybe not so crazy if you can not afford to have your cyptocurency stolen**
+This includes the cameras in **your own phone** and **your own computer**.  
+Any smartphone or computer capable of connecting to the Internet can be remotely controlled.  
+These can easily be used to spy on their owners.  
+Small cameras can be placed anywhere.  
+**If you can not afford to have your cyptocurrency stolen then cover yourself and your PrivateKeyVault with blanket when working with private keys.**  
 
 #### Lock Down Your Pi  
 
