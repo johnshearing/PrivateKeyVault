@@ -81,6 +81,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
 * [You are about to start working with Private Keys](https://github.com/johnshearing/PrivateKeyVault#you-are-about-to-start-working-with-private-keys)  
 * [How to Make an image of the SD card in it's current state](https://github.com/johnshearing/PrivateKeyVault#how-to-make-an-image-of-the-sd-card-in-its-current-state)  
+* [How To Restore Your SD Card From an Image](https://github.com/johnshearing/PrivateKeyVault#how-to-restore-your-sd-card-from-an-image)  
 * []()  
 
 
@@ -1091,7 +1092,7 @@ Check if two files are the same:
 Learn more about GPG:  
 `man gpg`  
 
-#### Encrypted Messaging  
+#### General Information About Encrypted Messaging  
 Encrypted messaging comes with the raspbian OS. So you have it already.  
 To use it, use the command line tool `gpg` or `gpg2`  
 To read about these tools on your raspberry pi execute the command `man gpg` or `man gpg2`  
@@ -1101,13 +1102,9 @@ The following links are good online resources on how to use gpg:
 [In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
 [Keeping It At The Console - Input to GPG from Stdin / GPG Output to Stdout](https://stackoverflow.com/questions/5504721/how-do-i-encrypt-plaintext-with-gnupg)  
 
-
 Digital Signatures are provided by MyEtherWallet as well as by GPG.  
 We will go over how to use all this in video tutorials.  
 [Check my YouTube channel for my video tutorials as they are produced.](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A)  
-
-
-## You are about to start working with Private Keys.  
 
 #### Copy all these notes over to the pi before pulling the plug on the Internet.
 You will need to refer to them from time to time.
@@ -1166,9 +1163,11 @@ This time, click "Write" to write the image to the SD card.
 When it finishes, eject the SD card and re-insert it into your Raspberry Pi.  
 When you boot it up, it should be in the exact same state it was in when you first cloned the SD card.  
 
-## Pull out the WiFi Dongle,  
-## Pull out the Ethernet Cable, and  
-## Never connect to anything ever again  
+## You are about to start working with Private Keys.  
+**Pull out the WiFi Dongle,  
+Pull out the Ethernet Cable, and  
+Never connect to anything ever again**
+
 Not to a computer, Not to the Internet, Not to a TV, Not to a Phone, Not to a printer, Not to another pi, Not to anything.  
 Not with WiFi, Not with Bluetooth, Not with Ethernet, Not with HDMI, Not with GPIO, Not with USB, Not with Video Out, Not with Audio Out, Not with anything.    
 #### Lock Down Your Pi  
