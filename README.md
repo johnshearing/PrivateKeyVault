@@ -92,7 +92,9 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [General Information About Encrypted Messaging](https://github.com/johnshearing/PrivateKeyVault#general-information-about-encrypted-messaging)    
 * [Generating the public address or public key for use on the Ethereum Blockchain](Generating the public address or public key for use on the Ethereum Blockchain)  
 * [Check that your public and private key work together](https://github.com/johnshearing/PrivateKeyVault#check-that-your-public-and-private-key-work-together)  
-* [Warning About Quantum Computers]()  
+* [Warning About Quantum Computers](https://github.com/johnshearing/PrivateKeyVault#warning-about-quantum-computers)  
+* [Generate a Keystore File from a private key](https://github.com/johnshearing/PrivateKeyVault#generate-a-keystore-file-from-a-private-key)  
+* []()  
  
 
 ### Physically Building the PrivateKeyVault  
@@ -1673,9 +1675,16 @@ So now you have a public/private key pair and think they work together. But if y
 #### Warning About Quantum Computers  
 Right now quantum computers are not wide spread so they are not much of a concern at this moment. In the future however, it would be impossible to for a quantum computer to get you private key with only the public address as input. This is because there is a difference between the public address and the public key. The public address is a truncated version of the public key - several characters are missing. It might however be possible for a quantum computer to figure out your private key given your public key. The public key however is not revealed to the public until the first transaction appears on the block chain. So if quantum computers are a concern then it actually makes sense to never test the private key / public address pair. Instead you would generate the public address from the private key but never make a transaction until you are ready to clear out the account. So you lose the ability to test that the private key can be used to move funds from the public address but you never expose the public key to quantum computers until it's too late to be of any use. One way to safely test that you can use the private key to access funds at the corresponding public address would be to test this on a private copy of the blockchain.
 
-#### Generate a Keystore File from a private key.  
+#### Generate a Keystore File from a private key  
 This can be done using the custom version of MyEtherWallet which is already loaded on you pi if you have been following along.  
-There is too much opportunity for other people to see the private key when using that option in MEW. Better to use a Keystore file. A keystore file is a password protected version of a private key. If you lose the password then you will not be able to use the keystore file to access your ether. So don't lose the password for the keystore file. My custom version of MyEtherWallet can generate keystore files given a private key. You can name the keystore files anything you want so that you can be sure you are sending ether from the appropriate account.  
+So these instructions are only for people who wish to see what is going on behind the scenes.  
+There is too much opportunity for other people to see the private key when working with them directly in MEW.  
+Better to use a Keystore file.  
+A keystore file is a password protected version of a private key.  
+If you lose the password then you will not be able to use the keystore file to access your ether.  
+So don't lose the password for the keystore file.   
+My custom version of MyEtherWallet can generate keystore files given a private key.  
+You can name the keystore files anything you want so that you can be sure you are sending ether from the appropriate account.  
 [This Stack Exchange thread shows how to do it at the command line.](https://ethereum.stackexchange.com/questions/11166/how-to-generate-a-keystore-utc-file-from-the-raw-private-key)  
 
 The following is example code from the above thread with some modification and explanation.  
@@ -1696,7 +1705,7 @@ Execute the following command:
 
 Put your private in into a JavaScript buffer and name the buffer "key" 
 Execute the following command substituting your own private key for the first parameter of course:  
-`var key = Buffer.from('efca4...Enter you 64 character private key...5378', 'hex')`  
+`var key = Buffer.from('efca4...Enter your 64 character private key...5378', 'hex')`  
 Notice that the **0x** is not included in the 64 character private key.  
 
 Create an object in memory that will be used to create the keystore file and name this object "wallet".  
@@ -1723,7 +1732,7 @@ When MyEtherWallet asks for a keystore file, select this file you just made and 
 The whole thing could be put in a script as shown below if you prefer.  
 ```
 > var Wallet = require('ethereumjs-wallet');  
-> var key = Buffer.from('efca4cdd31923b50f4214af5d2ae10e7ac45a5019e9431cc195482d707485378', 'hex');  
+> var key = Buffer.from('efca4...Enter your 64 character private key...5378', 'hex');  
 > var wallet = Wallet.fromPrivateKey(key);  
 > wallet.toV3String('password', {n: 1024});  
 ```   
