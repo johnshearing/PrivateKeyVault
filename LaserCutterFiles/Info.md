@@ -11,6 +11,9 @@ As I improve the box I am likely to replace these files with updated drawings.
 So if you like a particular version of the box be sure to save it on your own hard drive.  
 
 If you do not have a laser cutter and if you do not wish to use a local service provider then I will be happy to sell you a finished case for your PrivateKeyVault project.  
-Contact johnshearing@gmail.com or gshearing@radioactiverf.com
+Contact johnshearing@gmail.com or gshearing@radioactiverf.com  
+
+You are also free to set up your own business making these cases without giving me any money nor any credit.  
+Hooray Open Source!  
 
 Please feel free to suggest improvements and to contribute your own changes and original drawings if you have a different way to make this box.  
