@@ -84,7 +84,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Lock Down Your Pi](https://github.com/johnshearing/PrivateKeyVault#lock-down-your-pi)  
 * [Change your password and user-name](https://github.com/johnshearing/PrivateKeyVault#change-your-password-and-user-name)  
 * [Setting time without and Internet connection](https://github.com/johnshearing/PrivateKeyVault#setting-time-without-and-internet-connection)  
-* [Deleting information on the SD card](https://github.com/johnshearing/PrivateKeyVault#destroying-all-information-on-the-sd-card)  
+* [Deleting information on the SD card](https://github.com/johnshearing/PrivateKeyVault#deleting-information-on-the-sd-card)  
 
 [Using Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#using-your-privatekeyvault)  
 * [Sending an Offline Transaction to the Ethereum Blockchain](https://github.com/johnshearing/PrivateKeyVault#sending-an-offline-transaction-to-the-ethereum-blockchain)  
