@@ -102,7 +102,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [OS and Software Items To Work On](https://github.com/johnshearing/PrivateKeyVault#os-software-items-to-add-next-time)  
 * [Changes to MyEtherWallet](https://github.com/johnshearing/PrivateKeyVault#changes-to-myetherwallet)  
 
-[Scratch Pad of notes](https://github.com/johnshearing/PrivateKeyVault#scratch-pad-of-notes)  
+[Scratch Pad of Notes](https://github.com/johnshearing/PrivateKeyVault#scratch-pad-of-notes)  
 
 [Appendix](https://github.com/johnshearing/PrivateKeyVault#appendix)  
 * [Often Used Github Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-github-commands)  
@@ -1864,7 +1864,7 @@ Taylor says it will be complicated to remove this particular tab.
 She suggested wiping the tab clear and using it for something else.  
 Perhaps I can use this tab for implementing secure messaging.  
 
-### Scratch Pad of notes.   
+### Scratch Pad of Notes.   
 
 Clearing history in CLI  
 If we want to be sure we're clearing the history file, even with the histappend option set, we can use the the following commands:  
