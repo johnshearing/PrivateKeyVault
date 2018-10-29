@@ -105,7 +105,8 @@ By improving security, I hope this device will facilitate wide scale adoption of
 [Scratch Pad of notes](https://github.com/johnshearing/PrivateKeyVault#scratch-pad-of-notes)  
 
 [Appendix](https://github.com/johnshearing/PrivateKeyVault#appendix)  
-* []()  
+* [Often Used Github Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-github-commands)  
+* [Often Used GPG Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-gpg-commands)    
 
 
 ### Physically Building the PrivateKeyVault  
