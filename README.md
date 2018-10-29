@@ -79,6 +79,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Cloning Your Encrypted SD card Using Only the Raspberry Pi](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi)  
 
 [Security](https://github.com/johnshearing/PrivateKeyVault#security)  
+* [Setup LUKS Full Disk Encryption](https://github.com/johnshearing/PrivateKeyVault#setup-luks-full-disk-encryption)   
 * [Airgapping Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#airgapping-your-privatekeyvault)    
 * [Lock Down Your Pi](https://github.com/johnshearing/PrivateKeyVault#lock-down-your-pi)  
 * [Change your password and user-name](https://github.com/johnshearing/PrivateKeyVault#change-your-password-and-user-name)  
