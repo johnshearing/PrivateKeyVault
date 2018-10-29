@@ -98,6 +98,10 @@ Hooray Open Source!
 
 #### Parts List  
 The items you will need are as follows. 
+* [CorelDraw Files for Laser Cut Case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)    
+  * [Qty (2) Acrylic Sheets - 18 inches X 12 inches X .115 inches thick](https://www.acmeplastics.com/cut-to-size-clear-acrylic-sheet-extruded)  
+  * [Small BD-25/2 Hypo Applicator](https://www.tapplastics.com/product/repair_products/plastic_adhesives/hypo_type_solvent_cement_applicator/409)  
+  * [TAP Acrylic Cement (4 oz)](https://www.tapplastics.com/product/repair_products/plastic_adhesives/tap_acrylic_cement/130)  
 * Raspberry pi 2 board  
 * Official raspberry pi 7 inch touchscreen  
 * Official raspberry pi camera  
@@ -106,7 +110,6 @@ The items you will need are as follows.
 * WiFi dongle  
 * 32Mb thumbdrive   
 * [Miniature Keyboard- Microcontroller-Friendly PS/2 and USB](https://www.adafruit.com/product/857)  
-* [Laser cut case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)    
 * [5V 2.5A Switching Power Supply with 20AWG MicroUSB Cable](https://www.adafruit.com/product/1995)    
 * [Power Boost 1000 Charger](https://www.adafruit.com/product/2465)  
 * [PowerBoost 1000 Basic - 5V USB Boost @ 1000mA from 1.8V+](https://www.adafruit.com/product/2030)  
