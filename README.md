@@ -100,13 +100,25 @@ Hooray Open Source!
 The items you will need are as follows. 
 * Raspberry pi 2 board  
 * Official raspberry pi 7 inch touchscreen  
-* Laser cut case  
-* Official raspberry pi camera   
+* Official raspberry pi camera  
 * 16 G-bite SD card  
 * Ethernet cable  
 * WiFi dongle  
 * 32Mb thumbdrive   
-* Wall outlet type AC to DC power supply  
+* [Miniature Keyboard- Microcontroller-Friendly PS/2 and USB](https://www.adafruit.com/product/857)  
+* [Laser cut case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)    
+* [5V 2.5A Switching Power Supply with 20AWG MicroUSB Cable](https://www.adafruit.com/product/1995)    
+* [Power Boost 1000 Charger](https://www.adafruit.com/product/2465)  
+* [PowerBoost 1000 Basic - 5V USB Boost @ 1000mA from 1.8V+](https://www.adafruit.com/product/2030)  
+* [Lithium Ion Battery Pack - 3.7V 6600mAh](https://www.adafruit.com/product/353)  
+* [Rugged Metal On/Off Switch with Green LED Ring - 16mm Green On/Off](https://www.adafruit.com/product/482)  
+* [Panel Mount 2.1mm DC barrel jack](https://www.adafruit.com/product/610)  
+* [Black Nylon Screw and Stand-off Set – M2.5 Thread](https://www.adafruit.com/product/3299)  
+* [USB DIY Slim Connector Shell - A-M Plug](https://www.adafruit.com/product/1827)  
+* [Jumper Wires Premium 6" F/F - 20 AWG (10 Pack)](https://www.sparkfun.com/products/11710)  
+* [Wire, PVC, Red, 20 AWG, 25 ft, 7.6 m](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4831&storeId=10194)  
+* [Wire, PVC, Black, 20 AWG, 25 ft, 7.6 m](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4829&storeId=10194)  
+
 
 #### Laser Cutting the Transparent Case  
 [CorelDraw files are for laser cutting the case are found here](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)  
