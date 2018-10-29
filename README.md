@@ -104,7 +104,8 @@ By improving security, I hope this device will facilitate wide scale adoption of
 
 [Scratch Pad of notes](https://github.com/johnshearing/PrivateKeyVault#scratch-pad-of-notes)  
 
-[Appendix]
+[Appendix](https://github.com/johnshearing/PrivateKeyVault#appendix)  
+* []()  
 
 
 ### Physically Building the PrivateKeyVault  
@@ -1916,7 +1917,7 @@ To start the pi's file manager `pcmanfm`
 
 ### Appendix  
 
-#### Often Used Github commands  
+#### Often Used Github Commands  
 [This Video Tutorial series gets you up and running on GitHub quickly.](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV&index=1)  
 `git status` Check if any files need to be added to the index.  
 `git add <filename>` Add any files shown by status.  
