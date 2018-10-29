@@ -820,7 +820,7 @@ There is no part 2 in case you are wondering but I followed the instructions and
 #### Cloning Your Encrypted SD card Using Only the Raspberry Pi  
 It is of course possible to use Win 32 Disk Imager to clone your SD card for back up purposes.  
 No one would be able to read the data from the image created.  
-But now that you have private keys on the encrypted partition, putting your SD card into an Internet device is dangerous business.  
+But soon you will have private keys on the encrypted partition. So putting your SD card into an Internet device is dangerous business.  
 The attack vector is called The Evil Maid Attack also known as The Maid In The Middle Attack.  
 The attack is carried out by slipping malicious code such as a key logger into the boot partition of the image now stored on your PC.  
 Attackers might just as easily put the key logger directly onto the boot partition of the SD card up while it is being imaged on your PC. This can be done by remote control if your PC is connected to the Internet or the attack can happen any time you stick an SD card into your PC if the PC is already infected with malware.  
@@ -828,7 +828,7 @@ So if you restore the image and attempt to use it, or if your original SD card h
 
 The point is, (assuming a strong password) anyone who gets physical access to your SD card can not read it unless you supply the password. The Evil Maid Attack is one way to get you to supply the password without you knowing it.  
 
-We will talk more about the Evil Maid Attack in the next section.  
+We will talk more about the Evil Maid Attack in a later section.  
 The important point to remember here is that we need to make backup copies of the encrypted SD card without putting the card into an Internet connected device. The following explains how to accomplish this.  
 
 Before we get started make sure that all the important information on your encrypted SD card is written down or stored safely somewhere. If anything goes wrong during the cloning process which destroys your cards then you will still have your private keys written down. If you fail to take this precaution then you might lose all your crypto-currency and all the personal information that was stored on your encrypted SD card.  
@@ -990,6 +990,9 @@ So never think you can delete private keys using any method.
 The only way to delete data on an SD card is to destroy the card with a hot flame and then smash it into pieces.  
 
 ### Using Your PrivateKeyVault  
+
+#### Sending an Offline Transaction to the Ethereum Blockchain  
+[This Video](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) shows how an offline transaction is made on the Ethereum blockchain using the first prototype of this device. The procedure for making an offline transaction using the newer device is still the same so have a look if you want to see how an offline transaction is made.  
 
 #### Sending an Encrypted Message  
 Now lets try moving text out of the PrivateKeyVault from the command line.  
