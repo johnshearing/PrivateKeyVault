@@ -97,6 +97,11 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Preventing the Evil Maid Attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-attack)  
 * [Conclusion](https://github.com/johnshearing/PrivateKeyVault#conclusion)  
 
+[ToDo List](https://github.com/johnshearing/PrivateKeyVault#todo-list)  
+* [Hardware Items Todo](https://github.com/johnshearing/PrivateKeyVault#hardware-items-todo)  
+* [OS and Software Items To Work On](https://github.com/johnshearing/PrivateKeyVault#os-software-items-to-add-next-time)  
+* [Changes to MyEtherWallet](https://github.com/johnshearing/PrivateKeyVault#changes-to-myetherwallet)  
+
 
 ### Physically Building the PrivateKeyVault  
 If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
@@ -1773,7 +1778,7 @@ Using GPG message encryption along with GPG or MEW digital signatures makes the 
 
 Full Disk Encryption makes the PrivateKeyVault suitable for cold storage of private keys, password management, and for storage of private files.  
 
-## Todo List   
+### Todo List   
 
 #### Hardware Items Todo  
 Install a momentary **Scan** button on the face of the brick.  
@@ -1853,7 +1858,7 @@ Taylor says it will be complicated to remove this particular tab.
 She suggested wiping the tab clear and using it for something else.  
 Perhaps I can use this tab for implementing secure messaging.  
 
-#### Scratch Pad below of notes and current work.   
+### Scratch Pad of notes.   
 
 Clearing history in CLI  
 If we want to be sure we're clearing the history file, even with the histappend option set, we can use the the following commands:  
@@ -1903,11 +1908,9 @@ To start MyEtherWallet for development navigate to the **dist** directory using 
 To start the pi's file manager `pcmanfm`     
 
 [My Ethereum Notes are Found Here](https://gist.github.com/johnshearing)  
-[and here](https://github.com/johnshearing/Ethereum_Local_Block_Chain)  
+[and here](https://github.com/johnshearing/MyEtherWalletOffline/blob/master/Creating%20a%20Local%20BlockChain.md)   
 
-[Here is the github repository for my offline version of MEW]{https://github.com/johnshearing/MyEtherWalletOffline}  
-
-Cool Github commands:  
+### Often Used Github commands:  
 [This Video Tutorial series gets you up and running on GitHub quickly.](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV&index=1)  
 `git status` Check if any files need to be added to the index.  
 `git add <filename>` Add any files shown by status.  
@@ -1924,7 +1927,7 @@ Think carefully before using these.
 `gh-pages` To view repository as a website make a branch called **gh-pages**.  
 
 
-## GPG Commands  
+### Often Used GPG Commands  
 gpg2 --version  
 gpg2 --list-keys  
 gpg2 --list-secret-keys  
