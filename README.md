@@ -86,6 +86,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Deleting information on the SD card](https://github.com/johnshearing/PrivateKeyVault#destroying-all-information-on-the-sd-card)  
 
 [Using Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#using-your-privatekeyvault)  
+* [Sending an Offline Transaction to the Ethereum Blockchain](https://github.com/johnshearing/PrivateKeyVault#sending-an-offline-transaction-to-the-ethereum-blockchain)  
 * [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
 * [General Information About Encrypted Messaging](https://github.com/johnshearing/PrivateKeyVault#general-information-about-encrypted-messaging)    
  
@@ -934,6 +935,335 @@ If the two numbers on the screen match then the contents of two cards are the sa
 Finally, it would be a good idea to try both SD cards to be sure that they work properly and that both of them can be used to access your secrets.  
 
 ### Security  
+
+#### Setup LUKS Full Disk Encryption  
+The following is the written tutorial from which these notes are made.  
+[Raspberry Pi LUKS Root Encryption](https://robpol86.com/raspberry_pi_luks.html)  
+I have rewritten it below, changing the wording a bit to make it less confusing.  
+
+These instructions for encryption are unique because it shows a method of encrypting an entire partition on the SD card (your operating system) without the need of a second Linux computer. Everything is done on the raspberry pi. The only extra item you will need is a thumbdrive.  
+
+An overview of the process:  
+Install software on your Raspberry Pi’s Raspbian OS.  
+Build a custom and boot into the initramfs.  
+Shrink your main file system.  
+Back up your main file system from the SD card to the USB drive.  
+Wipe SD card and create an empty encrypted partition.  
+Copy back your backed-up file system from USB on to your encrypted SD card.  
+
+**Warning**  
+This guide involves backing up your data to a USB drive and destroying all data on your SD card. Though slim there is a possibility of failure. Be sure to have proper backups of your Raspberry Pi in case something goes wrong. Also note that all data on your USB drive will be destroyed during the process since it will temporarily hold all of your Raspberry Pi’s data.  
+
+First install some software:  
+We’ll begin by installing software and creating a new initramfs for your Raspberry Pi. This new initramfs will have the cryptsetup program needed to unlock the encrypted partition on every boot. We’ll also include other tools to assist in the initial encryption of your existing data.  
+
+Execute the following at the raspberry pi command prompt:  
+`sudo apt-get update && sudo apt-get install busybox cryptsetup initramfs-tools`  
+The first part of the command updates the catalog of programs available for download.  
+The second part of the command installs the software necessary to encrypt your SD card.  
+
+Next we’ll need to add a kernel post-install script. Since Raspbian doesn’t normally use an initrd/initramfs it doesn’t auto-update the one we’re about to create when a new kernel version comes out. Our initramfs holds kernel modules since they’re needed before the encrypted root file system can be mounted. When the kernel version changes it won’t be able to find its new modules. To fix this we will create the following script.  
+
+sudo Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
+`sudo leafpad /etc/kernel/postinst.d/initramfs-rebuild`  
+
+Now paste the following into the open text editor window and then save and exit:  
+``` 
+#!/bin/sh -e
+
+# Rebuild initramfs.gz after kernel upgrade to include new kernel's modules.
+# https://github.com/Robpol86/robpol86.com/blob/master/docs/_static/initramfs-rebuild.sh
+# Save as (chmod +x): /etc/kernel/postinst.d/initramfs-rebuild
+
+# Remove splash from cmdline.
+if grep -q '\bsplash\b' /boot/cmdline.txt; then
+  sed -i 's/ \?splash \?/ /' /boot/cmdline.txt
+fi
+
+# Exit if not building kernel for this Raspberry Pi's hardware version.
+version="$1"
+current_version="$(uname -r)"
+case "${current_version}" in
+  *-v7+)
+    case "${version}" in
+      *-v7+) ;;
+      *) exit 0
+    esac
+  ;;
+  *+)
+    case "${version}" in
+      *-v7+) exit 0 ;;
+    esac
+  ;;
+esac
+
+# Exit if rebuild cannot be performed or not needed.
+[ -x /usr/sbin/mkinitramfs ] || exit 0
+[ -f /boot/initramfs.gz ] || exit 0
+lsinitramfs /boot/initramfs.gz |grep -q "/$version$" && exit 0  # Already in initramfs.
+
+# Rebuild.
+mkinitramfs -o /boot/initramfs.gz "$version"
+```  
+
+Now we want resize2fs and fdisk to be included in our initramfs so we’ll need to create a hook file.  
+Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
+`sudo leafpad /etc/initramfs-tools/hooks/resize2fs`  
+
+Now paste the following into the open text editor window and then save and exit:  
+```  
+#!/bin/sh -e
+
+# Copy resize2fs, fdisk, and other kernel modules into initramfs image.
+# https://github.com/Robpol86/robpol86.com/blob/master/docs/_static/resize2fs.sh
+# Save as (chmod +x): /etc/initramfs-tools/hooks/resize2fs
+
+COMPATIBILITY=false  # Set to false to skip copying other kernel's modules.
+
+PREREQ=""
+prereqs () {
+  echo "${PREREQ}"
+}
+case "${1}" in
+  prereqs)
+    prereqs
+    exit 0
+  ;;
+esac
+
+. /usr/share/initramfs-tools/hook-functions
+
+copy_exec /sbin/resize2fs /sbin
+copy_exec /sbin/fdisk /sbin
+
+# Raspberry Pi 1 and 2+3 use different kernels. Include the other.
+if ${COMPATIBILITY}; then
+  case "${version}" in
+    *-v7+) other_version="$(echo ${version} |sed 's/-v7+$/+/')" ;;
+    *+) other_version="$(echo ${version} |sed 's/+$/-v7+/')" ;;
+    *)
+      echo "Warning: kernel version doesn't end with +, ignoring."
+      exit 0
+  esac
+  cp -r /lib/modules/${other_version} ${DESTDIR}/lib/modules/
+fi
+```  
+
+Finally let’s build the new initramfs and make sure our utilities have been installed. The mkinitramfs command may print some WARNINGs from cryptsetup, but that should be fine since we’re using `CRYPTSETUP=y`. As long as cryptsetup itself is present in the `initramfs` it won’t be a problem.  
+
+Execute the following commands at the raspberry pi command prompt one at a time.    
+The first two commands grant permission to execute the scripts on the next two lines.  
+`sudo chmod +x /etc/kernel/postinst.d/initramfs-rebuild`  
+`sudo chmod +x /etc/initramfs-tools/hooks/resize2fs`  
+`sudo -E CRYPTSETUP=y mkinitramfs -o /boot/initramfs.gz`  
+Don't wory about any warnings you might have seen.  
+`lsinitramfs /boot/initramfs.gz |grep -P "sbin/(cryptsetup|resize2fs|fdisk)"`  
+Make sure you see `sbin/resize2fs`, `sbin/cryptsetup`, and `sbin/fdisk` in the output.  
+
+Prepare Boot Files:
+Next step is to make some changes to some configuration files telling the Raspberry Pi to boot our soon-to-be-created encrypted partition. We’ll make these changes first since they’re relatively easily reversible if you mount your SD card on another computer, should you wish to abort this process. Edit these files with these changes:  
+
+Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
+`sudo leafpad /boot/config.txt`  
+Then append `initramfs initramfs.gz followkernel` to the end of the file.  
+Finally, save and exit the text editor.  
+
+Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
+`sudo leafpad /boot/cmdline.txt`  
+Then append `cryptdevice=/dev/mmcblk0p2:sdcard` to the end of the line.  
+Next replace `root=Whatever_it_says_here with root=/dev/mapper/sdcard`  
+Finally, save and exit the text editor.  
+
+Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
+`sudo leafpad /etc/fstab`  
+The directions from which I made these notes reads as follows  
+`Replace /dev/mmcblk0p2 with /dev/mapper/sdcard`  
+The problem I had is that there was no such text to replace.  
+But on the third line you will see text that looks something like the following:  
+`PARTUUID=f464b34e-02  /               ext4    defaults,noatime  0       1`  
+Replace `PARTUUID=f464b34e-02` or the similar text with `/dev/mapper/sdcard`  
+Finally, save and exit the text editor.  
+
+Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
+`sudo leafpad /etc/crypttab`  
+Append `sdcard  /dev/mmcblk0p2  none    luks` to the end of the file  
+Finally, save and exit the text editor.  
+
+Now run `sudo reboot`.  
+The Raspberry Pi will fail to boot and drop you into the initramfs shell.  
+**Don't Panic: Everything is good.**  
+Your raspberry pi is not broken  
+I doesn't look like it, but you are now at the command prompt.  
+Type `clear` and then press the Enter button.  
+Now it looks like you are at the command prompt.  
+
+Now we are going to shrink the OS, copy it to the thumbdrive, encrypt the SD card, and then copy everything back.  
+Since we are going to do all this on the pi which has limited computing power, it's going to take a long time.  
+Have a cup of coffee between steps - or maybe a nap.  
+
+Also, during the following operations you will not be able to cut and paste between your computer and your pi using VNC. So you will need to type the following commands into your pi manually. Type carefully and check your work before entering each command.  
+
+First we’ll shrink and copy to the USB drive.  
+**Insert your USB drive** and run the following commands one at a time.  
+
+Check SD card for errors.  
+`e2fsck -f /dev/mmcblk0p2`  
+This command took less than two minutes to run on my pi 2 and output 7 lines of information about what it was doing and what it found. The final output line read as follows for me:  
+/dev/mmcblk0p2: 128525/9499664 files (0.1% non-contiguous), 1073182/3854592 blocks  
+You should see something similar.  
+
+Next Shrink the file system on the SD card.  
+Note: When running resize2fs (the next command) it will print out the new size of the file system.  
+Keep track of the number of 4k blocks it tells you since you need to give that number to dd.  
+For reference my resize2fs said:  
+```  
+The file system on /dev/mmcblk0p2 is now 1516179 (4k) blocks long.  
+So “1516179” is my number of interest.  
+```  
+Execute the following command in the pi's terminal window.  
+Don't forget to record the number of 4k blocks that the command reports.  
+`resize2fs -fM /dev/mmcblk0p2`   
+This command took less than a minute to run on my pi 2.  
+It reported: The filesystem on /dev/mmcblk0p2 is now 1516179 (4k) blocks long.  
+It will likely report a different number for you.  
+Be sure to write down the number of 4k blocks that the command reports.  
+
+The next command is going to report the sha1sum of your operating system.  
+This number will be used to verify that the operating system is copied correcty to your thumbdrive in the next step.  
+Execute the following command substituting the count parameter for the result you got in the previous step.  
+Also be sure to record the output.  
+This command is going to run for a long time. Be patient and wait for the result.  
+Don't worry if your screen goes blank while the command is running. Just hit the Shift key to turn the screen on again.  
+If you hit any other key to turn the screen on again you will wind up with some meaningless characters in the command prompt. No worries you can just hit the backspace button to get rid of them. It will not disturb the process that is running.  
+**Do not enter the following command verbatim**  
+**Substitute the count parameter for the number of 4k blocks the previous step reported to you**  
+Type carefully and check your work before hitting the Enter button.  
+`dd bs=4k count=1516179 if=/dev/mmcblk0p2 | sha1sum`  
+This command took less than 9 minutes to run on my pi 2.  
+There were three lines of output.  
+The last line of output is the sha1sum.  
+Take a picture of the sha1sum so that you can refer to it later.  
+
+The next command is going to format your thumbdrive.  
+The format operation will destroy all the information that currently exists on your thumbdrive and will make it ready to receive the operating system that is currently stored on your pi's SD card.  
+Execute the following line in your pi's terminal window.  
+**Note: That is the letter el in the command below. It is not the number one.**  
+`fdisk -l /dev/sda`  
+This command finished instantly.  
+It produced four lines of output.  
+
+The next command is going to copy the operating system from your pi's SD card to the thumbdrive.  
+This command is going to take a long time to run.  
+Don't worry if your screen goes blank while the command is running. Just hit the Shift key to turn the screen on again.  
+Go have a nap after you enter the command.  
+Execute the following line in your pi's terminal window.  
+**Do not enter the following command verbatim**  
+**Substitute the count parameter for the number of 4k blocks you recorder earlier.**  
+Type carefully and check your work before hitting the Enter button.  
+`dd bs=4k count=1516179 if=/dev/mmcblk0p2 of=/dev/sda`  
+This command took less than an hour to run on my pi 2.  
+It produced 2 lines of output which reported the number of records in and the number of records out.  
+
+The next command is going to report the sha1sum of the operating system that is now sitting on your thumbdrive.  
+You will compare the result with the sha1sum of the operating system that is sitting on your SD card. Remember? You took a picture of it in an earlier step. If the results are the same then you know that the operating system was copied from your SD card to your thumbdrive without errors.   
+This command is going to run for a long time. Be patient and wait for the result.  
+Don't worry if your screen goes blank while the command is running. Just hit the Shift key to turn the screen on again.  
+**Do not enter the following command verbatim**  
+**Substitute the count parameter for the number of 4k blocks reported to you earlier**  
+Type carefully and check your work before hitting the Enter button.  
+`dd bs=4k count=1516179 if=/dev/sda | sha1sum`   
+This command took less than 10 minutes to run on my pi 2.  
+The output produced the sha1sum of the operating system that was copied to the thumbdrive.  
+Check this value against the sha1sum of the operating system which is sitting on your pi's SD card.  
+If the values are the same then the operating system has been copied from the SD card to the thumbdrive without errors.  
+
+Now it’s time to wipe your SD card’s main partition and create an empty encrypted one in its place.  
+The next command will prompt you for the password you want to use for your encrypted partition.  
+Make sure it’s a strong one.  
+Only a completely random string of at least 12 characters that you have never used before anywhere is a strong password.  
+Type the following command carefully and check your work before hitting the Enter button.  
+`cryptsetup --cipher aes-cbc-essiv:sha256 luksFormat /dev/mmcblk0p2`  
+The pi will ask you to confirm that you want to wipe out your operating system and replace it with an encrypted partition.  
+Answer `YES`. You must type YES in UPPERCASE letters and then press the Enter button to continue.  
+If you used the caps lock to type YES then be sure to set it back to lowercase. 
+Otherwise, in the next step you may enter your new password in all UPPERCASE without realizing what you have done.  
+
+Next you will be prompted for a new password.  
+Type in a strong password.  
+Type it in again when prompted.  
+In less then a minute the format will be completed.  
+
+This next command will mount your new encrypted file system.  
+Type the following command carefully and check your work before hitting the Enter button.  
+`cryptsetup luksOpen /dev/mmcblk0p2 sdcard`  
+Enter your strong password when prompted.  
+Nothing much will happen but don't worry - everything is proceeding nicely.  
+
+The next command copies the operating system back to the SD card from the thumbdrive.  
+This command is going to run for a long time. Be patient and wait for the result.  
+Don't worry if your screen goes blank while the command is running. Just hit the Shift key to turn the screen on again.  
+**Do not enter the following command verbatim**  
+**Substitute the count parameter for the number of 4k blocks reported to you earlier**  
+Type carefully and check your work before hitting the Enter button.  
+`dd bs=4k count=1516179 if=/dev/sda of=/dev/mapper/sdcard `  
+As this command runs you will see various output on your screen every few minutes which might seem to indicate that your system is hung. 
+**Do not believe these messages.  
+Everything is fine. 
+Your system is happily copying your operating system from your thumbdrive to your SD card.**  
+This command took less then 15 minutes to run on my pi 2.  
+
+The next command will report the sha1sum of the operating system which has just been copied to your root partition.     
+You will compare the result with the sha1sum of the operating system that was sitting on your SD card originally.  
+Remember? 
+You took a picture of it in an earlier step.  
+If the results are the same then you know that the operating system was copied from your thumbdrive back to your SD card without errors.   
+This command is going to run for a long time.   
+Be patient and wait for the result.   
+Don't worry if your screen goes blank while the command is running.  
+Just hit the Shift key to turn the screen on again.  
+**Do not enter the following command verbatim**  
+**Substitute the count parameter for the number of 4k blocks reported to you earlier**  
+Type carefully and check your work before hitting the Enter button.  
+`dd bs=4k count=1516179 if=/dev/mapper/sdcard | sha1sum`   
+This command took a less than 30 minutes to run on my pi 2.  
+The output produced the sha1sum of the operating system.  
+Check this value against the sha1sum of the operating system when we first started the encryption process.  
+Remember? You have a photo of it.  
+If the values are the same then the operating system has been copied from the SD card to the thumbdrive without errors.  
+
+The next command will check that the SD card itself is free of errors.  
+Type carefully and check your work before hitting the Enter button.  
+`e2fsck -f /dev/mapper/sdcard`   
+The process finishes in less than a minute and produces 7 lines of output.  
+
+The next command expands the encrypted file system back to full size.  
+Type carefully and check your work before hitting the Enter button.  
+`resize2fs -f /dev/mapper/sdcard`  
+This command takes less than a minute to run.  
+
+You can now remove the thumbdrive from your pi. It is no longer needed.  
+Remember, any information on the thumbdrive is not encrypted so if you have any private information on the thumbdrive, you should secure it in a very safe place until you can test your new encrypted partition. And after you are sure that everything is working correctly, that you can still access all your important information, and that your encrypted information is backed up, then you may want to destroy the thumbdrive.  
+
+Finally type Exit and press the Enter button and we are done.   
+Continue to boot into your encrypted SD card.  
+Everything should look as it did before.  
+
+**IMPORTANT** - the next time you boot up you will find yourself back at the initramfs command prompt after some delay.  
+**Don't Panic. Everything is fine**   
+Type `clear` and press Enter.  
+That looks nicer.  
+You’ll need to run `cryptsetup luksOpen /dev/mmcblk0p2 sdcard` on every boot from now on.  
+Type the command above carefully and check your work before pressing the Enter button.  
+Enter the strong password you created when prompted.  
+**WTF Nothing happened!**  
+**That's because you are not done yet**   
+Now type `exit` and press the enter button.  
+**The pi should boot up as normal.**  
+
+Wow! that was a big pain in the ass.  
+But all your private information is now safe from even the most aggressive criminals and oppressive governments.  
+The only way to get the information on your device now is to force you to hand it over or to trick you in to revealing your password. They can also catch you at a time when you are using the device and take it from you before you have a chance to turn it off.  
+
 #### Airgapping Your PrivateKeyVault  
 You are about to start working with Private Keys.  
 Pull out the WiFi Dongle,  
@@ -1285,334 +1615,6 @@ The following links are good online resources on how to use gpg:
 Digital Signatures are provided by MyEtherWallet as well as by GPG.  
 We will go over how to use all this in video tutorials.  
 [Check my YouTube channel for my video tutorials as they are produced.](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A)  
-
-#### Setup LUKS Full Disk Encryption  
-The following is the written tutorial from which these notes are made.  
-[Raspberry Pi LUKS Root Encryption](https://robpol86.com/raspberry_pi_luks.html)  
-I have rewritten it below, changing the wording a bit to make it less confusing.  
-
-These instructions for encryption are unique because it shows a method of encrypting an entire partition on the SD card (your operating system) without the need of a second Linux computer. Everything is done on the raspberry pi. The only extra item you will need is a thumbdrive.  
-
-An overview of the process:  
-Install software on your Raspberry Pi’s Raspbian OS.  
-Build a custom and boot into the initramfs.  
-Shrink your main file system.  
-Back up your main file system from the SD card to the USB drive.  
-Wipe SD card and create an empty encrypted partition.  
-Copy back your backed-up file system from USB on to your encrypted SD card.  
-
-**Warning**  
-This guide involves backing up your data to a USB drive and destroying all data on your SD card. Though slim there is a possibility of failure. Be sure to have proper backups of your Raspberry Pi in case something goes wrong. Also note that all data on your USB drive will be destroyed during the process since it will temporarily hold all of your Raspberry Pi’s data.  
-
-First install some software:  
-We’ll begin by installing software and creating a new initramfs for your Raspberry Pi. This new initramfs will have the cryptsetup program needed to unlock the encrypted partition on every boot. We’ll also include other tools to assist in the initial encryption of your existing data.  
-
-Execute the following at the raspberry pi command prompt:  
-`sudo apt-get update && sudo apt-get install busybox cryptsetup initramfs-tools`  
-The first part of the command updates the catalog of programs available for download.  
-The second part of the command installs the software necessary to encrypt your SD card.  
-
-Next we’ll need to add a kernel post-install script. Since Raspbian doesn’t normally use an initrd/initramfs it doesn’t auto-update the one we’re about to create when a new kernel version comes out. Our initramfs holds kernel modules since they’re needed before the encrypted root file system can be mounted. When the kernel version changes it won’t be able to find its new modules. To fix this we will create the following script.  
-
-sudo Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
-`sudo leafpad /etc/kernel/postinst.d/initramfs-rebuild`  
-
-Now paste the following into the open text editor window and then save and exit:  
-``` 
-#!/bin/sh -e
-
-# Rebuild initramfs.gz after kernel upgrade to include new kernel's modules.
-# https://github.com/Robpol86/robpol86.com/blob/master/docs/_static/initramfs-rebuild.sh
-# Save as (chmod +x): /etc/kernel/postinst.d/initramfs-rebuild
-
-# Remove splash from cmdline.
-if grep -q '\bsplash\b' /boot/cmdline.txt; then
-  sed -i 's/ \?splash \?/ /' /boot/cmdline.txt
-fi
-
-# Exit if not building kernel for this Raspberry Pi's hardware version.
-version="$1"
-current_version="$(uname -r)"
-case "${current_version}" in
-  *-v7+)
-    case "${version}" in
-      *-v7+) ;;
-      *) exit 0
-    esac
-  ;;
-  *+)
-    case "${version}" in
-      *-v7+) exit 0 ;;
-    esac
-  ;;
-esac
-
-# Exit if rebuild cannot be performed or not needed.
-[ -x /usr/sbin/mkinitramfs ] || exit 0
-[ -f /boot/initramfs.gz ] || exit 0
-lsinitramfs /boot/initramfs.gz |grep -q "/$version$" && exit 0  # Already in initramfs.
-
-# Rebuild.
-mkinitramfs -o /boot/initramfs.gz "$version"
-```  
-
-Now we want resize2fs and fdisk to be included in our initramfs so we’ll need to create a hook file.  
-Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
-`sudo leafpad /etc/initramfs-tools/hooks/resize2fs`  
-
-Now paste the following into the open text editor window and then save and exit:  
-```  
-#!/bin/sh -e
-
-# Copy resize2fs, fdisk, and other kernel modules into initramfs image.
-# https://github.com/Robpol86/robpol86.com/blob/master/docs/_static/resize2fs.sh
-# Save as (chmod +x): /etc/initramfs-tools/hooks/resize2fs
-
-COMPATIBILITY=false  # Set to false to skip copying other kernel's modules.
-
-PREREQ=""
-prereqs () {
-  echo "${PREREQ}"
-}
-case "${1}" in
-  prereqs)
-    prereqs
-    exit 0
-  ;;
-esac
-
-. /usr/share/initramfs-tools/hook-functions
-
-copy_exec /sbin/resize2fs /sbin
-copy_exec /sbin/fdisk /sbin
-
-# Raspberry Pi 1 and 2+3 use different kernels. Include the other.
-if ${COMPATIBILITY}; then
-  case "${version}" in
-    *-v7+) other_version="$(echo ${version} |sed 's/-v7+$/+/')" ;;
-    *+) other_version="$(echo ${version} |sed 's/+$/-v7+/')" ;;
-    *)
-      echo "Warning: kernel version doesn't end with +, ignoring."
-      exit 0
-  esac
-  cp -r /lib/modules/${other_version} ${DESTDIR}/lib/modules/
-fi
-```  
-
-Finally let’s build the new initramfs and make sure our utilities have been installed. The mkinitramfs command may print some WARNINGs from cryptsetup, but that should be fine since we’re using `CRYPTSETUP=y`. As long as cryptsetup itself is present in the `initramfs` it won’t be a problem.  
-
-Execute the following commands at the raspberry pi command prompt one at a time.    
-The first two commands grant permission to execute the scripts on the next two lines.  
-`sudo chmod +x /etc/kernel/postinst.d/initramfs-rebuild`  
-`sudo chmod +x /etc/initramfs-tools/hooks/resize2fs`  
-`sudo -E CRYPTSETUP=y mkinitramfs -o /boot/initramfs.gz`  
-Don't wory about any warnings you might have seen.  
-`lsinitramfs /boot/initramfs.gz |grep -P "sbin/(cryptsetup|resize2fs|fdisk)"`  
-Make sure you see `sbin/resize2fs`, `sbin/cryptsetup`, and `sbin/fdisk` in the output.  
-
-Prepare Boot Files:
-Next step is to make some changes to some configuration files telling the Raspberry Pi to boot our soon-to-be-created encrypted partition. We’ll make these changes first since they’re relatively easily reversible if you mount your SD card on another computer, should you wish to abort this process. Edit these files with these changes:  
-
-Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
-`sudo leafpad /boot/config.txt`  
-Then append `initramfs initramfs.gz followkernel` to the end of the file.  
-Finally, save and exit the text editor.  
-
-Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
-`sudo leafpad /boot/cmdline.txt`  
-Then append `cryptdevice=/dev/mmcblk0p2:sdcard` to the end of the line.  
-Next replace `root=Whatever_it_says_here with root=/dev/mapper/sdcard`  
-Finally, save and exit the text editor.  
-
-Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
-`sudo leafpad /etc/fstab`  
-The directions from which I made these notes reads as follows  
-`Replace /dev/mmcblk0p2 with /dev/mapper/sdcard`  
-The problem I had is that there was no such text to replace.  
-But on the third line you will see text that looks something like the following:  
-`PARTUUID=f464b34e-02  /               ext4    defaults,noatime  0       1`  
-Replace `PARTUUID=f464b34e-02` or the similar text with `/dev/mapper/sdcard`  
-Finally, save and exit the text editor.  
-
-Execute the following at the raspberry pi command prompt to open the leafpad text editor:  
-`sudo leafpad /etc/crypttab`  
-Append `sdcard  /dev/mmcblk0p2  none    luks` to the end of the file  
-Finally, save and exit the text editor.  
-
-Now run `sudo reboot`.  
-The Raspberry Pi will fail to boot and drop you into the initramfs shell.  
-**Don't Panic: Everything is good.**  
-Your raspberry pi is not broken  
-I doesn't look like it, but you are now at the command prompt.  
-Type `clear` and then press the Enter button.  
-Now it looks like you are at the command prompt.  
-
-Now we are going to shrink the OS, copy it to the thumbdrive, encrypt the SD card, and then copy everything back.  
-Since we are going to do all this on the pi which has limited computing power, it's going to take a long time.  
-Have a cup of coffee between steps - or maybe a nap.  
-
-Also, during the following operations you will not be able to cut and paste between your computer and your pi using VNC. So you will need to type the following commands into your pi manually. Type carefully and check your work before entering each command.  
-
-First we’ll shrink and copy to the USB drive.  
-**Insert your USB drive** and run the following commands one at a time.  
-
-Check SD card for errors.  
-`e2fsck -f /dev/mmcblk0p2`  
-This command took less than two minutes to run on my pi 2 and output 7 lines of information about what it was doing and what it found. The final output line read as follows for me:  
-/dev/mmcblk0p2: 128525/9499664 files (0.1% non-contiguous), 1073182/3854592 blocks  
-You should see something similar.  
-
-Next Shrink the file system on the SD card.  
-Note: When running resize2fs (the next command) it will print out the new size of the file system.  
-Keep track of the number of 4k blocks it tells you since you need to give that number to dd.  
-For reference my resize2fs said:  
-```  
-The file system on /dev/mmcblk0p2 is now 1516179 (4k) blocks long.  
-So “1516179” is my number of interest.  
-```  
-Execute the following command in the pi's terminal window.  
-Don't forget to record the number of 4k blocks that the command reports.  
-`resize2fs -fM /dev/mmcblk0p2`   
-This command took less than a minute to run on my pi 2.  
-It reported: The filesystem on /dev/mmcblk0p2 is now 1516179 (4k) blocks long.  
-It will likely report a different number for you.  
-Be sure to write down the number of 4k blocks that the command reports.  
-
-The next command is going to report the sha1sum of your operating system.  
-This number will be used to verify that the operating system is copied correcty to your thumbdrive in the next step.  
-Execute the following command substituting the count parameter for the result you got in the previous step.  
-Also be sure to record the output.  
-This command is going to run for a long time. Be patient and wait for the result.  
-Don't worry if your screen goes blank while the command is running. Just hit the Shift key to turn the screen on again.  
-If you hit any other key to turn the screen on again you will wind up with some meaningless characters in the command prompt. No worries you can just hit the backspace button to get rid of them. It will not disturb the process that is running.  
-**Do not enter the following command verbatim**  
-**Substitute the count parameter for the number of 4k blocks the previous step reported to you**  
-Type carefully and check your work before hitting the Enter button.  
-`dd bs=4k count=1516179 if=/dev/mmcblk0p2 | sha1sum`  
-This command took less than 9 minutes to run on my pi 2.  
-There were three lines of output.  
-The last line of output is the sha1sum.  
-Take a picture of the sha1sum so that you can refer to it later.  
-
-The next command is going to format your thumbdrive.  
-The format operation will destroy all the information that currently exists on your thumbdrive and will make it ready to receive the operating system that is currently stored on your pi's SD card.  
-Execute the following line in your pi's terminal window.  
-**Note: That is the letter el in the command below. It is not the number one.**  
-`fdisk -l /dev/sda`  
-This command finished instantly.  
-It produced four lines of output.  
-
-The next command is going to copy the operating system from your pi's SD card to the thumbdrive.  
-This command is going to take a long time to run.  
-Don't worry if your screen goes blank while the command is running. Just hit the Shift key to turn the screen on again.  
-Go have a nap after you enter the command.  
-Execute the following line in your pi's terminal window.  
-**Do not enter the following command verbatim**  
-**Substitute the count parameter for the number of 4k blocks you recorder earlier.**  
-Type carefully and check your work before hitting the Enter button.  
-`dd bs=4k count=1516179 if=/dev/mmcblk0p2 of=/dev/sda`  
-This command took less than an hour to run on my pi 2.  
-It produced 2 lines of output which reported the number of records in and the number of records out.  
-
-The next command is going to report the sha1sum of the operating system that is now sitting on your thumbdrive.  
-You will compare the result with the sha1sum of the operating system that is sitting on your SD card. Remember? You took a picture of it in an earlier step. If the results are the same then you know that the operating system was copied from your SD card to your thumbdrive without errors.   
-This command is going to run for a long time. Be patient and wait for the result.  
-Don't worry if your screen goes blank while the command is running. Just hit the Shift key to turn the screen on again.  
-**Do not enter the following command verbatim**  
-**Substitute the count parameter for the number of 4k blocks reported to you earlier**  
-Type carefully and check your work before hitting the Enter button.  
-`dd bs=4k count=1516179 if=/dev/sda | sha1sum`   
-This command took less than 10 minutes to run on my pi 2.  
-The output produced the sha1sum of the operating system that was copied to the thumbdrive.  
-Check this value against the sha1sum of the operating system which is sitting on your pi's SD card.  
-If the values are the same then the operating system has been copied from the SD card to the thumbdrive without errors.  
-
-Now it’s time to wipe your SD card’s main partition and create an empty encrypted one in its place.  
-The next command will prompt you for the password you want to use for your encrypted partition.  
-Make sure it’s a strong one.  
-Only a completely random string of at least 12 characters that you have never used before anywhere is a strong password.  
-Type the following command carefully and check your work before hitting the Enter button.  
-`cryptsetup --cipher aes-cbc-essiv:sha256 luksFormat /dev/mmcblk0p2`  
-The pi will ask you to confirm that you want to wipe out your operating system and replace it with an encrypted partition.  
-Answer `YES`. You must type YES in UPPERCASE letters and then press the Enter button to continue.  
-If you used the caps lock to type YES then be sure to set it back to lowercase. 
-Otherwise, in the next step you may enter your new password in all UPPERCASE without realizing what you have done.  
-
-Next you will be prompted for a new password.  
-Type in a strong password.  
-Type it in again when prompted.  
-In less then a minute the format will be completed.  
-
-This next command will mount your new encrypted file system.  
-Type the following command carefully and check your work before hitting the Enter button.  
-`cryptsetup luksOpen /dev/mmcblk0p2 sdcard`  
-Enter your strong password when prompted.  
-Nothing much will happen but don't worry - everything is proceeding nicely.  
-
-The next command copies the operating system back to the SD card from the thumbdrive.  
-This command is going to run for a long time. Be patient and wait for the result.  
-Don't worry if your screen goes blank while the command is running. Just hit the Shift key to turn the screen on again.  
-**Do not enter the following command verbatim**  
-**Substitute the count parameter for the number of 4k blocks reported to you earlier**  
-Type carefully and check your work before hitting the Enter button.  
-`dd bs=4k count=1516179 if=/dev/sda of=/dev/mapper/sdcard `  
-As this command runs you will see various output on your screen every few minutes which might seem to indicate that your system is hung. 
-**Do not believe these messages.  
-Everything is fine. 
-Your system is happily copying your operating system from your thumbdrive to your SD card.**  
-This command took less then 15 minutes to run on my pi 2.  
-
-The next command will report the sha1sum of the operating system which has just been copied to your root partition.     
-You will compare the result with the sha1sum of the operating system that was sitting on your SD card originally.  
-Remember? 
-You took a picture of it in an earlier step.  
-If the results are the same then you know that the operating system was copied from your thumbdrive back to your SD card without errors.   
-This command is going to run for a long time.   
-Be patient and wait for the result.   
-Don't worry if your screen goes blank while the command is running.  
-Just hit the Shift key to turn the screen on again.  
-**Do not enter the following command verbatim**  
-**Substitute the count parameter for the number of 4k blocks reported to you earlier**  
-Type carefully and check your work before hitting the Enter button.  
-`dd bs=4k count=1516179 if=/dev/mapper/sdcard | sha1sum`   
-This command took a less than 30 minutes to run on my pi 2.  
-The output produced the sha1sum of the operating system.  
-Check this value against the sha1sum of the operating system when we first started the encryption process.  
-Remember? You have a photo of it.  
-If the values are the same then the operating system has been copied from the SD card to the thumbdrive without errors.  
-
-The next command will check that the SD card itself is free of errors.  
-Type carefully and check your work before hitting the Enter button.  
-`e2fsck -f /dev/mapper/sdcard`   
-The process finishes in less than a minute and produces 7 lines of output.  
-
-The next command expands the encrypted file system back to full size.  
-Type carefully and check your work before hitting the Enter button.  
-`resize2fs -f /dev/mapper/sdcard`  
-This command takes less than a minute to run.  
-
-You can now remove the thumbdrive from your pi. It is no longer needed.  
-Remember, any information on the thumbdrive is not encrypted so if you have any private information on the thumbdrive, you should secure it in a very safe place until you can test your new encrypted partition. And after you are sure that everything is working correctly, that you can still access all your important information, and that your encrypted information is backed up, then you may want to destroy the thumbdrive.  
-
-Finally type Exit and press the Enter button and we are done.   
-Continue to boot into your encrypted SD card.  
-Everything should look as it did before.  
-
-**IMPORTANT** - the next time you boot up you will find yourself back at the initramfs command prompt after some delay.  
-**Don't Panic. Everything is fine**   
-Type `clear` and press Enter.  
-That looks nicer.  
-You’ll need to run `cryptsetup luksOpen /dev/mmcblk0p2 sdcard` on every boot from now on.  
-Type the command above carefully and check your work before pressing the Enter button.  
-Enter the strong password you created when prompted.  
-**WTF Nothing happened!**  
-**That's because you are not done yet**   
-Now type `exit` and press the enter button.  
-**The pi should boot up as normal.**  
-
-Wow! that was a big pain in the ass.  
-But all your private information is now safe from even the most aggressive criminals and oppressive governments.  
-The only way to get the information on your device now is to force you to hand it over or to trick you in to revealing your password. They can also catch you at a time when you are using the device and take it from you before you have a chance to turn it off.  
 
 #### Create your private key  
 Some people think it is a good idea to SHA3 Hash their dogs name or a clever phase to get a 64 character number for use as a private key. This is a very dumb idea. Anything you can possibly think of has already been thought of and hashed. You will likely lose your ether if you do this. MyEtherWallet comes with a utility to generate a public/private key pair. This is probably very safe but I do not use this method. The problem is not that MEW might transmit the private key - this would be impossible anyway if the pi is air-gapped. The reason I would not use it or any other software to generate my private key is because there is always some chance that a malware infected device could generate a key pair already know to an attacker. Of course, if an attacker has already hacked MyEtherWallet then he would substitute his own public address for the target address when the user presses the **Generate Transaction** button. In any case, I recommend flipping a coin to generate a private key. Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
