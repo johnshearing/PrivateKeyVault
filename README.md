@@ -94,8 +94,9 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Check that your public and private key work together](https://github.com/johnshearing/PrivateKeyVault#check-that-your-public-and-private-key-work-together)  
 * [Warning About Quantum Computers](https://github.com/johnshearing/PrivateKeyVault#warning-about-quantum-computers)  
 * [Generate a Keystore File from a private key](https://github.com/johnshearing/PrivateKeyVault#generate-a-keystore-file-from-a-private-key)  
-* []()  
- 
+* [Preventing the Evil Maid Attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-attack)  
+* [Conclusion](https://github.com/johnshearing/PrivateKeyVault#conclusion)  
+
 
 ### Physically Building the PrivateKeyVault  
 If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
@@ -1745,18 +1746,18 @@ So now it is possible to create a keystore file from a private key without leavi
 
 
 #### Preventing the Evil Maid Attack
-Keep your cloned sd card in a secure location.  
-If someone steals your card it's not a problem (the card is encrypted) but if they put a key logger on the boot partition without you knowing about it, then you will be giving away your password when you try to use it.  
+Keep your cloned sd card in a secure location and packaged in such a way that you will know if someone has tampered with it.  
+If someone steals your SD card it's not a problem (the card is encrypted) but if they put a key logger on the boot partition without you knowing about it, then you will be giving away your password when you try to use it.  
 So while you are not worried about theft, tampering is a big concern.  
 In order know if your card has been tampered with, use sparkly nail polish.  
 This is nail polish with glitter mixed in.  
 Yes that's right, security experts use sparkly nail polish to tell if their sd cards have been tampered with.  
-Just put the sd card in a small box and paint the seams of the box with sparkly nail polish.  
-Then take several pictures of the box.  
-If anyone tries to open the box it will cause the nail polish to break off.  
+Just put the sd card in a small box or envelope and paint the seams of the box with sparkly nail polish in such a way that the seal will be destroyed when someone opens the container.  
+Then take several pictures of the container.  
+If anyone tries to open the box it will cause the nail polish to break off and rip the paper as it breaks.  
 And if they paint the seams again it will not look the same because sparkly nail polish goes on differently every time you put it on.  
-Simply compare your box with the photos you took when you sealed it up.  
-If the nail polish looks different then someone has tampered with the box.  
+Simply compare your container with the photos you took when you sealed it up.  
+If the if the paper is torn or if the nail polish looks different then someone has tampered with the box.  
 In that case do not use the SD card but rather mark it as compromised.  
 Do not use this card unless you have no other choice and then only with extreme caution.  
 
@@ -1770,7 +1771,7 @@ MyEtherWallet makes the PrivateKeyVault suitable for airgapped offline transacti
 
 Using GPG message encryption along with GPG or MEW digital signatures makes the PrivateKeyVault a complete solution for secure encrypted airgapped messaging.  
 
-Full Disk Encryptions makes the PrivateKeyVault suitable for cold storage of private keys, password management, and for storage of private files.  
+Full Disk Encryption makes the PrivateKeyVault suitable for cold storage of private keys, password management, and for storage of private files.  
 
 ## Todo List   
 
@@ -1780,33 +1781,27 @@ Pressing the button starts the scan.
 Releasing the button ends the scan.  
 Also achieving a good read ends the scan.  
 
+Play around with more techniques to prevent tampering  
+
 Consider charging the battery with a wireless charger.  
 
 Consider the Raspberry Pi Module 3 for it's smaller size in future builds.  
-
-Consider adding a lid and lock to the next build and consider putting an integrated keyboard into the lid.  
 
 Consider adding some kind of notification on bootup if the device has been opened.  
 
 #### OS Software Items To Add Next Time    
 
-Make one button show up at a time for scan start and scan stop such that scan stop replaces scan start while the scan process is running and scan start replaces scan stop when the scan process has stopped. This will save on screen real estate and helps the user understand if the scan process is running or not.
-
-Stop scan process after a good scan.  
+Make one button show up at a time for scan start and scan stop such that scan stop replaces scan start while the scan process is running and scan start replaces scan stop when the scan process has stopped. This will save on screen real estate and helps the user understand if the scan process is running or not.   
 
 Put up a window showing what the camera sees while the scan process is running and make the window disappear when the scan stops either because a good scan has been achieved or because the user stopped the scan. This will help the user understand if there is too much glare to get a good scan or if the focal distance is not correct.  
 
 Install Buttons on the Application Launch Bar to Enable and Disable Two Finger Right Click Functionality.  
 For now, enable by executing the following command at the terminal window.  
-`twofing`
+`twofing`  
 To disable twofing execute the following  
 `killall twofing`   
   
-Set up a timer to logout the user after a period of inactivity.
-
-Add GUI GPG Utility for file encryption. 
-This is to protect any files that have private keys or other sensitive information without having to encrypt the whole drive.  
-Even though the whole drive is to be encrypted it makes sense to have encryption at the file level too in case the user walks away from the device while it is running. File encryption will not protect an SD card from forensic analysis but it will protect the data from someone poking around on an open device. The problem is that the source file used to make the encrypted file cannot be removed from the SD card using the shred command so the data could be recovered in a laboratory. This is why full disk encryption is required to secure data on the device. For this reason I have added the ability to create encrypted KeyStore files using MyEtherWallet. If KeyStore files are used to hold private keys then there is no reason to keep unencrypted private keys on the device.
+Set up a timer to logout the user after a period of inactivity.  
 
 #### Changes to MyEtherWallet  
 
@@ -1824,14 +1819,12 @@ Maybe even something that allows the exchange of encrypted messages on the block
 This should not be too costly if only encrypted private keys are being exchanged this way.
 In this way, an email account is not even required - only access to MEW online some other means of interacting with smart contracts in order to get the encrypted message and convert it to a QR-Code scanning into the PrivateKeyVault.     
 
+Done: Figure out how to pass large contracts out of the brick using multiple qr-codes.  
+
 Add a native way to associate a photograph with a public addresses for use as an additional blockie. This will prevent sending ether to the wrong address when selecting public addresses from lists or better from a database on the pi.  
 Doing this defeats an attack where different addresses might produce similar looking blockies. But the biggest advantage will be to keep users from getting confused between different accounts that they normally use. I understand that accounts can now be associated with human friendly names but not every account will have this so overall, I think this will be well worth doing.
 
 Add database functionality to handle public addresses and associated Photo-blockies.  
-
-Add a native onscreen virtual keyboard using AngularJS although Florence works ok for now. The keyboard should be Hex or alphanumeric where appropriate, should have cut and paste buttons, database functionality, QR-Code read start and stop buttons, QR-Code generate buttons, OCR controls where appropriate and should pop open when stepping onto a data entry field. MEW should position the data entry field at the top of the screen and the virtual keyboard should position itself underneath the data entry field. This will save on screen clutter which is a big problem with a small screen.  
-
-When tabbing - MEW should move to the next field, position it at the top of the screen and open the virtual keyboard with the appropriate layout for that field.  
 
 Make the user aware of how the gas price works and make the field match the Gas Price slider.   
   
@@ -1848,30 +1841,17 @@ Add the ability to SHA3 Hash any field, and turn that into a public address, and
 Keep a version of this on an online machine and one on the air-gapped machine for comparison.
 That will make it possible to compare imported smart contract code with code sent to ensure nothing has changed.  
 
-Look into posting a smart contract using offline transaction screen.  
-
-Done: Figure out how to pass large contracts out of the brick using multiple qr-codes.  
+Test posting a smart contract using offline transaction screen.  
 
 Not Now: Disable the notice that MEW is not connected to the Internet.  
 It will always be offline so there is no need for the message.  
-Maybe keep the message. It's an extra check to ensure that the brick is not connecting to the net.
+Maybe keep the message. It's an extra check to ensure that the brick is not connecting to the net.  
 
 Not Now: Trying to remove the ENS tab:  
 Right now the screen used to access the Ethereum Name Service will not disappear when **mew** is set to false in globalService.js  
 Taylor says it will be complicated to remove this particular tab.  
 She suggested wiping the tab clear and using it for something else.  
 Perhaps I can use this tab for implementing secure messaging.  
-
-#### Possible changes to the packaging  
-The version with built in printer is already created.
-
-The small printerless version is as follows: Think simple, small, thin, pocket sized digital camera - that will be the final form of the secure brick. A camera on the front (no zoom, nothing fancy) and a touch screen on the back. No buttons (maybe one for power). The package will be waterproof, Tempest certified, and cheap to make. The parts have already arrived 
-
-As small laptop version is also in the works.
-
-
-#### Issues  
-
 
 #### Scratch Pad below of notes and current work.   
 
