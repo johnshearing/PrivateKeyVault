@@ -1341,6 +1341,11 @@ The only way to delete data on an SD card is to destroy the card with a hot flam
 [This Video](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) shows how an offline transaction is made on the Ethereum blockchain using the first prototype of this device. The procedure for making an offline transaction using the newer device is still the same so have a look if you want to see how an offline transaction is made.  
 
 #### Sending an Encrypted Message  
+This section of instructions is still under construction.  
+Also, I will be covering all of this in a video tutorial shortly.  
+Until then, everything works so try playing around in the **menu utility**  
+Just open a terminal window and type `menu`  
+
 Now lets try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
 Execute the following command at the terminal window:  
@@ -1640,7 +1645,7 @@ Heads, heads, heads, head, would be an "F"
 You get the idea.  
 This takes a while to accomplish, but if you use this method, no one can ever guess your private key. An attacker might still be able to steal it or force you to hand it over, but he or she would never be able to guess it using a dictionary attack nor by guessing personal information about you.  
 
-#### Generating the public address or public key  
+#### Generating the public address or public key for use on the Ethereum Blockchain
 My custom version of MyEtherWallet (the one already loaded on your pi if you have been following along) does this for you.  
 You can also do this at the pi's command line.  
 I include the following instructions only for those who want to know what is going on behind the scenes.  
