@@ -90,7 +90,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Sending an Offline Transaction to the Ethereum Blockchain](https://github.com/johnshearing/PrivateKeyVault#sending-an-offline-transaction-to-the-ethereum-blockchain)  
 * [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
 * [General Information About Encrypted Messaging](https://github.com/johnshearing/PrivateKeyVault#general-information-about-encrypted-messaging)    
-* [Generating the public address or public key for use on the Ethereum Blockchain](Generating the public address or public key for use on the Ethereum Blockchain)  
+* [Generating the public address or public key for use on the Ethereum Blockchain](https://github.com/johnshearing/PrivateKeyVault#generating-the-public-address-or-public-key-for-use-on-the-ethereum-blockchain)  
 * [Check that your public and private key work together](https://github.com/johnshearing/PrivateKeyVault#check-that-your-public-and-private-key-work-together)  
 * [Warning About Quantum Computers](https://github.com/johnshearing/PrivateKeyVault#warning-about-quantum-computers)  
 * [Generate a Keystore File from a private key](https://github.com/johnshearing/PrivateKeyVault#generate-a-keystore-file-from-a-private-key)  
@@ -101,6 +101,10 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Hardware Items Todo](https://github.com/johnshearing/PrivateKeyVault#hardware-items-todo)  
 * [OS and Software Items To Work On](https://github.com/johnshearing/PrivateKeyVault#os-software-items-to-add-next-time)  
 * [Changes to MyEtherWallet](https://github.com/johnshearing/PrivateKeyVault#changes-to-myetherwallet)  
+
+[Scratch Pad of notes](https://github.com/johnshearing/PrivateKeyVault#scratch-pad-of-notes)  
+
+[Appendix]
 
 
 ### Physically Building the PrivateKeyVault  
@@ -1910,7 +1914,9 @@ To start the pi's file manager `pcmanfm`
 [My Ethereum Notes are Found Here](https://gist.github.com/johnshearing)  
 [and here](https://github.com/johnshearing/MyEtherWalletOffline/blob/master/Creating%20a%20Local%20BlockChain.md)   
 
-### Often Used Github commands:  
+### Appendix  
+
+#### Often Used Github commands  
 [This Video Tutorial series gets you up and running on GitHub quickly.](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV&index=1)  
 `git status` Check if any files need to be added to the index.  
 `git add <filename>` Add any files shown by status.  
@@ -1927,7 +1933,7 @@ Think carefully before using these.
 `gh-pages` To view repository as a website make a branch called **gh-pages**.  
 
 
-### Often Used GPG Commands  
+#### Often Used GPG Commands  
 gpg2 --version  
 gpg2 --list-keys  
 gpg2 --list-secret-keys  
