@@ -110,7 +110,10 @@ By improving security, I hope this device will facilitate wide scale adoption of
 
 
 ### Physically Building the PrivateKeyVault  
-If you prefer, the fully assembled device already loaded with software can be purchased from me or you can set up your own business to do the same without giving me any money or recognition.  
+If you do not wish to build the device yourself, the fully assembled device already loaded with software can be purchased from me.  
+Contact johnshearing@gmail.com or gshearing@radioactiverf.com   
+
+**Or you can set up your own business to do the same without giving me any money or recognition.  
 Hooray Open Source!  
 
 #### Parts List  
