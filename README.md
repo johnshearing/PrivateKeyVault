@@ -41,13 +41,17 @@ The PrivateKeyVault has a touchscreen on one side, and a camera on the back. It 
 
 Encrypted messaging is much more secure when using the PrivateKeyVault compared with using a regular computer. That's because anyone could be remotely viewing a computer which is connected to the Internet. So what's the point of using encrypted messaging if someone can read the files on your computer after they have been decrypted for viewing. With the PrivateKeyVault, you don't decrypt the files until after they have crossed the airgap where remote control of your vault and remote viewing of your documents is not possible.  
 
-The plan here is to teach people how to use the PrivateKeyVault [for free via YouTube](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) and via the documentation in this repository.  
-Using this documentation, you can build your own PrivateKeyVault, or if you prefer, you can buy one from us.  
-If you are really industrious, you can set up a factory and start your own business making and selling the PrivateKeyVault.  
-This is all open source so anyone can use this information for free.  
-Now that the public can set up their own accounts on a super secure device in their own homes or businesses when they are alone, there is never any doubt that only they can command their accounts and that their accounts are safe from hackers and thieves.  
+The plan here is to teach people [for free via YouTube](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) how to make and use the PrivateKeyVault.  
+Using this documentation, you can build your own PrivateKeyVault.    
+If you do not wish to build the Vault yourself, the fully assembled device loaded with software can be purchased from us.  
+Contact johnshearing@gmail.com or gshearing@radioactiverf.com   
 
-By improving security, I hope this device will facilitate wide scale adoption of blockchain technology    
+**Or you can set up your own business to do the same without giving me any money or recognition.**   
+**Hooray Open Source!**    
+ 
+Now that people all across the world can set up their own accounts on a super secure device in their own homes or businesses when they are alone, there is never any doubt that only they can command their accounts and that their accounts are safe from hackers thieves and oppressive governments.  
+
+By improving security, I hope this device will facilitate wide scale adoption of blockchain technology.    
 
 ## Contents   
 [Physically Building the PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#physically-building-the-privatekeyvault)  
@@ -110,12 +114,6 @@ By improving security, I hope this device will facilitate wide scale adoption of
 
 
 ### Physically Building the PrivateKeyVault  
-If you do not wish to build the Vault yourself, the fully assembled device loaded with software can be purchased from me.  
-Contact johnshearing@gmail.com or gshearing@radioactiverf.com   
-
-**Or you can set up your own business to do the same without giving me any money or recognition.**   
-**Hooray Open Source!**    
-
 The rest of this document shows you how to build and use the PrivateKeyVault.  
 
 #### Parts List  
