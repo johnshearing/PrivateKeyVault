@@ -4,12 +4,14 @@ This is what the case looks like opened.
 <hr>
 
 <img src="../images/LaserCutMakeImages/CaseClosed.jpg">   
-This is what the case looks like closed.      
+This is what the case looks like closed.    
+
 Everything including the spring latches are laser cut.  
+
 <hr>
 
 [Click here to return to the PrivateKeyVault main page for wiring and software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions)  
-**Continue reading below for instrutions on how to cut and assemble the transparent case.**  
+**Or continue reading below for instrutions on how to cut and assemble the transparent case.**  
 
 The files assume acrylic material 18 inches X 12 inches X .115 inch thick.  
 The files also assume that the kerf cut by the laser will be .007 inch wide.  
