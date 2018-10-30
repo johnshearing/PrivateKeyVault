@@ -113,8 +113,8 @@ By improving security, I hope this device will facilitate wide scale adoption of
 If you do not wish to build the Vault yourself, the fully assembled device loaded with software can be purchased from me.  
 Contact johnshearing@gmail.com or gshearing@radioactiverf.com   
 
-**Or you can set up your own business to do the same without giving me any money or recognition.  
-Hooray Open Source!  
+**Or you can set up your own business to do the same without giving me any money or recognition.**   
+**Hooray Open Source!**    
 
 #### Parts List  
 The items you will need are as follows. 
