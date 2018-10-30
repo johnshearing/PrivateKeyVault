@@ -1,4 +1,4 @@
-## Laser Cutting the Transparent Case for the PrivateKeyVault  
+## Laser Cutting and Assembling the Transparent Case for the PrivateKeyVault  
 [Click here to return to the PrivateKeyVault main page for wiring and software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions)  
 **Continue reading below for instrutions on how to cut and assemble the transparent case.**  
 
