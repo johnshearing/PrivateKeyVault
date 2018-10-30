@@ -4,9 +4,8 @@ This is what the case looks like opened.
 <hr>
 
 <img src="../images/LaserCutMakeImages/CaseClosed.jpg">   
-This is what the case looks like closed.  
-Everything including the spring latches are laser cut.   
-
+This is what the case looks like closed.      
+Everything including the spring latches are laser cut.  
 <hr>
 
 [Click here to return to the PrivateKeyVault main page for wiring and software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions)  
