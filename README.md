@@ -140,8 +140,9 @@ The items you will need are as follows.
 * [Wire, PVC, Black, 20 AWG, 25 ft, 7.6 m](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4829&storeId=10194)  
 
 
-#### Laser Cutting the Transparent Case  
-[CorelDraw files are for laser cutting the case are found here](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)  
+#### Laser Cutting and Building the Transparent Case  
+* [CorelDraw files are for laser cutting the case are found here](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)  
+* [Instructions for assembling the case are found here.](https://github.com/johnshearing/Airgapped_Encrypted_Messaging#privatekeyvault-application-launcher-and-encrypted-messaging-services)  
 
 ### Installing the OS and Setting Up Basic Functionality.  
 
