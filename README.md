@@ -116,6 +116,8 @@ Contact johnshearing@gmail.com or gshearing@radioactiverf.com
 **Or you can set up your own business to do the same without giving me any money or recognition.**   
 **Hooray Open Source!**    
 
+The rest of this document shows you how to build and use the PrivateKeyVault.  
+
 #### Parts List  
 The items you will need are as follows. 
 * [CorelDraw Files for Laser Cut Case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)    
