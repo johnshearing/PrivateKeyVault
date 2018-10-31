@@ -1775,7 +1775,7 @@ If the if the paper is torn or if the nail polish looks different then someone h
 In that case do not use the SD card but rather mark it as compromised.  
 Do not use this card unless you have no other choice and then only with extreme caution.  
 
-<img src="/images/ReadmeImages/UniqueDollar.jpg">  
+<img src="/images/ReadmeImages/UniqueDollar.jpg" width=200>  
 I like to wrap my SD cards in a dollar bill.  
 First I write down the serial number of the bill before making an evelope out of the bill.   
 [Click here to see how the bill was folded](https://www.youtube.com/watch?v=j30JG6eUe_o&t=1s)  
