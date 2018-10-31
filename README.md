@@ -144,8 +144,7 @@ The items you will need are as follows.
 
 
 #### Laser Cutting and Building the Transparent Case  
-* [CorelDraw files are for laser cutting the case are found here](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)  
-* [Instructions for assembling the case are found here.](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles#coreldraw-files-for-laser-cutting-transparent-case-for-the-privatekeyvault)  
+* [CorelDraw files are for laser cutting the case and assembly instructions are found here](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)    
 
 ### Installing the OS and Setting Up Basic Functionality.  
 
