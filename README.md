@@ -1775,6 +1775,22 @@ If the if the paper is torn or if the nail polish looks different then someone h
 In that case do not use the SD card but rather mark it as compromised.  
 Do not use this card unless you have no other choice and then only with extreme caution.  
 
+<img src="/images/ReadmeImages/UniqueDollar.jpg">  
+I like to wrap my SD cards in a dollar bill.  
+First I write down the serial number of the bill before making an evelope out of the bill.   
+[Click here to see how the bill was folded](https://www.youtube.com/watch?v=j30JG6eUe_o&t=1s)  
+Then I put the SD card into the envelope made from the dollar.  
+Finally, I seal the bill with sparkly nail polish and take pictures of it.  
+
+I am betting:  
+* That no one can open the bill and seal it again without any damage and without any sign of tampering,  
+* That no one will be able to duplicate the sparkly design I photographed,  
+* That no one will be able to switch out the photograph on my phone and with another one showing a different sparkly dollar which contains a tampered card,  
+* That no one will be able to find the piece of paper containing the serial number I wrote down, switch it with another one which contains a different serial number for a different sparkly dollar written convincingly in my handwritting,  
+* That no one will be able counterfit a dollar with the exact same serial number hidden inside the folds of the dollar.  
+* And finally, that it will cost more to fool me than a swindler is likely to receive for his or her efforts.  
+I hope the odds are in my favor.  
+
 Take the same precautions with your PrivateKeyVault.  
 If attackers steal your Pi with the encrypted SD card aboard then they could place a key logger anywhere they want without you knowing about it. They could put it on the SD card or at any place in the hardware such as the keyboard, the pi itself, the camera, just about anywhere. So the PrivateKeyVault should be wrapped in paper or put in a box, and sealed with sparkly nail polish to make it evident should the device be tampered with.  
 
