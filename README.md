@@ -1785,9 +1785,10 @@ Do not use this card unless you have no other choice and then only with extreme 
 Then destroy the card after you have recovered the data you need from it.  
 
 <img src="/images/ReadmeImages/UniqueDollar.jpg" width=200>  
+
 I like to wrap my SD cards in a dollar bill.  
-First I write down the serial number of the bill before making an evelope out of the bill.   
-[Click here to see how the bill was folded](https://www.youtube.com/watch?v=j30JG6eUe_o&t=1s)  
+First I write down the serial number of the bill before making an evelope out of the bill.  
+[Click here to see how the bill was folded](https://www.youtube.com/watch?v=j30JG6eUe_o&t)  
 Then I put the SD card into the envelope made from the dollar.  
 Finally, I seal the bill with sparkly nail polish and take pictures of it.  
 
