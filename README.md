@@ -22,7 +22,7 @@ Use it to:
 <hr>  
 
 <img src="/images/ReadmeImages/Guts.jpg">  
-Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with. This mitigates a Maid in the Middle attack.  
+Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with. This mitigates a [Maid in the Middle attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-attack).  
 <hr>  
 
 <img src="/images/ReadmeImages/PassingDataToPhone.jpg">  
@@ -858,7 +858,7 @@ There is no part 2 in case you are wondering but I followed the instructions and
 It is of course possible to use Win 32 Disk Imager to clone your SD card for back up purposes.  
 No one would be able to read the data from the image created.  
 But soon you will have private keys on the encrypted partition. So putting your SD card into an Internet device is dangerous business.  
-The attack vector is called The Evil Maid Attack also known as The Maid In The Middle Attack.  
+The attack vector is called The Maid Attack also known as The Maid In The Middle Attack.  
 The attack is carried out by slipping malicious code such as a key logger into the boot partition of the image now stored on your PC.  
 Attackers might just as easily put the key logger directly onto the boot partition of the SD card up while it is being imaged on your PC. This can be done by remote control if your PC is connected to the Internet or the attack can happen any time you stick an SD card into your PC if the PC is already infected with malware.  
 So if you restore the image and attempt to use it, or if your original SD card has been tampered with then your password will be captured by the key logger and stored in a file on the boot partition for later use by criminals.  
@@ -1759,9 +1759,13 @@ Since writing this section I have actually built this functionality into MyEther
 So now it is possible to create a keystore file from a private key without leaving the MyEtherWallet application.  
 
 
-#### Preventing the Evil Maid Attack
-Keep your cloned sd card in a secure location and packaged in such a way that you will know if someone has tampered with it.  
-If someone steals your SD card it's not a problem (the card is encrypted) but if they put a key logger on the boot partition without you knowing about it, then you will be giving away your password when you try to use it.  
+#### Preventing the **Evil Maid** or **Maid in the Middle** Attack 
+In this attack someone who gains physical access to you PrivateKeyVault puts a keylogger on the boot partition of your SD card without you knowing about it so that the next time you log in you will be giving away your password.  
+So keep your cloned sd card in a secure location and packaged in such a way that you will know if someone has tampered with it.  
+If someone steals your SD card it's not a problem.
+That's because the root partition (the partition containing your operating system and all your encrypted data) is encrypted.  
+No one can get the data without your password.  
+But if they put a key logger on the boot partition without you knowing about it, then you will be giving away your password the next time you log in.  
 So while you are not worried about theft, tampering is a big concern.  
 In order know if your card has been tampered with, use sparkly nail polish.  
 This is nail polish with glitter mixed in.  
@@ -1773,7 +1777,8 @@ And if they paint the seams again it will not look the same because sparkly nail
 Simply compare your container with the photos you took when you sealed it up.  
 If the if the paper is torn or if the nail polish looks different then someone has tampered with the box.  
 In that case do not use the SD card but rather mark it as compromised.  
-Do not use this card unless you have no other choice and then only with extreme caution.  
+Do not use this card unless you have no other choice and then only with extreme caution in a secure location.  
+Then destroy the card after you have recovered the data you need from it.  
 
 <img src="/images/ReadmeImages/UniqueDollar.jpg" width=200>  
 I like to wrap my SD cards in a dollar bill.  
