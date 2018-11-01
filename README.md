@@ -22,7 +22,10 @@ Use it to:
 <hr>  
 
 <img src="/images/ReadmeImages/Guts.jpg">  
-Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with. This mitigates a [Maid in the Middle attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-attack).  
+Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with.  
+This mitigates a [Maid in the Middle attack]
+(https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack)  
+
 <hr>  
 
 <img src="/images/ReadmeImages/PassingDataToPhone.jpg">  
@@ -98,7 +101,7 @@ By improving security, I hope this device will facilitate wide scale adoption of
 * [Check that your public and private key work together](https://github.com/johnshearing/PrivateKeyVault#check-that-your-public-and-private-key-work-together)  
 * [Warning About Quantum Computers](https://github.com/johnshearing/PrivateKeyVault#warning-about-quantum-computers)  
 * [Generate a Keystore File from a private key](https://github.com/johnshearing/PrivateKeyVault#generate-a-keystore-file-from-a-private-key)  
-* [Preventing the Evil Maid Attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-attack)  
+* [Preventing the Evil Maid Attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack)  
 * [Conclusion](https://github.com/johnshearing/PrivateKeyVault#conclusion)  
 
 [ToDo List](https://github.com/johnshearing/PrivateKeyVault#todo-list)  
@@ -858,14 +861,14 @@ There is no part 2 in case you are wondering but I followed the instructions and
 It is of course possible to use Win 32 Disk Imager to clone your SD card for back up purposes.  
 No one would be able to read the data from the image created.  
 But soon you will have private keys on the encrypted partition. So putting your SD card into an Internet device is dangerous business.  
-The attack vector is called The Maid Attack also known as The Maid In The Middle Attack.  
+The attack vector is called The Evil Maid Attack also known as The Maid In The Middle Attack.  
 The attack is carried out by slipping malicious code such as a key logger into the boot partition of the image now stored on your PC.  
 Attackers might just as easily put the key logger directly onto the boot partition of the SD card up while it is being imaged on your PC. This can be done by remote control if your PC is connected to the Internet or the attack can happen any time you stick an SD card into your PC if the PC is already infected with malware.  
 So if you restore the image and attempt to use it, or if your original SD card has been tampered with then your password will be captured by the key logger and stored in a file on the boot partition for later use by criminals.  
 
 The point is, (assuming a strong password) anyone who gets physical access to your SD card can not read it unless you supply the password. The Evil Maid Attack is one way to get you to supply the password without you knowing it.  
 
-We will talk more about the Evil Maid Attack in a later section.  
+We will talk more about the [Evil Maid Attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack) in a later section.  
 The important point to remember here is that we need to make backup copies of the encrypted SD card without putting the card into an Internet connected device. The following explains how to accomplish this.  
 
 Before we get started make sure that all the important information on your encrypted SD card is written down or stored safely somewhere. If anything goes wrong during the cloning process which destroys your cards then you will still have your private keys written down. If you fail to take this precaution then you might lose all your crypto-currency and all the personal information that was stored on your encrypted SD card.  
