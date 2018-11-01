@@ -1756,7 +1756,7 @@ The whole thing could be put in a script as shown below if you prefer.
 > wallet.toV3String('password', {n: 1024});  
 ```   
 
-(Here is a link to the Node Package required)[https://github.com/ethereumjs/ethereumjs-wallet]  
+[Here is a link to the Node Package required](https://github.com/ethereumjs/ethereumjs-wallet)  
 You already installed this package if you have been following along.  
 
 Since writing this section I have actually built this functionality into MyEtherWallet.  
