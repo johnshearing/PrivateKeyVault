@@ -1822,12 +1822,20 @@ Releasing the button ends the scan.
 Also achieving a good read ends the scan.  
 
 Play around with more techniques to prevent tampering  
+Consider adding some kind of notification on bootup if the device has been opened. 
 
 Consider charging the battery with a wireless charger.  
 
-Consider the Raspberry Pi Module 3 for it's smaller size in future builds.  
+Also condsider including a space in the box for the AC power supply.  
+My concern is that the charger which plugs into a USB port which would have physical access to the same circuits as the keyboard could be used to capture keystrokes if a keylogger was somehow installed into the power supply.  
+In fact it would even be possible to remotely view what is on the screen if a radio were built into the power supply which was tuned to the frequency of the touch screen.  
+Finally, I know of one attack on a trezor that captures the private key by reading spikes in the ac power as calculations are performed which use the key.  
+For all these reasons, I think it would be a good idea to provide extra space for the AC power supply in the tamper resistant case to mitigate these attack vectors.  
 
-Consider adding some kind of notification on bootup if the device has been opened.  
+Even though there is a touch screen, I wonder if it would also be a good idea to provide a space in the secure case for a mouse.  
+My reasons are the same as given above.  
+
+Consider the Raspberry Pi Module 3 for it's smaller size in future builds.   
 
 #### OS Software Items To Add Next Time    
 
