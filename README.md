@@ -50,7 +50,7 @@ Using this documentation, you can build your own PrivateKeyVault.
 If you do not wish to build the Vault yourself, the fully assembled device loaded with software can be purchased from us.  
 Contact johnshearing@gmail.com or gshearing@radioactiverf.com   
 
-**Or you can set up your own business to do the same without giving me any money or recognition.**   
+**Or you can set up your own business to do the same without giving us any money or recognition.**   
 **Hooray Open Source!**    
  
 Now that people all across the world can set up their own accounts on a super secure device in their own homes or businesses when they are alone, there is never any doubt that only they can command their accounts and that their accounts are safe from hackers thieves and oppressive governments.  
