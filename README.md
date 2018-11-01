@@ -25,8 +25,7 @@ Use it to:
 
 Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with.  
 
-This mitigates a [Maid in the Middle attack]
-(https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack)  
+This mitigates a [Maid in the Middle attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack)  
 
 <hr>  
 
