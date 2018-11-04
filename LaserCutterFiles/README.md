@@ -23,7 +23,15 @@ So to make a complete box you will need to cut each of the two drawings.
 
 <img src="../images/LaserCutMakeImages/01_In_The_Printer.jpg">  
 
+This photo shows the parts cut from the first CorelDraw file.  
+Don't forget to cut the second drawing too.  
+Then you will have all the parts you need to assemble the box.  
+
 <img src="../images/LaserCutMakeImages/02_All_The_Parts.jpg">  
+
+This photo shows all the parts cut from both drawings.  
+Some of the supports have already been glued to the sides of the box.  
+Also, you can see that the switch mount has been glued together.  
 
 <img src="../images/LaserCutMakeImages/03_Latch_Parts01.jpg">  
 
