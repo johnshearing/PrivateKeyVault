@@ -31,13 +31,13 @@ So to make a complete box you will need to cut each of the two drawings.
 
 <img src="../images/LaserCutMakeImages/05_Fit_Latch.jpg">  
 
-<img src="../images/LaserCutMakeImages/06_Stack_Order_01.jpg">  
+<img src="../images/LaserCutMakeImages/06_Stack_Order_1.jpg">  
 
-<img src="../images/LaserCutMakeImages/06_Stack_Order_02.jpg">  
+<img src="../images/LaserCutMakeImages/06_Stack_Order_2.jpg">  
 
-<img src="../images/LaserCutMakeImages/06_Stack_Order_04.jpg">  
+<img src="../images/LaserCutMakeImages/06_Stack_Order_4.jpg">  
 
-<img src="../images/LaserCutMakeImages/07_Finished_Box.jpg">  
+<img src="../images/LaserCutMakeImages/07_Finished_Box_1.jpg">  
 
 As I improve the box I am likely to replace these files with updated drawings.  
 So if you like a particular version of the box be sure to save it on your own hard drive.  
