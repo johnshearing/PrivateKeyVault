@@ -21,8 +21,15 @@ Each drawing makes half the parts necessary for the box.
 The only difference between the two drawings is that various layers have visibility and printing toggled on or off as required to print the respective sides of the box.  
 So to make a complete box you will need to cut each of the two drawings.
 
-
-**Complete instructions with photos for assembling the box with be writen here shortly.**    
+<img src="../images/LaserCutMakeImages/01_In_The_PrinterCaseClosed.jpg">  
+<img src="../images/LaserCutMakeImages/02_All_The_Parts.jpg">  
+<img src="../images/LaserCutMakeImages/03_Latch_Parts.jpg">  
+<img src="../images/LaserCutMakeImages/04_Sand_Latch.jpg">  
+<img src="../images/LaserCutMakeImages/05_Fit_Latch.jpg">  
+<img src="../images/LaserCutMakeImages/06_Stack_Order_01.jpg">  
+<img src="../images/LaserCutMakeImages/06_Stack_Order_02.jpg">  
+<img src="../images/LaserCutMakeImages/06_Stack_Order_04.jpg">  
+<img src="../images/LaserCutMakeImages/07_Finished_Box.jpg">  
 
 As I improve the box I am likely to replace these files with updated drawings.  
 So if you like a particular version of the box be sure to save it on your own hard drive.  
