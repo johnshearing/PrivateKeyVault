@@ -21,7 +21,7 @@ Use it to:
 * Crypto-Journalism: Create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonomus if he or she so choses.  
 <hr>  
 
-<img src="/images/ReadmeImages/Guts.jpg">  
+<img src="/images/ReadmeImages/Wiring.jpg">  
 
 Computer and keyboard store in a transparent tamper resistant case which can not be opened without the owner knowing the device has been tampered with.  
 
