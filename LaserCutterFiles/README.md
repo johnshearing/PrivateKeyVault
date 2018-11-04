@@ -1,14 +1,14 @@
 ## Laser Cutting and Assembling the Transparent Case for the PrivateKeyVault  
 <img src="../images/LaserCutMakeImages/CaseOpened.jpg">  
 This is what the case looks like opened.  
-<hr>
+<hr>  
 
 <img src="../images/LaserCutMakeImages/CaseClosed.jpg">   
 This is what the case looks like closed.    
 
 Everything including the spring latches are laser cut.  
 
-<hr>
+<hr>  
 
 [Click here to return to the PrivateKeyVault main page for wiring and software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions)  
 **Or continue reading below for instrutions on how to cut and assemble the transparent case.**  
@@ -27,25 +27,43 @@ This photo shows the parts cut from the first CorelDraw file.
 Don't forget to cut the second drawing too.  
 Then you will have all the parts you need to assemble the box.  
 
+<hr>  
+
 <img src="../images/LaserCutMakeImages/02_All_The_Parts.jpg">  
 
 This photo shows all the parts cut from both drawings.  
 Some of the supports have already been glued to the sides of the box.  
 Also, you can see that the switch mount has been glued together.  
 
+<hr>  
+
 <img src="../images/LaserCutMakeImages/03_Latch_Parts01.jpg">  
+
+<hr>  
 
 <img src="../images/LaserCutMakeImages/04_Sand_Latch03.jpg">  
 
+<hr>  
+
 <img src="../images/LaserCutMakeImages/05_Fit_Latch.jpg">  
+
+<hr>  
 
 <img src="../images/LaserCutMakeImages/06_Stack_Order_x1.jpg">  
 
+<hr>  
+
 <img src="../images/LaserCutMakeImages/06_Stack_Order_x2.jpg">  
+
+<hr>  
 
 <img src="../images/LaserCutMakeImages/06_Stack_Order_x4.jpg">  
 
+<hr>  
+
 <img src="../images/LaserCutMakeImages/07_Finished_Box_x1.jpg">  
+
+<hr>  
 
 As I improve the box I am likely to replace these files with updated drawings.  
 So if you like a particular version of the box be sure to save it on your own hard drive.  
