@@ -25,7 +25,7 @@ So to make a complete box you will need to cut each of the two drawings.
 
 <img src="../images/LaserCutMakeImages/02_All_The_Parts.jpg">  
 
-<img src="../images/LaserCutMakeImages/03_Latch_Parts.jpg">  
+<img src="../images/LaserCutMakeImages/03_Latch_Parts01.jpg">  
 
 <img src="../images/LaserCutMakeImages/04_Sand_Latch03.jpg">  
 
