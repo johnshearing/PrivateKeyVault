@@ -32,8 +32,13 @@ Then you will have all the parts you need to assemble the box.
 <img src="../images/LaserCutMakeImages/02_All_The_Parts.jpg">  
 
 This photo shows all the parts cut from both drawings.  
-Some of the supports have already been glued to the sides of the box.  
-Also, you can see that the switch mount has been glued together.  
+Some of the supports have already been chemically welded to the sides of the box.  
+Also, you can see that the switch mount has been chemically welded together.  
+
+[Click here to learn how to chemically weld acrylic](https://www.youtube.com/watch?v=hT6Ow_cBTps&feature=youtu.be)  
+
+[Click here to order chemical welding products](https://www.tapplastics.com/product/repair_products/plastic_adhesives/tap_acrylic_cement/130)  
+PrivateKeyVault has no finacial interest in the sale of these products.  
 
 <hr>  
 
