@@ -1,4 +1,4 @@
-Wiring instructions here
+Wiring instructions here  
 [Click here to return to the PrivateKeyVault main page for software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions)  
 **Or continue reading here for wiring instructions**  
 
