@@ -1,4 +1,4 @@
-# PrivateKeyVault - [Click Here for Open Source Make Instructions](https://github.com/johnshearing/PrivateKeyVault#contents)  
+# PrivateKeyVault - [Click for Open Source Make Instructions](https://github.com/johnshearing/PrivateKeyVault#contents)  
 ### Airgapped raspberry pi computer with touch screen and camera  
 ### Featuring LUKS full disk encryption  
 ### For secure offline blockchain transactions and for secure encrypted messaging     
