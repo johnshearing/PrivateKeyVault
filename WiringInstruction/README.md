@@ -36,7 +36,7 @@ I didn't show it in the photo above, but I actually shortened the red and black 
 **Instead, cut one wire to shorten it and then solder it back together and heat shrink the wire to safely cover the solder joint.**  
 **Then it will be safe to do the same with the other wire.**  
 
-The reason I did this is because the raspberry pi is very sensitive to voltage drops and longer power cables cause a larger voltage drop. For the same reason I used relatively thick 22 gage wire for all the power and ground connections. 
+The reason I did this is because the raspberry pi is very sensitive to voltage drops and longer power cables cause a larger voltage drop. For the same reason I used relatively thick 20 gage wire for all the power and ground connections. 
 
 Also, when you are ready to charge the battery or power the Vault the AC power supply plugs into the top of the charger board.  
 
@@ -59,15 +59,29 @@ In this photo we see how the ribbon cable is inserted into the pi.
 In this photo the lid has been flipped over so that you can see how the touch screen is mounted.  
 You will need a 2.5 mm standoff which is 23 mm long.  
 The touch screen comes with an 11 mm long stand off and the hardware kit linked above has some 12 mm long standoffs included.  
-So I screwed these together to come up with the 23 mm of length needed.  
-This length allow you to close the lid over the keyboard with just the right amount of pressure on the keys to keep it from moving around in the box.  
+So I screw these together to come up with the 23 mm of length needed.  
+This length allows you to close the lid over the keyboard with just the right amount of pressure on the keys to keep it from moving around in the box.  
+For the next build I am going to look for steel hardware of the correct length for all the hardware parts.  
+
+Notice the camera in the very center of the lid still has it's protective tab over the lens.  
+Later after we apply power, we will need to focus the camera to a length of 2 3/8 inches from lens to subject.  
+This is the perfect focal length for passing qr-codes from a smartphone into the PrivateKeyVault.  
 
 <hr>  
 
+<img src="../images/WiringInstructionImages/05_FrontCharger.jpg">  
 
+Solder the wires according to the diagram given further below.  
 
+To start out, solder a 6 in long piece of 20 gage [red](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4831&storeId=10194) and [black](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4829&storeId=10194) wire to the (+ and -) connections as shown in the photo above.  
+These go to the lighted switch as you can see.  
 
+Then cut a 3 in piece of special [red and black jumper wires](https://www.sparkfun.com/products/11710) and solder them to the 5v and Gnd connections as shown in the photo above.  
+These will connect to the touch screen by sliding on the connectors at the ends of the jumper wires.  
+These are not your typical jumper wires. These are 20 gage which are thicker than ordinary jumper wires so there is less voltage drop across them.  
+The red connection to the touch screen is visible in the very first photo of this document if you look carefully. The black jumper wire is not visible in that photo. 
 
+<hr> 
 
 
 
