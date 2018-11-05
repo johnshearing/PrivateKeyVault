@@ -85,7 +85,7 @@ The red connection to the touch screen is visible in the very first photo of thi
 
 <img src="../images/WiringInstructionImages/06_BackCharger.jpg">  
 
-Now flip the charger board over and ...
+Sorry about the dirty fingers - should have used a hand model ...
 
 
 <hr> 
