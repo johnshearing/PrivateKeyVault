@@ -45,7 +45,7 @@ You are responsible for making sure there are no keyloggers or radio transmitter
 [So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
 
 [Wiring Instructions](https://github.com/johnshearing/PrivateKeyVault/blob/master/WiringInstruction/README.md)  
-As mentioned above you don't need battery power provided by all the special wiring. An AC adaptor is enough to power a basic raspberry pi PrivateKeyVault. But battery power is nice so follow the link above if you would like battery power for your PrivateKeyVault.  
+As mentioned above you don't need battery power provided by all the special wiring. An AC adaptor is enough to power a basic raspberry pi. But battery power is nice so follow the link above if you would like battery power for your PrivateKeyVault.  
 
 [This Video](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) shows how an offline transaction is made on the Ethereum blockchain using the first prototype of the PrivateKeyVault. The procedure for making an offline transaction using the newer Vault or using a plain raspberry pi 2 is still the same so have a look if you want to see how an offline transaction is made.  
 
