@@ -42,6 +42,7 @@ You don't need to have this case in order for your PrivateKeyVault to work, but 
 All you really need is a Pi 2, a Pi camera, and an AC adaptor for power.  
 You probably have a mouse, screen and keyboard laying around already.   
 You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
+[So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
 
 [Wiring Instructions](https://github.com/johnshearing/PrivateKeyVault/blob/master/WiringInstruction/README.md)  
 As mentioned above you don't need battery power provided by all the special wiring. An AC adaptor is enough to power a basic raspberry pi PrivateKeyVault. But battery power is nice so follow the link above if you would like battery power for your PrivateKeyVault.  
