@@ -38,6 +38,13 @@ Disk images are forthcoming but you don't need them.
 You can build from scratch using these instructions.  
 
 [CorelDraw files are included for laser cutting the case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)
+You don't need to have this case in order for your PrivateKeyVault to work, but it's nice and it solves a lot of problems.  
+All you really need is a Pi 2, a Pi camera, and an AC adaptor for power.  
+You probably have a mouse, screen and keyboard laying around already.   
+You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
+
+[Wiring Instructions](https://github.com/johnshearing/PrivateKeyVault/blob/master/WiringInstruction/README.md)  
+As mentioned above you don't need battery power provided by all the special wiring. An AC adaptor is enough to power the PrivateKeyVault. But battery power is nice so follow the link above if you would like battery power for your PrivateKeyVault.  
 
 [This Video](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) shows how an offline transaction is made on the Ethereum blockchain using the first prototype of this device. The procedure for making an offline transaction using the newer device is still the same so have a look if you want to see how an offline transaction is made.
 
