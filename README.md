@@ -60,8 +60,8 @@ By improving security, I hope this device will facilitate wide scale adoption of
 ## Contents   
 [Physically Building the PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#physically-building-the-privatekeyvault)  
 * [Parts List](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md#parts-list)  
-* [Laser Cutting and Building the Transparent Case](https://github.com/johnshearing/PrivateKeyVault#laser-cutting-and-building-the-transparent-case)  
-* [Wiring Instructions](https://github.com/johnshearing/PrivateKeyVault/blob/master/WiringInstruction/README.md)
+* [Laser Cutting and Building the Transparent Case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles/README.md)  
+* [Wiring Instructions](https://github.com/johnshearing/PrivateKeyVault/blob/master/WiringInstruction/README.md)  
 
 [Installing the OS and Setting Up Basic Functionality](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
 * [Write the image to the SD Card](https://github.com/johnshearing/PrivateKeyVault#write-the-image-to-the-sd-card)  
@@ -149,7 +149,11 @@ The items you will need are as follows.
 
 
 #### Laser Cutting and Building the Transparent Case  
-* [CorelDraw files for laser cutting the case and assembly instructions are found here](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)    
+* [CorelDraw files for laser cutting the case and assembly instructions are found here](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles/README.md)    
+
+#### Wiring Instructions  
+* [Wiring Instructions](https://github.com/johnshearing/PrivateKeyVault/blob/master/WiringInstruction/README.md)
+
 
 ### Installing the OS and Setting Up Basic Functionality.  
 
