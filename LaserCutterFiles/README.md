@@ -44,25 +44,52 @@ PrivateKeyVault has no finacial interest in the sale of these products.
 
 <img src="../images/LaserCutMakeImages/03_Latch_Parts01.jpg">  
 
+Here are all the parts required to make a latch.  
+There are four latches on each box.  
+There are two latches on the top and two latches on the bottom.  
+That's because both the bottom and the top of the box can be opened.  
+
+[This video shows how these types of latches are assembled](https://youtu.be/koxFgN304TI)  
+
 <hr>  
 
 <img src="../images/LaserCutMakeImages/04_Sand_Latch03.jpg">  
+
+Before fitting the latch together I first sand one side of the spring piece just a tiny bit until I get a nice sliding fit with a little bit of friction. I sand the four corners of this part just a tiny bit as well.  
 
 <hr>  
 
 <img src="../images/LaserCutMakeImages/05_Fit_Latch.jpg">  
 
+In this photo the latch spring is placed inside the lid slot to check for a nice sliding fit with a little bit of friction.  
+In the following photos I will show you how to assemble the latches.  
+**Be sure to try and fit one of the latches together without welding it at first.**  
+**Then try latching the box at one corner while holding the parts together with your fingers.**  
+**This will ensure that you got the orientation of all the pices right before permanently bonding them together**  
+
 <hr>  
 
 <img src="../images/LaserCutMakeImages/06_Stack_Order_x1.jpg">  
+
+In this photo, the lid is upside down on the table a the larger of the two cover pices is placed under the lid.  
 
 <hr>  
 
 <img src="../images/LaserCutMakeImages/06_Stack_Order_x2.jpg">  
 
+Now the rectangular pin is inserted in the rectangular hole and chemically welded in place.   
+
 <hr>  
 
 <img src="../images/LaserCutMakeImages/06_Stack_Order_x4.jpg">  
+
+In this photo, the latch spring is seen placed over the rectangular pin and chemical welding solvent is applied to the pin only.  
+Also shown over the top of the spring latch is the bottom cover piece which is also chemically welded by applying solvent at the pin only.  
+**Careful, watch the orientation of this last piece.**  
+This last piece is not symentrical so the orientation matters.  
+Better get this right before applying the cement.  
+
+
 
 <hr>  
 
