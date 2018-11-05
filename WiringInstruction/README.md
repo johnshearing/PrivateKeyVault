@@ -1,5 +1,5 @@
 Wiring instructions here
-[Click here to return to the PrivateKeyVault main page for wiring and software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions)  
+[Click here to return to the PrivateKeyVault main page for software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions)  
 **Or continue reading here for wiring instructions**  
 
 <img src="../images/ReadmeImages/Wiring.jpg">  
