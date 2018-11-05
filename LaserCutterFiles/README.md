@@ -108,4 +108,6 @@ Hooray Open Source!
 
 Please feel free to suggest improvements and to contribute your own changes and original drawings if you have a different way to make this box.  
 
+[Click here to return to the PrivateKeyVault main page for wiring and software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions) 
+
 
