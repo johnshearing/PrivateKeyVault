@@ -9,14 +9,14 @@ A wiring diagram will be given further below.
 
 <img src="../images/WiringInstructionImages/01_Standoffs.jpg">  
 
-In this photo we see qty 16 standoffs which are threaded 2.5 mm screws and are 6 mm long.  
-These standoffs are fastened to the lid with 2.5 mm screws which are 6 mm long.  
+In this photo we see 16 standoffs which are threaded 2.5 mm and are 6 mm long.  
+These standoffs are fastened to the lid with 2.5 mm screws which are also 6 mm long.  
 [The standoffs, screws, and other parts can be found in this kit](https://www.adafruit.com/product/3299)  
 PrivateKeyVault has no finacial relationship with the vendor.  
 
-Also shown is the switch mount fastened to the lid with part found in the kit linked above.  
+Also shown is the switch mount fastened to the lid with parts found in the kit linked above.  
 
-Notice that four holes are left empty. The touch screen will be fastened there later.  
+Notice that four holes are left empty. The touch screen will be fastened with these later.  
 
 Also notice that the chemically welded tabs are facing up so that the lid is laying flat on the table.  
 That will ensure that the standoffs and switch mount are inside the box when the lid is closed and latched.  
@@ -36,11 +36,22 @@ I didn't show it in the photo above, but I actually shortened the red and black 
 **Instead, cut one wire to shorten it and then solder it back together and heat shrink the wire to safely cover the solder joint.**  
 **Then it will be safe to do the same with the other wire.**  
 
-The reason I did this is because the raspberry pi is very sensitive to voltage drops and longer cables cause a larger voltage drop. For the same reason I used 22 gage wire for all the power and ground connections. 
+The reason I did this is because the raspberry pi is very sensitive to voltage drops and longer power cables cause a larger voltage drop. For the same reason I used relatively thick 22 gage wire for all the power and ground connections. 
 
-Also, the AC power plugs into the top of the charger board when you are ready to charge the battery or power the Vault.  
+Also, when you are ready to charge the battery or power the Vault the AC power supply plugs into the top of the charger board.  
+
+Notice the camera mounted in the center of the lid.  
+For some reason two of the holes are smaller than 2.5 mm so I drilled these out with a .093" drill bit.  
+
+Finally, take notice of how the ribbon cable is folded to fit into the receptical on the raspberry pi.  
+It is necessary to do this so that the touch screen will fit on top without any interference.  
+
+<hr>  
+
+<img src="../images/WiringInstructionImages/03_RibbonInserted.jpg">  
+
+In this photo we see how the ribbon cable is inserted into the pi.  
+
+<hr>
 
 
-
-
-<hr> 
