@@ -65,13 +65,13 @@ In this photo the latch spring is placed inside the lid slot to check for a nice
 In the following photos I will show you how to assemble the latches.  
 **Be sure to try and fit one of the latches together without welding it at first.**  
 **Then try latching the box at one corner while holding the parts together with your fingers.**  
-**This will ensure that you got the orientation of all the pices right before permanently bonding them together**  
+**This will ensure that you got the orientation of all the pieces right before permanently bonding them together**  
 
 <hr>  
 
 <img src="../images/LaserCutMakeImages/06_Stack_Order_x1.jpg">  
 
-In this photo, the lid is upside down on the table a the larger of the two cover pices is placed under the lid.  
+In this photo, the lid is upside down on the table a the larger of the two cover pieces is placed under the lid.  
 
 <hr>  
 
