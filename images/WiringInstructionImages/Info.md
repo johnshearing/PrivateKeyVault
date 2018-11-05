@@ -1,1 +1,1 @@
-These files are used in the wiring instruction document.  
+These images are used in the wiring instruction document.  
