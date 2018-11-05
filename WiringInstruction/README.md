@@ -77,16 +77,36 @@ To start out, solder a 6 in long piece of 20 gage [red](https://www.newark.com/w
 These go to the lighted switch as you can see in this document's very first photo.  
 
 Then cut a 3 in piece of special [red and black jumper wires](https://www.sparkfun.com/products/11710) and solder them to the 5v and Gnd connections as shown in the photo above.  
-These are not your typical jumper wires. Not shown in the photo, these wires have a connector crimped at the ends. Also these jumpers are made from 20 gage wire which is thicker than wire ordinarily used to make jumper wires. So there is less voltage drop across them. This really matters.   
+These are not your typical jumper wires. Not shown in this photo, these wires have a connector crimped at the ends. You can see the crimp connectors in the next photo. Also these jumpers are made from 20 gage wire which is thicker than wire ordinarily used to make jumper wires. So there is less voltage drop across them. This really matters.   
 These will connect to the touch screen by sliding the connectors onto the 5v pin for the red wire and GND pin for the black wire.  
-The red connection to the touch screen is visible in the very first photo of this document if you look carefully. The black jumper wire is not visible in that photo you will know it because it is marked GND. 
+The red connection to the touch screen is visible in the very first photo of this document if you look carefully. The black jumper wire is not visible in that photo you will know it because it is marked GND.  
+
+Finally, solder a grey wire about 6 inches long to the connection marked EN for enable.  
+This wire will go to the lighted switch as seen in this document's very first photo.  
 
 <hr>  
 
 <img src="../images/WiringInstructionImages/06_BackCharger.jpg">  
 
-Sorry about the dirty fingers - should have used a hand model ...
+Sorry about the dirty fingers - should have hired a hand model.  
+In any case, flip the charger board over.  
+Notice the black and yellow wires.  
+These wire are 20 gage.  
+I used 3 inch long pieces of wire cut from the package of special jumpers we used in the previous step.  
+Notice that these two wires are inserted into the board from bottom where as the wires in the previous step were inserted from the top.  
+The black wire will go into the connection marked GND and the yellow wire will go into the connnection marked LiPo.  
+Solder the wires in place.  
+Later you can mount the board back onto the lid an cut the length of the wire so that it is just long enough to reach the GND and Bat connections on the smaller boost board.  
+We will do that part later.  
+
+Now referring the the very first photo in this document and to the wiring diagram at the end, solder a 6 inch length of red, black, and grey wire as shown. into the smaller boost board.  The red wire will go to the 5 Volt GPIO pin on the raspberry pi. The black wire will go to a ground pin on the raspberry pi. And the grey wire will go to the lighted switch.  
+
+<hr>   
+
+I am getting tired. Will try to finish these instructions tomorrow.
+:)
 
 
-<hr> 
+
+
 
