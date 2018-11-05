@@ -52,6 +52,23 @@ It is necessary to do this so that the touch screen will fit on top without any 
 
 In this photo we see how the ribbon cable is inserted into the pi.  
 
-<hr>
+<hr>  
+
+<img src="../images/WiringInstructionImages/04_ScreenMounted.jpg">  
+
+In this photo the lid has been flipped over so that you can see how the touch screen is mounted.  
+You will need a 2.5 mm standoff which is 23 mm long.  
+The touch screen comes with an 11 mm long stand off and the hardware kit linked above has some 12 mm long standoffs included.  
+So I screwed these together to come up with the 23 mm of length needed.  
+This length allow you to close the lid over the keyboard with just the right amount of pressure on the keys to keep it from moving around in the box.  
+
+<hr>  
+
+
+
+
+
+
+
 
 
