@@ -74,15 +74,19 @@ This is the perfect focal length for passing qr-codes from a smartphone into the
 Solder the wires according to the diagram given further below.  
 
 To start out, solder a 6 in long piece of 20 gage [red](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4831&storeId=10194) and [black](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4829&storeId=10194) wire to the (+ and -) connections as shown in the photo above.  
-These go to the lighted switch as you can see.  
+These go to the lighted switch as you can see in this document's very first photo.  
 
 Then cut a 3 in piece of special [red and black jumper wires](https://www.sparkfun.com/products/11710) and solder them to the 5v and Gnd connections as shown in the photo above.  
-These will connect to the touch screen by sliding on the connectors at the ends of the jumper wires.  
-These are not your typical jumper wires. These are 20 gage which are thicker than ordinary jumper wires so there is less voltage drop across them.  
-The red connection to the touch screen is visible in the very first photo of this document if you look carefully. The black jumper wire is not visible in that photo. 
+These are not your typical jumper wires. Not shown in the photo, these wires have a connector crimped at the ends. Also these jumpers are made from 20 gage wire which is thicker than wire ordinarily used to make jumper wires. So there is less voltage drop across them. This really matters.   
+These will connect to the touch screen by sliding the connectors onto the 5v pin for the red wire and GND pin for the black wire.  
+The red connection to the touch screen is visible in the very first photo of this document if you look carefully. The black jumper wire is not visible in that photo you will know it because it is marked GND. 
+
+<hr>  
+
+<img src="../images/WiringInstructionImages/06_BackCharger.jpg">  
+
+Now flip the charger board over and ...
+
 
 <hr> 
-
-
-
 
