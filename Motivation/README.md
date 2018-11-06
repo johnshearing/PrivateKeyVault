@@ -11,7 +11,7 @@ That will make the value of your cryptocurrency go up.  **Way Up**
 Let's show everyone how to keep their cryptocurrency safe.  
 
 ### What's In It For Me?  
-Buy giving away omy work on the PrivateKeyVault I can bring about universal adoption of cryptocurrency by making it secure.  
+Buy giving away my work on the PrivateKeyVault I can bring about universal adoption of cryptocurrency by making it secure.  
 That will make the cryptocurrency I own to rise in value.  
 That makes us partners.  
 
