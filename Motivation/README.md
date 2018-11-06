@@ -10,6 +10,7 @@ Authoritarian rule, Civil war, Terrorism, and Mass migration of refugees are the
 This stabilizing effect of cryptocurrency can only work if everybody is using it but until people are satisfied that there is a safe way to store private keys, cryptocurrency will not become main stream.  
 
 **Now we have a safe way to store cryptocurrency that is accessable to everyone with electricity and an Internet connection.**  
+Let's get rid of dictators and terrorist. Let's erradicate civil war. Let's turn every human being into a welcome visitor and they will never need to flee their countries.  
 [The PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions)  
 
 
