@@ -65,7 +65,7 @@ Now that people all across the world can set up their own accounts on a super se
 
 ## Contents   
 Motivation  
-* By improving security, I hope this device will facilitate wide scale adoption of blockchain technology.  
+* By providing a single secure device managing secrets, I hope to facilitate wide scale adoption of blockchain technology.  
 * [What's In It For You?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-you)  
 * [What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)  
 * [What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
