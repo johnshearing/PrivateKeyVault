@@ -97,6 +97,12 @@ Better get this right before applying the cement.
 
 <img src="../images/LaserCutMakeImages/07_Finished_Box_x1.jpg">  
 
+
+Finally, 
+The top lid in the photo above is the one with all the extra holes for mounting the electronics.  
+The bottom lid only has the slots for the spring latches.  
+Notice that the latch spring and corresponding dimples in the top lid are facing right where as the latch spring and the dimples are facing left in the bottom lid. This ensures that when the box is closed the top and bottom latches will have the same orientation. This matters because holes can be drilled into the box when the latches are closed so that wire ties can be passed through to secure the box. The wire ties are then sealed with sparkley nail polish and photographed. The box can not be opened without breaking the wire ties and new wire ties will not look the same because it never goes on exactly the same way twice. This is how you will know if your device has been tampered with. Next time I post the drawings, I will have the laser cut the holes so you don't have to drill them out yourself.  
+
 <hr>  
 
 As I improve the box I am likely to replace these files with updated drawings.  
