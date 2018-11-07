@@ -91,20 +91,6 @@ https://newatlas.com/pin-smartphone-sensors/52752/
 Against Keeping Keys With Brokers
 Other people trust their private keys to the brokers they use to buy the currency. Broker's computers often get hacked as well, and sometimes the brokers just disappear taking the private keys with them. In some countries the government forces the brokers to turn over their customers private keys. For these reasons, many people are moving to take control of their own private keys.
 
-
-Social issues
-One problem cryptocurrency can solve is the problem of refugees. Heres how: 
-Unlike normal money, cryptocurrency does not reside in any particular country and is not controlled by any government.
-So if someone decides to leave one country for another, their money is already there waiting for them as long as they have their private key.
-The problem with regular money is that when refugees leave, the money stays. So turning people into refugees is profitable.
-Imagine if refugees could take their money with them.
-The loss of funds created by people leaving would cause governments to serve people better.
-Market forces would cause things to get better even before they get very bad.
-This is only one of the many advantages of cryptocurrency over regular currency.
-
-But until people are satisfied that there is a very safe way to store private keys, cryptocurrency will not become main stream and society will not realize the benefits.
-This is why I am working hard on this project. 
-
 Ethereum is a Bubble
 Many people are worried that the rising value of Ethereum is a bubble. I don't think so. I think what we are seeing is people emptying out their bank accounts and buying cryptocurrency with the funds simply because it is a more productive way to work with money. When there is no more money in the banks, then the price will stop rising. Until then I think we will see the value of Ethereum go up.
 
