@@ -27,7 +27,17 @@ Let's give every human being planet wide access to their money.
 Let's turn every human being into a welcome visitor so that they will never need to flee their own countries.  
 Let's show everyone how to make and use [The PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions)
 
-### What Besides Money Is Blockchain Technology Good For?  
-Let's cut off another source of income for dictators and terrorist that turn citizens into refugees. Their land. Blockchains are lists that cannot be destroyed. They can be used to record land ownership as easily as they are used to track the ownership of money. Currently, after dictators and terrorist chase people off their lands they immediately destroy all the countries records of land and business ownership. This makes it extremely difficult to for refugees to return to their lands and regain ownership even after a civil war has ended. Knowing that refugees have little chance proving ownership of the land and property they were forced to leave behind makes taking it an irresistible proposition for those in position to take it. Getting official records of land ownership onto a blockchain will have a dramatic stabilizing effect on countries where civil war is likely to break out or where ethnic cleansing is likely to occur.
+### How else can blockchains help stabilize our world?  
+Blockchains are lists that can be used to record land ownership as easily as they are used to track money.  
+But these lists can not be destroyed.  
 
-The key to getting government records onto blockchains is making blockchains the easiest to use, safest, and most efficient, and most available instrument for the job. That is why I want everyone to learn how they can use the raspberry pi to take control of their own assets. This is what the [The PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is for.  
+Currently, after dictators and terrorist chase people off their lands they immediately destroy all the countries records of land ownership. This makes it extremely difficult for refugees to regain ownership or even make a claim in international courts. Knowing that refugees have little chance proving ownership of their land makes ethnic cleansing an attractive proposition for athoritarian regimes. Getting official records of land ownership onto a blockchain will have a dramatic stabilizing effect on countries where civil war is likely to break out or where ethnic cleansing is likely to occur.  
+
+The key to getting government records onto blockchains is making blockchains the easiest, most widely available, and most secure instrument for the task.  
+
+Sounds like a job for the raspberry pi:  
+* Easy to use: It was made for teaching children.  
+* Widely available all over the planet for practically nothing.  
+* Super secure if set up with LUKS full disk encryption according to [the instructions here](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions).
+
+Lets teach everyone how they can use the raspberry pi to take control of their own assets. This is what the [This PrivateKeyVault GitHub repository](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is for.  
