@@ -87,6 +87,8 @@ In this photo, the latch spring is seen placed over the rectangular pin and chem
 Also shown over the top of the spring latch is the bottom cover piece which is also chemically welded by applying solvent at the pin only.  
 **Careful, watch the orientation of this last piece.**  
 This last piece is not symentrical so the orientation matters.  
+The distance from the rectangular hole to the ends is not the same.  
+The end with the shorter distance to the rectangular hole must be placed over edge of the lid.  
 Better get this right before applying the cement.  
 
 
