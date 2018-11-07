@@ -152,7 +152,6 @@ The items you will need are as follows.
 * [PowerBoost 1000 Basic - 5V USB Boost @ 1000mA from 1.8V+](https://www.adafruit.com/product/2030)  
 * [Lithium Ion Battery Pack - 3.7V 6600mAh](https://www.adafruit.com/product/353)  
 * [Rugged Metal On/Off Switch with Green LED Ring - 16mm Green On/Off](https://www.adafruit.com/product/482)  
-* [Panel Mount 2.1mm DC barrel jack](https://www.adafruit.com/product/610)  
 * [Black Nylon Screw and Stand-off Set – M2.5 Thread](https://www.adafruit.com/product/3299)  
 * [USB DIY Slim Connector Shell - A-M Plug](https://www.adafruit.com/product/1827)  
 * [Jumper Wires Premium 6" F/F - 20 AWG (10 Pack)](https://www.sparkfun.com/products/11710)  
@@ -1844,10 +1843,9 @@ Consider adding some kind of notification on bootup if the device has been opene
 Consider charging the battery with a wireless charger.  
 
 Also condsider including a space in the box for the AC power supply.  
-My concern is that the charger which plugs into a USB port which would have physical access to the same circuits as the keyboard could be used to capture keystrokes if a keylogger was somehow installed into the power supply.  
-In fact it would even be possible to remotely view what is on the screen if a radio were built into the power supply which was tuned to the frequency of the touch screen.  
+My concern is that it would be possible to remotely view what is on the screen if a radio were built into the power supply which was tuned to the frequency of the touch screen.  
 Finally, I know of one attack on a trezor that captures the private key by reading spikes in the ac power as calculations are performed which use the key.  
-For all these reasons, I think it would be a good idea to provide extra space for the AC power supply in the tamper resistant case to mitigate these attack vectors.  
+For all these reasons, I think it would be a good idea to provide extra space for the AC power supply in the tamper resistant case to mitigate these attack vectors. I could justify making a vesion with a bigger case if people wanted to use a larger screen and a larger keyboard. I might also make space for the hub and adaptors required for cloning the SD cards.  
 
 Even though there is a touch screen, I wonder if it would also be a good idea to provide a space in the secure case for a mouse.  
 My reasons are the same as given above.  
