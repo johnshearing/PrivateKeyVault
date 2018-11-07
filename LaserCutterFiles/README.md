@@ -71,7 +71,7 @@ In the following photos I will show you how to assemble the latches.
 
 <img src="../images/LaserCutMakeImages/06_Stack_Order_x1.jpg">  
 
-In this photo, the lid is upside down on the table a the larger of the two cover pieces is placed under the lid.  
+In this photo, the lid is upside down on the table and the longer of the two cover pieces is placed under the lid.  
 
 <hr>  
 
