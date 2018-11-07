@@ -104,7 +104,7 @@ Now referring the the very first photo in this document and to the wiring diagra
 
 <hr>   
 
-<img src="../images/ReadmeImages/WiringDiagram.jpg">    
+<img src="../images/WiringInstructionImages/WiringDiagram.jpg">    
 
 <hr>  
 
