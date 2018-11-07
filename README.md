@@ -1796,7 +1796,7 @@ Then take several pictures of the container.
 If anyone tries to open the box it will cause the nail polish to break off and rip the paper as it breaks.  
 And if they paint the seams again it will not look the same because sparkly nail polish goes on differently every time you put it on.  
 Simply compare your container with the photos you took when you sealed it up.  
-If the if the paper is torn or if the nail polish looks different then someone has tampered with the box.  
+If the paper is torn or if the nail polish looks different then someone has tampered with the box.  
 In that case do not use the SD card but rather mark it as compromised.  
 Do not use this card unless you have no other choice and then only with extreme caution in a secure location.  
 Then destroy the card after you have recovered the data you need from it.  
