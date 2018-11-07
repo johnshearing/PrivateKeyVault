@@ -4,6 +4,11 @@
 ### For secure offline blockchain transactions and for secure encrypted messaging     
 ### Using qr-codes to pass encrypted files and offline transactions across the airgap  
 
+All you really need is a raspberry pi 2, a raspberry pi camera, an SD card and an AC power supply.  
+You probably have a keyboard, mouse, and monitor laying around already.  
+You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
+[So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality) 
+
 <img src="/images/ReadmeImages/FiredUp.jpg">  
 Does anything a regular computer does and more.  
 
@@ -39,7 +44,7 @@ You can build from scratch using these instructions.
 
 [CorelDraw files are included for laser cutting the case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)  
 You don't need the transparent case for your PrivateKeyVault, but it's nice and it solves a lot of problems.  
-All you really need is a Pi 2, a Pi camera, and an AC adaptor for power.  
+All you really need is a Pi 2, a Pi camera, an SD card, and an AC adaptor for power.  
 You probably have a mouse, screen and keyboard laying around already.   
 You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
 [So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
