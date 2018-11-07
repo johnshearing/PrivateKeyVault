@@ -100,11 +100,22 @@ The black wire will go into the connection marked GND and the yellow wire will g
 Solder the wires in place.  
 Later you can mount the board back onto the lid and cut the length of the wire so that it is just long enough to reach the GND and Bat connections on the smaller boost board. Then you can unmount the boards and solder the wires to the board. Make sure the wires are long enough so that mounting the boost boards back on to the acrylic lid will not be difficult.   
 
-Now referring the the very first photo in this document and to the wiring diagram at the end, solder a 6 inch length of red, black, and grey wire as shown. into the smaller boost board.  The red wire will go to the 5 Volt GPIO pin on the raspberry pi. The black wire will go to a ground pin on the raspberry pi. And the grey wire will go to the lighted switch. All of this is shown in the wiring diagram which is the next and last photo below.  
+Now referring the the very first photo in this document and to the wiring diagram at the end, solder a 6 inch length of red, black, and grey wire as shown. into the smaller boost board.  The red wire will go to the 5 Volt GPIO pin on the raspberry pi. The black wire will go to a ground pin on the raspberry pi. And the grey wire will go to the lighted switch. All of this is shown in the wiring diagram which is the next photo below.  
 
 <hr>   
 
 <img src="../images/WiringInstructionImages/WiringDiagram.jpg">    
+
+This diagram shows all the wires and their terminal points for soldering but looking at the very first photo in this document will give you a better idea of how to run the wires.  
+
+<hr>  
+
+<img src="../images/WiringInstructionImages/KeyboardUSBDiagram.jpg">    
+
+The cable for the keyboard as it came from the vendor was too long to fit in the box. Further more, all that extra length was inconvenient manage when using the device. So I cut the wire to a length of 24 1/4 inches from keyboard to the end of the wire.  
+The above wiring diagram shows the where to solder the wires to a new USB connector [Which can be ordered here]()
+
+The wire measures about .103 inches in diameter so for the next build I will put slots into all the uprights that will make it easier to tuck away the wire. A slot .100 inches wide should provide enough friction to keep the wire in place.  
 
 <hr>  
 
