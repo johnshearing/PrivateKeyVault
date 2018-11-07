@@ -26,3 +26,5 @@ Let's eradicate civil war.
 Let's give every human being planet wide access to their money.  
 Let's turn every human being into a welcome visitor so that they will never need to flee their own countries.  
 Let's show everyone how to make and use [The PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions)  
+
+### What Besides Money Is Blockchain Technology Good For?
