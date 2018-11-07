@@ -40,4 +40,4 @@ Sounds like a job for the raspberry pi:
 * Widely available all over the planet for practically nothing.  
 * Super secure if set up with LUKS full disk encryption according to [the instructions here](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions).
 
-Lets teach everyone how they can use the raspberry pi to take control of their own assets. This is what the [This PrivateKeyVault GitHub repository](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is for.  
+Lets teach everyone how they can use the raspberry pi to take control of their own assets. This is what the [PrivateKeyVault GitHub repository](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is for.  
