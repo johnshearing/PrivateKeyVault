@@ -112,13 +112,12 @@ This diagram shows all the wires and their terminal points for soldering but loo
 
 <img src="../images/WiringInstructionImages/KeyboardUSBDiagram.jpg">    
 
-The cable for the keyboard as it came from the vendor was too long to fit in the box. Furthermore, all that extra length was inconvenient to manage when using the device. So I cut the wire to a length of 24 1/4 inches from keyboard to the end of the wire. The above wiring diagram shows the where to solder the wires to a new USB connector [Which can be ordered here](https://www.adafruit.com/product/1827)  
+The cable for the keyboard as it came from the vendor was too long to fit in the box. Furthermore, all that extra length was inconvenient to manage when using the device. So I cut the wire to a length of 24 1/4 inches from keyboard to the end of the wire. The above wiring diagram shows how to solder the wires to a new USB connector [Which can be ordered here](https://www.adafruit.com/product/1827)  
 
 Next time I make one I will take photos and post them here.  
 
 The wire measures about .103 inches in diameter so for the next build I will put slots into all the uprights that will make it easier to tuck away the wire. A slot .100 inches wide should provide enough friction to keep the wire in place.  
 
 <hr>  
-
 
 [Click here to return to the PrivateKeyVault main page for wiring and software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions) 
