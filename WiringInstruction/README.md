@@ -120,4 +120,24 @@ The wire measures about .103 inches in diameter so for the next build I will put
 
 <hr>  
 
+
+<img src="../images/WiringInstructionImages/CheckingFocus.jpg">    
+
+  
+
+<hr>  
+
+
+
+
+<img src="../images/WiringInstructionImages/AdjustingFocus.jpg">    
+
+  
+
+<hr>  
+
+
+
+
+
 [Click here to return to the PrivateKeyVault main page for wiring and software installation instructions](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---make-instructions) 
