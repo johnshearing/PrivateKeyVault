@@ -473,11 +473,27 @@ If you have been following along then the camera was already enabled using `sudo
  Execute the following to set up the camera focus  
 `raspistill -t 0`  
 Small sharp sissors are good for turning the retaining ring.  
+
+<img src="../images/WiringInstructionImages/CheckingFocus.jpg">    
+After you get
+  
+
+<hr>  
+
+
+
+
+<img src="../images/WiringInstructionImages/AdjustingFocus.jpg">    
+
+  
+
+<hr>  
+
 Some force will be required to break the dots of glue that hold the retaining ring in place.  
 The focus comes set at infinity.  
 Counter clock wise moves the focus closer.  
-I adjusted the focus to about 4 inches.  
-This is because you will be using the camera to take pictures QR-Codes on your phone which will be held by a device about 4 inches from your camera.  
+I adjusted the focus to about 2 3/8 inches as measured from lens to object.  
+This is because you will be using the camera to take pictures QR-Codes on your phone which will be held by a device about 2 3/8 inches from your camera.  
 It might be good to put a tiny dot of super glue on the retaining ring when finished adjusting the focus.  
 This whole process is best done before putting the camera in it's housing.  
 To see what is possible with raspistill execute `raspistill --help`  
