@@ -4,7 +4,6 @@ All you really need is a raspberry pi 2, a raspberry pi camera, an SD card and a
 You probably have a keyboard, mouse, and monitor laying around already.  
 You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
 [So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality) 
-
 <img src="/images/ReadmeImages/FiredUp.jpg">  
 
 ### Featuring LUKS full disk encryption  
