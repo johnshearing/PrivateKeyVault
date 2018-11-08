@@ -897,6 +897,8 @@ The companion video can be found here.
 There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file.  
 
 #### Cloning Your Encrypted SD card Using Only the Raspberry Pi  
+This method works just as well with unencrypted SD cards.  
+
 It is of course possible to use Win 32 Disk Imager to clone your SD card for back up purposes.  
 No one would be able to read the data from the image created.  
 But soon you will have private keys on the encrypted partition. So putting your SD card into an Internet device is dangerous business.  
