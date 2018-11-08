@@ -120,6 +120,16 @@ The wire measures about .103 inches in diameter so for the next build I will put
 
 <hr>  
 
+<img src="../images/ReadmeImages/FiredUp.jpg">  
+
+If you happen to have an SD card already loaded with the Raspbian operating system then you may want to fire up your PrivateKeyVault now. Otherwise this step is covered later. If you have a card with operating system installed then go ahead and put in the SD card and press the power button. It should look something like the picture above.  
+
+**Warning**
+When shutting down: always shut down using the menu option and then wait ten second before pressing off the power button.  
+**If you fail to do this then you may ruin your SD card.**
+
+<hr>  
+
 If you happen to have an SD card already loaded with the Raspbian operating system then you may want to focus the camera now. Otherwise this step is covered later.  
 You will need to focus the camera. This is because you will be using the camera to take pictures and videos of qr-codes on your phone which will be held about 2 3/8 inches from your camera. This really matters if you are using the camera to read qr-codes. You simply will not be able to read qr-codes with your camera if it is not focused for a distance of 2 3/8 inches.  
 
