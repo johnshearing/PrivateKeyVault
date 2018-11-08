@@ -493,9 +493,11 @@ If the dot of glue is present then some force will be required to break the dots
 Keep turning the retaining ring and checking focus until focus is sharp at 2 3/8 inches.  
 When focus is good shut down and power off and then remount the camera at it's normal position.  
 It might be good to put a tiny dot of super glue on the retaining ring when finished adjusting the focus but I haven't tried doing it.  
+To see what is possible with raspistill execute `raspistill --help`  
+
 <hr>  
 
-To see what is possible with raspistill execute `raspistill --help`  
+
 
 Install zbarcam. This is the program that decodes QR code.  
 Run the following command in the pi's terminal window one at a time.  
