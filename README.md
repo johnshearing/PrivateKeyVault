@@ -471,7 +471,7 @@ Don't put any private keys into MyEtherWallet until you have finished working th
 If you have been following along then the camera was already enabled using `sudo raspi-config`  
 Now you will need to focus the camera. This is because you will be using the camera to take pictures and videos of qr-codes on your phone which will be held about 2 3/8 inches from your camera. This really matters if you are using the camera to read qr-codes. You simply will not be able to read qr-codes with your camera if it is not focused for a distance of 2 3/8 inches.  
 
-<img src="../images/ReadmeImages/CheckingFocus.jpg">    
+<img src="images/ReadmeImages/CheckingFocus.jpg">    
 
 You will need to remove the touch screen in order to remove the camera and then temporarily put it back together as show in the photo above in order to focus the camera.  
 
@@ -483,14 +483,14 @@ The next photo shows how to make the adjustment.
 
 <hr>  
 
-<img src="../images/ReadmeImages/AdjustingFocus.jpg">    
+<img src="images/ReadmeImages/AdjustingFocus.jpg">    
 
 The focus comes set at infinity.  
 Small sharp sissors are good for turning the retaining ring.  
 Counter clock wise moves the focus closer.  
 Some of the cameras come from the vendor with a dot of glue on the retaining ring to keep the focus set at infinity.  
 If the dot of glue is present then some force will be required to break the dots of glue that hold the retaining ring in place.  
-Keep turning the retaining ring an checking focus until focus is sharp at 2 3/8 inches.  
+Keep turning the retaining ring and checking focus until focus is sharp at 2 3/8 inches.  
 When focus is good shut down and power off and then remount the camera at it's normal position.  
 It might be good to put a tiny dot of super glue on the retaining ring when finished adjusting the focus but I haven't tried doing it.  
 <hr>  
