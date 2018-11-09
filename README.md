@@ -1857,6 +1857,11 @@ Full Disk Encryption makes the PrivateKeyVault suitable for cold storage of priv
 
 ### Todo List   
 
+#### Phone App
+Make phone app that from OpenCV 3 python app in ecryption repository that decodes a qr-code parade back into text.  
+This text file will be smaller and therefore easier to send via Internet.  
+Although posting the qr-videos on YouTube is also an option.  
+
 #### Hardware Items Todo  
 Install a momentary **Scan** button on the face of the brick.  
 Pressing the button starts the scan.  
@@ -1879,6 +1884,8 @@ My reasons are the same as given above.
 Consider the Raspberry Pi Module 3 for it's smaller size in future builds.   
 
 #### OS Software Items To Add Next Time    
+
+Turn the camera image 90 degrees counter-clockwise.  
 
 Make one button show up at a time for scan start and scan stop such that scan stop replaces scan start while the scan process is running and scan start replaces scan stop when the scan process has stopped. This will save on screen real estate and helps the user understand if the scan process is running or not.   
 
