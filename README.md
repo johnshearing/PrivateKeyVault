@@ -1,11 +1,6 @@
 # PrivateKeyVault - [Click for Open Source Make Instructions](https://github.com/johnshearing/PrivateKeyVault#contents)  
 ### Airgapped raspberry pi computer with touch screen and camera  
-All you really need is a raspberry pi 2, a raspberry pi camera, an SD card and an AC power supply.  
-You probably have a keyboard, mouse, and monitor laying around already.  
-You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
-[So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality) 
 <img src="/images/ReadmeImages/FiredUp.jpg">  
-
 ### Featuring LUKS full disk encryption  
 ### For secure offline blockchain transactions and for secure encrypted messaging     
 ### Using qr-codes to pass encrypted files and offline transactions across the airgap  
@@ -22,6 +17,13 @@ Use it to:
 * Securely read and edit all types of files behind the airgap where remote viewing and key logging is not possible.  
 * Send GPG encrypted files and digitally signed documents across the airgap to other devices via qr-codes.  
 * Crypto-Journalism: Create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonomus if he or she so choses. Protected sources. No more fake news.  
+
+All you really need is a raspberry pi 2, a raspberry pi camera, an SD card and an AC power supply.  
+You probably have a keyboard, mouse, and monitor laying around already.  
+You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
+[So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality) 
+
+Or continue reading if you would like to build the device as it is shown above.  
 
 <hr>  
 
