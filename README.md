@@ -478,7 +478,7 @@ Now you will need to focus the camera. This is because you will be using the cam
 You will need to remove the touch screen in order to remove the camera and then temporarily put it back together as show in the photo above in order to focus the camera.  
 
 When you have the Vault powered up again in this new configuration execute the following command at the terminal window to set up the camera focus  
-`raspistill -t 0`  
+`raspistill -t 0 --rotation 270`  
 Now the touchscreen will show what the camera sees.  
 Adjust the focus to about 2 3/8 inches as measured from lens to object.  
 The next photo shows how to make the adjustment.  
