@@ -24,7 +24,7 @@ You probably have a keyboard, mouse, and monitor laying around already.
 You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
 [So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality) 
 
-Or continue reading if you would like to build the device as it is shown above.  
+Or continue reading if you would like to build the device as it is shown here.  
 
 <hr>  
 
