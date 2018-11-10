@@ -1524,7 +1524,17 @@ ssb   2048R/0199AA57 2018-04-15
   * Never show anyone your private key.  
   * The menu does this for you but it sends the output to the file you specify rather than to the screen.  
   * Let's try it.  
+  * Type `menu` to open the PrivateKeyVault menu application.  
+  * Highligh the menu option which reads `Export a private key to a text file` and press the **Enter** key.  
+  * After clicking through some warning dialog boxes you will be prompted to select a directory where the file containing your private key will be saved to. You can create a new folder if you want to. I created a folder called **privatekeys**.  
+  * Then you will be prompted for the name of the file. I entered **bobs_private_key.txt**.  
+  * Then you will be prompted for the unique id or email address associated with the private key that you wish to export.  
+  * Enter **bob@gmail.com** and press the **Enter** button.  
+  * You will see a message on the screen telling you the name of the new file and where it has been saved to.  
+  
+* Now you may wish to look at the file where your private key has been exported.  
   * 
+  
 
 
 Normally, private keys should never leave your PrivateKeyVault.  
