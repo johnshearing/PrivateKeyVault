@@ -1496,33 +1496,36 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
   * You don't have to type constantly in order for the process to work but I am sure it's a good idea to random characters and move the mouse a lot.  
   * When the pi is done generating you public/private keypair it will show you some information about the keypair and then it will prompt you to press the **Enter** key to continue.  
   *  
-  * After Bob's keys have been generated you may want to see information which helps you use his private keys.  
+* After Bob's keys have been generated you may want to see information which helps you use his private keys.  
   * You could enter the following command at the terminal window `gpg --list-secret-keys` but the menu app will do this for you.  
   * Just highlight the menu option which says: **List private keys** and press the **Enter** key.  
   * You will be prompted to enter a unique identifier like an email address but if you just hit the **back space** key to clear out the field then GPG will return information about all the private keys on your keyring. So far there is only one.  
-The output should look something like the following:  
-We only see information about one secret key because so far we only have one key on the secret key ring.  
-  * ```
+  * The output should look something like the output shown below:  
+  * The top line indicates the location and name of the secret keyring file on your pi.  
+  * The **sec** line shows the key size : 2048, the key type : r for RSA, the UniqueID : 6E477330, and the creation date.  
+  * The UniqueID is used in GPG commands to refer to that specific private key.  
+  * The **uid** line shows Bob's real name, Bob's comment, and Bob's email address.  
+  * The email address can also be used to uniquely identify Bob's keys when making gpg commands.  
+  * The **ssb** line shows the size, type, and unique identifier of Bob's subkey. Subkeys are cool because you can have as many subkeys associated with your private key as you want but you can revoke them individually without harming your ability to use your other subkeys or the originating private key.  
+  * We only see information about one secret key because so far we only have one key on the secret key ring.  
+```
 /home/pi/.gnupg/secring.gpg
 ---------------------------
 sec   2048R/6E477330 2018-04-15
 uid                  Bob (Bob's comment) <bob@gmail.com>
 ssb   2048R/0199AA57 2018-04-15 
 ```  
-  * The top line indicates the location and name of the secret keyring file on your pi.  
-The **sec** line shows the key size : 2048, the key type : r for RSA, the UniqueID : 6E477330, and the creation date.  
-The UniqueID is used in GPG commands to refer to that specific private key.  
-The **uid** line shows Bob's real name, Bob's comment, and Bob's email address.  
-The email address can also be used to uniquely identify Bob's keys when making gpg commands.  
-The **ssb** line shows the size, type, and unique identifier of Bob's subkey.  
-Subkeys are cool because you can have as many subkeys associated with your private key as you want but you can revoke them individually without harming your ability to use your other subkeys or the originating private key.  
 
+* Lets take a look at the private key.  
+  * To see Bob's private key you could the execute the following command at the terminal window:  
+  * `gpg2 --export-secret-key --armor bob@gmail.com`  
+  * You should see a big block of text on the pi's touch screen.  
+  * That's the private key.  
+  * Never show anyone your private key.  
+  * The menu does this for you but it sends the output to the file you specify rather than to the screen.  
+  * Let's try it.  
+  * 
 
-If you want to see what Bob's private key actually looks like the execute the following command:  
-gpg2 --export-secret-key --armor bob@gmail.com  
-You should see a big block of text on the pi's touch screen.  
-That's the private key.  
-Never show anyone your private key.  
 
 Normally, private keys should never leave your PrivateKeyVault.  
 Although you may want to export your private keys to a file so that you can back them up on a thumb drive or to move them to another machine.  
