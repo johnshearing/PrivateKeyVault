@@ -1407,12 +1407,10 @@ The only way to delete data on an SD card is to destroy the card with a hot flam
 [This Video](https://www.youtube.com/channel/UCQlQRc9muSqPZIXSfugN43A) shows how an offline transaction is made on the Ethereum blockchain using the first prototype of this device. The procedure for making an offline transaction using the newer device is still the same so have a look if you want to see how an offline transaction is made.  
 
 #### Sending an Encrypted Message  
-This section of instructions is still under construction.  
-Also, I will be covering all of this in a video tutorial shortly.  
-Until then, everything works so try playing around in the **menu utility**  
-Just open a terminal window and type `menu`  
+Also, I will be covering all of this material in a video tutorial shortly.  
+What is written below is the script that the video will follow.  
+So it serves as an written tutorial as well. 
 
-Below is the start of the tutorial: 
 Now lets try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
 Execute the following command at the terminal window:  
@@ -1517,12 +1515,18 @@ ssb   2048R/0199AA57 2018-04-15
 ```  
 
 * Lets take a look at the private key.  
-  * To see Bob's private key you could the execute the following command at the terminal window:  
+  * The menu app does this for you but you could the execute the following command at the terminal window to see the private key.
   * `gpg2 --export-secret-key --armor bob@gmail.com`  
-  * You should see a big block of text on the pi's touch screen.  
+  * You would see a big block of text on the pi's touch screen.  
   * That's the private key.  
   * Never show anyone your private key.  
-  * The menu does this for you but it sends the output to the file you specify rather than to the screen.  
+  * Here is the command to export Bob's private key to a file:  
+   `gpg --export-secret-key --armor --output BobsPrivateKeyFile.asc bob@gmail.com`  
+  * **gpg --export-secret-key** is the command.  
+  * **--armor** specifies that base64 encoding will be used. That ensures that all characters will be unambiguous and easy to read.  
+  * **--output BobsPrivateKeyFile.asc** specifies what name you wish to give the file, and  
+  * **bob@gmail.com** specifies which private key on the keyring you wish to export.     
+  * The menu does this all for you and it sends the output to the file you specify just like the command above, but it's easier to use. 
   * Let's try it.  
   * Type `menu` to open the PrivateKeyVault menu application.  
   * Highligh the menu option which reads `Export a private key to a text file` and press the **Enter** key.  
@@ -1531,107 +1535,70 @@ ssb   2048R/0199AA57 2018-04-15
   * Then you will be prompted for the unique id or email address associated with the private key that you wish to export.  
   * Enter **bob@gmail.com** and press the **Enter** button.  
   * You will see a message on the screen telling you the name of the new file and where it has been saved to.  
+  * Press the **Enter** button to return to the menu.  
   
 * Now you may wish to look at the file where your private key has been exported.  
-  * 
+  * Highlight the menu option **Read or write a message** and press the **Enter** key.  
+  * Navigate to the folder where the file is stored and then click on it.  
+  * The leafpad text editor will open up and show you the copy of Bob's private key which was exported to a text file.  
+  * Close the text editor when you have finished looking at the private key and you will be returned to the menu application. 
+  * Normally, private keys should never leave your PrivateKeyVault.  
+  * Although you may want to export your private keys to a file so that you can back them up or to move them to another machine.  
+  * Rather than exporting your private keys, I would just clone the encrypted SD card and get a backup of everything.  
   
-
-
-Normally, private keys should never leave your PrivateKeyVault.  
-Although you may want to export your private keys to a file so that you can back them up on a thumb drive or to move them to another machine.  
-Here is the command to export Bob's private key to a file:  
-`gpg --export-secret-key --armor --output BobsPrivateKeyFile.asc bob@gmail.com`  
-**gpg --export-secret-key** is the command.  
-**--armor** specifies that base64 encoding will be used. That ensures that all characters will be unambiguous and easy to read.  
-**--output BobsPrivateKeyFile.asc** specifies what name you wish to give the file, and  
-**bob@gmail.com** specifies which private key on the keyring you wish to export.  
-
-Your public keys are meant to be shared with everyone.  
-Public keys are used by others to encrypt documents that can only be decrypted by you using your private key.  
-If you want to see information about your public keys execute the following command.  
-`gpg --list-keys`  
-The output should look something like the following:  
+* Your public keys are meant to be shared with everyone.  
+  * Public keys are used by others to encrypt documents that can only be decrypted by you using your private key.  
+  * The menu app makes this easy but if you wanted to get information about your public keys from the command line you could execute the following command.  
+  * `gpg --list-keys`  
+  * The output below provides information about keys on the public keyring exactly as explained in the section above for keys on the private key ring.  
 ```
 /home/pi/.gnupg/pubring.gpg
 ---------------------------
 pub   2048R/6E477330 2018-04-15
 uid       [ultimate] Bob (Bob's Comment) <bob@gmail.com>
 sub   2048R/0199AA57 2018-04-15
-```
-The output above provides information about keys on the public keyring exactly as explained in the section above for keys on the private key ring.  
+```  
+* To do this using the menu app, just highlight the menu option that says **List public keys** and press the **Enter** key.  
 
-If you wish to see a finger print for a particular public key execute the following command.  
-`gpg --fingerprint bob@gmail.com`  
-The output should look something like the following:  
+* If you wish to see a finger print for a particular public key from the command line then execute the following command.  
+  * `gpg --fingerprint bob@gmail.com`  
+  * The output is shown below.   
+  * If the email address were omitted from the command then fingerprints for all public keys on your keyring would be shown. That shows one way that Unique IDs are used to specify a particular key when making GPG commands. The fingerprint is used to verify that a public key which Alice receives from Bob has not been switched out by Mallory. If Mallory manages to intercept Bob's public key on it's way to Alice and replaces it with his own, then Mallory will be able to decrypt Alice's secret message instead of Bob. To prevent this attack, Bob will send the fingerprint of his public key to Alice by a method different from that used to send the public key. Then after Alice imports Bob's public key onto her keyring she will check the finger print produced by her PrivateKeyVault against the finger print that Bob sent and check that they are the same. You will see how a finger print is used to prevent this attack right after we see how Bob sends his private key to Alice.    
+  * Below is the output of the fingerprint command.  
 ```
 pub   2048R/6E477330 2018-04-15
       Key fingerprint = DE46 D08E 0666 0BD7 B010  CDEB C708 CD56 6E47 7330
 uid       [ultimate] Bob (Bob's comment) <bob@gmail.com>
 sub   2048R/0199AA57 2018-04-15
 ```  
-If the email address were omitted from the command then fingerprints for all public keys would be shown.  
-That shows one way that Unique IDs are used to specify a particular key when making GPG commands.  
-The finger print is used to verify that a public key which Alice receives from Bob has not been switched out by Mallory.  
-If Mallory manages to intercept Bob's public key on it's way to Alice and replaces it with his own, then Mallory will be able to decrypt Alice's secret message instead of Bob. You will see how a finger print is used to prevent this right after we see how Bob sends his private key to Alice.  
+* To see the fingerprint using the menu app, just highlight the menu option that says **Show fingerprints for public keys** and press the **Enter** key.  
 
-Now Bob needs to get his public key to Alice.  
-* First Bob needs to get his public key out of the public keyring file and into a file of it's own so he can send it to Alice.  
-  * Make a directory or folder to hold the key file that Bob needs.  
-    * Execute the following command for Bob:
-    * `mkdir keys`  
-  * Now move to the **keys** directory.  
-    * Execute the following command:  
-    * `cd keys`  
-  * Next Bob would execute the following command to make a file containing his public key.  
-    * Execute the command for Bob.  
-    * `gpg --export --armor bob@gmail.com > bob@gmail.com_pubkey.asc`  
-  * You will not see any output but there will be a new file in the keys directory called `bob@gmail.com_pubkey.asc`  
-    * Lets see if it's there.
-    * Execute the following command to see what is in your current directory:  
-    * `ls`  
-  * You should see the following output:
-    * `bob@gmail.com_pubkey.asc`  
-    * So the file is there. Let's see what's in it:  
-  * Lets look at the contents of the file.  
-    * Execute the following command to open the file with the leafpad text editor.  
-    * `leafpad bob@gmail.com_pubkey.asc`  
-  * The output will look something like the following block of characters.  
-    * That's what is in the `bob@gmail.com_pubkey.asc` file.  
-    * If Bob can get this public key file to Alice unchanged then Alice can use it to make an encrypted message which explains her secrets for making cakes which are super moist and delicious. And because she is using Bob's public key to encrypt her message, no one except Bob will be able to decrypt the message because Bob is the only person in the world who has access to the private key which matches the public key he sent to Alice.  
+* Now Bob needs to get his public key to Alice.  
+  * First Bob needs to get his public key out of the public keyring file and into a file of it's own so he can send it to Alice.  
+  * I am sure you guessed this can be done at the command line.  
+  * The most useful GPG commands are listed at the end of this document and you can learn how to use them all by entering the following command into your favorite command line interpreter.  
+  * `man gpg`  
+  * The following links are good online resources on how to use gpg:  
+  * [Super Short Quick Start Document](https://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)  
+  * [30 Minute QuickStart - YouTube](https://youtu.be/ZSa-d_9O5DA)  
+  * [In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
+  * [Keeping It At The Console - Input to GPG from Stdin / GPG Output to Stdout](https://stackoverflow.com/questions/5504721/how-do-i-encrypt-plaintext-with-gnupg)  
+  * For the rest of this tutorial however, we will work exclusively with PrivateKeyVault menu application because it's easy to use and because you don't have to remember all the commands.  
+  * Highlight the menu option **Export a public key to a text file** and press the **Enter** key.  
+  * Now press the **Create Folder** button.  
+  * You will be prompted to type in the name of the new folder.  
+  * Type in **public_keys** and press the **Enter** key.  
+  * Press the **Enter** key again and you will be prompted to input an file name for Bob's public key file.  
+  * I entered **bobs_public_key.txt**.  
+  * Next you will be prompted to enter the unique id or email address associated with Bob's public key.  
+  * Enter **bob@gmail.com**  
   
-```
------BEGIN PGP PUBLIC KEY BLOCK-----
-Version: GnuPG v1
-
-mQENBFrTU3ABCAC5YbcSE/39K3xMTR7jjcy7fEim58P4xJBs4vcU7jXXDM+Rj1hl
-YZi7C/7B0lqeoYduac/XgEU7bXPQOdUmtOnJh2tlQZBnGzIuE9TqA4oyC38d05LI
-XuwKsdb5c5Ev5l5nhnoRIyWlNQMroAOcqsE+05riz/o2nV4aeal5gvpXvo+Br+wn
-RIeBqUPcLg8ArHVUj0PFsEq5VY0ZFU0nG6A0tUsARRZn8pDoqdtNNYWznY+OzVxY
-jODNHdIdxCcIfXlXzZ1afCp/70dYeWPNMbYv/8ZAipIsnzFYyfg8vvmKxsknx2qE
-7Y5qRKhTFeTmWaS00lS7p5rmRAQLxJIuLuJbABEBAAG0QkpvaG4gUiBTaGVhcmlu
-ZyAod3d3LlByaXZhdGVLZXlWYXVsdC5jb20pIDxqb2huc2hlYXJpbmdAZ21haWwu
-Y29tPokBOQQTAQgAIwUCWtNTcAIbAwcLCQgHAwIBBhUIAgkKCwQWAgMBAh4BAheA
-AAoJEMcIzVZuR3Mwu28H/ja0tnbyVU2ZBNXnkyh5ou36dD3udvCZ7BgdUgKGxeOJ
-I+Rzkqt3+sqGz73pkK/VKcuW0nZcffFr7VwjTTM8FJ8QsyqaoHlmOB/hKDuLxRoU
-sg/JhGUGp99lvoVQlf+F3lbn0308NUUvjEbsUld8yur4mIeaQ1mEqsTn/OrGCTK9
-o/7ybOllinJoGs2t27aSwrgfy8qGln2aVh+ln3SmkObroCGJ5a0mP/0+2QLlFlEd
-OQFLrAh6bY9ut1qiAw/E1aREqPTNQORgmY7MqgFD/qfidGts4RqiVgF7QbdNPZcO
-5XsfcRgay+b3LPgJBGcaaVru+YMQpYuQMIur6q47P1+5AQ0EWtNTcAEIAON7wT31
-Ub7wEC7FyC94cdlf7dzHGiZkJHaR60q5BFtNFgKN5GQuco/ndY5baTycOJ00K6in
-JexRxGATZw7KNJ0RYLpZlu5Fpsv7HN462aqWd+PrejfmZ9vhEtP3GqikWr5aSsa0
-OXcJRhepGlud9lZ4gvb/4jlb+T6+7sGgtFxuYP3t6bj+UFGxdUivWDSZgih9tSnv
-SEFHqNPGo5uCifE8NJf3oAYZ9nB1VqY1A8l2354KLe6OCSpoVU5Pvi0hK5X77DuN
-9JSYMLML709tbwL8ue1hmItFez0fPqqVJLzqOhCZCdRxNlxcA7V8i5BtwTA3ftdi
-LovMRFxGensotzcAEQEAAYkBHwQYAQgACQUCWtNTcAIbDAAKCRDHCM1WbkdzMCNR
-B/9eTWvbk5xWQfjmJzY9rk/2qbmDr3GCiAUqxPq5AlmIK57jJAr//8iO+cA26jXN
-4Kqbda0sP6iCNVMH/vta84V60jhQ0vtuVplmrcnttj05DS6x0HT0lAtQ0S04Ajqa
-7YknDkHEYpSerbPoIwFnX6Og+3yeBpR75XwzNQnvdXFMCIqra3e5EgeS3oJi7d4V
-aUmOVrmq9EwHDoIa4SKp5dM95EAjTHandnTmbnK9Ujkm7Vp0sFWKsm5qSn3sh5JM
-qVCLloH9MWosANCNAN0X6/H/hjjfhb5/BLriJMUDanwokFNLm6xidBR7YSXlfb+G
-T4AB3pe9QWtei872ZUpnb2AT
-=mESj
------END PGP PUBLIC KEY BLOCK-----
-```
+ * You can look at the key if you want to the same way we looked at bob's private key.  
+   * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
+   * Navigate to the **public_keys** directory and then click on the file named **bobs_public_key**.  
+   * The leafpad text editor will open and Bob's public key will be displayed.  
+   * Pressing **CTRL-q** will close the text editor.  
+   
 
 Now we will see how to get this public key file out of Bob's PrivateKeyVault, email it to Alice, and get it into her Vault without ever connecting the Vaults to any other devices. They will not be using a thumbdrive, no WiFi, no Bluetooth, no ethernet cable, no USB cable - no connections of any kind to other devices. By preserving the airgap during the transfer process we prevent Mallory from gaining access to the PrivateKeyVaults. So he cannot use spyware to read how Alice makes her cakes so super moist and delicious.  
 * To do all this we will start by outputing an entire text file to the touch screen in the form of QR-Codes.  
@@ -1707,19 +1674,6 @@ If you want to look at a png file:
 
 Check if two files are the same:  
 `diff /home/pi/test/gem4.png ./gem4.png`    
-
-Learn more about GPG:  
-`man gpg`  
-
-#### General Information About Encrypted Messaging  
-Encrypted messaging comes with the raspbian OS. So you have it already.  
-To use it, use the command line tool `gpg` or `gpg2`  
-To read about these tools on your raspberry pi execute the command `man gpg` or `man gpg2`  
-The following links are good online resources on how to use gpg:  
-[Super Short Quick Start Document](https://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)  
-[30 Minute QuickStart - YouTube](https://youtu.be/ZSa-d_9O5DA)  
-[In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
-[Keeping It At The Console - Input to GPG from Stdin / GPG Output to Stdout](https://stackoverflow.com/questions/5504721/how-do-i-encrypt-plaintext-with-gnupg)  
 
 Digital Signatures are provided by MyEtherWallet as well as by GPG.  
 We will go over how to use all this in video tutorials.  
