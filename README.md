@@ -1412,6 +1412,7 @@ Also, I will be covering all of this in a video tutorial shortly.
 Until then, everything works so try playing around in the **menu utility**  
 Just open a terminal window and type `menu`  
 
+Below is the start of the tutorial: 
 Now lets try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
 Execute the following command at the terminal window:  
@@ -1453,61 +1454,69 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
 ```  
 
 * First Bob needs to make a public/private keypair:   
-  * [Here is a video which shows how it's done.](https://youtu.be/ZraIkHqpxzU?t=7m4s)  
-  * At the command line Bob enters the following command: 
-  * Execute the command for Bob on your device.  
-  * `gpg --gen-key`  
-  * Bob be prompted for the type of key he wants.  
+  * [Here is a video which shows how it's done from the command line.](https://youtu.be/ZraIkHqpxzU?t=7m4s)  
+  * I made an application to help you with encryption tasks so that you do not have to do all this at the command line.  
+  * The application is already installed if you have been following along.  
+  * Open the terminal window and execute the following command:  
+  * `menu`  
+  * You should see a menu of things you can do with your PrivateKeyVault.  
+  * Scroll down the menu until the item **Generate a Public/Private key pair** is highlighted and press the enter button.  
+  * You will be prompted for the type of key you want.  
   * Select: (1) RSA and RSA (Default)  
-  *   
-  * Next Bob will be prompted to select the length of the keys.  
+  * Next you will be prompted to select the length of the keys.  
   * The larger the key size, the harder the encryption is to crack assuming you have a strong password.  
   * Unfortunately, larger key sizes take longer to generate and to use.  
   * The default (2048) is a good compromise.  
   * Select the default for Bob.  
   *   
-  * Next Bob will be prompted for the amount of time before the key expires.  
+  * Next you will be prompted for the amount of time before the key expires.  
   * Select the default (0) on Bob's behalf to continue.  
   * By selecting **0** you specify that Bob's key will never expire.  
   * You will be asked to confirm your selection:  
   * Press **y** for yes and then press the enter button.  
   *   
-  * Next Bob will be asked for **Bob's Name**, **Bob's Email Address**, and a **Comment**.  
+  * Next you will be asked for **Bob's Name**, **Bob's Email Address**, and a **Comment**.  
   * These will be used to make a unique identifyer for Bob's key.  
-  * Enter **Bob** for the Name, **bob@gmail.com** for the email address, and **Bob's GPG keypair** for the comment.  
-  * Follow the prompts to continue.  
+  * Since the name must be at least five characters long, we will enter **Robert** when asked for Bob's name.  
+  * Enter **Robert** for the Name, **bob@gmail.com** for the email address, and **Bob's GPG keypair** for the comment.  
+  * If you are satisfied that all is correct then input the capital letter O and press **Enter** to continue.  
+  * Otherwise follow the prompts to make any required changes.  
   * Don't worry if you get a message stating that the GPG agent is not available.  
   * It doesn't matter.  
   *  
   * Next Bob will be prompted for the password to use when accessing his private key.  
   * Make a good one for Bob, or what's the point of doing all this.  
-  * Make it at least 10 completely random characters using upper and lower case letters, numbers, and special characters.  
+  * Use at least 10 completely random characters which might include upper and lower case letters, numbers, and special characters.  
   * After you enter Bob's password, you will be prompted to enter it again to be sure that you typed it correctly.  
   *  
   * Then the pi will start doing the work of creating Bob's public/private key pair.  
   * The pi will ask you to move your mouse and type randomly on your keyboard to provide a source of randomness for the key generation process.  
   * It took about 5 minutes for my pi 2 to generate the key pairs.  
   * Be patient as you provide random input.  
-  
-After Bob's keys have been generated you may want to see information which helps you access his private keys.  
-Enter the following command:  
-`gpg --list-secret-keys`  
+  * You don't have to type constantly in order for the process to work but I am sure it's a good idea to random characters and move the mouse a lot.  
+  * When the pi is done generating you public/private keypair it will show you some information about the keypair and then it will prompt you to press the **Enter** key to continue.  
+  *  
+  * After Bob's keys have been generated you may want to see information which helps you use his private keys.  
+  * You could enter the following command at the terminal window `gpg --list-secret-keys` but the menu app will do this for you.  
+  * Just highlight the menu option which says: **List private keys** and press the **Enter** key.  
+  * You will be prompted to enter a unique identifier like an email address but if you just hit the **back space** key to clear out the field then GPG will return information about all the private keys on your keyring. So far there is only one.  
 The output should look something like the following:  
 We only see information about one secret key because so far we only have one key on the secret key ring.  
-```
+  * ```
 /home/pi/.gnupg/secring.gpg
 ---------------------------
 sec   2048R/6E477330 2018-04-15
 uid                  Bob (Bob's comment) <bob@gmail.com>
 ssb   2048R/0199AA57 2018-04-15 
 ```  
-The top line indicates the location and name of the secret keyring file on your pi.  
+  * The top line indicates the location and name of the secret keyring file on your pi.  
 The **sec** line shows the key size : 2048, the key type : r for RSA, the UniqueID : 6E477330, and the creation date.  
 The UniqueID is used in GPG commands to refer to that specific private key.  
 The **uid** line shows Bob's real name, Bob's comment, and Bob's email address.  
 The email address can also be used to uniquely identify Bob's keys when making gpg commands.  
 The **ssb** line shows the size, type, and unique identifier of Bob's subkey.  
 Subkeys are cool because you can have as many subkeys associated with your private key as you want but you can revoke them individually without harming your ability to use your other subkeys or the originating private key.  
+
 
 If you want to see what Bob's private key actually looks like the execute the following command:  
 gpg2 --export-secret-key --armor bob@gmail.com  
@@ -1856,6 +1865,9 @@ Using GPG message encryption along with GPG or MEW digital signatures makes the 
 Full Disk Encryption makes the PrivateKeyVault suitable for cold storage of private keys, password management, and for storage of private files.  
 
 ### Todo List   
+
+#### SD card
+The Unencrypted setup SD card needs to have the updated README.md and must be updated from the encrypted messaging repository.   
 
 #### Phone App
 Make phone app that from OpenCV 3 python app in ecryption repository that decodes a qr-code parade back into text.  
