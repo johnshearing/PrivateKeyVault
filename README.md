@@ -18,7 +18,8 @@ Use it to:
 * Securely read and edit all types of files behind the airgap where remote viewing and key logging is not possible.  
 * Send GPG encrypted files and digitally signed documents across the airgap to other devices via qr-codes.  
 * Crypto-Journalism: Create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonomus if he or she so choses. Protected sources. No more fake news.  
-[What's In It For You?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-you)  [What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)  [What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
+
+[What's In It For You?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-you)-----[What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)-----[What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
 
 All you really need is a raspberry pi 2, a raspberry pi camera, an SD card and an AC power supply.  
 You probably have a keyboard, mouse, and monitor laying around already.  
