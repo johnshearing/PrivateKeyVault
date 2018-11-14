@@ -52,7 +52,7 @@ Flipping a coin is the method I use. It is just one of many fully decentralized 
 * Heads, heads, heads, head, would be an "F"  
 * You get the idea.  
 
-No government or individual can put a back door into this method. If you use this method, no one can ever guess your private key. An attacker might still be able force you to hand it over, but he or she would never be able to guess it using a dictionary attack nor by guessing personal information about you.  
+No government or individual can put a back door into this method. If you use this method, no one can ever guess your private key. An oppressive government or an attacker might still be able force you to hand it over, but he, she, or it would never be able to guess the key using a dictionary attack nor by guessing personal information about you.  
 Only a decentralized method of generating a private key should be used for large amounts of money and the Nano Ledger does not permit you to generate your own private key using a method known to be truly random. The Nano Ledger and other devices which use a pseudo random algorithm to generate private keys are a central point of attack.  
 
 The PrivateKeyVault allows individuals to select any hexadecimal number as a private key which decentralizes the most important aspect of any blockchain.  
@@ -61,9 +61,9 @@ The second huge problem with the Nano Ledger hardware wallet is that it cannot b
 
 [Click here to find out more about these limitations](https://www.reddit.com/r/ethereumnoobies/comments/7hebj8/ledger_nano_s_multiple_eth_wallets/)  
 
-How can we expect organizations, governments, corporations, and financial institutions to use blockchain technology when there are is no widely available method to securely manage multiple accounts. The PrivateKeyVault is meant to clear this bottleneck and make blockchain technology accessable to organizations, governments, corporations and financial institutions. Getting these entities on a public blockchain using the PrivateKeyVault is how we will make them transparent and accountable.  
+How can we expect organizations, governments, corporations, and financial institutions to use blockchain technology when there is no widely available method to securely manage multiple accounts. The PrivateKeyVault is meant to clear this bottleneck and make blockchain technology accessable to organizations, governments, corporations and financial institutions. Getting these entities on a public blockchain using the PrivateKeyVault is how we will make them transparent and accountable.  
 
-Remember, the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is not a thing that someone is selling. It is rather a way of working that is freely accessable to anyone with electricity and an Internet connection. If we work together we can get everyone on the blockchain by sharing the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions).  
+Remember, the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is not a thing that someone is selling. It is rather a way of working that is freely accessible to anyone with electricity and an Internet connection. If we work together we can get everyone onto the blockchain by sharing the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions).  
 
 
     
