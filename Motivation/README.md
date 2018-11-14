@@ -63,6 +63,8 @@ The PrivateKeyVault allows individuals to select any hexadecimal number as a pri
 
 How can we expect organizations, governments, corporations, and financial institutions to use blockchain technology when there are is no widely available method to securely manage multiple accounts. The PrivateKeyVault is meant to clear this bottleneck and make blockchain technology accessable to organizations, governments, corporations and financial institutions. Getting these entities on a public blockchain using the PrivateKeyVault is how we will make them transparent and accountable.  
 
-Remember, the PrivateKeyVault is not a thing that someone is selling. It is rather a way of working that is freely accessable to anyone with electricity and an Internet connection. Let's share it with everyone.  
+Remember, the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is not a thing that someone is selling. It is rather a way of working that is freely accessable to anyone with electricity and an Internet connection. Let's share it with everyone.  
+
+
     
     
