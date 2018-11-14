@@ -1495,7 +1495,7 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
   * The pi will ask you to move your mouse and type randomly on your keyboard to provide a source of randomness for the key generation process.  
   * It took about 5 minutes for my pi 2 to generate the key pairs.  
   * Be patient as you provide random input.  
-  * You don't have to type constantly in order for the process to work but I am sure it's a good idea to random characters and move the mouse a lot.  
+  * You don't have to type constantly in order for the process to work but I am sure it's a good idea to type random characters and to move your finger around the touch screen.  
   * When the pi is done generating you public/private keypair it will show you some information about the keypair and then it will prompt you to press the **Enter** key to continue.  
   *  
 * After Bob's keys have been generated you may want to see information which helps you use his private keys.  
