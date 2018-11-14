@@ -57,7 +57,7 @@ Only a decentralized method of generating a private key should be used for large
 
 The PrivateKeyVault allows individuals to select any hexadecimal number as a private key which decentralizes the most important aspect of any blockchain.  
 
-The second huge problem with the Nano Ledger hardware wallet is that it cannot be used by governments, corporations, financial institutions where a large number of accounts must be managed. While the nano does allow for multiple public addresses, they are all tied to a master private key. So if the pass phrase is compromised then all the accounts are accessible. Furthermore multiple accounts are hard to manage with only two buttons on the nano.  
+The second huge problem with the Nano Ledger hardware wallet is that it cannot be used by governments, corporations, and financial institutions where a large number of accounts must be managed. While the nano does allow for multiple public addresses, they are all tied to a master private key. So if the pass phrase is compromised then all the accounts are accessible. Furthermore multiple accounts are very hard to manage with only two buttons on the nano.  
 
 [Click here to find out more about these limitations](https://www.reddit.com/r/ethereumnoobies/comments/7hebj8/ledger_nano_s_multiple_eth_wallets/)  
 
