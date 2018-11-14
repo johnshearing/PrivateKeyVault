@@ -75,7 +75,7 @@ Contact johnshearing@gmail.com or gshearing@radioactiverf.com
 Now that people all across the world can set up their own accounts on a super secure device in their own homes or businesses when they are alone, there is never any doubt that only they can command their accounts and that their accounts are safe from hackers thieves and oppressive governments.  
 
 ## Contents   
-Motivation  
+[Motivation](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md)  
 * By providing a single secure device for managing secrets, I hope to facilitate wide scale adoption of blockchain technology.  
 * [What's In It For You?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-you)  
 * [What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)  
