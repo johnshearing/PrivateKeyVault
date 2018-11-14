@@ -63,7 +63,7 @@ The second huge problem with the Nano Ledger hardware wallet is that it cannot b
 
 How can we expect organizations, governments, corporations, and financial institutions to use blockchain technology when there is no widely available method to securely manage multiple accounts. The PrivateKeyVault is meant to clear this bottleneck and make blockchain technology accessable to organizations, governments, corporations and financial institutions. Getting these entities on a public blockchain using the PrivateKeyVault is how we will make them transparent and accountable.  
 
-Remember, the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is not a thing that someone is selling. It is rather a way of working that is freely accessible to anyone with electricity and an Internet connection. If we work together we can get everyone onto the blockchain by sharing the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions).  
+Remember, the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is not a thing that someone is selling. It is rather a way of working that is freely accessible to anyone with electricity and an Internet connection. If we work together we can get everyone onto a public blockchain by sharing the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions).  
 
 
     
