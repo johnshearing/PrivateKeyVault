@@ -1589,6 +1589,7 @@ sub   2048R/0199AA57 2018-04-15
   * [30 Minute QuickStart - YouTube](https://youtu.be/ZSa-d_9O5DA)  
   * [In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
   * [Keeping It At The Console - Input to GPG from Stdin / GPG Output to Stdout](https://stackoverflow.com/questions/5504721/how-do-i-encrypt-plaintext-with-gnupg)  
+  *
   * For the rest of this tutorial however, we will work exclusively with PrivateKeyVault menu application because it's easy to use and because you don't have to remember all the commands.  
   * Highlight the menu option **Export a public key to a text file** and press the **Enter** key.  
   * Now press the **Create Folder** button.  
@@ -1598,32 +1599,38 @@ sub   2048R/0199AA57 2018-04-15
   * I entered **bobs_public_key.txt**.  
   * Next you will be prompted to enter the unique id or email address associated with Bob's public key.  
   * Enter **bob@gmail.com**  
-  
- * You can look at the key if you want to the same way we looked at bob's private key.  
-   * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
-   * Navigate to the **public_keys** directory and then click on the file named **bobs_public_key**.  
-   * The leafpad text editor will open and Bob's public key will be displayed.  
-   * Pressing **CTRL-q** will close the text editor.  
-   
-
-Now we will see how to get this public key file out of Bob's PrivateKeyVault, email it to Alice, and get it into her Vault without ever connecting the Vaults to any other devices. They will not be using a thumbdrive, no WiFi, no Bluetooth, no ethernet cable, no USB cable - no connections of any kind to other devices. By preserving the airgap during the transfer process we prevent Mallory from gaining access to the PrivateKeyVaults. So he cannot use spyware to read how Alice makes her cakes so super moist and delicious.  
-* To do all this we will start by outputing an entire text file to the touch screen in the form of QR-Codes.  
-  * The following command will display several QR-codes sequentially on the touchscreen.  
-  * There will be one QR-Code for each line in the file.  
-  * Execute the following line of code:    
-  * `base64 bob@gmail.com_pubkey.asc | while read r; do echo $r | qrencode -t ANSIUTF8; sleep .3; done`  
-  * You should see several QR-Codes displayed sequentially on your touch screen.  
+  *  
+  * You can look at the key if you want to the same way we looked at bob's private key.  
+  * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
+  * Navigate to the **public_keys** directory and then click on the file named **bobs_public_key**.  
+  * The leafpad text editor will open and Bob's public key will be displayed.  
+  * Pressing **CTRL-q** will close the text editor.  
+  *
+  * Now we will see how to get this public key file out of Bob's PrivateKeyVault, email it to Alice, and get it into her Vault without ever connecting the Vaults to any other devices. They will not be using a thumbdrive, no WiFi, no Bluetooth, no ethernet cable, no USB cable - no connections of any kind to other devices. By preserving the airgap during the transfer process we prevent Mallory from gaining access to the PrivateKeyVaults. So he cannot use spyware to read how Alice makes her cakes so super moist and delicious.  
+  * To do all this we will start by outputing Bob's public key text file (the one we just exported) to the touch screen in the form of QR-Codes.  
+  * The menu application does this for us, but by way of introduction, the following command typed into the command window would display several QR-codes sequentially on the touchscreen.  
+  * There would be one QR-Code for each line in Bob's public key file.     
+  * `cd ~/public_keys && base64 bobs_public_key.txt | while read r; do echo $r | qrencode -t ANSIUTF8; sleep .3; done`  
+  * You would see several QR-Codes displayed sequentially on your touch screen.  
   * The part of the command that reads `sleep .3` means display each QR-Code for .3 seconds.  
   * You can change this value if you want.  
-  * You can substitute the name of any text file for `bob@gmail.com_pubkey.asc` in the command above.  
-  * Or try the following command instead.  
+  * You can substitute the name of any text file for `base64 bobs_public_key.txt` in the command above.  
+  * Or you might try the following command instead.  
   * The following command is the same as above but allows you to pick the file using a file selection dialog box.  
-  * `x=$(zenity --file-selection); base64 $x | while read r; do echo $r | qrencode -t ANSIUTF8; sleep .3; done`
+  * `x=$(zenity --file-selection); base64 $x | while read r; do echo $r | qrencode -t ANSIUTF8; sleep .3; done`  
+  * This is the line of code used by the PrivateKeyVault menu application to output one qr-code for each line in the file.  
   * If it's a large file it may take a while to show all the QR-Codes.  
   * Press `Ctrl C` if you want to stop the parade of QR-Codes before the program is finished displaying all the lines in the file.  
-* OK, so we displayed Bob's public key file as a parade of QR-Codes but how do we get this to Alice?  
-  * Run the above command again but this time use your smartphone to make a video of the QR-Code parade. 
-  * Email the video to Alice or email it to yourself for this demonstration. Actually, you don't need to email the video at all for the purposes of this demonstration - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can send it to someone with another PrivateKeyVault who can import it without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
+  *  
+  * That's a lot of typing to see our file represented as a parade of qr-codes so let's do it with the PrivateKeyVault menu application instead.  
+  * Highlight the menu option which says **Export Text File: Send QR-Code parade to screen** and press the **Enter** key.  
+  * Navigate to the file we exported named **bobs_public_key.txt** and press the **Enter** key.  
+  * You should see a parade of qr-codes flash across the touch screen.  
+  * <img src="/images/ReadmeImages/PassingDataToPhone.jpg">  
+  * OK, so we displayed Bob's public key file as a parade of QR-Codes on the touch screen but how do we get this to Alice?  
+  * Run the above command again but this time use your smartphone to make a video of the QR-Code parade.  
+  * Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can send it to someone with another PrivateKeyVault who can import it without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
+
   
 Now we will be playing the part of Alice.  
 * Alice has just received Bob's video on her smart phone.  
