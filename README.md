@@ -1626,21 +1626,21 @@ sub   2048R/0199AA57 2018-04-15
   * Highlight the menu option which says **Export Text File: Send QR-Code parade to screen** and press the **Enter** key.  
   * Navigate to the file we exported named **bobs_public_key.txt** and press the **Enter** key.  
   * You should see a parade of qr-codes flash across the touch screen.  
-  * <img src="/images/ReadmeImages/PassingDataToPhone.jpg">  
-  * OK, so we displayed Bob's public key file as a parade of QR-Codes on the touch screen but how do we get this to Alice?  
+  *  
+  * OK, so we displayed Bob's public key file as a parade of QR-Codes on the touch screen but how do we get this to Alice?   
+  * First arrange the PrivateKeyVault as shown in the photo below with the camera of your smart phone looking at the touch screen.  
+  * <img src="/images/ReadmeImages/PassingDataToPhone.jpg">   
   * Run the above command again but this time use your smartphone to make a video of the QR-Code parade.  
-  * Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can send it to someone with another PrivateKeyVault who can import it without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
-
-  
-Now we will be playing the part of Alice.  
-* Alice has just received Bob's video on her smart phone.  
-* She now needs to import this video into her PrivateKeyVault from the smartphone without connecting to it so as to maintain the airgap which prevents Mallory from installing spyware on her device.    
-* Then she needs to convert the video file back into a text file so she can use Bob's public key to encrypt a secret message for Bob which explains how she makes her cakes so super moist and delicious.  
-
-To start the import process,  
-* Alice will use the video camera on her PrivateKeyVault to make a video of the video on her smartphone.  
-* Doing it is actually easier than saying it.  
-* Put the smartphone in front of the pi's video camera.  
+  * Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can send it to someone with another PrivateKeyVault (really any raspberry pi with a camera) who can import it without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
+  * 
+* Now we will be playing the part of Alice.  
+  * Alice has just received Bob's video on her smart phone.  
+  * She now needs to import this video into her PrivateKeyVault from the smartphone without connecting to it so as to maintain the airgap which prevents Mallory from installing spyware on her device.    
+  * Then she needs to convert the video file back into a text file so she can use Bob's public key to encrypt a secret message for Bob which explains how she makes her cakes so super moist and delicious.  
+  * To start the import process,  
+  * Alice will use the video camera on her PrivateKeyVault to make a video of the video on her smartphone.  
+  * Doing it is actually easier than saying it.  
+  * Put the smartphone in front of the pi's video camera.  
 
 
 raspivid -t 30000 -w 640 -h 480 -fps 25 -b 1200000 -p 0,0,640,480 -o pivideo.h264
