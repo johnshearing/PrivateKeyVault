@@ -40,6 +40,9 @@ This mitigates a [Maid in the Middle attack](https://github.com/johnshearing/Pri
 
 <hr>  
 
+<a href="https://youtu.be/3MwJOj3t8cI" target="_blank"><img src="/images/ReadmeImages/Vault2Phone.jpg"  
+alt="Image of Vault passing qr-code to phone" /></a>  
+
 <img src="/images/ReadmeImages/PassingDataToPhone.jpg">  
 Transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen which are received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means. All data moving in or out of the device stands for inspection and approval before crossing the airgap.
 <hr>  
@@ -1628,12 +1631,12 @@ sub   2048R/0199AA57 2018-04-15
   * You should see a parade of qr-codes flash across the touch screen.  
   *  
   * OK, so we displayed Bob's public key file as a parade of QR-Codes on the touch screen but how do we get this to Alice?   
+  * Run the above command again but this time use your smartphone to make a video of the QR-Code parade.  
   * First arrange the PrivateKeyVault as shown in the photo below with the camera of your smart phone looking at the touch screen.  
   * If you click on the image it will take you to a YouTube video which shows what's supposed to happen.  
   * <a href="https://youtu.be/3MwJOj3t8cI" target="_blank"><img src="/images/ReadmeImages/Vault2Phone.jpg"  
 alt="Image of Vault passing qr-code to phone" width="240" height="180" border="10" /></a>  
-  * Run the above command again but this time use your smartphone to make a video of the QR-Code parade.  
-  * Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can send it to someone with another PrivateKeyVault (really any raspberry pi with a camera) who can import it without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
+  * Now you can Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can email it to someone or broadcast it to everyone with another PrivateKeyVault (really any raspberry pi with a camera) who will import the video without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
 * Now we will be playing the part of Alice.  
   * Alice has just received Bob's video on her smart phone.  
   * She now needs to import this video into her PrivateKeyVault from the smartphone without connecting to it so as to maintain the airgap which prevents Mallory from installing spyware on her device.    
