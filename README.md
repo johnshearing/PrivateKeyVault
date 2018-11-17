@@ -1629,10 +1629,11 @@ sub   2048R/0199AA57 2018-04-15
   *  
   * OK, so we displayed Bob's public key file as a parade of QR-Codes on the touch screen but how do we get this to Alice?   
   * First arrange the PrivateKeyVault as shown in the photo below with the camera of your smart phone looking at the touch screen.  
-  * <img src="/images/ReadmeImages/PassingDataToPhone.jpg">   
+  * If you click on the image it will take you to a YouTube video which shows what's supposed to happen.  
+  * <a href="https://youtu.be/3MwJOj3t8cI" target="_blank"><img src="/images/ReadmeImages/Vault2Phone.jpg"  
+alt="Image of Vault passing qr-code to phone" width="240" height="180" border="10" /></a>  
   * Run the above command again but this time use your smartphone to make a video of the QR-Code parade.  
   * Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can send it to someone with another PrivateKeyVault (really any raspberry pi with a camera) who can import it without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
-  * 
 * Now we will be playing the part of Alice.  
   * Alice has just received Bob's video on her smart phone.  
   * She now needs to import this video into her PrivateKeyVault from the smartphone without connecting to it so as to maintain the airgap which prevents Mallory from installing spyware on her device.    
