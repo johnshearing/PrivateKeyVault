@@ -40,7 +40,7 @@ This mitigates a [Maid in the Middle attack](https://github.com/johnshearing/Pri
 
 <hr>  
 
-Click on image below to see how files are passed out of the PrivateKeyVault to a phone.  
+**Click on image below to see YouTube video showing how files are passed out of the PrivateKeyVault to a phone.**  
 <a href="https://youtu.be/3MwJOj3t8cI" target="_blank"><img src="/images/ReadmeImages/PassingDataToPhone.jpg"  
 alt="Image of Vault passing qr-code to phone" /></a>  
 Transparent case facilitates transfer of files and transaction instructions out of the Vault across the airgap using a parade of qr-codes flashed across the screen which are received by the phone's camera. The reverse process transfers files into the Vault from the phone. The device has no WiFi or BlueTooth and it is never connected to another computer - not by cable, not by thumbdrive, nor by any other means. All data moving in or out of the device stands for inspection and approval before crossing the airgap.
