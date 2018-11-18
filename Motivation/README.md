@@ -51,7 +51,7 @@ This is what the [PrivateKeyVault GitHub repository](https://github.com/johnshea
 The Nano Ledger and other similar devices use a pseudo random algorithm to generate private keys.  
 So if some [individual or government were to put a back door](https://www.wired.com/story/encryption-backdoors-shadow-brokers-vault-7-wannacry/) into the algorithm then everyone loses individual control of their accounts all at the same time. Avoiding this kind of disaster is the whole point decentralization using blockchains. Individuals must have the right to generate their own private keys using a method known to be completely random. The private key is how an account is controlled. How can we hand this control over to any single entity?  
 
-Flipping a coin is the method I use. It is just one of many fully decentralized methods of generating a private key which are sure to be truly random. It works like this: Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
+Flipping a coin is the method I use. It is just one of many fully decentralized methods of generating a private key which is sure to be truly random. It works like this: Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
 * Four tails in a row would be a zero  
 * Heads, heads, tails, tails would be a three.  
 * Heads, heads, heads, head, would be an "F"  
