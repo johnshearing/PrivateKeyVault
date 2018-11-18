@@ -73,9 +73,12 @@ The PrivateKeyVault is meant to clear this bottleneck and make blockchain techno
 Remember, the [PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is not a thing that someone is selling. It is rather a way of working that is freely accessible to anyone with electricity and an Internet connection. If we work together we can get everyone onto a public blockchain by sharing the [PrivateKeyVault GitHub repository](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions).  
 
 ### Crypto-Journalism  
+
 Now anything can be faked on the Internet. Anyone can now access computer programs which can fabricate videos featuring world leaders saying things they never actually said. False news stories appear on facebook and twitter all the time which are circulated by foreign governments to cause confusion, to shatter the common will of a nation, and to insert puppet leaders into office. When a nation's people no longer know what's real they can be manipulated to do anything. Free nations are at serious risk of losing their democracies as more and more people are fooled with social media into handing over their free will to authoritarian leaders. There is a defense against fake news (Digitally Signed Documents). These are videos and written news articles which have been encrypted using the private key of a trusted source such as a news caster or political leader. The reader decrypts these files using the news source's public key. If the documents are legible after decryption then the reader can be certain that the document is indeed from the trusted source and that it has not been changed. 
 
-Anyone with a PrivateKeyVault (really just a raspberry pi) can read, write, and distribute digitally signed documents.  
+With a PrivateKeyVault (really just a raspberry pi) you can read, write, and distribute digitally signed documents.  
+Now anyone can safely create a journalistic body of work and prove that the entire work was written by a particular author and that it has not been tampered with all while allowing the author to remain anonymous if he or she so chooses.  
+
 The public must become familiar with use of digitally signed documents if we are to avoid the collective insanity which will precede the destruction of our democracies.  
 That's what the [PrivateKeyVault GitHub repository](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is for.  
 
