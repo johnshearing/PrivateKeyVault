@@ -829,9 +829,9 @@ Since the PrivateKeyVault does not connect to any other devices there must be a 
 
 The following 4 minute video gives a general idea of how QR-Code is used to transfer information into and out of the PrivateKeyVault. It is also a full demonstration of how to securely send ether on the Ethereum block chain. To see the video [click here](https://www.youtube.com/watch?v=_vA4tTLdL2M)    
 
-Now we will see how to move text typed in at the command line editor and also large files into and out of the PrivateKeyVault using QR-Code.  
+[This very short video shows how QR-Codes are used to move files out of the PrivateKeyVault across the airgap](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
 
-The following instructions were made from information acquired from the following videos  
+The following instructions were made from information acquired from the following videos.  
 You can view these if you are interested in seeing where the idea came from.  
 These videos are made for security experts and penetration testers.  
 These people, who work within the law, are hired to test network security by stealing information.  
@@ -910,7 +910,7 @@ Instructions for installing OpenCV 3 can be found at the link below:
 
 The companion video can be found here.  
 [Raspberry Pi 2 and OpenCV 3 Tutorial Part 1](https://www.youtube.com/watch?v=6j-Wy9j0TCs)  
-There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file.  
+There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file. Further down in this document is a full tutorial on how to use the software you just installed to send encrypted messages across the Internet without connecting to any other devices. But for now  lets see how to make a back up of your operating system.  
 
 #### Cloning Your Encrypted SD card Using Only the Raspberry Pi  
 This method works just as well with unencrypted SD cards.  
