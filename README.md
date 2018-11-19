@@ -126,8 +126,7 @@ Now that people all across the world can set up their own accounts on a super se
 
 [Using Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#using-your-privatekeyvault)  
 * [Sending an Offline Transaction to the Ethereum Blockchain](https://github.com/johnshearing/PrivateKeyVault#sending-an-offline-transaction-to-the-ethereum-blockchain)  
-* [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
-* [General Information About Encrypted Messaging](https://github.com/johnshearing/PrivateKeyVault#general-information-about-encrypted-messaging)    
+* [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)   
 * [Generating the public address or public key for use on the Ethereum Blockchain](https://github.com/johnshearing/PrivateKeyVault#generating-the-public-address-or-public-key-for-use-on-the-ethereum-blockchain)  
 * [Check that your public and private key work together](https://github.com/johnshearing/PrivateKeyVault#check-that-your-public-and-private-key-work-together)  
 * [Warning About Quantum Computers](https://github.com/johnshearing/PrivateKeyVault#warning-about-quantum-computers)  
@@ -1656,7 +1655,6 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   *  Place your phone on the PrivateKeyVault as shown in the video.  
 
 
-raspivid -t 30000 -w 640 -h 480 -fps 25 -b 1200000 -p 0,0,640,480 -o pivideo.h264
 
 
 * Now press the video record button on you pi.  
