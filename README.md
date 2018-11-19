@@ -127,6 +127,7 @@ Now that people all across the world can set up their own accounts on a super se
 [Using Your PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#using-your-privatekeyvault)  
 * [Sending an Offline Transaction to the Ethereum Blockchain](https://github.com/johnshearing/PrivateKeyVault#sending-an-offline-transaction-to-the-ethereum-blockchain)  
 * [Sending an Encrypted Message](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)   
+* [Create your private key](https://github.com/johnshearing/PrivateKeyVault#create-your-private-key)  
 * [Generating the public address or public key for use on the Ethereum Blockchain](https://github.com/johnshearing/PrivateKeyVault#generating-the-public-address-or-public-key-for-use-on-the-ethereum-blockchain)  
 * [Check that your public and private key work together](https://github.com/johnshearing/PrivateKeyVault#check-that-your-public-and-private-key-work-together)  
 * [Warning About Quantum Computers](https://github.com/johnshearing/PrivateKeyVault#warning-about-quantum-computers)  
@@ -1653,58 +1654,33 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Alice will use the video camera on her PrivateKeyVault to import the video from her smartphone.  
   * [Click here for a very short video showing the setup and transfer](https://www.youtube.com/watch?v=JsmamD40nSQ)  
   *  Place your phone on the PrivateKeyVault as shown in the video.  
+  *  Then highlight the menu option which reads **Import Text File: Read QR_Coded video into camera and extract the text**.  
+  *  You will be prompted for a location to store the video that the PrivateKeyVault will take of the phone.  
+  *  Select the **public_keys** directory. 
+  *  You will be prompted for many settings which control the process. Accept all the defaults.  
+  *  Finally you will be prompted to start the recording process. Press the **Play** button on your phone and press the **Enter** key on your PrivateKeyVault.  
+  *  When the phone finishes the QR_Code display they press the **Enter** key on your PrivateKeyVault to stop the recording.  
+  *  Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
+  *  Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
+  *  Finally, you will be prompted for a name. You can accept the default (extractedTextFile.txt).  
+  *  Be aware that the Vault will not overwrite a file of the same name if it exists but does not warn you about this either.  
+  *  I will be dealing with this problem shortly.  
+  *  The conversion takes some time. Be patient. It takes time to bake a cake.  
+  *  When the text has been extracted you will be asked if you would like to view the text file. Answer **Yes**  
+  *  The Leafpad text editor will open and show you the file.  
+  *
+  *  The file you are looking at (extractedTextFile.txt) should be identical to the file containing bob's public key which is called bobs_public_key.txt.  
+  *  This is easy to check since both files are now in the same directory.  
+  *  Close the Leafpad text editor.  
+  *  Now back at the menu application, highlight the menu option which says **Work at the command prompt** and press the **Enter** key.  
+  
 
 
 
 
-* Now press the video record button on you pi.  
-* Now press the play button on your smartphone.  
-* When the video is finished playing, press the Video Stop button on your pi.  
-  * You will be prompted to name the file and for the place you wish to store it.  
-  * You can call it anything you want but let's call it `bob@gmail.com_pubkey.asc` because that tells us the file contains Bob's public key.  
-* If you want, you can look at the video on your PrivateKeyVault by pressing the video play button. 
-* Now press the Convert Video to Text button.  
-* A dialog box will open and prompt you to name the text file.  
-* It will then start the conversion process.  
-* This will take a few minutes. It takes time to bake a cake.  
-
-Now that Alice has Bob's public key in a text file, she will need to import it into her public keyring so she can use it.  
-* To do that you would normally execute the following command for Alice:  
-* In this case however there is no need because the public key is already on your keyring. 
-* It was put there when you were playing the part of Bob and you generated the key. 
-* So you can skip this step. 
-* Just remember that if someone sends you a public key then you will need to import it into your public keyring file by using the following command: 
-* `gpg --import bob@gmail.com_pubkey.asc`  
-* `bob@gmail.com_pubkey.asc` is the name of the file which contains bob's public key.  
-
-
-
-
-Record a video:  
-`raspivid -t 30000 -w 640 -h 480 -fps 25 -b 1200000 -p 0,0,640,480 -o pivideo.h264`  
-The -t 30000 in the line above makes the recording process last for 30 seconds.   
-
-Stop the recording process with the following command:  
-`pkill raspivid`  
-
-Convert the video to mp4 format:  
-`MP4Box -add pivideo.h264 pivideo.mp4`  
-
-Play back the video:  
-`omxplayer pivideo.mp4`  
-
-If you want to look at a png file:  
-`eog gem4.png`  
-
-Check if two files are the same:  
-`diff /home/pi/test/gem4.png ./gem4.png`    
-
-Digital Signatures are provided by MyEtherWallet as well as by GPG.  
-We will go over how to use all this in video tutorials.  
-[Check my YouTube channel for my video tutorials as they are produced.](https://www.youtube.com/watch?v=_vA4tTLdL2M)  
 
 #### Create your private key  
-Some people think it is a good idea to SHA3 Hash their dogs name or a clever phase to get a 64 character number for use as a private key. This is a very dumb idea. Anything you can possibly think of has already been thought of and hashed. You will likely lose your ether if you do this. MyEtherWallet comes with a utility to generate a public/private key pair. This is probably very safe but I do not use this method. The problem is not that MEW might transmit the private key - this would be impossible anyway if the pi is air-gapped. The reason I would not use it or any other software to generate my private key is because there is always some chance that a malware infected device could generate a key pair already know to an attacker. Of course, if an attacker has already hacked MyEtherWallet then he would substitute his own public address for the target address when the user presses the **Generate Transaction** button. In any case, I recommend flipping a coin to generate a private key. Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
+Some people think it is a good idea to SHA3 Hash their dogs name or a clever phase to get a 64 character number for use as a private key. This is a very dumb idea. Anything you can possibly think of has already been thought of and hashed. You will likely lose your ether if you do this. MyEtherWallet comes with a utility to generate a public/private key pair. This is probably very safe but I do not use this method. The reason I would not use it or any other software to generate my private key is because there is always some chance that a malware infected device could generate a key pair already know to an attacker. I recommend flipping a coin to generate a private key. Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
 Four tails in a row would be a zero.  
 Heads, heads, tails, tails would be a three.  
 Heads, heads, heads, head, would be an "F"  
@@ -2005,6 +1981,26 @@ To start the pi's file manager `pcmanfm`
 [and here](https://github.com/johnshearing/MyEtherWalletOffline/blob/master/Creating%20a%20Local%20BlockChain.md)   
 
 ### Appendix  
+
+#### Commands for Working With Video at the Terminal  
+Record a video:  
+`raspivid -t 30000 -w 640 -h 480 -fps 25 -b 1200000 -p 0,0,640,480 -o pivideo.h264`  
+The -t 30000 in the line above makes the recording process last for 30 seconds.   
+
+Stop the recording process with the following command:  
+`pkill raspivid`  
+
+Convert the video to mp4 format:  
+`MP4Box -add pivideo.h264 pivideo.mp4`  
+
+Play back the video:  
+`omxplayer pivideo.mp4`  
+
+If you want to look at a png file:  
+`eog gem4.png`  
+
+Check if two files are the same:  
+`diff -s /home/pi/test/my_file.txt /home/pi/test/my_other_file.txt`    
 
 #### Often Used Github Commands  
 [This Video Tutorial series gets you up and running on GitHub quickly.](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV&index=1)  
