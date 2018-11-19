@@ -824,10 +824,14 @@ Press `CTRL + X` to quit Nano.
 
 We will see how to use this program shortly.  
 
-#### Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code  
-Since the PrivateKeyVault does not connect to any other devices there must be a way to transfer text and files into and out of the device in some transparent manner that gives the user complete control and the ability to inspect what information is moving in and out of the device at every stage of the transfer. The following 4 minute video gives a general idea of how QR-Code is used to transfer information into and out of the PrivateKeyVault. It is also a full demonstration of how to securely send ether on the Ethereum block chain. To see the video [click here](https://www.youtube.com/watch?v=_vA4tTLdL2M)    
+#### Installing Software for Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code  
+Since the PrivateKeyVault does not connect to any other devices there must be a way to transfer text and files into and out of the device in some transparent manner that gives the user complete control and the ability to inspect what information is moving in and out of the device at every stage of the transfer. We will be doing this job with QR-Codes.  
 
-Now we will see how to move text typed in at the command line editor and also large files into and out of the PrivateKeyVault using QR-Code. The following instructions were made from information acquired from the following videos  
+The following 4 minute video gives a general idea of how QR-Code is used to transfer information into and out of the PrivateKeyVault. It is also a full demonstration of how to securely send ether on the Ethereum block chain. To see the video [click here](https://www.youtube.com/watch?v=_vA4tTLdL2M)    
+
+Now we will see how to move text typed in at the command line editor and also large files into and out of the PrivateKeyVault using QR-Code.  
+
+The following instructions were made from information acquired from the following videos  
 You can view these if you are interested in seeing where the idea came from.  
 These videos are made for security experts and penetration testers.  
 These people, who work within the law, are hired to test network security by stealing information.  
