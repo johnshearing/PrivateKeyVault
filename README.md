@@ -1422,7 +1422,11 @@ I will be covering all of this material in a video tutorial shortly.
 What is written below is the script that the video will follow.  
 So it serves as an written tutorial as well. 
 
-Now lets try moving text out of the PrivateKeyVault from the command line.  
+To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
+[This very short video shows the process](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
+Look at this first before proceeding with this topic.  
+
+By way of introduction, lets try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
 Execute the following command at the terminal window:  
 `qrencode -t ANSIUTF8 "hello world"`  
@@ -1433,12 +1437,9 @@ Once the text is scanned into your phone you can do whatever you want with it
 simply by pasting the text it into other apps like gmail or perhaps a text editor. 
 So this is basically how you get text out of the Private Key Vault without connecting to other devices.  
 
-To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
-[This very short video shows the process](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
-
 Now we will see how to transfer an encrypted text file from one PrivateKeyVault to another using QR-Codes.  
 This will allow us to make a secure file transfer over the Internet without losing our airgap.  
-By using this method, there will be no opportunity for attackers to access any files on the Vaults because we will make the transfer without connecting to any other devices. Further more, there will be no chance of anyone reading our message because the message will not be decrypted until the message is safely on the other side of the airgap where spyware and keyloggers can not go.  
+By using this method, there will be no opportunity for attackers to access any files on either Vault because we will make the transfer without connecting to any other devices. Further more, there will be no chance of anyone reading our message because the message will not be decrypted until the message is safely on the other side of the airgap where spyware and keyloggers can not go.  
 
 Here is a summary of what we will be doing:  
 Let's pretend Alice owns a baking company and she is opening a new cake factory in another city. Her new associate Bob already has the cake recipe but does not yet possess the secrets for making the cake super moist and delicious. Both Alice and Bob possess a PrivateKeyVault which is nothing more that an airgapped raspberry pi computer. Mallory is an industrial spy. He is trying to steal Alice's baking secrets to sell to the highest bidder. We will be playing both the parts of Alice and Bob in this exchange so that you can experience all the steps required to successfully make the encrypted file transfer.  
