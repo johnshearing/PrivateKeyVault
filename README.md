@@ -1651,9 +1651,9 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * She now needs to import this video into her PrivateKeyVault from the smartphone without connecting to it so as to maintain the airgap which prevents Mallory from installing spyware on her device.    
   * Then she needs to convert the video file back into a text file so she can use Bob's public key to encrypt a secret message for Bob which explains how she makes her cakes so super moist and delicious.  
   * To start the import process,  
-  * Alice will use the video camera on her PrivateKeyVault to make a video of the video on her smartphone.  
-  * Doing it is actually easier than saying it.  
-  * Put the smartphone in front of the pi's video camera.  
+  * Alice will use the video camera on her PrivateKeyVault to import the video from her smartphone.  
+  * [Click here for a very short video showing the setup and transfer](https://www.youtube.com/watch?v=JsmamD40nSQ)  
+  *  Place your phone on the PrivateKeyVault as shown in the video.  
 
 
 raspivid -t 30000 -w 640 -h 480 -fps 25 -b 1200000 -p 0,0,640,480 -o pivideo.h264
