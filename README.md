@@ -1668,12 +1668,23 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   *  The conversion takes some time. Be patient. It takes time to bake a cake.  
   *  When the text has been extracted you will be asked if you would like to view the text file. Answer **Yes**  
   *  The Leafpad text editor will open and show you the file.  
-  *
   *  The file you are looking at (extractedTextFile.txt) should be identical to the file containing bob's public key which is called bobs_public_key.txt.  
-  *  This is easy to check since both files are now in the same directory.  
   *  Close the Leafpad text editor.  
-  *  Now back at the menu application, highlight the menu option which says **Work at the command prompt** and press the **Enter** key.  
+  *
+  *  This is easy to check that the files are the same since both files are now in the same directory.  
+  *  Return to the menu application.  
+  *  Highlight the menu option which says **Work at the command prompt** and press the **Enter** key.  
+  *  You will be prompted to select the working directory.  
+  *  Choose the **public_keys** directory.  
+  *  Then a terminal window will open.  
+  *  Type the following command into the terminal window and press the **Enter** key.  
+  *  `diff -s bobs_public_key.txt extractedTextFile.txt`  
+  *  You should see a message in the terminal window telling you thaIt the files are identical.  
+  *  If the files are not identical then output from the diff program will show you where the files differ.  
+  *
   
+  I am getting tired. I will continue with this tutorial tomorrow.
+  :)
 
 
 
