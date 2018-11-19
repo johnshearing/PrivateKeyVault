@@ -910,7 +910,7 @@ Instructions for installing OpenCV 3 can be found at the link below:
 
 The companion video can be found here.  
 [Raspberry Pi 2 and OpenCV 3 Tutorial Part 1](https://www.youtube.com/watch?v=6j-Wy9j0TCs)  
-There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file. Further down in this document is a full tutorial on how to use the software you just installed to send encrypted messages across the Internet without connecting to any other devices. But for now  lets see how to make a back up of your operating system.  
+There is no part 2 in case you are wondering but I followed the instructions and was rewarded with a successful install of OpenCV 3 and the ability to read QR-Codes from a video and turn it back into a text file. Further down in this document is a full tutorial on how to use the software you just installed to send encrypted messages across the Internet without connecting to any other devices. But for now  lets see how to make a backup of your operating system and then learn how to secure your device.  
 
 #### Cloning Your Encrypted SD card Using Only the Raspberry Pi  
 This method works just as well with unencrypted SD cards.  
