@@ -113,7 +113,7 @@ Now that people all across the world can set up their own accounts on a super se
 * [Install Nodejs and NPM](https://github.com/johnshearing/PrivateKeyVault#install-nodejs-and-npm)  
 * [Install the npm packages required for working with Ethereum](https://github.com/johnshearing/PrivateKeyVault#install-the-npm-packages-required-for-working-with-ethereum)  
 * [Get the program required to get a public address given a private key](https://github.com/johnshearing/PrivateKeyVault#get-the-program-required-to-get-a-public-address-given-a-private-key)  
-* [Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code](https://github.com/johnshearing/PrivateKeyVault#installing-software-for-getting-text-and-files-into-and-out-of-the-privatekeyvault-using-qr-code)  
+* [Installing Software for Getting Text and Files Into and Out Of the PrivateKeyVault Using QR-Code](https://github.com/johnshearing/PrivateKeyVault#installing-software-for-getting-text-and-files-into-and-out-of-the-privatekeyvault-using-qr-code)  
 * [Cloning Your Encrypted SD card Using Only the Raspberry Pi](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi)  
 
 [Security](https://github.com/johnshearing/PrivateKeyVault#security)  
