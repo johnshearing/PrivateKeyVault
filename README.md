@@ -17,8 +17,9 @@ Use it to:
 * [Securely move assets on the Ethereum blockchain without exposing your private keys to any other device.](https://www.youtube.com/watch?v=_vA4tTLdL2M)  
 * Support for other blockchains is coming soon.  
 * Securely read and edit all types of files behind the airgap where remote viewing and key logging is not possible.  
-* No WiFi, No BlueTooth, No Cables, No USB ThumbDrives. [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
-* GPG encryption is easy using this device.    
+* No WiFi, No BlueTooth, No Cables, No USB ThumbDrives  
+* [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
+* [GPG encrypted messaging is easy using this device.](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
 * [Crypto-Journalism:](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#crypto-journalism) Now anyone can safely create a journalistic body of work and prove that they authored the entire work and that it has not been tampered with all while allowing the author to remain anonymous if he or she so chooses. Protected sources. No more fake news.  
 
 [What's In It For You?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-you)-----[What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)-----[What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
