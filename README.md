@@ -2,7 +2,8 @@
 ### Airgapped raspberry pi computer with touch screen and camera  
 ### Featuring LUKS full disk encryption  
 ### For secure offline blockchain transactions and for secure encrypted messaging     
-### Using qr-codes to pass encrypted files and offline transactions across the airgap  
+### [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
+
 <img src="/images/ReadmeImages/FiredUp.jpg">  
 
 Does anything a regular computer does and more.  
