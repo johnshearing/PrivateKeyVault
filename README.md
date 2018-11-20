@@ -1889,10 +1889,18 @@ My concern is that it would be possible to remotely view what is on the screen i
 Finally, I know of one attack on a trezor that captures the private key by reading spikes in the ac power as calculations are performed which use the key.  
 For all these reasons, I think it would be a good idea to provide extra space for the AC power supply in the tamper resistant case to mitigate these attack vectors. I could justify making a vesion with a bigger case if people wanted to use a larger screen and a larger keyboard. I might also make space for the hub and adaptors required for cloning the SD cards.  
 
+The keyboard might also be a central point of attack because the currently used board fits so nicely in the case. My concern is if someone inserts a hardware keylogger during manufacture or when the device is shipped. I am wondering if a we can make our own keyboard using the laser cutter. This way as people make their own devices they will be sourcing materials from various locations which will decentralize the manufacture of the keyboard.  
+
+One also has to be concerned that the pi, camera, and touch screen has not been tampered with during manufacture or shipping.  
+
 Even though there is a touch screen, I wonder if it would also be a good idea to provide a space in the secure case for a mouse.  
 My reasons are the same as given above.  
 
 Consider the Raspberry Pi Module 3 for it's smaller size in future builds.   
+
+Strongly consider using the PiJuice in a future build.  
+
+
 
 #### OS Software Items To Add Next Time    
 
