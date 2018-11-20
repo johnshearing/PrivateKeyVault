@@ -86,6 +86,7 @@ Now that people all across the world can set up their own accounts on a super se
 * [What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)  
 * [What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
 * [What 2 Big Problems Does The PrivateKeyVault Solve That Hardware Wallets Cannot](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#what-2-big-problems-does-the-privatekeyvault-solve-that-hardware-wallets-cannot)  
+* [Added Value For People In Third World Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-third-world-countries)  
 * [Crypto-Journalism:](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#crypto-journalism)  
 
 [Physically Building the PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#physically-building-the-privatekeyvault)  
