@@ -21,9 +21,7 @@ Use it to:
 * [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
 * [GPG encrypted messaging is easy using this device.](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
 * [Crypto-Journalism:](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#crypto-journalism) Now anyone can safely create a journalistic body of work and prove that they authored the entire work and that it has not been tampered with all while allowing the author to remain anonymous if he or she so chooses. Protected sources. No more fake news.  
-* The PrivateKeyVault is the cheapest computer you can have and it does double duty as a regular Internet connected computer simply by swaping out the encrypted SD card containing private information with another one set up for business, education, browsing, and casual use.  
-
-[Added Value For People In Developing Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-developing-countries)  
+* [Added Value For People In Developing Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-developing-countries) The PrivateKeyVault is the cheapest computer you can have and it does double duty as a regular Internet connected computer simply by swaping out the encrypted SD card containing private information with another one set up for business, education, browsing, and casual use.  
 
 [What's In It For You?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-you)-----[What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)-----[What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
 
