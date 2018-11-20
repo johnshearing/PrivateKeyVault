@@ -23,6 +23,8 @@ Use it to:
 * [Crypto-Journalism:](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#crypto-journalism) Now anyone can safely create a journalistic body of work and prove that they authored the entire work and that it has not been tampered with all while allowing the author to remain anonymous if he or she so chooses. Protected sources. No more fake news.  
 * The PrivateKeyVault is the cheapest computer you can have and it does double duty as a regular Internet connected computer simply by swaping out the encrypted SD card containing private information with another one set up for business, education, browsing, and casual use.  
 
+[Added Value For People In Developing Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-developing-countries)  
+
 [What's In It For You?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-you)-----[What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)-----[What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
 
 [What 2 Big Problems Does The PrivateKeyVault Solve That Hardware Wallets Cannot](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#what-2-big-problems-does-the-privatekeyvault-solve-that-hardware-wallets-cannot)
@@ -87,8 +89,8 @@ Now that people all across the world can set up their own accounts on a super se
 * [What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)  
 * [What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
 * [What 2 Big Problems Does The PrivateKeyVault Solve That Hardware Wallets Cannot](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#what-2-big-problems-does-the-privatekeyvault-solve-that-hardware-wallets-cannot)  
-* [Added Value For People In Third World Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-third-world-countries)  
 * [Crypto-Journalism:](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#crypto-journalism)  
+* [Added Value For People In Developing Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-developing-countries)  
 
 [Physically Building the PrivateKeyVault](https://github.com/johnshearing/PrivateKeyVault#physically-building-the-privatekeyvault)  
 * [Parts List](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md#parts-list)  
