@@ -84,7 +84,7 @@ That's what the [PrivateKeyVault GitHub repository](https://github.com/johnshear
 ### Added Value For People In Developing Countries  
 While many people in developing countries have the phones required to access the Internet, not so many have the computers necessary to make the most of it. The PrivateKeyVault is the cheapest computer you can have and it does double duty as a regular Internet connected computer simply by swapping out the encrypted SD card containing private information with another one set up for business, education, browsing, and casual use. Now, not only can everyone with Internet reach the blockchain - Finally they can learn to use it. The raspberry pi is a community for getting people on computers. The PrivateKeyVault is a community for getting people on blockchains.  
 
-Support [The PrivateKeyVault GitHub repository](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions)   
+[The PrivateKeyVault GitHub repository](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions)   
 
 
     
