@@ -72,9 +72,6 @@ Encrypted messaging is much more secure when using the PrivateKeyVault compared 
 
 The plan here is to teach people [for free via YouTube](https://www.youtube.com/watch?v=_vA4tTLdL2M) how to make and use the PrivateKeyVault.  
 Using this documentation, you can build your own PrivateKeyVault.    
-If you do not wish to build the Vault yourself, the fully assembled device loaded with software can be purchased from us.  
-Contact johnshearing@gmail.com or gshearing@radioactiverf.com   
-
 **Or you can set up your own business to do the same without giving us any money or recognition.**   
 **Hooray Open Source!**    
  
@@ -2053,7 +2050,6 @@ Think carefully before using these.
 
 `gh-pages` To view repository as a website make a branch called **gh-pages**.  
 
-
 #### Often Used GPG Commands  
 gpg2 --version  
 gpg2 --list-keys  
@@ -2079,3 +2075,6 @@ gpg --edit-key KeyID  revsig, save
 gpg --send-keys keyID  
 gpg2 --delete-secret-keys KeyID  
 gpg2 --delete-key KeyID  
+
+Contact Information
+johnshearing@gmail.com or gshearing@radioactiverf.com   
