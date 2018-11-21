@@ -1357,12 +1357,15 @@ Enter the strong password you created when prompted.
 Now type `exit` and press the enter button.  
 **The pi should boot up as normal.**  
 
-Wow! that was a big pain in the ass.  
+Wow! that was a big pain.  
 But all your private information is now safe from even the most aggressive criminals and oppressive governments.  
 The only way to get the information on your device now is to force you to hand it over or to trick you in to revealing your password. They can also catch you at a time when you are using the device and take it from you before you have a chance to turn it off.  
 
 #### Airgapping Your PrivateKeyVault  
 You are about to start working with Private Keys.  
+Copy this README.md file onto your PrivateKeyVault.  
+Copy it both as rendered by GitHub for normal reading with a **txt** extension and also as raw unrendered text with all the links and commands visible using the **md** extension.  
+Put the two files on your pi in a folder called **readme**.  
 Pull out the WiFi Dongle,  
 Pull out the Ethernet Cable,   
 Stop using Thumbdrives, and   
@@ -1688,7 +1691,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * The file you are looking at (extractedTextFile.txt) should be identical to the file containing bob's public key which is called bobs_public_key.txt.  
   * Close the Leafpad text editor.  
   * 
-  * This is easy to check that the files are the same since both files are now in the same directory.  
+  * It's easy to check that the files are the same since both files are now in the same directory.  
   * Return to the menu application.  
   * Highlight the menu option which says **Work at the command prompt** and press the **Enter** key.  
   * You will be prompted to select the working directory.  
@@ -1699,9 +1702,46 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * To learn more about this command type **man diff** into the terminal window.  
   * If the files are not identical then output from the diff program will show you where the files differ.    
   * If all went well you should see a message in the terminal window telling you that the files are identical.  
-  * Congratulations! Using QR-Codes you have just passed a file from your PrivateKeyVault out across the airgap to your phone without connecting the devices. Then you passed the file back in without exposing your PrivateKeyVault to any attacks from WiFi, Bluetooth, Thumbdrives, or Data cable transfers.  
-  * 
-  * Now we need to get the files
+  * Congratulations! Using QR-Codes you have just passed a file from your PrivateKeyVault out across the airgap to your phone without connecting the devices. Then you passed the file back in - all without exposing your PrivateKeyVault to any attacks from WiFi, Bluetooth, Thumbdrives, or Data cable transfers. When you work this way, no one can install malware, keyloggers, remote control or remote viewing software and no one can dig through the files on your PrivateKeyVault.  
+  *  
+  * Now let's make a public/private key pair for Alice. 
+  * Do it the same way you did for Bob.  
+  * Just highlight the menu option which says **Generate a Public/Private key pair** and press the **Enter** key.  
+  * Then follow the prompts as before.  
+  * For the Unique ID, use alice@gmail.com  
+  * When you are finished, continue with the tutorial.  
+  *  
+  * Now we will import Bob's public key onto Alice's keyring.  
+  * Highlight the menu option which says **Import a public or private key from a text file** and press the **Enter** key.  
+  * You will be prompted to select the text file containing Bob's public key.  
+  * Navigate to the **public_keys** folder and then select the file named **extractedTextFile.txt** and press the **Enter** key.  
+  * You should get a message saying that the public key was imported.  
+  *  
+  * Lets check an see if the key is there.  
+  * Highlight the menu option which says **List public keys** and then press the **Enter** key.  
+  * You will see a dialog box asking which public key to show.  
+  * Just hit the **Backspace** key to blank out the field and then press the **Enter** key.  
+  * Notice both Bob's and Alice's public key is displayed. That's because we did specify which key to show.  
+  *  
+  * Now let's encrypted Alice's secrets for making a cake super moist and delicious.  
+  * If you remember, just before we pulled the plug on the Internet airgapping your PrivateKeyVault, we copied this file that you are reading now onto you pi. It's in a fold named **readme** and file is named readme.txt  
+  * We will open that file using the menu app, copy the baking secrets onto the clipboard and then paste it into a new document called **baking_secrets.txt**  
+  * Then we will encrypt the file using Bob's public key and send the encrypted baking secrets to Bob. 
+  * First highlight the menu option which says **Read or write a message** and then press the **Enter** key.  
+  * Then open the **readme** folder.  
+  * Then open the file named **readme.txt**  
+  * Then press **CTRL+F** and search for the term **Secret 1**. That will bring you to the secrets for baking a moist cake.  
+  * Highlight all the secrets an press **CTRL+C** to copy all the secrets onto the clipboard.  
+  * Then close the Leafpad text editor.  
+  * Open the text editor again by highlighting the menu option which says **Read or write a message** and press the **Enter** key.  
+  * Again, navigate to the **readme** folder.  
+  * Then, instead of selecting a file to open, press the cancel button.  
+  * This will open a blank document.  
+  * Press **CTRL+V** to copy the secrets on the clipboard into your blank document.  
+  * Then save the document as **baking_secrets.txt**  
+  * Sadly, as of this writing, the resolution of the screen is not compatible with the file save dialog box. But if you touch **pi** on the list of folders on the left and then touch the list of files and folders on the right and finally type **readme** and then press the **Enter** key then you will find yourself in the correct folder. Then simply enter the name of the file (baking_secrets.txt) into the **Name** field at the top of the dialog box and press the **Enter** key.  
+  
+  
   
   
   I am getting tired. I will continue with this tutorial tomorrow.
@@ -2084,5 +2124,7 @@ gpg --send-keys keyID
 gpg2 --delete-secret-keys KeyID  
 gpg2 --delete-key KeyID  
 
-Contact Information
-johnshearing@gmail.com or gshearing@radioactiverf.com   
+Contact Information  
+Geoffrey Shearing: gshearing@radioactiverf.com  
+or  
+John Shearing: johnshearing@gmail.com    
