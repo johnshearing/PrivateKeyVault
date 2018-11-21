@@ -1751,10 +1751,42 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Press **CTRL+V** to copy the secrets on the clipboard into your blank document.  
   * Then save the document as **baking_secrets.txt** in the readme folder
   *  
-  * So we have a file containing Alice's baking secrets.  
-  * Now we will encrypt the file before sending it to Bob.  
+  * So now we have a file containing Alice's baking secrets and we want to encrypt the file before sending it to Bob.  
+  * The first time I tried to encrypt the file it didn't work because the directory **readme** was created by the root user during a VNC session so I didn't have permission to create the new encrypted file inside the **readme** folder.  
+  * This is normally not an issue but let's see how to give ourselves full permissions to a folder.  
+  * Highlight the menu option which says **Work at the command prompt** and press the **Enter** key.  
+  * Then press the **Enter** key again to select the pi directory as your working directory.  
+  * In the new terminal window type the following command and press the **Enter** key.  
+  * `sudo chmod 777 readme`  
+  * Now GPG will be able to create an encrypted version of **baking_secrets.txt** in the **readme** folder.  
+  *  
+  * Finally we are ready to encrypt the file containing Alice's baking secrets.  
   * Highlight the menu option which says **Encrypt a text file** and press the **Enter** key.  
   * Navigate to the readme directory and select **baking_secrets.txt**.  
+  * You will be asked if you want to sign the encrypted file.  
+  * Answer yes so that Bob will know for sure that the encrypted file is from Alice.  
+  * Enter Alices Password when prompted.  
+  * Next you will be asked for the Unique Id of the recipients.  
+  * It is customary to make yourself one of the recipients so otherwise only Bob will be able decrypt the file.  
+  * So enter Alice's email address **alice@gmail.com** and press the **Enter** key.  
+  * Next enter Bob's email address **bob@gmail.com** and press the **Enter** key.  
+  * You will get a warning that there is no certainty that the public key for bob actually belongs to him.  
+  * Maybe Malory intercepted Bob's public key and then replaced it with his own public key so that he will be able to decrypt your baking secrets instead of Bob.  
+  * This is were you compare the finger print Bob read to you over the phone with the finger print now showing on the touch screen.  
+  * If the fingerprints are the same then enter **y** for YES and press the **Enter** key.  
+  * Now you will see that both Bob and Alice are listed as recipients.  
+  * Press the **Enter** key again to finsh the encryption process.  
+  * You will see a message telling you to check that the encrypted file has been created.  
+  * Press the **Enter** key one more time to get back to the menu.  
+  *
+  * Now let's look at the encrypted file.  
+  * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
+  * Select the **readme** folder and press the **Enter** key.  
+  * You will see a file called **baking_secrets.txt.asc**  
+  * Highlight that file and press the **Enter** key.  
+  * You will see an encrypted version of the file containing Alice's baking secrets.  
+  * Close the text editor.  
+  *
   
   
   
