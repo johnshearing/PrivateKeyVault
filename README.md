@@ -1676,10 +1676,12 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Next highlight the menu option which says **Delete a public key** and press the **Enter** key.  
   * Follow the prompts to delete Bob's public key.  
   * Verify that there are no more private eys on the key ring by highlighting the menu option which says **List private keys** and press the **Enter** key.  
-  * Verify that there are no more public eys on the key ring by highlighting the menu option which says **List public keys** and press the **Enter** key.  
+  * Verify that there are no more public keys on the key ring by highlighting the menu option which says **List public keys** and press the **Enter** key.  
   * Now that the keyring is cleared out we are ready to play the part of Alice.  
   *  
   * Alice has just received Bob's video on her smart phone.  
+  * The very first thing she does is to call Bob and ask for the finger print associated with his public key.  
+  * She will need this later to be sure she actually received Bob's public key.  
   * She now needs to import this video into her PrivateKeyVault from the smartphone without connecting to it so as to maintain the airgap which prevents Mallory from installing spyware on her device.    
   * Then she needs to convert the video file back into a text file so she can use Bob's public key to encrypt a secret message for Bob which explains how she makes her cakes so super moist and delicious.  
   * To start the import process,  
@@ -1778,25 +1780,20 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Press the **Enter** key again to finsh the encryption process.  
   * You will see a message telling you to check that the encrypted file has been created.  
   * Press the **Enter** key one more time to get back to the menu.  
-  *
+  *  
   * Now let's look at the encrypted file.  
   * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
   * Select the **readme** folder and press the **Enter** key.  
   * You will see a file called **baking_secrets.txt.asc**  
   * Highlight that file and press the **Enter** key.  
   * You will see an encrypted version of the file containing Alice's baking secrets.  
+  * This is the file that Alice is going to send to Bob.  
   * Close the text editor.  
+  *  
   *
-  
-  
-  
   
   I am getting tired. I will continue with this tutorial tomorrow.
   :)
-
-
-
-
 
 #### Create your private key  
 Some people think it is a good idea to SHA3 Hash their dogs name or a clever phase to get a 64 character number for use as a private key. This is a very dumb idea. Anything you can possibly think of has already been thought of and hashed. You will likely lose your ether if you do this. MyEtherWallet comes with a utility to generate a public/private key pair. This is probably very safe but I do not use this method. The reason I would not use it or any other software to generate my private key is because there is always some chance that a malware infected device could generate a key pair already know to an attacker. I recommend flipping a coin to generate a private key. Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
