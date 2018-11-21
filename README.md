@@ -313,6 +313,18 @@ You may get some security questions the first time you login with VNC because th
 
 When prompted, login in with the username pi and with the new password you just created.    
 
+#### Change the System Font Size and Type  
+Buttons on system dialog boxes will be off the screen and you will not be able to access them unless you set the system font size.  
+You will have to make the font small at first and then you can make it large again.  
+This forces the system to put values in some configuration file where currently none exist.  
+Press the **CTRL+ESC** to open the main menu. Or if you want click on the raspberry.   
+Arrow down to **Preferences** and then select the **Appearance Settings** menu option.  
+Click on the **System** tab.  
+Select a small font and then click the **OK** button.  
+Then do the same thing again but select a larger font  
+Roboto 12 is the font I use.  
+This seems to be the largest font I can have that will allow the entire dialog box to fit on the screen.  
+
 #### Switch to American keyboard layout if you are American  
 Open the raspberry pi's command line interpreter.  
 It's the forth icon from the top left on the menu bar.  
@@ -1734,12 +1746,15 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Highlight all the secrets an press **CTRL+C** to copy all the secrets onto the clipboard.  
   * Then close the Leafpad text editor.  
   * Open the text editor again by highlighting the menu option which says **Read or write a message** and press the **Enter** key.  
-  * Again, navigate to the **readme** folder.  
-  * Then, instead of selecting a file to open, press the cancel button.  
+  * Instead of selecting a file to open, press the cancel button.  
   * This will open a blank document.  
   * Press **CTRL+V** to copy the secrets on the clipboard into your blank document.  
-  * Then save the document as **baking_secrets.txt**  
-  * Sadly, as of this writing, the resolution of the screen is not compatible with the file save dialog box. But if you touch **pi** on the list of folders on the left and then touch the list of files and folders on the right and finally type **readme** and then press the **Enter** key then you will find yourself in the correct folder. Then simply enter the name of the file (baking_secrets.txt) into the **Name** field at the top of the dialog box and press the **Enter** key.  
+  * Then save the document as **baking_secrets.txt** in the readme folder
+  *  
+  * So we have a file containing Alice's baking secrets.  
+  * Now we will encrypt the file before sending it to Bob.  
+  * Highlight the menu option which says **Encrypt a text file** and press the **Enter** key.  
+  * Navigate to the readme directory and select **baking_secrets.txt**.  
   
   
   
@@ -2055,7 +2070,15 @@ Then execute the command `gulp`
 
 To start MyEtherWallet for development navigate to the **dist** directory using the File Manager and double click on **index.html**.  
 
-To start the pi's file manager `pcmanfm`     
+To start the pi's file manager `sudo pcmanfm`     
+
+To start the terminal window from the keyboard type CTRL+ALT+T  
+
+To open the raspberry menu CTRL+Esc  
+
+To open text editor sudo leafpad filename
+
+
 
 [My Ethereum Notes are Found Here](https://gist.github.com/johnshearing)  
 [and here](https://github.com/johnshearing/MyEtherWalletOffline/blob/master/Creating%20a%20Local%20BlockChain.md)   
