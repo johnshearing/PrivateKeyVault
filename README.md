@@ -1653,15 +1653,24 @@ sub   2048R/0199AA57 2018-04-15
   * That's a lot of typing to see our file represented as a parade of qr-codes so let's do it with the PrivateKeyVault menu application instead.  
   * Highlight the menu option which says **Export Text File: Send QR-Code parade to screen** and press the **Enter** key.  
   * Navigate to the file we exported named **bobs_public_key.txt** and press the **Enter** key.  
+  * You will see a dialog box asking you how long you wish each QR-Code to be displayed.  
+  * Accept the default.  
   * You should see a parade of qr-codes flash across the touch screen.  
   *  
   * OK, so we displayed Bob's public key file as a parade of QR-Codes on the touch screen but how do we get this to Alice?   
-  * Run the above command again but this time use your smartphone to make a video of the QR-Code parade.  
+  * We are going to run the above command again but this time use your smartphone to make a video of the QR-Code parade.  
   * First arrange the PrivateKeyVault as shown in the photo below with the camera of your smart phone looking at the touch screen.  
   * [If you click on the image it will take you to a YouTube video which shows what's supposed to happen.](https://youtu.be/3MwJOj3t8cI)  
   * <a href="https://youtu.be/3MwJOj3t8cI" target="_blank"><img src="/images/ReadmeImages/Vault2Phone.jpg"  
 alt="Image of Vault passing qr-code to phone" width="240" height="180" border="10" /></a>  
-  * Now you can Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can email it to someone or broadcast it to everyone with another PrivateKeyVault (really any raspberry pi with a camera) who will import the video without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
+
+  * Highlight the menu option which says **Export Text File: Send QR-Code parade to screen** and press the **Enter** key.  
+  * Navigate to the file we exported named **bobs_public_key.txt** and press the **Enter** key.  
+  * You will see a dialog box asking you how long you wish each QR-Code to be displayed.  
+  * Press the video record button on your phone and let it record for a few seconds and then press the **Enter** key on your PrivateKeyVault to start the procession of QR-Codes.  
+  * When the procession ends press the stop button on your phone to end the recording.  
+  * 
+  * Now you can Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you will already have the video on your phone when you play the part of Alice. The point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed across the touch screen, and that you can email the video to someone or broadcast it to everyone who can then import the it into their own PrivateKeyVaults (really any raspberry pi with a camera) - and do all this without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
 * 
 * Now we will be playing the part of Alice.  
   * To play Alice's part we will need to remove Bob's public and private keys from the keyring.  
@@ -1790,7 +1799,18 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * This is the file that Alice is going to send to Bob.  
   * Close the text editor.  
   *  
-  *
+  * Alice is now going to pass her encrypted baking secrets out of the PrivateKeyVault to her phone exactly the way Bob sent his public key to Alice - using QR-Codes.  
+  * First arrange the PrivateKeyVault as shown in the photo below with the camera of your smart phone looking at the touch screen.  
+  * [If you click on the image it will take you to a YouTube video which shows what's supposed to happen.](https://youtu.be/3MwJOj3t8cI)  
+  * <a href="https://youtu.be/3MwJOj3t8cI" target="_blank"><img src="/images/ReadmeImages/Vault2Phone.jpg"  
+alt="Image of Vault passing qr-code to phone" width="240" height="180" border="10" /></a>  
+  * Then highlight the menu option which says **Export Text File: Send QR-Code parade to screen** and press the **Enter** key.  
+  * Navigate to the file we exported named **bobs_public_key.txt** and press the **Enter** key.  
+  * You should see a parade of qr-codes flash across the touch screen.  
+  *  
+
+  * Now you can Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can email it to someone or broadcast it to everyone with another PrivateKeyVault (really any raspberry pi with a camera) who will import the video without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
+  
   
   I am getting tired. I will continue with this tutorial tomorrow.
   :)
