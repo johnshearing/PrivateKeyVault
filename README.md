@@ -1706,8 +1706,9 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * You will be prompted for a location to store the video that the PrivateKeyVault will take of the phone.  
   * Select the **public_keys** directory. 
   * You will be prompted for many settings which control the process. Accept all the defaults.  
-  * Finally you will be prompted to start the recording process. Press the **Play** button on your phone and press the **Enter** key on your PrivateKeyVault.  
-  * When the phone finishes the QR_Code display they press the **Enter** key on your PrivateKeyVault to stop the recording.  
+  * Finally you will be prompted to start the recording process.  
+  * Press the **Play** button on your phone first and then press the **Enter** key on your PrivateKeyVault.  
+  * When the phone finishes playing the QR_Code display then press the **Enter** key on your PrivateKeyVault to stop the recording.  
   * Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
   * Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
   * Finally, you will be prompted for a name. You can accept the default (extractedTextFile.txt).  
@@ -1854,34 +1855,31 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Bob has just received the QR-Coded video containing Alice's encrypted secrets for baking a super moist and delicious cake.  
   * First Bob will move the QR-Coded video from his phone across the airgap to his PrivateKeyVault and extract the encrypted text from the video, placing it into a text file which will contain the encrypted message.    
   * An when the file is safely behind the airgap where no one can remotely view what he is doing - he will decrypt the message and read Alice's secrets for making a super moist and delicious cake.  
-  
-  
-  From here down I need to swap the names because Bob is now importing the file.  
-  * Alice has just received Bob's video on her smart phone.  
-  * The very first thing she does is to call Bob and ask for the finger print associated with his public key.  
-  * She will need this later to be sure she actually received Bob's public key.  
-  * She now needs to import this video into her PrivateKeyVault from the smartphone without connecting to it so as to maintain the airgap which prevents Mallory from installing spyware on her device.    
-  * Then she needs to convert the video file back into a text file so she can use Bob's public key to encrypt a secret message for Bob which explains how she makes her cakes so super moist and delicious.  
-  * To start the import process,  
-  * Alice will use the video camera on her PrivateKeyVault to import the video from her smartphone.  
+  * Bob has just received Alices's video on his smart phone.  
+  * To start the import process  
+  * Bob will use the video camera on her PrivateKeyVault to import the video from his smartphone.  
   * [Click here for a very short video showing the setup and transfer](https://www.youtube.com/watch?v=JsmamD40nSQ)  
   * Place your phone on the PrivateKeyVault as shown in the video.  
   * Then highlight the menu option which reads **Import Text File: Read QR_Coded video into camera and extract the text**.  
   * You will be prompted for a location to store the video that the PrivateKeyVault will take of the phone.  
-  * Select the **public_keys** directory. 
+  * Select the **readme** directory.  
   * You will be prompted for many settings which control the process. Accept all the defaults.  
-  * Finally you will be prompted to start the recording process. Press the **Play** button on your phone and press the **Enter** key on your PrivateKeyVault.  
-  * When the phone finishes the QR_Code display they press the **Enter** key on your PrivateKeyVault to stop the recording.  
+  * Finally you will be prompted to start the recording process.  
+  * Press the **Play** button on your phone first and then press the **Enter** key on your PrivateKeyVault.  
+  * When the phone finishes playing the QR_Code display then press the **Enter** key on your PrivateKeyVault to stop the recording.  
   * Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
   * Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
-  * Finally, you will be prompted for a name. You can accept the default (extractedTextFile.txt).  
+  * Finally, you will be prompted for a name. You can accept the default (extractedTextFile.txt) or change the name.  
   * Be aware that the Vault will not overwrite a file of the same name if it exists but does not warn you about this either.  
   * I will be dealing with this problem shortly.  
   * The conversion takes some time. Be patient. It takes time to bake a cake.  
   * When the text has been extracted you will be asked if you would like to view the text file. Answer **Yes**  
   * The Leafpad text editor will open and show you the file.  
-  * The file you are looking at (extractedTextFile.txt) should be identical to the file containing bob's public key which is called bobs_public_key.txt.  
+  * The file you are looking at (extractedTextFile.txt) will contain the encrypted text of Alice's baking secrets.  
+  * The contents of the file **extractedTextFile.txt** should contain exactly the same encrypted text as **baking_secrets.txt.asc**  
   * Close the Leafpad text editor.  
+  
+  Continue the work here.  
   * 
   * It's easy to check that the files are the same since both files are now in the same directory.  
   * Return to the menu application.  
