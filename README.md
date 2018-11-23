@@ -2127,11 +2127,14 @@ To start MyEtherWallet for development navigate to the **dist** directory using 
 
 To start the pi's file manager `sudo pcmanfm`     
 
-To start the terminal window from the keyboard type CTRL+ALT+T  
+To get the file manager to fill the screen on startup `pcmanfm --wallpaper-mode=screen`  
+The above command I think changes the configuration file although I don't know were the configuration file is.  
 
-To open the raspberry menu CTRL+Esc  
+To start the terminal window from the keyboard type `CTRL+ALT+T`  
 
-To open text editor sudo leafpad filename
+To open the raspberry menu `CTRL+ESC` or just press the **Windows** button  
+
+To open text editor `sudo leafpad filename`  
 
 
 
