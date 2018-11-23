@@ -1677,7 +1677,6 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * When the procession ends press the stop button on your phone to end the recording.  
   * 
   * Now you can Email the video to Alice or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you will already have the video on your phone when you play the part of Alice. The point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed across the touch screen, and that you can email the video to someone or broadcast it to everyone who can then import it into their own PrivateKeyVaults (really any raspberry pi with a camera) - and do all this without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
-* 
 * Now we will be playing the part of Alice.  
   * To play Alice's part we will need to remove Bob's public and private keys from the keyring.  
   * We can easily restore them later from the backup files you just made.   
@@ -1822,7 +1821,6 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * When the procession ends press the stop button on your phone to end the recording.  
   *  
   * Now you can Email the video to Bob or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can email it to someone or broadcast it to everyone with another PrivateKeyVault (really any raspberry pi with a camera) who will import the video without ever connecting to the Internet and without connecting to any other devices as we are about to see again.   
-*  
 * Soon we will be playing the part of Bob again.  
   * Let's get the machine ready for Bob to use.  
   * We are going to delete Alices key's from the keyring and restore Bob's keys. 
@@ -1849,6 +1847,11 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Navigate to the private_keys folder and select the file named **bobs_private_key.txt** and press the **Enter** key.  
   * You can list the public and private keys on your keyring now by selecting those menu options.  
   * Go ahead and try that now to confirm that the PrivateKeyVault is ready for Bob to use.  
+* Now we are going to play the part of Bob again.
+  * Bob has just received the QR-Coded video containing Alice's encrypted secrets for baking a super moist and delicious cake.  
+  * First Bob will move the QR-Coded video from his across the airgap to his PrivateKeyVault and extract the encrypted text from the video place it into a text file which will contain the encrypted message.    
+  * An now that the file is safely behind the airgap where no one can remotely view what he is doing - he will decrypt the message and read Alices secrets for making a super moist and delicious cake.  
+  
   
   I am getting tired. I will continue with this tutorial tomorrow.
   :)
