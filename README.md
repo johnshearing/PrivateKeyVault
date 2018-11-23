@@ -1564,7 +1564,7 @@ ssb   2048R/0199AA57 2018-04-15
   * Let's try it.  
   * Type `menu` to open the PrivateKeyVault menu application.  
   * Highligh the menu option which reads `Export a private key to a text file` and press the **Enter** key.  
-  * After clicking through some warning dialog boxes you will be prompted to select a directory where the file containing your private key will be saved to. You can create a new folder if you want to. I created a folder called **privatekeys**.  
+  * After clicking through some warning dialog boxes you will be prompted to select a directory where the file containing your private key will be saved to. You can create a new folder if you want to. I created a folder called **private_keys**.  
   * Then you will be prompted for the name of the file. I entered **bobs_private_key.txt**.  
   * Then you will be prompted for the unique id or email address associated with the private key that you wish to export.  
   * Enter **bob@gmail.com** and press the **Enter** button.  
@@ -1655,6 +1655,8 @@ sub   2048R/0199AA57 2018-04-15
   * Navigate to the file we exported named **bobs_public_key.txt** and press the **Enter** key.  
   * You will see a dialog box asking you how long you wish each QR-Code to be displayed.  
   * Accept the default.  
+  * You will see a dialog box asking if you would like to start the parade.  
+  * Go ahead and press the button which says **Start the Parade**  
   * You should see a parade of qr-codes flash across the touch screen.  
   *  
   * OK, so we displayed Bob's public key file as a parade of QR-Codes on the touch screen but how do we get this to Alice?   
@@ -1663,12 +1665,14 @@ sub   2048R/0199AA57 2018-04-15
   * [If you click on the image it will take you to a YouTube video which shows what's supposed to happen.](https://youtu.be/3MwJOj3t8cI)  
   * <a href="https://youtu.be/3MwJOj3t8cI" target="_blank"><img src="/images/ReadmeImages/Vault2Phone.jpg"  
 alt="Image of Vault passing qr-code to phone" width="240" height="180" border="10" /></a>  
-
   * Highlight the menu option which says **Export Text File: Send QR-Code parade to screen** and press the **Enter** key.  
   * Navigate to the file we exported named **bobs_public_key.txt** and press the **Enter** key.  
   * You will see a dialog box asking you for how long you wish each QR-Code to be displayed.  
-  * The very first QR-Code will show for 2 seconds not matter what you select.  
+  * The very first QR-Code will show for 2 seconds no matter what you select.  
   * This allows the camera time to focus and adjust to the light from the screen.  
+  * Press the **Enter** key to select the default.  
+  * You will see a dialog box asking if you would like to start the parade.  
+  * Do not start the parade yet.  
   * Press the video record button on your phone and let it record for a few seconds and then press the **Enter** key on your PrivateKeyVault to start the procession of QR-Codes.  
   * When the procession ends press the stop button on your phone to end the recording.  
   * 
@@ -1809,14 +1813,42 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Then highlight the menu option which says **Export Text File: Send QR-Code parade to screen** and press the **Enter** key.  
   * Navigate to the file we encrypted named **baking_secrets.txt.asc** and press the **Enter** key.  
   * You will see a dialog box asking you for how long you wish each QR-Code to be displayed.  
-  * Accept the default.  
-  * The very first QR-Code will show for 2 seconds nt matter what you select.  
+  * The very first QR-Code will show for 2 seconds no matter what you select.  
   * This allows the camera time to focus and adjust to the light from the screen.  
+  * Press the **Enter** key to select the default.  
+  * You will see a dialog box asking if you would like to start the parade.  
+  * Do not start the parade yet.  
   * Press the video record button on your phone and let it record for a few seconds and then press the **Enter** key on your PrivateKeyVault to start the procession of QR-Codes.  
-  * When the procession ends press the stop button on your phone to end the recording.    
+  * When the procession ends press the stop button on your phone to end the recording.  
   *  
-  * Now you can Email the video to Bob or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can email it to someone or broadcast it to everyone with another PrivateKeyVault (really any raspberry pi with a camera) who will import the video without ever connecting to the Internet and without connecting to any other devices as we will soon see.   
-  
+  * Now you can Email the video to Bob or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can email it to someone or broadcast it to everyone with another PrivateKeyVault (really any raspberry pi with a camera) who will import the video without ever connecting to the Internet and without connecting to any other devices as we are about to see again.   
+*  
+* Soon we will be playing the part of Bob again.  
+  * Let's get the machine ready for Bob to use.  
+  * We are going to delete Alices key's from the keyring and restore Bob's keys. 
+  * First lets export Alice's keys to text files in case we want to use them later.  
+  * Then we will remove her keys from the keyring.  
+  * Highlight the menu option which says **Export a public key to a text file** and press the **Enter** key.  
+  * You will be asked to select a location for the new text file containing Alice's public key.  
+  * Select the **public_keys** directory and press the **Enter** key.  
+  * You will be asked to name the new text file containing Alice's public key.  
+  * Enter the name **alices_public_key.txt** and press the **Enter** key.  
+  * You will be asked for a Unique ID.  
+  * Enter **alice@gmail.com** and press the **Enter** key.  
+  * You will see a message saying the that public key has been exported.  
+  * If you misspelled the email address then a blank file will be created so you better check the contents of the file.  
+  * Highlight the menu option which says **Read or write a message** and press the **Enter key**.  
+  * Go to the public_keys folder and open the file **alices_public_key.txt**  
+  * Close the text editor after you have examined the file.  
+  * Now export Alices private key to **private_keys** folder - You are expert at this by now.  
+  * Then delete Alice's private key first and then her public key just like you did for Bob when you were getting the machine ready for alice to use.  
+  * Bob's public key is already on the keyring. Remember he sent it to Alice via QR-Code parade?  
+  * So there is no need to restore his public key.  
+  * Go ahead and restore his private key.  
+  * Highlight the menu option which says **Import a public or private key from a text file** and press the **Enter** key.  
+  * Navigate to the private_keys folder and select the file named **bobs_private_key.txt** and press the **Enter** key.  
+  * You can list the public and private keys on your keyring now by selecting those menu options.  
+  * Go ahead and try that now to confirm that the PrivateKeyVault is ready for Bob to use.  
   
   I am getting tired. I will continue with this tutorial tomorrow.
   :)
