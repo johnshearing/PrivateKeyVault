@@ -1823,23 +1823,25 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Now you can Email the video to Bob or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can email it to someone or broadcast it to everyone with another PrivateKeyVault (really any raspberry pi with a camera) who will import the video without ever connecting to the Internet and without connecting to any other devices as we are about to see again.   
 * Soon we will be playing the part of Bob again.  
   * Let's get the machine ready for Bob to use.  
-  * We are going to delete Alices key's from the keyring and restore Bob's keys. 
-  * First lets export Alice's keys to text files in case we want to use them later.  
-  * Then we will remove her keys from the keyring.  
-  * Highlight the menu option which says **Export a public key to a text file** and press the **Enter** key.  
-  * You will be asked to select a location for the new text file containing Alice's public key.  
-  * Select the **public_keys** directory and press the **Enter** key.  
-  * You will be asked to name the new text file containing Alice's public key.  
-  * Enter the name **alices_public_key.txt** and press the **Enter** key.  
+  * We are going to delete Alices private key from the keyring and restore Bob's public and private keys.  
+  * We are going to leave Alices public key on the keyring for this demontration because we will need it to verify Alices signature.  
+  * We will just pretend that she sent her public key to Bob the same way Bob sent his public key to Alice.  
+  * We will further pretend that Bob called Alice on the phone to get the fingerprint of her public key to be sure that Mallory did not switch his public key for Alice's via malware on Bob or Alice's phone.  
+  * First lets export Alice's private key to a text file in case we want to use it later.  
+  * Then we will remove her private key from the keyring.  
+  * Highlight the menu option which says **Export a private key to a text file** and press the **Enter** key.  
+  * You will be asked to select a location for the new text file containing Alice's private key.  
+  * Select the **private_keys** directory and press the **Enter** key.  
+  * You will be asked to name the new text file containing Alice's private key.  
+  * Enter the name **alices_private_key.txt** and press the **Enter** key.  
   * You will be asked for a Unique ID.  
   * Enter **alice@gmail.com** and press the **Enter** key.  
-  * You will see a message saying the that public key has been exported.  
+  * You will see a message saying the that private key has been exported.  
   * If you misspelled the email address then a blank file will be created so you better check the contents of the file.  
   * Highlight the menu option which says **Read or write a message** and press the **Enter key**.  
-  * Go to the public_keys folder and open the file **alices_public_key.txt**  
+  * Go to the private_keys folder and open the file **alices_private_key.txt**  
   * Close the text editor after you have examined the file.  
-  * Now export Alices private key to **private_keys** folder - You are expert at this by now.  
-  * Then delete Alice's private key first and then her public key just like you did for Bob when you were getting the machine ready for alice to use.  
+  * Now delete Alice's private key. There is a menu option for this operation and you have done this before.  
   * Bob's public key is already on the keyring. Remember he sent it to Alice via QR-Code parade?  
   * So there is no need to restore his public key.  
   * Go ahead and restore his private key.  
@@ -1847,13 +1849,52 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Navigate to the private_keys folder and select the file named **bobs_private_key.txt** and press the **Enter** key.  
   * You can list the public and private keys on your keyring now by selecting those menu options.  
   * Go ahead and try that now to confirm that the PrivateKeyVault is ready for Bob to use.  
-* Now we are going to play the part of Bob again.
+  * You should see that both Bob's public and private keys are on the keyring and that Alice's public key is also on the keyring.  
+* Now we are going to play the part of Bob again.  
   * Bob has just received the QR-Coded video containing Alice's encrypted secrets for baking a super moist and delicious cake.  
   * First Bob will move the QR-Coded video from his phone across the airgap to his PrivateKeyVault and extract the encrypted text from the video, placing it into a text file which will contain the encrypted message.    
-  * An when the file is safely behind the airgap where no one can remotely view what he is doing - he will decrypt the message and read Alices secrets for making a super moist and delicious cake.  
-  *  
-  * 
+  * An when the file is safely behind the airgap where no one can remotely view what he is doing - he will decrypt the message and read Alice's secrets for making a super moist and delicious cake.  
   
+  
+  From here down I need to swap the names because Bob is now importing the file.  
+  * Alice has just received Bob's video on her smart phone.  
+  * The very first thing she does is to call Bob and ask for the finger print associated with his public key.  
+  * She will need this later to be sure she actually received Bob's public key.  
+  * She now needs to import this video into her PrivateKeyVault from the smartphone without connecting to it so as to maintain the airgap which prevents Mallory from installing spyware on her device.    
+  * Then she needs to convert the video file back into a text file so she can use Bob's public key to encrypt a secret message for Bob which explains how she makes her cakes so super moist and delicious.  
+  * To start the import process,  
+  * Alice will use the video camera on her PrivateKeyVault to import the video from her smartphone.  
+  * [Click here for a very short video showing the setup and transfer](https://www.youtube.com/watch?v=JsmamD40nSQ)  
+  * Place your phone on the PrivateKeyVault as shown in the video.  
+  * Then highlight the menu option which reads **Import Text File: Read QR_Coded video into camera and extract the text**.  
+  * You will be prompted for a location to store the video that the PrivateKeyVault will take of the phone.  
+  * Select the **public_keys** directory. 
+  * You will be prompted for many settings which control the process. Accept all the defaults.  
+  * Finally you will be prompted to start the recording process. Press the **Play** button on your phone and press the **Enter** key on your PrivateKeyVault.  
+  * When the phone finishes the QR_Code display they press the **Enter** key on your PrivateKeyVault to stop the recording.  
+  * Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
+  * Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
+  * Finally, you will be prompted for a name. You can accept the default (extractedTextFile.txt).  
+  * Be aware that the Vault will not overwrite a file of the same name if it exists but does not warn you about this either.  
+  * I will be dealing with this problem shortly.  
+  * The conversion takes some time. Be patient. It takes time to bake a cake.  
+  * When the text has been extracted you will be asked if you would like to view the text file. Answer **Yes**  
+  * The Leafpad text editor will open and show you the file.  
+  * The file you are looking at (extractedTextFile.txt) should be identical to the file containing bob's public key which is called bobs_public_key.txt.  
+  * Close the Leafpad text editor.  
+  * 
+  * It's easy to check that the files are the same since both files are now in the same directory.  
+  * Return to the menu application.  
+  * Highlight the menu option which says **Work at the command prompt** and press the **Enter** key.  
+  * You will be prompted to select the working directory.  
+  * Choose the **public_keys** directory.  
+  * Then a terminal window will open.  
+  * Type the following command into the terminal window and press the **Enter** key.  
+  * `diff -s bobs_public_key.txt extractedTextFile.txt`  
+  * To learn more about this command type **man diff** into the terminal window.  
+  * If the files are not identical then output from the diff program will show you where the files differ.    
+  * If all went well you should see a message in the terminal window telling you that the files are identical.  
+  * Congratulations! Using QR-Codes you have just passed a file from your PrivateKeyVault out across the airgap to your phone without connecting the devices. Then you passed the file back in - all without exposing your PrivateKeyVault to any attacks from WiFi, Bluetooth, Thumbdrives, or Data cable transfers. When you work this way, no one can install malware, keyloggers, remote control or remote viewing software and no one can dig through the files on your PrivateKeyVault.   
   
   I am getting tired. I will continue with this tutorial tomorrow.
   :)
