@@ -1849,8 +1849,10 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Go ahead and try that now to confirm that the PrivateKeyVault is ready for Bob to use.  
 * Now we are going to play the part of Bob again.
   * Bob has just received the QR-Coded video containing Alice's encrypted secrets for baking a super moist and delicious cake.  
-  * First Bob will move the QR-Coded video from his across the airgap to his PrivateKeyVault and extract the encrypted text from the video place it into a text file which will contain the encrypted message.    
-  * An now that the file is safely behind the airgap where no one can remotely view what he is doing - he will decrypt the message and read Alices secrets for making a super moist and delicious cake.  
+  * First Bob will move the QR-Coded video from his phone across the airgap to his PrivateKeyVault and extract the encrypted text from the video, placing it into a text file which will contain the encrypted message.    
+  * An when the file is safely behind the airgap where no one can remotely view what he is doing - he will decrypt the message and read Alices secrets for making a super moist and delicious cake.  
+  *  
+  * 
   
   
   I am getting tired. I will continue with this tutorial tomorrow.
