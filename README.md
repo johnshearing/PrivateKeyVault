@@ -1852,12 +1852,11 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Go ahead and try that now to confirm that the PrivateKeyVault is ready for Bob to use.  
   * You should see that both Bob's public and private keys are on the keyring and that Alice's public key is also on the keyring.  
 * Now we are going to play the part of Bob again.  
-  * Bob has just received the QR-Coded video containing Alice's encrypted secrets for baking a super moist and delicious cake.  
+  * Bob has just received on his smart phone the QR-Coded video containing Alice's encrypted secrets for baking a super moist and delicious cake.  
   * First Bob will move the QR-Coded video from his phone across the airgap to his PrivateKeyVault and extract the encrypted text from the video, placing it into a text file which will contain the encrypted message.    
-  * An when the file is safely behind the airgap where no one can remotely view what he is doing - he will decrypt the message and read Alice's secrets for making a super moist and delicious cake.  
-  * Bob has just received Alices's video on his smart phone.  
+  * And when the file is safely behind the airgap where no one can remotely view what he is doing - he will decrypt the message and read Alice's secrets for making a super moist and delicious cake.  
   * To start the import process  
-  * Bob will use the video camera on her PrivateKeyVault to import the video from his smartphone.  
+  * Bob will use the video camera on his PrivateKeyVault to import the video from his smartphone.  
   * [Click here for a very short video showing the setup and transfer](https://www.youtube.com/watch?v=JsmamD40nSQ)  
   * Place your phone on the PrivateKeyVault as shown in the video.  
   * Then highlight the menu option which reads **Import Text File: Read QR_Coded video into camera and extract the text**.  
@@ -1866,10 +1865,10 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * You will be prompted for many settings which control the process. Accept all the defaults.  
   * Finally you will be prompted to start the recording process.  
   * Press the **Play** button on your phone first and then press the **Enter** key on your PrivateKeyVault.  
-  * When the phone finishes playing the QR_Code display then press the **Enter** key on your PrivateKeyVault to stop the recording.  
+  * When the phone finishes playing the QR_Code parade then press the **Enter** key on your PrivateKeyVault to stop the recording.  
   * Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
   * Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
-  * Finally, you will be prompted for a name. You can accept the default (extractedTextFile.txt) or change the name.  
+  * Finally, you will be prompted for a name. Accept the default (extractedTextFile.txt).  
   * Be aware that the Vault will not overwrite a file of the same name if it exists but does not warn you about this either.  
   * I will be dealing with this problem shortly.  
   * The conversion takes some time. Be patient. It takes time to bake a cake.  
@@ -1878,24 +1877,28 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * The file you are looking at (extractedTextFile.txt) will contain the encrypted text of Alice's baking secrets.  
   * The contents of the file **extractedTextFile.txt** should contain exactly the same encrypted text as **baking_secrets.txt.asc**  
   * Close the Leafpad text editor.  
-  
-  Continue the work here.  
-  * 
-  * It's easy to check that the files are the same since both files are now in the same directory.  
-  * Return to the menu application.  
-  * Highlight the menu option which says **Work at the command prompt** and press the **Enter** key.  
-  * You will be prompted to select the working directory.  
-  * Choose the **public_keys** directory.  
-  * Then a terminal window will open.  
-  * Type the following command into the terminal window and press the **Enter** key.  
-  * `diff -s bobs_public_key.txt extractedTextFile.txt`  
-  * To learn more about this command type **man diff** into the terminal window.  
-  * If the files are not identical then output from the diff program will show you where the files differ.    
-  * If all went well you should see a message in the terminal window telling you that the files are identical.  
-  * Congratulations! Using QR-Codes you have just passed a file from your PrivateKeyVault out across the airgap to your phone without connecting the devices. Then you passed the file back in - all without exposing your PrivateKeyVault to any attacks from WiFi, Bluetooth, Thumbdrives, or Data cable transfers. When you work this way, no one can install malware, keyloggers, remote control or remote viewing software and no one can dig through the files on your PrivateKeyVault.   
-  
-  I am getting tired. I will continue with this tutorial tomorrow.
-  :)
+  * You could check that both files are the same by opening the terminal window in the **readme** directory and then executing the following command. You have made this comparison earlier with Bob's public key.  
+  * `diff -s baking_secrets.txt.asc extractedTextFile.txt`  
+  * But there is no need to check if they are the same. You will know when you decrypt the file.  
+  * If even a single character has been changed then you will be notified by GPG that the file can not be decrypted.  
+  * That's how you will know if Alice's baking secrets did not arrive intact or if someone has tampered with the file.  
+  * Congratulations! Using QR-Codes you have just passed a file from Alice's PrivateKeyVault out across the airgap to your phone without connecting the devices. Then you passed the file in to Bob's PrivateKeyVault - all without exposing the devices to any attacks from WiFi, Bluetooth, Thumbdrives, or Data cable transfers. When you work this way, no one can install malware, keyloggers, remote control or remote viewing software and no one can dig through the files on your PrivateKeyVault.  
+  *  
+  * Now that Alice's baking secrets encrypted with Bob's public key are safely across the airgap, Bob can decrypt the message using his private key and read it without worrying about Mallory seeing it.  
+  * Highlight the menu option which says **Decrypt a text file** and press the **Enter** key.  
+  * Select the file named **extractedTextFile.txt** in the **readme** folder.  
+  * You will be asked for the passphrase you entered when you created Bob's private key.  
+  * Provide the passphrase and follow the prompts.  
+  * GPG will try an give the new unencrypted file the same name as the original (baking_secrets.txt).  
+  * If the original file exists in the readme folder then GPG will give you a chance to rename the file.  
+  * Call the file **unencrypted_baking_secrets.txt**  
+  * You will see a message saying that the signature matches Alice's public key but it will warn you that her public key has not been marked by you as trusted. Don't worry about that. All you need to do right now is make sure that the fingerprint shown on the terminal window matches the fingerprint that Alice read to you over the phone when you called her.  
+  *  
+  * Now lets read Alice's secrets for making a super moist and delicious cake.  
+  * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
+  * Then select the file **unencrypted_baking_secrets.txt** in the **readme** folder.  
+  * Congratulations! There in front of you are Alices secrets for making a super moist and delicious cake.  
+  * Moreover, you are now able to write, encrypt, send, receive, decrypt, and read and store secret messages with absoult certainty that they will remain private.  
 
 #### Create your private key  
 Some people think it is a good idea to SHA3 Hash their dogs name or a clever phase to get a 64 character number for use as a private key. This is a very dumb idea. Anything you can possibly think of has already been thought of and hashed. You will likely lose your ether if you do this. MyEtherWallet comes with a utility to generate a public/private key pair. This is probably very safe but I do not use this method. The reason I would not use it or any other software to generate my private key is because there is always some chance that a malware infected device could generate a key pair already know to an attacker. I recommend flipping a coin to generate a private key. Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
@@ -2089,6 +2092,10 @@ Strongly consider using the PiJuice in a future build.
 
 
 #### OS Software Items To Add Next Time    
+
+I think the recvid bash script will not overwrite a file of the same name if it exists but does not warn you about this either.  
+Check if this is true and fix the problem if it exists.  
+The fix will be a warning dialog and an option to overwrite.  
 
 Turn the camera image 90 degrees counter-clockwise.  
 
