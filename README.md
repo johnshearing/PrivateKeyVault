@@ -1898,7 +1898,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
   * Then select the file **unencrypted_baking_secrets.txt** in the **readme** folder.  
   * Congratulations! There in front of you are Alices secrets for making a super moist and delicious cake.  
-  * Moreover, you are now able to write, encrypt, send, receive, decrypt, and read and store secret messages with absoult certainty that they will remain private.  
+  * Moreover, you are now able to write, encrypt, send, receive, decrypt, read and store secret messages with absoult certainty that your secrets will remain private.  
 
 #### Create your private key  
 Some people think it is a good idea to SHA3 Hash their dogs name or a clever phase to get a 64 character number for use as a private key. This is a very dumb idea. Anything you can possibly think of has already been thought of and hashed. You will likely lose your ether if you do this. MyEtherWallet comes with a utility to generate a public/private key pair. This is probably very safe but I do not use this method. The reason I would not use it or any other software to generate my private key is because there is always some chance that a malware infected device could generate a key pair already know to an attacker. I recommend flipping a coin to generate a private key. Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
