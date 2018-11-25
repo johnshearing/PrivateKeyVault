@@ -158,9 +158,9 @@ The items you will need are as follows.
 * Raspberry pi 2 board  
 * Official raspberry pi 7 inch touchscreen  
 * Official raspberry pi camera  
-* 16 G-bite SD card  
+* 16 GB SD card  
 * Ethernet cable  
-* WiFi dongle  
+* WiFi dongle for USB port    
 * 32Mb thumbdrive   
 * [Miniature Keyboard- Microcontroller-Friendly PS/2 and USB](https://www.adafruit.com/product/857)  
 * [5V 2.5A Switching Power Supply with 20AWG MicroUSB Cable](https://www.adafruit.com/product/1995)    
@@ -168,8 +168,12 @@ The items you will need are as follows.
 * [PowerBoost 1000 Basic - 5V USB Boost @ 1000mA from 1.8V+](https://www.adafruit.com/product/2030)  
 * [Lithium Ion Battery Pack - 3.7V 6600mAh](https://www.adafruit.com/product/353)  
 * [Rugged Metal On/Off Switch with Green LED Ring - 16mm Green On/Off](https://www.adafruit.com/product/482)  
+* [BRASS M2.5 STANDOFFS FOR PI HATS - BLACK PLATED - PACK OF 2](https://www.adafruit.com/product/2336) Buy 2 pack because you need 4 total.  
 * [Black Nylon Screw and Stand-off Set – M2.5 Thread](https://www.adafruit.com/product/3299)  
-* [USB DIY Slim Connector Shell - A-M Plug](https://www.adafruit.com/product/1827)  
+* 2.5 mm steel screws 6 mm long. You will need 4 to mount the touch screen. Plastic screws from kit are fine for everything else.  
+* A wire tie to hold the battery.  
+* A 3/32 inch in diameter drill bit. Two holes in camera board need to be drilled larger to pass 2.5 mm screws.  
+* [USB DIY Slim Connector Shell - A-M Plug](https://www.adafruit.com/product/1827) for shortening keyboard cable.  
 * [Jumper Wires Premium 6" F/F - 20 AWG (10 Pack)](https://www.sparkfun.com/products/11710)  
 * [Wire, PVC, Red, 20 AWG, 25 ft, 7.6 m](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4831&storeId=10194)  
 * [Wire, PVC, Black, 20 AWG, 25 ft, 7.6 m](https://www.newark.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=10001&langId=-1&urlRequestType=Base&partNumber=68X4829&storeId=10194)  
