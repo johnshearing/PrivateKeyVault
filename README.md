@@ -1618,14 +1618,7 @@ sub   2048R/0199AA57 2018-04-15
 * Now Bob needs to get his public key to Alice.  
   * First Bob needs to get his public key out of the public keyring file and into a file of it's own so he can send it to Alice.  
   * I am sure you guessed this can be done at the command line.  
-  * The most useful GPG commands are listed at the end of this document and you can learn how to use them all by entering the following command into your favorite command line interpreter.  
-  * `man gpg`  
-  * The following links are good online resources on how to use gpg:  
-  * [Super Short Quick Start Document](https://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)  
-  * [30 Minute QuickStart - YouTube](https://youtu.be/ZSa-d_9O5DA)  
-  * [In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
-  * [Keeping It At The Console - Input to GPG from Stdin / GPG Output to Stdout](https://stackoverflow.com/questions/5504721/how-do-i-encrypt-plaintext-with-gnupg)  
-  *
+  * The most useful GPG commands are listed in the appendix at the end of this document.  
   * For the rest of this tutorial however, we will work exclusively with PrivateKeyVault menu application because it's easy to use and because you don't have to remember all the commands.  
   * Highlight the menu option **Export a public key to a text file** and press the **Enter** key.  
   * Now press the **Create Folder** button.  
@@ -2295,6 +2288,15 @@ gpg --edit-key KeyID  revsig, save
 gpg --send-keys keyID  
 gpg2 --delete-secret-keys KeyID  
 gpg2 --delete-key KeyID  
+
+You can learn how to use all the commands by entering the following command into your favorite command line interpreter.   
+`man gpg`  
+
+The following links are good online resources on how to use gpg:  
+[Super Short Quick Start Document](https://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)  
+[30 Minute QuickStart - YouTube](https://youtu.be/ZSa-d_9O5DA)  
+[In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
+[Keeping It At The Console - Input to GPG from Stdin / GPG Output to Stdout](https://stackoverflow.com/questions/5504721/how-do-i-encrypt-plaintext-with-gnupg)  
 
 Contact Information  
 Geoffrey Shearing: gshearing@radioactiverf.com  
