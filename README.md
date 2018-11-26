@@ -1754,7 +1754,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Highlight the menu option which says **List public keys** and then press the **Enter** key.  
   * You will see a dialog box asking which public key to show.  
   * Just hit the **Backspace** key to blank out the field and then press the **Enter** key.  
-  * Notice both Bob's and Alice's public key is displayed. That's because we did specify which key to show.  
+  * Notice both Bob's and Alice's public key is displayed. That's because we didn't specify which key to show.  
   *  
   * Now let's encrypted Alice's secrets for making a cake super moist and delicious.  
   * If you remember, just before we pulled the plug on the Internet airgapping your PrivateKeyVault, we copied this file that you are reading now onto you pi. It's in a fold named **readme** and file is named readme.txt  
