@@ -1756,7 +1756,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Just hit the **Backspace** key to blank out the field and then press the **Enter** key.  
   * Notice both Bob's and Alice's public key is displayed. That's because we didn't specify which key to show.  
   *  
-  * Now let's encrypted Alice's secrets for making a cake super moist and delicious.  
+  * Now let's encrypt Alice's secrets for making a cake super moist and delicious.  
   * If you remember, just before we pulled the plug on the Internet airgapping your PrivateKeyVault, we copied this file that you are reading now onto you pi. It's in a fold named **readme** and file is named readme.txt  
   * We will open that file using the menu app, copy the baking secrets onto the clipboard and then paste it into a new document called **baking_secrets.txt**  
   * Then we will encrypt the file using Bob's public key and send the encrypted baking secrets to Bob. 
