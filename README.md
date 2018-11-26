@@ -142,6 +142,7 @@ Now that people all across the world can set up their own accounts on a super se
 [Scratch Pad of Notes](https://github.com/johnshearing/PrivateKeyVault#scratch-pad-of-notes)  
 
 [Appendix](https://github.com/johnshearing/PrivateKeyVault#appendix)  
+* [Commands for working](https://github.com/johnshearing/PrivateKeyVault#commands-for-working-with-video-at-the-terminal)
 * [Often Used Github Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-github-commands)  
 * [Often Used GPG Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-gpg-commands)    
 
