@@ -2095,15 +2095,18 @@ Consider the Raspberry Pi Module 3 for it's smaller size in future builds.
 
 Strongly consider using the PiJuice in a future build.  
 
+Tip the screen up a bit for a better viewing angle.  
 
 
 #### OS Software Items To Add Next Time    
 
-I think the recvid bash script will not overwrite a file of the same name if it exists but does not warn you about this either.  
+The recvid bash script will not overwrite a file of the same name if it exists but does not warn you about this either.  
 Check if this is true and fix the problem if it exists.  
 The fix will be a warning dialog and an option to overwrite.  
 
-Turn the camera image 90 degrees counter-clockwise.  
+The qrflash bash script does not check for two identical lines of text right next to each other.  
+So while chances of this are low in a text file it must be checked and handled.  
+This will matter more if the script is used to transfer image files.  
 
 Make one button show up at a time for scan start and scan stop such that scan stop replaces scan start while the scan process is running and scan start replaces scan stop when the scan process has stopped. This will save on screen real estate and helps the user understand if the scan process is running or not.   
 
