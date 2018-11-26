@@ -1709,7 +1709,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * You will be prompted for many settings which control the process. Accept all the defaults.  
   * Finally you will be prompted to start the recording process.  
   * Press the **Play** button on your phone first and then press the **Enter** key on your PrivateKeyVault.  
-  * When the phone finishes playing the QR_Code display then press the **Enter** key on your PrivateKeyVault to stop the recording.  
+  * When the phone finishes playing the QR_Code parade then press the **Enter** key on your PrivateKeyVault to stop the recording.  
   * Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
   * Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
   * Finally, you will be prompted for a name. You can accept the default (extractedTextFile.txt).  
