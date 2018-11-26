@@ -1447,7 +1447,9 @@ The only way to delete data on an SD card is to destroy the card with a hot flam
 #### Sending an Encrypted Message  
 I will be covering all of this material in a video tutorial shortly.  
 What is written below is the script that the video will follow.  
-So it serves as an written tutorial as well. 
+So it serves as an written tutorial as well.  
+
+Not only does this tutorial cover the use of QR-Codes to cross the airgap, it is also a beginners tutorial on using GPG encrypted messaging. Everything you need to know in order to send and receive encrypted messages across the Internet is covered here.  
 
 To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
 [This very short video shows the process](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
