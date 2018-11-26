@@ -1058,7 +1058,7 @@ The following is the written tutorial from which these notes are made.
 [Raspberry Pi LUKS Root Encryption](https://robpol86.com/raspberry_pi_luks.html)  
 I have rewritten it below, changing the wording a bit to match this particular application.  
 
-These instructions for encryption are unique because it shows a method of encrypting an entire partition on the SD card (your operating system) without the need of a second Linux computer. Everything is done on the raspberry pi. The only extra item you will need is a thumbdrive.  
+These instructions for encryption are unique because it shows a method of encrypting an entire partition on the SD card (your operating system) without the need of a second Linux computer. Everything is done on the raspberry pi which reduces the opportunity for a malware attack.    
 
 An overview of the process:  
 Install software on your Raspberry Pi’s Raspbian OS.  
