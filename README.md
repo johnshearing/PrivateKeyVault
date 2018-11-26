@@ -1631,7 +1631,7 @@ sub   2048R/0199AA57 2018-04-15
   *  
   * You can look at the key if you want to the same way we looked at bob's private key.  
   * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
-  * Navigate to the **public_keys** directory and then click on the file named **bobs_public_key**.  
+  * Navigate to the **public_keys** directory and then click on the file named **bobs_public_key.txt**.  
   * The leafpad text editor will open and Bob's public key will be displayed.  
   * Pressing **CTRL-q** will close the text editor.  
   *
