@@ -1062,7 +1062,7 @@ These instructions for encryption are unique because it shows a method of encryp
 
 An overview of the process:  
 Install software on your Raspberry Pi’s Raspbian OS.  
-Build a custom and boot into the initramfs.  
+Build a custom initramfs and boot into it.  
 Shrink your main file system.  
 Back up your main file system from the SD card to the USB drive.  
 Wipe SD card and create an empty encrypted partition.  
