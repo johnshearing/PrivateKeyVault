@@ -1788,7 +1788,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Answer yes so that Bob will know for sure that the encrypted file is from Alice.  
   * Enter Alices Password when prompted.  
   * Next you will be asked for the Unique Id of the recipients.  
-  * It is customary to make yourself one of the recipients so otherwise only Bob will be able decrypt the file.  
+  * It is customary to make yourself one of the recipients - otherwise only Bob will be able decrypt the file.  
   * So enter Alice's email address **alice@gmail.com** and press the **Enter** key.  
   * Next enter Bob's email address **bob@gmail.com** and press the **Enter** key.  
   * You will get a warning that there is no certainty that the public key for bob actually belongs to him.  
