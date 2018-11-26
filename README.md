@@ -1894,7 +1894,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Select the file named **extractedTextFile.txt** in the **readme** folder.  
   * You will be asked for the passphrase you entered when you created Bob's private key.  
   * Provide the passphrase and follow the prompts.  
-  * GPG will try an give the new unencrypted file the same name as the original (baking_secrets.txt).  
+  * GPG will try to give the new unencrypted file the same name as the original (baking_secrets.txt).  
   * If the original file exists in the readme folder then GPG will give you a chance to rename the file.  
   * Call the file **unencrypted_baking_secrets.txt**  
   * You will see a message saying that the signature matches Alice's public key but it will warn you that her public key has not been marked by you as trusted. Don't worry about that. All you need to do right now is make sure that the fingerprint shown on the terminal window matches the fingerprint that Alice read to you over the phone when you called her.  
@@ -1903,7 +1903,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
   * Then select the file **unencrypted_baking_secrets.txt** in the **readme** folder.  
   * Congratulations! There in front of you are Alices secrets for making a super moist and delicious cake.  
-  * Moreover, you are now able to write, encrypt, send, receive, decrypt, read and store secret messages with absoult certainty that your secrets will remain private.  
+  * Moreover, you are now able to write, encrypt, send, receive, decrypt, read and store secret messages with absolute certainty that your secrets will remain private.  
 
 #### Create your private key  
 Some people think it is a good idea to SHA3 Hash their dogs name or a clever phase to get a 64 character number for use as a private key. This is a very dumb idea. Anything you can possibly think of has already been thought of and hashed. You will likely lose your ether if you do this. MyEtherWallet comes with a utility to generate a public/private key pair. This is probably very safe but I do not use this method. The reason I would not use it or any other software to generate my private key is because there is always some chance that a malware infected device could generate a key pair already know to an attacker. I recommend flipping a coin to generate a private key. Let heads represent a one and tails represent a zero. Four flips will produce one hexadecimal character of the key by converting binary to hexadecimal.  
