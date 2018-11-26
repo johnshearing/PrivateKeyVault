@@ -1447,31 +1447,31 @@ The only way to delete data on an SD card is to destroy the card with a hot flam
 #### Sending an Encrypted Message  
 I will be covering all of this material in a video tutorial shortly.  
 What is written below is the script that the video will follow.  
-So it serves as an written tutorial as well.  
+So it serves as a written tutorial as well.  
 
-Not only does this tutorial cover the use of QR-Codes to cross the airgap, it is also a beginners tutorial on using GPG encrypted messaging. Everything you need to know in order to send and receive encrypted messages across the Internet is covered here.  
+Not only does this tutorial cover the use of QR-Codes to cross the airgap, it is also a beginner’s tutorial on using GPG encrypted messaging. Everything you need to know in order to send and receive encrypted messages across the Internet is covered here.  
 
 To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
 [This very short video shows the process](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
 Look at this first before proceeding with this topic.  
 
-By way of introduction, lets try moving text out of the PrivateKeyVault from the command line.  
+By way of introduction, let’s try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
 Execute the following command at the terminal window:  
 `qrencode -t ANSIUTF8 "hello world"`  
 You should see a QR-Code on the screen.  
 If you scan this into you smartphone using any QR-Code scanning app you will see that this reads "hello world"  
-The QRCode scanning app I like to use is Norton's Snap for Android.  
+The QR-Code scanning app I like to use is Norton's Snap for Android.  
 Once the text is scanned into your phone you can do whatever you want with it  
-simply by pasting the text it into other apps like gmail or perhaps a text editor. 
+simply by pasting the text into other apps like gmail or perhaps a text editor. 
 So this is basically how you get text out of the Private Key Vault without connecting to other devices.  
 
 Now we will see how to transfer an encrypted text file from one PrivateKeyVault to another using QR-Codes.  
 This will allow us to make a secure file transfer over the Internet without losing our airgap.  
-By using this method, there will be no opportunity for attackers to access any files on either Vault because we will make the transfer without connecting to any other devices. Further more, there will be no chance of anyone reading our message because the message will not be decrypted until the message is safely on the other side of the airgap where spyware and keyloggers can not go.  
+By using this method, there will be no opportunity for attackers to access any files on either Vault because we will make the transfer without connecting to any other devices. Furthermore, there will be no chance of anyone reading our message because the message will not be decrypted until the message is safely on the other side of the airgap where spyware and keyloggers cannot go.  
 
 Here is a summary of what we will be doing:  
-Let's pretend Alice owns a baking company and she is opening a new cake factory in another city. Her new associate Bob already has the cake recipe but does not yet possess the secrets for making the cake super moist and delicious. Both Alice and Bob possess a PrivateKeyVault which is nothing more that an airgapped raspberry pi computer. Mallory is an industrial spy. He is trying to steal Alice's baking secrets to sell to the highest bidder. We will be playing both the parts of Alice and Bob in this exchange so that you can experience all the steps required to successfully make the encrypted file transfer.  
+Let's pretend Alice owns a baking company and she is opening a new cake factory in another city. Her new associate Bob already has the cake recipe but does not yet possess the secrets for making the cake super moist and delicious. Both Alice and Bob possess a PrivateKeyVault which is nothing more than an airgapped raspberry pi computer. Mallory is an industrial spy. He is trying to steal Alice's baking secrets to sell to the highest bidder. We will be playing both the parts of Alice and Bob in this exchange so that you can experience all the steps required to successfully make the encrypted file transfer.  
 
 The following is the information we will be sending.  
 ```  
@@ -1518,7 +1518,7 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
   * Press **y** for yes and then press the enter button.  
   *   
   * Next you will be asked for **Bob's Name**, **Bob's Email Address**, and a **Comment**.  
-  * These will be used to make a unique identifyer for Bob's key.  
+  * These will be used to make a unique identifier for Bob's key.  
   * Since the name must be at least five characters long, we will enter **Robert** when asked for Bob's name.  
   * Enter **Robert** for the Name, **bob@gmail.com** for the email address, and **Bob's GPG keypair** for the comment.  
   * If you are satisfied that all is correct then input the capital letter O and press **Enter** to continue.  
@@ -1573,7 +1573,7 @@ ssb   2048R/0199AA57 2018-04-15
   * The menu does this all for you and it sends the output to the file you specify just like the command above, but it's easier to use. 
   * Let's try it.  
   * Type `menu` to open the PrivateKeyVault menu application.  
-  * Highligh the menu option which reads `Export a private key to a text file` and press the **Enter** key.  
+  * Highlight the menu option which reads `Export a private key to a text file` and press the **Enter** key.  
   * After clicking through some warning dialog boxes you will be prompted to select a directory where the file containing your private key will be saved to. You can create a new folder if you want to. I created a folder called **private_keys**.  
   * Then you will be prompted for the name of the file. I entered **bobs_private_key.txt**.  
   * Then you will be prompted for the unique id or email address associated with the private key that you wish to export.  
@@ -1618,7 +1618,7 @@ sub   2048R/0199AA57 2018-04-15
 * To see the fingerprint using the menu app, just highlight the menu option that says **Show fingerprints for public keys** and press the **Enter** key.  
 
 * Now Bob needs to get his public key to Alice.  
-  * First Bob needs to get his public key out of the public keyring file and into a file of it's own so he can send it to Alice.  
+  * First Bob needs to get his public key out of the public keyring file and into a file of its own so he can send it to Alice.  
   * I am sure you guessed this can be done at the command line.  
   * The most useful GPG commands are listed in the appendix at the end of this document.  
   * For the rest of this tutorial however, we will work exclusively with PrivateKeyVault menu application because it's easy to use and because you don't have to remember all the commands.  
@@ -1638,7 +1638,7 @@ sub   2048R/0199AA57 2018-04-15
   * Pressing **CTRL-q** will close the text editor.  
   *
   * Now we will see how to get this public key file out of Bob's PrivateKeyVault, email it to Alice, and get it into her Vault without ever connecting the Vaults to any other devices. They will not be using a thumbdrive, no WiFi, no Bluetooth, no ethernet cable, no USB cable - no connections of any kind to other devices. By preserving the airgap during the transfer process we prevent Mallory from gaining access to the PrivateKeyVaults. So he cannot use spyware to read how Alice makes her cakes so super moist and delicious.  
-  * To do all this we will start by outputing Bob's public key text file (the one we just exported) to the touch screen in the form of QR-Codes.  
+  * To do all this we will start by outputting Bob's public key text file (the one we just exported) to the touch screen in the form of QR-Codes.  
   * The menu application does this for us, but by way of introduction, the following command typed into the command window would display several QR-codes sequentially on the touchscreen.  
   * There would be one QR-Code for each line in Bob's public key file.     
   * `cd ~/public_keys && base64 bobs_public_key.txt | while read r; do echo $r | qrencode -t ANSIUTF8; sleep .3; done`  
@@ -1684,7 +1684,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * To play Alice's part we will need to remove Bob's public and private keys from the keyring.  
   * We can easily restore them later from the backup files you just made.   
   * In the alternative, we could simply clone a fresh copy of the SD card and run the PrivateKeyVault from that.  
-  * Then everything would be the same execpt that Bob's public and private keys would not be anywhere on the system.  
+  * Then everything would be the same except that Bob's public and private keys would not be anywhere on the system.  
   * For this demonstration, let's just remove Bob's keys from the keyring because this will give us extra practice working with GPG and with the menu application.  
   * The GPG system requires that the private key be deleted first.  
   * Highlight the menu option which says **Delete a private key** and press the **Enter** key.  
@@ -1705,13 +1705,13 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Alice will use the video camera on her PrivateKeyVault to import the video from her smartphone.  
   * [Click here for a very short video showing the setup and transfer](https://www.youtube.com/watch?v=JsmamD40nSQ)  
   * Place your phone on the PrivateKeyVault as shown in the video.  
-  * Then highlight the menu option which reads **Import Text File: Read QR_Coded video into camera and extract the text**.  
+  * Then highlight the menu option which reads **Import Text File: Read QR-Coded video into camera and extract the text**.  
   * You will be prompted for a location to store the video that the PrivateKeyVault will take of the phone.  
   * Select the **public_keys** directory. 
   * You will be prompted for many settings which control the process. Accept all the defaults.  
   * Finally you will be prompted to start the recording process.  
   * Press the **Play** button on your phone first and then press the **Enter** key on your PrivateKeyVault.  
-  * When the phone finishes playing the QR_Code parade then press the **Enter** key on your PrivateKeyVault to stop the recording.  
+  * When the phone finishes playing the QR-Code parade then press the **Enter** key on your PrivateKeyVault to stop the recording.  
   * Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
   * Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
   * Finally, you will be prompted to name the file where the extracted text will go.  
@@ -1750,7 +1750,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Navigate to the **public_keys** folder and then select the file named **extractedTextFile.txt** and press the **Enter** key.  
   * You should get a message saying that the public key was imported.  
   *  
-  * Lets check an see if the key is there.  
+  * Let's check an see if the key is there.  
   * Highlight the menu option which says **List public keys** and then press the **Enter** key.  
   * You will see a dialog box asking which public key to show.  
   * Just hit the **Backspace** key to blank out the field and then press the **Enter** key.  
@@ -1764,7 +1764,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Then open the **readme** folder.  
   * Then open the file named **readme.txt**  
   * Then press **CTRL+F** and search for the term **Secret 1**. That will bring you to the secrets for baking a moist cake.  
-  * Highlight all the secrets an press **CTRL+C** to copy all the secrets onto the clipboard.  
+  * Highlight all the secrets and press **CTRL+C* to copy all the secrets onto the clipboard.  
   * Then close the Leafpad text editor.  
   * Open the text editor again by highlighting the menu option which says **Read or write a message** and press the **Enter** key.  
   * Instead of selecting a file to open, press the cancel button.  
@@ -1786,7 +1786,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Navigate to the readme directory and select **baking_secrets.txt**.  
   * You will be asked if you want to sign the encrypted file.  
   * Answer yes so that Bob will know for sure that the encrypted file is from Alice.  
-  * Enter Alices Password when prompted.  
+  * Enter Alice's Password when prompted.  
   * Next you will be asked for the Unique Id of the recipients.  
   * It is customary to make yourself one of the recipients - otherwise only Bob will be able decrypt the file.  
   * So enter Alice's email address **alice@gmail.com** and press the **Enter** key.  
@@ -1796,7 +1796,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * This is were you compare the finger print Bob read to you over the phone with the finger print now showing on the touch screen.  
   * If the fingerprints are the same then enter **y** for YES and press the **Enter** key.  
   * Now you will see that both Bob and Alice are listed as recipients.  
-  * Press the **Enter** key again to finsh the encryption process.  
+  * Press the **Enter** key again to finish the encryption process.  
   * You will see a message telling you to check that the encrypted file has been created.  
   * Press the **Enter** key one more time to get back to the menu.  
   *  
@@ -1828,11 +1828,11 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Now you can Email the video to Bob or post it on YouTube. Actually, you don't need to email or post the video for the purposes of this demonstration because you already have the video - the point is for you to understand that you can get a text file out of the PrivateKeyVault by taking a video of QR-Codes flashed on the screen, and that you can email it to someone or broadcast it to everyone with another PrivateKeyVault (really any raspberry pi with a camera) who will import the video without ever connecting to the Internet and without connecting to any other devices as we are about to see again.   
 * Soon we will be playing the part of Bob again.  
   * Let's get the machine ready for Bob to use.  
-  * We are going to delete Alices private key from the keyring and restore Bob's public and private keys.  
-  * We are going to leave Alices public key on the keyring for this demontration because we will need it to verify Alices signature.  
+  * We are going to delete Alice's private key from the keyring and restore Bob's public and private keys.  
+  * We are going to leave Alice's public key on the keyring for this demonstration because we will need it to verify Alice's signature.  
   * We will just pretend that she sent her public key to Bob the same way Bob sent his public key to Alice.  
   * We will further pretend that Bob called Alice on the phone to get the fingerprint of her public key to be sure that Mallory did not switch his public key for Alice's via malware on Bob or Alice's phone.  
-  * First lets export Alice's private key to a text file in case we want to use it later.  
+  * First let's export Alice's private key to a text file in case we want to use it later.  
   * Then we will remove her private key from the keyring.  
   * Highlight the menu option which says **Export a private key to a text file** and press the **Enter** key.  
   * You will be asked to select a location for the new text file containing Alice's private key.  
@@ -1841,7 +1841,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Enter the name **alices_private_key.txt** and press the **Enter** key.  
   * You will be asked for a Unique ID.  
   * Enter **alice@gmail.com** and press the **Enter** key.  
-  * You will see a message saying the that private key has been exported.  
+  * You will see a message saying that private key has been exported.  
   * If you misspelled the email address then a blank file will be created so you better check the contents of the file.  
   * Highlight the menu option which says **Read or write a message** and press the **Enter key**.  
   * Go to the private_keys folder and open the file **alices_private_key.txt**  
@@ -1864,13 +1864,13 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Bob will use the video camera on his PrivateKeyVault to import the video from his smartphone.  
   * [Click here for a very short video showing the setup and transfer](https://www.youtube.com/watch?v=JsmamD40nSQ)  
   * Place your phone on the PrivateKeyVault as shown in the video.  
-  * Then highlight the menu option which reads **Import Text File: Read QR_Coded video into camera and extract the text**.  
+  * Then highlight the menu option which reads **Import Text File: Read QR-Coded video into camera and extract the text**.  
   * You will be prompted for a location to store the video that the PrivateKeyVault will take of the phone.  
   * Select the **readme** directory.  
   * You will be prompted for many settings which control the process. Accept all the defaults.  
   * Finally you will be prompted to start the recording process.  
   * Press the **Play** button on your phone first and then press the **Enter** key on your PrivateKeyVault.  
-  * When the phone finishes playing the QR_Code parade then press the **Enter** key on your PrivateKeyVault to stop the recording.  
+  * When the phone finishes playing the QR-Code parade then press the **Enter** key on your PrivateKeyVault to stop the recording.  
   * Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
   * Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
   * Finally, you will be prompted for a name. Accept the default (extractedTextFile.txt).  
@@ -1899,10 +1899,10 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Call the file **unencrypted_baking_secrets.txt**  
   * You will see a message saying that the signature matches Alice's public key but it will warn you that her public key has not been marked by you as trusted. Don't worry about that. All you need to do right now is make sure that the fingerprint shown on the terminal window matches the fingerprint that Alice read to you over the phone when you called her.  
   *  
-  * Now lets read Alice's secrets for making a super moist and delicious cake.  
+  * Now let's read Alice's secrets for making a super moist and delicious cake.  
   * Highlight the menu option which says **Read or write a message** and press the **Enter** key.  
   * Then select the file **unencrypted_baking_secrets.txt** in the **readme** folder.  
-  * Congratulations! There in front of you are Alices secrets for making a super moist and delicious cake.  
+  * Congratulations! There in front of you are Alice's secrets for making a super moist and delicious cake.  
   * Moreover, you are now able to write, encrypt, send, receive, decrypt, read and store secret messages with absolute certainty that your secrets will remain private.  
 
 #### Create your private key  
