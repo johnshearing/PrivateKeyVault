@@ -1712,7 +1712,8 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * When the phone finishes playing the QR_Code parade then press the **Enter** key on your PrivateKeyVault to stop the recording.  
   * Next you will be asked if you want to view the recording. Answer **Yes**. This is a good check to make sure that the Vault had a good view of all the QR-Codes.  
   * Next you will be asked if you want the Vault to extract text from the QR-Codes in the video.  Answer **Yes**  
-  * Finally, you will be prompted for a name. You can accept the default (extractedTextFile.txt).  
+  * Finally, you will be prompted to name the file where the extracted text will go.  
+  * You can accept the default (extractedTextFile.txt).  
   * Be aware that the Vault will not overwrite a file of the same name if it exists but does not warn you about this either.  
   * I will be dealing with this problem shortly.  
   * The conversion takes some time. Be patient. It takes time to bake a cake.  
