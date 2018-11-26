@@ -1534,7 +1534,7 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
   * It took about 5 minutes for my pi 2 to generate the key pairs.  
   * Be patient as you provide random input.  
   * You don't have to type constantly in order for the process to work but I am sure it's a good idea to type random characters and to move your finger around the touch screen.  
-  * When the pi is done generating you public/private keypair it will show you some information about the keypair and then it will prompt you to press the **Enter** key to continue.  
+  * When the pi is done generating your public/private keypair it will show you some information about the keypair and then it will prompt you to press the **Enter** key to continue.  
   *  
 * After Bob's keys have been generated you may want to see information which helps you use his private keys.  
   * You could enter the following command at the terminal window `gpg --list-secret-keys` but the menu app will do this for you.  
