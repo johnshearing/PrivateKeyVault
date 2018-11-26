@@ -1,7 +1,7 @@
 # PrivateKeyVault - [Click for Open Source Make Instructions](https://github.com/johnshearing/PrivateKeyVault#contents)  
 ### Airgapped raspberry pi computer with touch screen and camera  
 ### Featuring LUKS full disk encryption  
-### For secure offline blockchain transactions and for secure encrypted messaging     
+### For [secure offline blockchain transactions](https://www.youtube.com/watch?v=_vA4tTLdL2M) and for [secure encrypted messaging](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)     
 ### [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
 
 <img src="/images/ReadmeImages/FiredUp.jpg">  
