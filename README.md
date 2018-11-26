@@ -10,7 +10,7 @@ Does anything a regular computer does and more.
 
 Full disk encryption keeps your private keys and personal information safe in case the device is stolen.  
 
-Easily clone the SD card with all the encryption intact using only the Private Key Vault to do the cloning.  
+Easily [clone the SD card](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi) with all the encryption intact using only the Private Key Vault to do the cloning.  
 So there is never a need to put your SD card into any other device.
 
 Use it to:  
