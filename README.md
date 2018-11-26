@@ -1624,7 +1624,7 @@ sub   2048R/0199AA57 2018-04-15
   * Now press the **Create Folder** button.  
   * You will be prompted to type in the name of the new folder.  
   * Type in **public_keys** and press the **Enter** key.  
-  * Press the **Enter** key again and you will be prompted to input an file name for Bob's public key file.  
+  * Press the **Enter** key again and you will be prompted to input a file name for Bob's public key file.  
   * I entered **bobs_public_key.txt**.  
   * Next you will be prompted to enter the unique id or email address associated with Bob's public key.  
   * Enter **bob@gmail.com**  
