@@ -85,9 +85,15 @@ To start out, solder a 6 in long piece of 20 gage [red](https://www.newark.com/w
 These go to the lighted switch as you can see in this document's very first photo.  
 
 Then cut a 3 in piece of special [red and black jumper wires](https://www.sparkfun.com/products/11710) and solder them to the 5v and Gnd connections as shown in the photo above.  
-These are not your typical jumper wires. Not shown in this photo, these wires have a connector crimped at the ends. You can see the crimp connectors in the next photo. Also these jumpers are made from 20 gage wire which is thicker than wire ordinarily used to make jumper wires. So there is less voltage drop across them. This really matters.   
+These are not your typical jumper wires.  
+Not shown in this photo, these wires have a connector crimped at the ends.  
+You can see the crimp connectors in the next photo.  
+Also these jumpers are made from 20 gage wire which is thicker than wire ordinarily used to make jumper wires of this type.  
+So there is less voltage drop across these wire compared with normal jumper wires.  
+This really matters.   
+Do not fail to purchase these special jumper wires for your project.  
 These will connect to the touch screen by sliding the connectors onto the 5v pin for the red wire and GND pin for the black wire.  
-The red connection to the touch screen is visible in the very first photo of this document if you look carefully. The black jumper wire is not visible in that photo you will know it because it is marked GND.  
+The red connection to the touch screen is visible in the very first photo of this document if you look carefully. The black jumper wire is not visible in that photo but you will know it because it is marked GND.  
 
 Finally, solder a grey wire about 6 inches long to the connection marked EN for enable.  
 This wire will go to the lighted switch as seen in this document's very first photo.  
