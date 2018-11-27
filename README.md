@@ -189,6 +189,8 @@ The items you will need are as follows.
   * You will need 4 to mount the touch screen.  
   * Plastic screws from kit above are fine for everything else.  
 * A wire tie to hold the battery.  
+* Heat shrink tubing 1/16 inch diameter.  
+  * This will be used to cover solder joints when we shorten the battery wires.  
 * A 3/32 inch in diameter drill bit.  
   * Two holes in camera board need to be drilled larger to pass 2.5 mm screws.  
 * [USB DIY Slim Connector Shell - A-M Plug](https://www.adafruit.com/product/1827) for shortening keyboard cable.  
