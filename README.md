@@ -174,8 +174,16 @@ The items you will need are as follows.
 * [Lithium Ion Battery Pack - 3.7V 6600mAh](https://www.adafruit.com/product/353)  
 * [Rugged Metal On/Off Switch with Green LED Ring - 16mm Green On/Off](https://www.adafruit.com/product/482)  
 * [BRASS M2.5 STANDOFFS FOR PI HATS - BLACK PLATED - PACK OF 2](https://www.adafruit.com/product/2336)  
+  * These standoffs are Male at one end and female at the other.  
+  * The body is 11 mm long and the male threads are 6 mm long. 
   * Buy 2 packs because you need 4 total.  
-* [Black Nylon Screw and Stand-off Set – M2.5 Thread](https://www.adafruit.com/product/3299)  
+  * These are for stacking on top of the 12 mm long standoffs already on the touch screen for a total of 23 mm.  
+* [Black Nylon Screw and Stand-off Set – M2.5 Thread](https://www.adafruit.com/product/3299) Items use are as follows.  
+  * (Qty 4) nuts for fastening the switch mount to the case.  
+  * (Qty 4) screws 10 mm long for fastening the switch mount to the case.   
+  * (Qty 16) female female spacers 6 mm long to hold the circuit boards up off the case.  
+  * (Qty 16) screws 6 mm long to secure the spacers to the case  
+  * (Qty 16) screws 4 mm long to secure the circuit boards to the spacers.  
 * 2.5 mm steel screws 6 mm long.  
   * You will need 4 to mount the touch screen.  
   * Plastic screws from kit above are fine for everything else.  
