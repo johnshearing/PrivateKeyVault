@@ -1,6 +1,6 @@
 Most of the sections in this document are for setting up the original prototype of the PrivateKeyVault.
 I abandoned that version because a keyboard is required in order to have full disk encryption of the SD card.
-The original version only has a virtual onscreen keyboard.
+The original version only had virtual onscreen keyboard. The idea with the original device was to cover all the ports with a hardended sealed case. [Cobo Vault](https://cobo.com/hardware-wallet) is persuing that path now. I have discovered that it doesn't matter if someone breaks into the device or if they steal it as long as the SD card has full disk encryption. Tampering is the big problem if the owner doesn't know the device has been tampered with. So I decided to go with tamper evident seals and full disk encryption. And with the removable SD card you can also use the newer PrivateKeyVault as a regular Internet connected computer. Finally if you need to escape an ethnic cleansing or civil war then you can swallow an SD card but swallowing a large armored hardware wallet would not be possible.  
 
 #### Graceful Shutdown on Low Battery While not Plugged In or If User Presses Power Button without Initiating Shutdown at Main Menu  
 First I need to measure the current:  
@@ -61,15 +61,7 @@ All this was tested on a Rpi Zero W, a Rpi B, a Rpi B+ and a Rpi 2.
 
 This overlay was merged into the official kernel repository, so in the future step 1 above should no longer be needed. It is included in the 1.20170811-1 kernel release, which will hopefull be included in Raspbian images soon (but the 2017.08.16 image does not include it yet).
 
-When the new kernel is included in Raspbian, it would only leave a simple modification to /boot/config.txt to set this up :-D
-
-
-
-
-Implement an SSD drive with full disk encryption.  
-As of March 18 2018 full disk encryption has been implemented on the SD card. It seems to work fine. I don't see a need to go further by implementing an SSD because it is easy enough to make backup images of the encrypted SD card.  
-https://www.youtube.com/watch?v=wuKgWK7O9p8  
-It turns out there is no difference between a thumb drive and an SD card except that an SD card can not be removed without disassembling the device. Also, the pi 3 is the only one that will boot off a thumb drive. So we are stuck with using an SD card and swaping out the card for different people would be very cumbersome. A Solid State Drive is far better than a thumb drive or an SD card because it is much more sophisticated even though the basic technology is the same. A SSD is faster, will last longer, because it is built like a mini RAID system. The extra speed of an SSD may even make full disk encryption practical for this project. 
+When the new kernel is included in Raspbian, it would only leave a simple modification to /boot/config.txt to set this up :-D  
 
 [Download Putty.exe found here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to  **PiSetup**.  
 Look under **Alternative Binary Files**  
@@ -193,10 +185,12 @@ Execute the following command in the pi's terminal window:
 `sudo chmod 777 /home/pi/.local/share/applications/menu.desktop`
 
 Reboot the pi and then right click on the Application Launch Bar so that you can edit its properties in the same way that was shown for the Florence virtual keyboard above.  
-Select your new desktop item (It can be found in accessories) and place it onto the Application Launch Bar. 
+Select your new desktop item It can be found in accessories) and place it onto the Application Launch Bar. 
 
 
 #### INSTALL PRINTER  
+I abandoned the printer because I found the thermal paper fades overtime. What a horrible thing that would be if that was your only method of storing private keys. I have discovered that keystore files (encrypted files which hold private keys) are a great way to go because you can give to other people for backup but they won't be able to see or use your private key without your password. This is the method the latest version of the PrivateKeyVault uses to backup keys. Full disk encryption is also used as backup where the whole SD card is cloned with encryption intact.  
+
 Source:
 [Pi camera project](https://learn.adafruit.com/instant-camera-using-raspberry-pi-and-thermal-printer?view=all)  
 
