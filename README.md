@@ -179,7 +179,7 @@ The items you will need are as follows.
   * Buy 2 packs because you need 4 total.  
   * These are for stacking on top of the 12 mm long standoffs already on the touch screen for a total of 23 mm.  
 * [Black Nylon Screw and Stand-off Set – M2.5 Thread](https://www.adafruit.com/product/3299)  
-  * Items use are as follows.  
+  * Items used are as follows.  
     * (Qty 4) nuts for fastening the switch mount to the case.  
     * (Qty 4) screws 10 mm long for fastening the switch mount to the case.   
     * (Qty 16) female female spacers 6 mm long to hold the circuit boards up off the case.  
