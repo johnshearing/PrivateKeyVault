@@ -104,15 +104,15 @@ This wire will go to the lighted switch as seen in this document's very first ph
 
 Sorry about the dirty fingers - should have hired a hand model.  
 In any case, flip the charger board over.  
-Notice the black and yellow wires.  
-These wire are 20 gage.  
+Notice the black wire at GND and yellow wire at LiPo.  
+These wire are 20 gage. Thick wires are required to avoid an unacceptable voltage drop.  
 I used 3 inch long pieces of wire cut from the package of special jumpers we used in the previous step.  
 Notice that these two wires are inserted into the board from bottom where as the wires in the previous step were inserted from the top.  
 The black wire will go into the connection marked GND and the yellow wire will go into the connnection marked LiPo.  
 Solder the wires in place.  
-Later you can mount the board back onto the lid and cut the length of the wire so that it is just long enough to reach the GND and Bat connections on the smaller boost board. Then you can unmount the boards and solder the wires to the board. Make sure the wires are long enough so that mounting the boost boards back on to the acrylic lid will not be difficult.   
+Later you can mount the board back onto the lid and cut the lengths of the wires so that they are just long enough to reach the GND and Bat connections on the smaller boost board. Then you can unmount the boards and solder the wires to the board. Make sure the wires are just long enough so that mounting the boost boards back on to the acrylic lid will not be difficult.   
 
-Now referring the the very first photo in this document and to the wiring diagram at the end, solder a 6 inch length of red, black, and grey wire as shown. into the smaller boost board.  The red wire will go to the 5 Volt GPIO pin on the raspberry pi. The black wire will go to a ground pin on the raspberry pi. And the grey wire will go to the lighted switch. All of this is shown in the wiring diagram which is the next photo below.  
+Now referring the the very first photo in this document and to the wiring diagram below, solder a 6 inch length of red, black, and grey wire as shown. into the smaller boost board.  The red wire will go to the 5 Volt GPIO pin on the raspberry pi. The black wire will go to a ground pin on the raspberry pi. And the grey wire will go to the lighted switch. All of this is shown in the wiring diagram which is the next photo below. Please note that the wiring diagram seems to indicate that the wires are soldered to the side of the board shown in the diagram. Actually they are soldered to the other side where GPIO pins extend for this purpose. This is made clear in the first photo.    
 
 <hr>   
 
