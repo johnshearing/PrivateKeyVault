@@ -4,7 +4,7 @@ Wiring instructions here
 
 <img src="../images/ReadmeImages/Wiring.jpg">  
 
-This is what the finished wiring job will look like.  
+Above is what the finished wiring job will look like.  
 A wiring diagram will be given further below.  
 
 <hr>  
@@ -13,10 +13,12 @@ A wiring diagram will be given further below.
 
 In this photo we see 16 standoffs which are threaded 2.5 mm and are 6 mm long.  
 These standoffs are fastened to the lid with 2.5 mm screws which are also 6 mm long.  
+Circuit boards will be fastend to the standoffs with 2.5 mm screws 4 mm long.  
 [The standoffs, screws, and other parts can be found in this kit](https://www.adafruit.com/product/3299)  
 PrivateKeyVault has no finacial relationship with the vendor.  
 
-Also shown is the switch mount fastened to the lid with parts found in the kit linked above.  
+Also shown is the switch mount fastened to the lid with 2.5 mm screws 10 mm long and 2.5 mm nuts  
+These are also found in the kit linked above.  
 
 Notice that four holes are left empty. The touch screen will be fastened with these later.  
 
@@ -31,6 +33,7 @@ In this photo we see all the parts except the touch screen are mounted.
 We can't mount the touch screen until all the soldering is done.  
 
 The battery plugs into the side of the charger board when you are ready to energize the Vault.  
+You can see this connection in the very first photo.  
 
 I didn't show it in the photo above, but I actually shortened the red and black battery cables by cutting a section of wire out of each and then soldering them back together.  
 **Danger**  
