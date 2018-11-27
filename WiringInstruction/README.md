@@ -112,7 +112,7 @@ The black wire will go into the connection marked GND and the yellow wire will g
 Solder the wires in place.  
 Later you can mount the board back onto the lid and cut the lengths of the wires so that they are just long enough to reach the GND and Bat connections on the smaller boost board. Then you can unmount the boards and solder the wires to the board. Make sure the wires are just long enough so that mounting the boost boards back on to the acrylic lid will not be difficult.   
 
-Now referring the the very first photo in this document and to the wiring diagram below, solder a 6 inch length of red, black, and grey wire as shown. into the smaller boost board.  The red wire will go to the 5 Volt GPIO pin on the raspberry pi. The black wire will go to a ground pin on the raspberry pi. And the grey wire will go to the lighted switch. All of this is shown in the wiring diagram which is the next photo below. Please note that the wiring diagram seems to indicate that the wires are soldered to the side of the board shown in the diagram. Actually they are soldered to the other side where GPIO pins extend for this purpose. This is made clear in the first photo.    
+Now referring the the very first photo in this document and to the wiring diagram below, solder a 6 inch length of red, black, and grey wire as shown into the smaller boost board. The red wire will go to the 5 Volt GPIO pin on the raspberry pi. The black wire will go to a ground pin on the raspberry pi. And the grey wire will go to the lighted switch. All of this is shown in the wiring diagram which is the next photo below. Please note that the wiring diagram seems to indicate that the wires are soldered to the side of the board shown in the diagram. Actually they are soldered to the other side where GPIO pins extend for this purpose. This is made clear in the first photo.    
 
 <hr>   
 
@@ -124,11 +124,11 @@ This diagram shows all the wires and their terminal points for soldering but loo
 
 <img src="../images/WiringInstructionImages/KeyboardUSBDiagram.jpg">    
 
-The cable for the keyboard as it came from the vendor was too long to fit in the box. Furthermore, all that extra length was inconvenient to manage when using the device. So I cut the wire to a length of 24 1/4 inches from keyboard to the end of the wire. The above wiring diagram shows how to solder the wires to a new USB connector [Which can be ordered here](https://www.adafruit.com/product/1827)  
+The cable for the keyboard as it came from the vendor was too long to fit in the box. Furthermore, all that extra length was inconvenient to manage when using the device. So I cut the wire to a length of 24 1/4 inches from keyboard to the end of the wire. The above wiring diagram shows how to solder the wires to a new USB connector [Which can be ordered here](https://www.adafruit.com/product/1827). This connector has a very thin profile which will matter when you are plugging several devices into the USB ports during the SD card cloning process.  
 
 Next time I make one I will take photos and post them here.  
 
-The wire measures about .103 inches in diameter so for the next build I will put slots into all the uprights that will make it easier to tuck away the wire. A slot .100 inches wide should provide enough friction to keep the wire in place.  
+The wire measures about .103 inches in diameter so in the next build I put slots into all the uprights to make it easier to tuck away the wire. A slot .100 inches wide provided enough friction to keep the wire in place. This is not shown in the photos but the feature is included in the CorelDraw files so you will have this feature when you cut the parts.  
 
 <hr>  
 
@@ -138,8 +138,10 @@ If you happen to have an SD card already loaded with the Raspbian operating syst
 
 **Warning**  
 When shutting down: 
-Always shutdown with the menu option and wait ten second before pressing off the power button.  
-**If you fail to do this then you may ruin your SD card.**
+Always shutdown with the menu option and wait 15 second before pressing off the power button.  
+**If you fail to do this then you may ruin your SD card.**  
+I hope you have a backup.  
+I will incorperate inteligent power management in future builds.  
 
 <hr>  
 
@@ -162,12 +164,11 @@ The next photo shows how to make the adjustment.
 
 The focus comes set at infinity.  
 Small sharp sissors are good for turning the retaining ring.  
-Counter clock wise moves the focus closer.  
+Counter clock wise moves the focus closer. Counter clockwise is the direction you need to turn the ring.  
 Some of the cameras come from the vendor with a dot of glue on the retaining ring to keep the focus set at infinity.  
 If the dot of glue is present then some force will be required to break the dots of glue that hold the retaining ring in place.  
 Keep turning the retaining ring and checking focus until focus is sharp at 2 3/8 inches.  
-When focus is good shut down and power off and then remount the camera at it's normal position.  
-It might be good to put a tiny dot of super glue on the retaining ring when finished adjusting the focus but I haven't tried doing it.  
+When focus is good shut down at the menu, wait 15 seconds, power off at the push button switch, and then remount the camera at it's normal position.   
 To see what is possible with raspistill execute `raspistill --help`  
 
 <hr>  
