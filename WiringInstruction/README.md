@@ -35,11 +35,13 @@ We can't mount the touch screen until all the soldering is done.
 The battery plugs into the side of the charger board when you are ready to energize the Vault.  
 You can see this connection in the very first photo.  
 
-I didn't show it in the photo above, but I actually shortened the red and black battery cables by cutting a section of wire out of each and then soldering them back together.  
+Also seen in the very first photo, I shortened the red and black battery cables by cutting a section of wire out of each and then soldered them back together.  
 **Danger**  
 **Don't cut the wires at the same time or you will short out the battery and cause a dangerous arc.**  
 **Instead, cut one wire to shorten it and then solder it back together and heat shrink the wire to safely cover the solder joint.**  
 **Then it will be safe to do the same with the other wire.**  
+
+You will need 1/16 inch diameter heat shrink tubing for this.  
 
 The reason I did this is because the raspberry pi is very sensitive to voltage drops and longer power cables cause a larger voltage drop. For the same reason I used relatively thick 20 gage wire for all the power and ground connections. 
 
