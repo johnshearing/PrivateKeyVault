@@ -35,20 +35,21 @@ We can't mount the touch screen until all the soldering is done.
 The battery plugs into the side of the charger board when you are ready to energize the Vault.  
 You can see this connection in the very first photo.  
 
-Also seen in the very first photo, I shortened the red and black battery cables by cutting a section of wire out of each and then soldered them back together.  
+Also seen in the very first photo:  
+I shortened the red and black battery cables by cutting a section of wire out of each and then soldered them back together.  
+You will need 1/16 inch diameter heat shrink tubing to cover the solder joints.  
 **Danger**  
 **Don't cut the wires at the same time or you will short out the battery and cause a dangerous arc.**  
-**Instead, cut one wire to shorten it and then solder it back together and heat shrink the wire to safely cover the solder joint.**  
+**Instead, cut one wire to shorten it, solder it back together, and heat shrink the wire to safely cover the solder joint.**  
 **Then it will be safe to do the same with the other wire.**  
 
-You will need 1/16 inch diameter heat shrink tubing for this.  
+The reason I did this is because the raspberry pi is very sensitive to voltage drops and longer power cables cause a larger voltage drop. For the same reason I used relatively thick 20 gage wire for all the power and ground connections.  
+Don't fail to take these precautions or your Vault will not work reliably.  
 
-The reason I did this is because the raspberry pi is very sensitive to voltage drops and longer power cables cause a larger voltage drop. For the same reason I used relatively thick 20 gage wire for all the power and ground connections. 
-
-Also, when you are ready to charge the battery or power the Vault the AC power supply plugs into the top of the charger board.  
+Also, when you are ready to charge the battery or power the Vault, the AC power supply plugs into the top of the charger board right next to the connector where the battery plugs in. 
 
 Notice the camera mounted in the center of the lid.  
-For some reason two of the holes are smaller than 2.5 mm so I drilled these out with a .093" drill bit.  
+For some reason two of the holes are smaller than 2.5 mm so I drilled these out with a .093" or 3/32" drill bit.  
 
 Finally, take notice of how the ribbon cable is folded to fit into the receptical on the raspberry pi.  
 It is necessary to do this so that the touch screen will fit on top without any interference.  
@@ -64,11 +65,11 @@ In this photo we see how the ribbon cable is inserted into the pi.
 <img src="../images/WiringInstructionImages/04_ScreenMounted.jpg">  
 
 In this photo the lid has been flipped over so that you can see how the touch screen is mounted.  
-You will need a 2.5 mm standoff which is 23 mm long.  
-The touch screen comes with an 11 mm long stand off and the hardware kit linked above has some 12 mm long standoffs included.  
-So I screw these together to come up with the 23 mm of length needed.  
+You will need (Qty 4) 2.5 mm standoffs which are 23 mm long.  
+The touch screen comes with (Qty 4) 12 mm long standoffs.  
+You can purchase (Qty 4) [11 mm long standoffs here.](https://www.adafruit.com/product/2336)  
+Screw these together to come up with the 23 mm of length needed.  
 This length allows you to close the lid over the keyboard with just the right amount of pressure on the keys to keep it from moving around in the box.  
-For the next build I am going to look for steel hardware of the correct length for all the hardware parts.  
 
 Notice the camera in the very center of the lid still has it's protective tab over the lens.  
 Later after we apply power, we will need to focus the camera to a length of 2 3/8 inches from lens to subject.  
