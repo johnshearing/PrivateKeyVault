@@ -2050,7 +2050,7 @@ Be sure to take pictures of the seals so that when you want to open the vault yo
 <hr>
 
 If someone steals your SD card it's not a problem.  
-It's not a problem if they steal you Vault either.  
+It's not a problem if they steal your Vault either.  
 Your secrets are safe.  
 That's because the root partition (the partition containing your operating system and all your data) is encrypted.  
 No one can get the data without your password.  
