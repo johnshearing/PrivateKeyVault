@@ -2027,19 +2027,19 @@ So now it is possible to create a keystore file from a private key without leavi
 In this attack someone who gains physical access to you PrivateKeyVault puts a keylogger on the boot partition of your SD card without you knowing about it so that the next time you log in you will be giving away your password.  
 So keep your cloned sd card in a secure location and packaged in such a way that you will know if someone has tampered with it.  
 
-<img src="/images/ReadmeImages/WireTies.jpg"  
+<img src="/images/ReadmeImages/WireTies.jpg">  
 
 Notice the two wire ties which secure all 4 latches.  
 
 <hr>  
 
-<img src="/images/ReadmeImages/WireTie.jpg"  
+<img src="/images/ReadmeImages/WireTie.jpg">  
 
 Above is a clearer picture showing one of the seals
 
 <hr>  
 
-<img src="/images/ReadmeImages/Sparkly.jpg"  
+<img src="/images/ReadmeImages/Sparkly.jpg">  
 
 Above you can see that sparkly nail polish has been used to seal the wire tie. 
 It is unlikely that anyone can remove the nail polish without destroying the wire tie and even if they do it is even more unlikely that they will be able to reapply the 
