@@ -2027,7 +2027,7 @@ So now it is possible to create a keystore file from a private key without leavi
 In this attack someone who gains physical access to you PrivateKeyVault puts a malware keylogger on the boot partition of your SD card without you knowing about it so that the next time you log in you will be giving away your password.  
 In the alternative, the attacker could put a hardware keylogger inside your keyboard or on the raspberry pi computer board or perhaps on the touchscreen circuit board or maybe hiden in a USB port...  
 So keep your cloned sd cards in a secure location and packaged such that you will know if someone has tampered with it.  
-Also keep your PrivateKeyVault in a secure location and packaged such that you will know if someone has tamperedd with it.  
+Also keep your PrivateKeyVault in a secure location and packaged such that you will know if someone has tampered with it.  
 
 <img src="/images/ReadmeImages/WireTies.jpg">  
 
