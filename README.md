@@ -2024,8 +2024,10 @@ So now it is possible to create a keystore file from a private key without leavi
 
 
 #### Preventing the **Evil Maid** or **Maid in the Middle** Attack 
-In this attack someone who gains physical access to you PrivateKeyVault puts a keylogger on the boot partition of your SD card without you knowing about it so that the next time you log in you will be giving away your password.  
-So keep your cloned sd card in a secure location and packaged in such a way that you will know if someone has tampered with it.  
+In this attack someone who gains physical access to you PrivateKeyVault puts a malware keylogger on the boot partition of your SD card without you knowing about it so that the next time you log in you will be giving away your password.  
+In the alternative, the attacker could put a hardware keylogger inside your keyboard or on the raspberry pi computer board or perhaps on the touchscreen circuit board or maybe hiden in a USB port...  
+So keep your cloned sd cards in a secure location and packaged in such a way that you will know if someone has tampered with it.  
+Also keep your PrivateKeyVault in a secure location and packaged in such away that you will know if someone has tamperedd with it.  
 
 <img src="/images/ReadmeImages/WireTies.jpg">  
 
@@ -2035,25 +2037,28 @@ Notice the two wire ties which secure all 4 latches.
 
 <img src="/images/ReadmeImages/WireTie.jpg">  
 
-Above is a clearer picture showing one of the seals
+Above is a closeup picture showing one of the seals.
 
 <hr>  
 
 <img src="/images/ReadmeImages/Sparkly.jpg">  
 
 Above you can see that sparkly nail polish has been used to seal the wire tie. 
-It is unlikely that anyone can remove the nail polish without destroying the wire tie and even if they do it is even more unlikely that they will be able to reapply the 
+It is unlikely that anyone can remove the nail polish without destroying the wire tie and if they do it is even more unlikely that they will be able to reapply the sparkly nail polish to a new wire tie so it looks exactly the same.  
+Be sure to take pictures of the seals so that when you want to open the vault you will be able to tell if someone has tampered with your device.  
 
 <hr>
 
-If someone steals your SD card it's not a problem.
-That's because the root partition (the partition containing your operating system and all your encrypted data) is encrypted.  
+If someone steals your SD card it's not a problem.  
+It's not a problem if they steal you Vault either.  
+Your secrets are safe.  
+That's because the root partition (the partition containing your operating system and all your data) is encrypted.  
 No one can get the data without your password.  
 But if they put a key logger on the boot partition without you knowing about it, then you will be giving away your password the next time you log in.  
 So while you are not worried about theft, tampering is a big concern.  
 In order know if your card has been tampered with, use sparkly nail polish.  
 This is nail polish with glitter mixed in.  
-Yes that's right, security experts use sparkly nail polish to tell if their sd cards have been tampered with.  
+Yes that's right, security experts use sparkly nail polish to tell if their sd cards and computers have been tampered with.  
 Just put the sd card in a small box or envelope and paint the seams of the box with sparkly nail polish in such a way that the seal will be destroyed when someone opens the container.  
 Then take several pictures of the container.  
 If anyone tries to open the box it will cause the nail polish to break off and rip the paper as it breaks.  
@@ -2082,7 +2087,7 @@ I am betting:
 I hope the odds are in my favor.  
 
 Take the same precautions with your PrivateKeyVault.  
-If attackers steal your Pi with the encrypted SD card aboard then they could place a key logger anywhere they want without you knowing about it. They could put it on the SD card or at any place in the hardware such as the keyboard, the pi itself, the camera, just about anywhere. So the PrivateKeyVault should be wrapped in paper or put in a box, and sealed with sparkly nail polish to make it evident should the device be tampered with.  
+If attackers steal your Pi with the encrypted SD card aboard then they could place a key logger anywhere they want without you knowing about it. They could put it on the SD card or at any place in the hardware such as the keyboard, the pi itself, the camera, just about anywhere. So the PrivateKeyVault should be sealed with wire ties and sparkly nail polish as shown and then photographed to make it evident should the device be tampered with.  
 
 ## Conclusion:  
 QR-Code functionality airgaps the PrivateKeyVault.  
