@@ -2092,7 +2092,7 @@ Take the same precautions with your PrivateKeyVault.
 If attackers gain physical access your pi with the encrypted SD card aboard then they could place a key logger anywhere they want without you knowing about it. They could put it on the SD card or at any place in the hardware such as the keyboard, the pi itself, the camera, just about anywhere. So the PrivateKeyVault should be sealed with wire ties and sparkly nail polish as shown and then photographed to make it evident should anyone tamper with the device.  
 
 To be sure, there are still ways that someone with physical access could secretly tamper with your PrivateKeyVault. 
-At some point we will have a hackathon with prize money for people who can successfully install a keylogger on the device without the judges being able to detect it.  
+At some point we will have a hackathon with prize money for people who can successfully install a keylogger on the device without the judges being able to detect the intrusion and prizes for people who manage to get the password to an encypted partition.
 
 We can take security a step further with multisignature wallets. These are smart contracts that require a transaction from two or more accounts before funds will be moved. We will explore this option when we start studying smart contracts.  
 
