@@ -2087,7 +2087,7 @@ I am betting:
 I hope the odds are in my favor.  
 
 Take the same precautions with your PrivateKeyVault.  
-If attackers steal your Pi with the encrypted SD card aboard then they could place a key logger anywhere they want without you knowing about it. They could put it on the SD card or at any place in the hardware such as the keyboard, the pi itself, the camera, just about anywhere. So the PrivateKeyVault should be sealed with wire ties and sparkly nail polish as shown and then photographed to make it evident should the device be tampered with.  
+If attackers gain physical access your pi with the encrypted SD card aboard then they could place a key logger anywhere they want without you knowing about it. They could put it on the SD card or at any place in the hardware such as the keyboard, the pi itself, the camera, just about anywhere. So the PrivateKeyVault should be sealed with wire ties and sparkly nail polish as shown and then photographed to make it evident should anyone tamper with the device.  
 
 ## Conclusion:  
 QR-Code functionality airgaps the PrivateKeyVault.  
