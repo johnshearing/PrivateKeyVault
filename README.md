@@ -2062,7 +2062,7 @@ Yes that's right, security experts use sparkly nail polish to tell if their sd c
 Just put the sd card in a small box or envelope and paint the seams of the box with sparkly nail polish in such a way that the seal will be destroyed when someone opens the container.  
 Then take several pictures of the container.  
 If anyone tries to open the box it will cause the nail polish to break off and rip the paper as it breaks.  
-And if they paint the seams again it will not look the same because sparkly nail polish goes on differently every time you put it on.  
+And if they paint the seams again it will not look the same because sparkly nail polish goes on differently every time you use it.  
 Simply compare your container with the photos you took when you sealed it up.  
 If the paper is torn or if the nail polish looks different then someone has tampered with the box.  
 In that case do not use the SD card but rather mark it as compromised.  
