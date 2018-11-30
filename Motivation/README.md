@@ -46,7 +46,7 @@ Sounds like a job for the raspberry pi:
 Let's teach everyone how they can use the raspberry pi to take control of their own assets.  
 This is what the [PrivateKeyVault GitHub repository](https://github.com/johnshearing/PrivateKeyVault#privatekeyvault---click-for-open-source-make-instructions) is for.  
 
-### What 2 Big Problems Does The [PrivateKeyVault](www.privatekeyvault.com) Solve That Hardware Wallets Cannot.    
+### What 2 Big Problems Does The PrivateKeyVault Solve That Hardware Wallets Cannot.    
 **First Big Problem Solved**  
 **The Nano Ledger hardware wallet and similar devices cannot be used by governments, corporations, and financial institutions where a large number of accounts must be managed**  
 While the nano does allow for multiple public addresses, they are all tied to a master private key. So if the pass phrase is compromised then all the accounts are accessible. Furthermore multiple accounts are very hard to manage with only two buttons on the nano.  
