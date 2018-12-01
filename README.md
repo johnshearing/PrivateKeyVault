@@ -2284,7 +2284,9 @@ To open text editor `sudo leafpad filename`
 
 #### Linux Learning Resources  
 [Linux For Beginners Playlist](https://www.youtube.com/watch?v=LVBmXYhks4E&list=PL6YwPExkSESqcOfH8SP0vYRnavpJf-JRH&index=1)  
+[First 100 Terminal Commands WebPage](https://factorpad.com/tech/linux-essentials/outline.html)  
 [First 100 Terminal Commands Playlist](https://www.youtube.com/watch?v=Xu7ODfjXeL8&t=3s&list=PL6YwPExkSESqQ69B7B011XOIuoVv3SdDg&index=2)  
+
 
 
 #### Commands for Working With Video at the Terminal  
