@@ -127,6 +127,7 @@ This diagram shows all the wires and their terminal points for soldering but loo
 The cable for the keyboard as it came from the vendor was too long to fit in the box. Furthermore, all that extra length was inconvenient to manage when using the device. So I cut the wire to a length of 24 1/4 inches from keyboard to the end of the wire. The above wiring diagram shows how to solder the wires to a new USB connector [Which can be ordered here](https://www.adafruit.com/product/1827). This connector has a very thin profile which will matter when you are plugging several devices into the USB ports during the SD card cloning process.  
 
 Next time I make one I will take photos and post them here.  
+Opps I forgot to show a fifth sheild/ground wire in the drawing. That must be soldered to the case of the connector. I will take a photo of that next time too.   
 
 The wire measures about .103 inches in diameter so in the next build I put slots into all the uprights to make it easier to tuck away the wire. A slot .100 inches wide provided enough friction to keep the wire in place. This is not shown in the photos but the feature is included in the CorelDraw files so you will have this feature when you cut the parts.  
 
