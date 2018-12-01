@@ -2043,7 +2043,7 @@ Above is a closer picture showing one of the seals.
 
 <hr>  
 
-<img src="/images/ReadmeImages/Sparkly.jpg">  
+<img src="/images/ReadmeImages/ExtremeCloseUp.jpg">  
 
 Above you can see that sparkly nail polish has been used to seal the wire tie. 
 It is unlikely that anyone can remove the nail polish without destroying the wire tie and if they do it is even more unlikely that they will be able to reapply the sparkly nail polish to a new wire tie so it looks exactly the same.  
