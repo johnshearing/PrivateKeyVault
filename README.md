@@ -2032,7 +2032,7 @@ Also keep your PrivateKeyVault in a secure location and packaged such that you w
 <img src="/images/ReadmeImages/WireTies.jpg">  
 
 Notice the two wire ties which secure all 4 latches.  
-Anyone could cut the wire ties but they are not for preventing a breakin.  
+Anyone could cut the wire ties but they are not for preventing someone from opening the case.  
 They are for tamper detection.  
 
 <hr>  
