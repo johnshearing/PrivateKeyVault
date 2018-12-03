@@ -9,13 +9,13 @@ A wiring diagram will be given further below.
 
 <hr>  
 
-<img src="../images/ReadmeImages/WiringFromInside.jpg">  
+<img src="../images/WiringInstructionImages/WiringFromInside.jpg">  
 
 This photo shows just the wires you will be soldering.  
 
 <hr>  
 
-<img src="../images/ReadmeImages/WiringFromOutside.jpg">  
+<img src="../images/WiringInstructionImages/WiringFromOutside.jpg">  
 
 This photo shows the wires you will be soldering from the other side.  
 
