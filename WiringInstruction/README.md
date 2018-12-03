@@ -9,6 +9,18 @@ A wiring diagram will be given further below.
 
 <hr>  
 
+<img src="../images/ReadmeImages/WiringFromInside.jpg">  
+
+This photo shows just the wires you will be soldering.  
+
+<hr>  
+
+<img src="../images/ReadmeImages/WiringFromOutside.jpg">  
+
+This photo shows the wires you will be soldering from the other side.  
+
+<hr>  
+
 <img src="../images/WiringInstructionImages/01_Standoffs.jpg">  
 
 In this photo we see 16 standoffs which are threaded 2.5 mm and are 6 mm long.  
