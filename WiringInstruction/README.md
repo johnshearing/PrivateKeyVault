@@ -147,7 +147,7 @@ I will incorperate inteligent power management in future builds.
 <hr>  
 
 If you happen to have an SD card already loaded with the Raspbian operating system then you may want to focus the camera now. Otherwise this step is covered later.  
-You will need to focus the camera. This is because you will be using the camera to take pictures and videos of qr-codes on your phone which will be held about 2 3/8 inches from your camera. This really matters if you are using the camera to read qr-codes. You simply will not be able to read qr-codes with your camera if it is not focused for a distance of 2 3/8 inches.  
+You will need to focus the camera. This is because you will be using the camera to take pictures and videos of qr-codes on your phone which will be held about 3 1/8 inches from your camera. This really matters if you are using the camera to read qr-codes. You simply will not be able to read qr-codes with your camera if it is not focused for a distance of 3 1/8 inches.  
 
 <img src="../images/ReadmeImages/CheckingFocus.jpg">    
 
@@ -156,7 +156,7 @@ You will need to remove the touch screen in order to remove the camera and then 
 When you have the Vault powered up again in this new configuration execute the following command at the terminal window to set up the camera focus  
 `raspistill -t 0`  
 Now the touchscreen will show what the camera sees.  
-Adjust the focus to about 2 3/8 inches as measured from lens to object.  
+Adjust the focus to about 3 1/8 inches as measured from lens to object.  
 The next photo shows how to make the adjustment.  
 
 <hr>  
