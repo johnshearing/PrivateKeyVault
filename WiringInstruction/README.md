@@ -84,7 +84,7 @@ Screw these together to come up with the 23 mm of length needed.
 This length allows you to close the lid over the keyboard with just the right amount of pressure on the keys to keep it from moving around in the box.  
 
 Notice the camera in the very center of the lid still has it's protective tab over the lens.  
-Later after we apply power, we will need to focus the camera to a length of 2 3/8 inches from lens to subject.  
+Later after we apply power, we will need to focus the camera to a length of 3 1/8 inches from lens to subject.  
 This is the perfect focal length for passing qr-codes from a smartphone into the PrivateKeyVault.  
 
 <hr>  
