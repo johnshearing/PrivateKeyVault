@@ -99,7 +99,7 @@ These go to the lighted switch as you can see in this document's very first phot
 Then cut a 3 in piece of special [red and black jumper wires](https://www.sparkfun.com/products/11710) and solder them to the 5v and Gnd connections as shown in the photo above.  
 These are not your typical jumper wires.  
 Not shown in this photo, these wires have a connector crimped at the ends.  
-You can see the crimp connectors in the next photo.  
+You can see the crimp connectors in the next photo and also in the second photo of this document.  
 Also these jumpers are made from 20 gage wire which is thicker than wire ordinarily used to make jumper wires of this type.  
 So there is less voltage drop across these wire compared with normal jumper wires.  
 This really matters.   
