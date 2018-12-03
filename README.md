@@ -952,7 +952,7 @@ This method works just as well with unencrypted SD cards.
 
 It is of course possible to use Win 32 Disk Imager to clone your SD card for back up purposes.  
 No one would be able to read the data from the image created.  
-But soon you will have private keys on the encrypted partition. So putting your SD card into an Internet device is dangerous business.  
+But soon you will have private keys on the encrypted partition. So putting your SD card into an Internet connected device is dangerous business.  
 The attack vector is called The Evil Maid Attack also known as The Maid In The Middle Attack.  
 The attack is carried out by slipping malicious code such as a key logger into the boot partition of the image now stored on your PC.  
 Attackers might just as easily put the key logger directly onto the boot partition of the SD card up while it is being imaged on your PC. This can be done by remote control if your PC is connected to the Internet or the attack can happen any time you stick an SD card into your PC if the PC is already infected with malware.  
