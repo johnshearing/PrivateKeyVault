@@ -12,6 +12,8 @@ A wiring diagram will be given further below.
 <img src="../images/WiringInstructionImages/WiringFromInside.jpg">  
 
 This photo shows just the wires you will be soldering.  
+The wires are routed slightly differently compared with the photo above.  
+It doesn't matter how your route them as long as you do your best to keep the wires short.  
 
 <hr>  
 
