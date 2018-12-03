@@ -966,11 +966,16 @@ The important point to remember here is that we need to make backup copies of th
 Before we get started make sure that all the important information on your encrypted SD card is written down or stored safely somewhere. If anything goes wrong during the cloning process which destroys your cards then you will still have your private keys written down. If you fail to take this precaution then you might lose all your crypto-currency and all the personal information that was stored on your encrypted SD card.  
  
 Ok, let's get started:  
+The following photo shows the things you will need.  
+
+<img src="/images/ReadmeImages/CloneTools.jpg">  
+<hr>  
+
 Get two SD card to USB adaptors.  
 Get a USB hub. This plugs in to one of your USB ports on the pi but gives you 4 more places to plug in USB devices.  
 The reason you need the hub is because the SD card to USB adaptors are too big to fit directly into the closely stacked USB ports on the raspberry pi itself.  
 
-Now you will need three SD cards.  
+You will need three SD cards.  
 The first SD card will contain a trusted install of Jessie but does not have to be encrypted.  
 You will put this into the raspberry pi's SD card slot.  
 This will run the raspberry operating system pi during the copy process.  
@@ -1015,7 +1020,7 @@ You probably see the pattern.
 The first card you insert into the hub will be called **sda** and the second card you insert into the hub will be known as **sdb**.  
 So be careful about which card you insert first and which card you insert second.  
 
-Before we are ready to do the actual cloning we must first be sure the SD cards are not mounted.  
+**Before we are ready to do the actual cloning we must first be sure the SD cards are not mounted.**  
 To do this, just press the eject button in the upper right corner of the pi's touch screen.  
 If any cards show up in the pulldown list then press on these to unmount them.  
 You will get a message saying that it is safe to remove the media.  
@@ -1027,13 +1032,18 @@ Cards in the list which are grayed out are already unmounted.
 Some cards may not even show up in the list because they are impossible to mount in the first place.  
 That's fine.  
 
+The following photos shows everything all setup for cloning.  
+
+<img src="/images/ReadmeImages/CloneSetup.jpg">  
+
+<hr>  
 
 Now we are ready to copy all the information from the encrypted card to the blank card.  
 Run the following command in the pi's terminal window.  
 Careful - the following command assumes that the encrypted card with all your precious data is known to the pi as **sda**.  
 dd in the following command is the name of the command.  
-if= in the following command specifies the input file (the SD card you wish to read from).  
-of= in the following command specifies the output file (the SD card you wish to write to).  
+if= in the following command specifies the input file (the SD card you wish to read from) - the card with the data (**sda**).  
+of= in the following command specifies the output file (the SD card you wish to write to) - the new blank card (**sdb**).  
 `sudo dd if=/dev/sda of=/dev/sdb`  
 This command will take several hours to run without giving any sign that it is working at all.  
 **Don't worry - everything is fine**  
