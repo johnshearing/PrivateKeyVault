@@ -10,7 +10,7 @@ Does anything a regular computer does and more.
 
 Full disk encryption keeps your private keys and personal information safe in case the device is stolen.  
 
-Easily [clone the SD card](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi) with all the encryption intact using only the Private Key Vault to do the cloning.  
+Easily [clone the micro SD card](https://github.com/johnshearing/PrivateKeyVault#cloning-your-encrypted-sd-card-using-only-the-raspberry-pi) with all the encryption intact using only the Private Key Vault to do the cloning.  
 So there is never a need to put your SD card into any other device.
 
 Use it to:  
@@ -21,7 +21,7 @@ Use it to:
 * [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
 * [GPG encrypted messaging is easy using this device.](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
 * [Crypto-Journalism:](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#crypto-journalism) Now anyone can safely create a journalistic body of work and prove that they authored the entire work and that it has not been tampered with all while allowing the author to remain anonymous if he or she so chooses. Protected sources. No more fake news.  
-* [Added Value For People In Developing Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-developing-countries) The PrivateKeyVault is the cheapest computer you can have and it does double duty as a regular Internet connected computer simply by swapping out the encrypted SD card containing private information with another one set up for business, education, browsing, and casual use. Now, not only can everyone with Internet reach the blockchain - Finally they can learn to use it.  
+* [Added Value For People In Developing Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-developing-countries) The PrivateKeyVault is the cheapest computer you can have and it does double duty as a regular Internet connected computer simply by swapping out the encrypted micro SD card containing private information with another one set up for business, education, browsing, and casual use. Now, not only can everyone with Internet reach the blockchain - Finally they can learn to use it.  
 
 The raspberry pi is not so much a thing as it is a community for getting the world on computers.  
 The PrivateKeyVault is not so much a thing as it is a community for getting the world on blockchains.  
@@ -30,7 +30,7 @@ The PrivateKeyVault is not so much a thing as it is a community for getting the 
 
 [What 2 Big Problems Does The PrivateKeyVault Solve That Hardware Wallets Cannot](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#what-2-big-problems-does-the-privatekeyvault-solve-that-hardware-wallets-cannot)
 
-All you really need is a raspberry pi 2, a raspberry pi camera, an SD card and an AC power supply.  
+All you really need is a raspberry pi 2, a raspberry pi camera, a micro SD card and an AC power supply.  
 You probably have a keyboard, mouse, and monitor laying around already.  
 You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
 [So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality) 
@@ -59,7 +59,7 @@ You can build from scratch using these instructions.
 
 [CorelDraw files are included for laser cutting the case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)  
 You don't need the transparent case for your PrivateKeyVault, but it's nice and it solves a lot of problems.  
-All you really need is a Pi 2, a Pi camera, an SD card, and an AC adaptor for power.  
+All you really need is a Pi 2, a Pi camera, a micro SD card, and an AC adaptor for power.  
 You probably have a mouse, screen and keyboard laying around already.   
 You are responsible for making sure there are no keyloggers or radio transmitters installed on any of these devices.  
 [So click here if you just want to install the software on your raspberry pi](https://github.com/johnshearing/PrivateKeyVault#installing-the-os-and-setting-up-basic-functionality)  
@@ -163,7 +163,7 @@ The items you will need are as follows.
 * Raspberry pi 2 board  
 * Official raspberry pi 7 inch touchscreen  
 * Official raspberry pi camera  
-* 16 GB SD card  
+* 16 GB micro SD card  
 * Ethernet cable  
 * WiFi dongle for USB port    
 * 32Mb thumbdrive   
@@ -971,11 +971,11 @@ The following photo shows the things you will need.
 <img src="/images/ReadmeImages/CloneTools.jpg">  
 <hr>  
 
-Get two SD card to USB adaptors.  
+Get two micro SD card to USB adaptors.  
 Get a USB hub. This plugs in to one of your USB ports on the pi but gives you 4 more places to plug in USB devices.  
 The reason you need the hub is because the SD card to USB adaptors are too big to fit directly into the closely stacked USB ports on the raspberry pi itself.  
 
-You will need three SD cards.  
+You will need three micro SD cards.  
 The first SD card will contain a trusted install of Jessie but does not have to be encrypted.  
 You will put this into the raspberry pi's SD card slot.  
 This will run the raspberry operating system pi during the copy process.  
