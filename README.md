@@ -1074,6 +1074,8 @@ Here is the second command:
 You probably guessed that the above command is getting the sha1sum of the newly cloned SD card.  
 If the two numbers on the screen match then the contents of two cards are the same.  
 
+For protection against tampering, it would be a very good idea to record the sha1sum result that you just got from the two cards. Take a photo of the touch screen and also write the number down by hand as well. As soon as you use the card this number will change of course. But since you will not be using the cloned card, it should have the same sha1sum until you actually use it. 
+
 Finally, it would be a good idea to try both SD cards to be sure that they work properly and that both of them can be used to access your secrets.  
 
 It would be a good idea to clone 2 extra SD cards so that you are prepared in case anything happens to the SD cards you have worked so hard to setup.  
@@ -2104,6 +2106,8 @@ If attackers gain physical access to your pi with the encrypted SD card aboard t
 
 To be sure, there are still ways that someone with physical access could secretly tamper with your PrivateKeyVault. 
 At some point we will have a hackathon with prize money for people who can successfully install a keylogger on the device without the judges being able to detect the intrusion and prizes for people who manage to get the password to an encypted partition. Then as an open source community, we can make the Vault more secure from what we have learned.  
+
+For additional protection against tampering, it would be a very good idea get the sha1sum of any SD card you intend to store. We covered how to do this in the section on cloning. Take a photo of the touch screen after generating the sha1sum and also write the number down by hand as well. As soon as you use the card this number will change of course. But it should have the same sha1sum until you actually use it. So before using a card that you have put away, you can generate the sha1sum. If the number is different then you might suspect that a keylogger has been installed on the boot partition. 
 
 We can take security a step further with multisignature wallets. These are smart contracts that require a transaction from two or more accounts before funds will be moved. We will explore this option when we start studying smart contracts.  
 
