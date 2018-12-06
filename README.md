@@ -2169,6 +2169,8 @@ The fix will be a warning dialog and an option to overwrite.
 The qrflash bash script does not check for two identical lines of text right next to each other.  
 So while chances of this are low in a text file it must be checked and handled.  
 This will matter more if the script is used to transfer image files.  
+The `uniq` linux command should alert the user to the condition.  
+Don't know yet how to work around the issue.  
 
 Make one button show up at a time for scan start and scan stop such that scan stop replaces scan start while the scan process is running and scan start replaces scan stop when the scan process has stopped. This will save on screen real estate and helps the user understand if the scan process is running or not.   
 
