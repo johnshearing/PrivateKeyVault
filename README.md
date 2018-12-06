@@ -2182,6 +2182,9 @@ To disable twofing execute the following
   
 Set up a timer to logout the user after a period of inactivity.  
 
+Play with taking the Sha1Hash of the boot partition to see if it has changed since last use.  
+Also play with WC to look for changes in the boot partition.  
+
 #### Changes to MyEtherWallet  
 
 Done: Add a native way to generate keystore files (UTC / JSON) from a private key.
