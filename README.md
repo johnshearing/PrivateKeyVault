@@ -1461,12 +1461,14 @@ Never store your password on any electronic device.
 #### Setting time without and Internet connection
 `sudo date -s 2017-02-05 15:30:0`
 
-#### Deleting information on the SD card  
+#### Deleting information on an SD card is impossible 
 It is not possible to securely wipe an SD card.  
 It is not possible to securely delete information on an SD card.  
-Any information deleted from an SD card can be easily recovered in a very simple computer lab.
-So never think you can delete private keys using any method.  
+Any information deleted from an SD card can be easily recovered in a very simple computer lab.  
+So never think you can delete private keys or personal information using any method.  
 The only way to delete data on an SD card is to destroy the card with a hot flame and then smash it into pieces.  
+One work-around for this limitation is encryption.  
+If a the root partition is fully encrypted then it shouldn't matter that the information can not be deleted.  
 
 ### Using Your PrivateKeyVault  
 
