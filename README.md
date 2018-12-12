@@ -164,7 +164,10 @@ PrivateKeyVault has no finacial relationship with these vendors.
 * Raspberry pi 2 board  
 * Official raspberry pi 7 inch touchscreen  
 * Official raspberry pi camera  
-* 16 GB micro SD card  
+* (Qty 3) 16 GB micro SD cards  
+  * Two of these cards are for backups.  
+  * Do not fail to make backups.  
+  * Get a high quality cards
 * Ethernet cable  
 * WiFi dongle for USB port    
 * 32Mb thumbdrive   
