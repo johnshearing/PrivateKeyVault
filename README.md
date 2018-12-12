@@ -155,7 +155,8 @@ Now that people all across the world can set up their own accounts on a super se
 The rest of this document shows you how to build and use the PrivateKeyVault.  
 
 #### Parts List  
-The items you will need are as follows. 
+The items you will need are as follows.  
+PrivateKeyVault has no finacial relationship with these vendors.  
 * [CorelDraw Files for Laser Cut Case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)    
   * [Qty (2) Acrylic Sheets - 18 inches X 12 inches X .115 inches thick](https://www.acmeplastics.com/cut-to-size-clear-acrylic-sheet-extruded)  
   * [Small BD-25/2 Hypo Applicator](https://www.tapplastics.com/product/repair_products/plastic_adhesives/hypo_type_solvent_cement_applicator/409)  
