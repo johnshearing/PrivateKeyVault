@@ -2066,7 +2066,7 @@ Be sure to take pictures of the seals so that when you want to open the vault yo
 
 <hr>
 
-If someone steals your SD card it's not a problem.  
+If someone steals your encrypted SD card it's not a problem.  
 You have cloned several copies and stored them in several different locations. Right?  
 It's not a problem if they steal your Vault either.  
 Your secrets are safe.  
