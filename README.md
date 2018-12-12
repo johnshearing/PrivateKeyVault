@@ -169,6 +169,11 @@ The items you will need are as follows.
 * 32Mb thumbdrive   
 * [Miniature Keyboard- Microcontroller-Friendly PS/2 and USB](https://www.adafruit.com/product/857)  
 * [5V 2.5A Switching Power Supply with 20AWG MicroUSB Cable](https://www.adafruit.com/product/1995)    
+  * This is a special powersupply made just for the raspberry pi.  
+  * It actually supplies a little more than 5V to account for voltage drop along the cable.  
+  * Also, the cable is made of thicker than wire than is normally found on these devices.  
+    * This is to reduce the amount of voltage dropped along the cable.  
+  * Do not use just any power supply - use this one.  
 * [Power Boost 1000 Charger](https://www.adafruit.com/product/2465)  
 * [PowerBoost 1000 Basic - 5V USB Boost @ 1000mA from 1.8V+](https://www.adafruit.com/product/2030)  
 * [Lithium Ion Battery Pack - 3.7V 6600mAh](https://www.adafruit.com/product/353)  
