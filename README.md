@@ -41,7 +41,7 @@ Or continue reading if you would like to build the device as it is shown here.
 
 <img src="/images/ReadmeImages/Wiring.jpg">  
 
-Computer and keyboard store in a [transparent tamper evident case](https://github.com/johnshearing/PrivateKeyVault/blob/master/images/ReadmeImages/WireTies.jpg) which can not be opened without the owner knowing the device has been tampered with.  
+Computer and keyboard store in a [transparent tamper evident case](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack) which can not be opened without the owner knowing the device has been tampered with.  
 
 This mitigates a [Maid in the Middle attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack)  
 
