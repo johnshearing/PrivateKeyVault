@@ -39,11 +39,11 @@ Or continue reading if you would like to build the device as it is shown here.
 
 <hr>  
 
-<img src="/images/ReadmeImages/Wiring.jpg">  
+<a href="https://youtu.be/T9qtRytdffU" target="_blank"><img src="/images/ReadmeImages/Wiring.jpg"  
+alt="Image of Vault closed showing all components and wiring" /></a>  
+[**Click on image above to see a YouTube video showing how to Open the device, Power up, Shutdown, Power off, and Pack it up.**](https://youtu.be/T9qtRytdffU)  
 
 Computer and keyboard store in a [transparent tamper evident case](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack) which can not be opened without the owner knowing the device has been tampered with.  
-
-This mitigates a [Maid in the Middle attack](https://github.com/johnshearing/PrivateKeyVault#preventing-the-evil-maid-or-maid-in-the-middle-attack)  
 
 <hr>  
 
