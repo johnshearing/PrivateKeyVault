@@ -152,7 +152,7 @@ Then solder the wires to the USB connector as shown above.
 Next turn the connector over and solder the ground wire as shown in the photo above.  
 You will need to file the solder flat so that you can slide the plastic cover over the soldered wires.  
 
-Finally, a bit of epoxy glue on the wire and connector will ensure that it does not come apart during use. 
+Finally, a bit of epoxy glue on the wire and connector will ensure that it does not come apart during use.  
 Do not skip this step.  
 
 <hr>  
