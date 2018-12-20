@@ -139,7 +139,7 @@ This diagram shows all the wires and their terminal points for soldering but loo
 The cable for the keyboard as it came from the vendor was too long to fit in the box.  
 Furthermore, all that extra length is inconvenient to manage when using the device. 
 
-The next three photos below show how to solder the wires to a new USB connector [Which can be ordered here](https://www.adafruit.com/product/1827).  
+The next three photos below show how to solder the wires to a new USB connector [which can be ordered here](https://www.adafruit.com/product/1827).  
 This connector has a very thin profile which will matter when you are plugging several devices into the USB ports during the SD card cloning process.  
 
 <img src="../images/WiringInstructionImages/USB_Wire.jpg">    
