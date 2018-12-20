@@ -136,9 +136,29 @@ This diagram shows all the wires and their terminal points for soldering but loo
 
 <hr>  
 
-<img src="../images/WiringInstructionImages/KeyboardUSBDiagram.jpg">    
+<img src="../images/WiringInstructionImages/USB_Wire.jpg">    
 
-The cable for the keyboard as it came from the vendor was too long to fit in the box. Furthermore, all that extra length was inconvenient to manage when using the device. So I cut the wire to a length of 26 inches from keyboard to the end of the wire. The above wiring diagram shows how to solder the wires to a new USB connector [Which can be ordered here](https://www.adafruit.com/product/1827). This connector has a very thin profile which will matter when you are plugging several devices into the USB ports during the SD card cloning process.  
+The cable for the keyboard as it came from the vendor was too long to fit in the box. Furthermore, all that extra length is inconvenient to manage when using the device. So cut the wire to a length of 24 1/4 inches from keyboard to the end of the wire and strip it as shown.  
+<hr>  
+
+<img src="../images/WiringInstructionImages/USB_BGWR.jpg">   
+
+Then solder the wires to the USB connector as shown above.  
+
+<hr>  
+
+<img src="../images/WiringInstructionImages/USB_Grnd.jpg">   
+
+Next turn the connector over and solder the ground wire as shown in the photo above.  
+You will need to file the solder flat so that you can slide the plastic cover over the soldered wires.  
+
+Finally, a bit of epoxy glue on the wire and connector will ensure that it does not come apart during use. 
+Do not skip this step.  
+
+<hr>  
+
+
+The above wiring diagram shows how to solder the wires to a new USB connector [Which can be ordered here](https://www.adafruit.com/product/1827). This connector has a very thin profile which will matter when you are plugging several devices into the USB ports during the SD card cloning process.  
 
 Next time I make one I will take photos and post them here.  
 Opps I forgot to show a fifth sheild/ground wire in the drawing. That must be soldered to the case of the connector. I will take a photo of that next time too.   
