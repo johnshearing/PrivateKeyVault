@@ -988,7 +988,7 @@ The reason you need the hub is because the SD card to USB adaptors are too big t
 You will need three micro SD cards.  
 The first SD card will contain a trusted install of Jessie but does not have to be encrypted.  
 You will put this into the raspberry pi's SD card slot.  
-This will run the raspberry operating system pi during the copy process.  
+This will run the raspberry pi operating system during the copy process.  
 Plug in the USB hub and turn on the raspberry pi.  
 
 The second card is the encrypted SD card that you wish to clone.  
