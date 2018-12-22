@@ -2319,7 +2319,8 @@ To open text editor `sudo leafpad filename`
   * [Linux For Beginners Playlist](https://www.youtube.com/watch?v=LVBmXYhks4E&list=PL6YwPExkSESqcOfH8SP0vYRnavpJf-JRH&index=1)  
   * [First 100 Terminal Commands WebPage](https://factorpad.com/tech/linux-essentials/outline.html)  
   * [First 100 Terminal Commands Playlist](https://www.youtube.com/watch?v=Xu7ODfjXeL8&t=3s&list=PL6YwPExkSESqQ69B7B011XOIuoVv3SdDg&index=2)  
-  * [Another Linux For Beginers Playlist](https://www.youtube.com/watch?v=irYWpAZKurA&index=1&list=PLHE8wkAai4cpXWVhQw4vU0GOQ98NUzrnC)   * [Official Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/)  
+  * [Another Playlist For Linux Beginers](https://www.youtube.com/watch?v=irYWpAZKurA&index=1&list=PLHE8wkAai4cpXWVhQw4vU0GOQ98NUzrnC)   
+  * [Official Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/)  
   * [Non-Official Raspberry Pi Documentation](http://what-when-how.com/Tutorial/topic-1252sqnc/Learning-Raspbian-bookmark.html)  
  
 
