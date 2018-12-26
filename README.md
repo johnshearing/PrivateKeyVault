@@ -2315,13 +2315,28 @@ To open text editor `sudo leafpad filename`
 ### Appendix  
 
 #### Linux Learning Resources  
+
+* [Official Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/)  
+* [Non-Official Raspberry Pi Documentation](http://what-when-how.com/Tutorial/topic-1252sqnc/Learning-Raspbian-bookmark.html)  
+
 * Linux Basics and Working at the Command Line  
   * [Linux For Beginners Playlist](https://www.youtube.com/watch?v=LVBmXYhks4E&list=PL6YwPExkSESqcOfH8SP0vYRnavpJf-JRH&index=1)  
   * [First 100 Terminal Commands WebPage](https://factorpad.com/tech/linux-essentials/outline.html)  
   * [First 100 Terminal Commands Playlist](https://www.youtube.com/watch?v=Xu7ODfjXeL8&t=3s&list=PL6YwPExkSESqQ69B7B011XOIuoVv3SdDg&index=2)  
-  * [Another Playlist For Linux Beginers](https://www.youtube.com/watch?v=irYWpAZKurA&index=1&list=PLHE8wkAai4cpXWVhQw4vU0GOQ98NUzrnC)   
-  * [Official Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/)  
-  * [Non-Official Raspberry Pi Documentation](http://what-when-how.com/Tutorial/topic-1252sqnc/Learning-Raspbian-bookmark.html)  
+  * [Another Playlist For Linux Beginers](https://www.youtube.com/watch?v=irYWpAZKurA&index=1&list=PLHE8wkAai4cpXWVhQw4vU0GOQ98NUzrnC) 
+  
+* Understanding the Linux File System  
+  * [The Linux Documentation Project](http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/index.html)  
+  * [Video: Learning the Linux File System](https://www.youtube.com/watch?v=HIXzJ3Rz9po&)  
+  
+* Bash Scripting  
+  * 
+  
+* Linux Deep Dives  
+  * [The: Linux From Scratch, and Beyond Linux From Scratch, books online](http://www.linuxfromscratch.org/)  
+  * [The: Linux From Scratch for Raspberry Pi book online](http://intestinate.com/pilfs/)  
+  * [Search this website for the term **rasp**](http://what-when-how.com/)  
+
  
 
 
