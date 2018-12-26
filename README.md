@@ -2337,7 +2337,7 @@ To open text editor `sudo leafpad filename`
   * [BASH Programming - Introduction HOW-TO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)  
   * [Bash Guide for Beginners](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/index.html)  
   * [Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html/)  
-  * [Kris Occhipinti Video Playlist ON Shell Scripting](https://www.youtube.com/watch?v=iINdaimyVds&list=PLcUid3OP_4OXOUqYTDGjq-iEwtBf-3l2E&index=1)  
+  * [Kris Occhipinti Video Playlist On Shell Scripting](https://www.youtube.com/watch?v=iINdaimyVds&list=PLcUid3OP_4OXOUqYTDGjq-iEwtBf-3l2E&index=1)  
   * [Where to Place Your Bash Scripts](https://www.youtube.com/watch?v=7pOvgwmce0k)  
   * [Using Zenity Part 1](http://jamesslocum.com/post/55694754191)  
   * [Using Zenity Part 2](http://jamesslocum.com/post/61904545275)    
