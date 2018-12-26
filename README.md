@@ -149,6 +149,8 @@ Now that people all across the world can set up their own accounts on a super se
 * [Often Used Github Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-github-commands)  
 * [Often Used GPG Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-gpg-commands)    
 
+[Contact Information]()
+
 
 ### Physically Building the PrivateKeyVault  
 The rest of this document shows you how to build and use the PrivateKeyVault.  
@@ -2422,7 +2424,7 @@ The following links are good online resources on how to use gpg:
 [In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
 [Keeping It At The Console - Input to GPG from Stdin / GPG Output to Stdout](https://stackoverflow.com/questions/5504721/how-do-i-encrypt-plaintext-with-gnupg)  
 
-Contact Information  
+#### Contact Information  
 Geoffrey Shearing: gshearing@radioactiverf.com  
 or  
 John Shearing: johnshearing@gmail.com    
