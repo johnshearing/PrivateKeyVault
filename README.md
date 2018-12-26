@@ -2323,14 +2323,27 @@ To open text editor `sudo leafpad filename`
   * [Linux For Beginners Playlist](https://www.youtube.com/watch?v=LVBmXYhks4E&list=PL6YwPExkSESqcOfH8SP0vYRnavpJf-JRH&index=1)  
   * [First 100 Terminal Commands WebPage](https://factorpad.com/tech/linux-essentials/outline.html)  
   * [First 100 Terminal Commands Playlist](https://www.youtube.com/watch?v=Xu7ODfjXeL8&t=3s&list=PL6YwPExkSESqQ69B7B011XOIuoVv3SdDg&index=2)  
-  * [Another Playlist For Linux Beginers](https://www.youtube.com/watch?v=irYWpAZKurA&index=1&list=PLHE8wkAai4cpXWVhQw4vU0GOQ98NUzrnC) 
+  * [Another Playlist For Linux Beginers](https://www.youtube.com/watch?v=irYWpAZKurA&index=1&list=PLHE8wkAai4cpXWVhQw4vU0GOQ98NUzrnC)  
+  * [A Cheat Sheet of Linux Commands with Examples](http://cheat.sh/)  
   
+ 
+ 
 * Understanding the Linux File System  
   * [The Linux Documentation Project](http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/index.html)  
   * [Video: Learning the Linux File System](https://www.youtube.com/watch?v=HIXzJ3Rz9po&)  
   
 * Bash Scripting  
-  * 
+  * [A Beginners Guide to Shell Scripting](https://bash.cyberciti.biz/guide/Main_Page)  
+  * [BASH Programming - Introduction HOW-TO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)  
+  * [Bash Guide for Beginners](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/index.html)  
+  * [Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html/)  
+  * [Kris Occhipinti Video Playlist ON Shell Scripting](https://www.youtube.com/watch?v=iINdaimyVds&list=PLcUid3OP_4OXOUqYTDGjq-iEwtBf-3l2E&index=1)  
+  * [Where to Place Your Bash Scripts](https://www.youtube.com/watch?v=7pOvgwmce0k)  
+  * [Using Zenity Part 1](http://jamesslocum.com/post/55694754191)  
+  * [Using Zenity Part 2](http://jamesslocum.com/post/61904545275)    
+  * [Using Zenity Video](https://www.youtube.com/watch?v=7VeDf0_xCIU)  
+  * [Kris Occhipinti Video 1 ON Zenity](https://www.youtube.com/watch?v=9YL1GtpCDFg&index=46&list=PL465C6C735CEB7CBD)  
+  * [Kris Occhipinti Video 2 ON Zenity](https://www.youtube.com/watch?v=erIXNmF5PEU&index=44&list=PL465C6C735CEB7CBD)    
   
 * Linux Deep Dives  
   * [The: Linux From Scratch, and Beyond Linux From Scratch, books online](http://www.linuxfromscratch.org/)  
