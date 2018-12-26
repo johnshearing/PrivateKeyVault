@@ -145,8 +145,7 @@ Now that people all across the world can set up their own accounts on a super se
 [Scratch Pad of Notes](https://github.com/johnshearing/PrivateKeyVault#scratch-pad-of-notes)  
 
 [Appendix](https://github.com/johnshearing/PrivateKeyVault#appendix)  
-* [Linux Learning Resources](https://github.com/johnshearing/PrivateKeyVault#linux-learning-resources)
-* [Commands for Working With Video at the Terminal](https://github.com/johnshearing/PrivateKeyVault#commands-for-working-with-video-at-the-terminal)
+* [Linux Learning Resources](https://github.com/johnshearing/PrivateKeyVault#linux-learning-resources)  
 * [Often Used Github Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-github-commands)  
 * [Often Used GPG Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-gpg-commands)    
 
@@ -2307,6 +2306,26 @@ To open the raspberry menu `CTRL+ESC` or just press the **Windows** button
 
 To open text editor `sudo leafpad filename`  
 
+Check if two files are the same:  
+`diff -s /home/pi/test/my_file.txt /home/pi/test/my_other_file.txt`  
+
+**Commands for Working With Video at the Terminal**   
+Record a video:  
+`raspivid -t 30000 -w 640 -h 480 -fps 25 -b 1200000 -p 0,0,640,480 -o pivideo.h264`  
+The -t 30000 in the line above makes the recording process last for 30 seconds.   
+
+Stop the recording process with the following command:  
+`pkill raspivid`  
+
+Convert the video to mp4 format:  
+`MP4Box -add pivideo.h264 pivideo.mp4`  
+
+Play back the video:  
+`omxplayer pivideo.mp4`  
+
+If you want to look at a png file:  
+`eog gem4.png`    
+
 
 
 [My Ethereum Notes are Found Here](https://gist.github.com/johnshearing)  
@@ -2350,29 +2369,6 @@ To open text editor `sudo leafpad filename`
   * [The: Linux From Scratch for Raspberry Pi book online](http://intestinate.com/pilfs/)  
   * [Search this website for the term **rasp**](http://what-when-how.com/)  
 
- 
-
-
-
-#### Commands for Working With Video at the Terminal  
-Record a video:  
-`raspivid -t 30000 -w 640 -h 480 -fps 25 -b 1200000 -p 0,0,640,480 -o pivideo.h264`  
-The -t 30000 in the line above makes the recording process last for 30 seconds.   
-
-Stop the recording process with the following command:  
-`pkill raspivid`  
-
-Convert the video to mp4 format:  
-`MP4Box -add pivideo.h264 pivideo.mp4`  
-
-Play back the video:  
-`omxplayer pivideo.mp4`  
-
-If you want to look at a png file:  
-`eog gem4.png`  
-
-Check if two files are the same:  
-`diff -s /home/pi/test/my_file.txt /home/pi/test/my_other_file.txt`    
 
 #### Often Used Github Commands  
 [This Video Tutorial series gets you up and running on GitHub quickly.](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV&index=1)  
