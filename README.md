@@ -2361,10 +2361,11 @@ If you want to look at a png file:
   * [Using Zenity Part 1](http://jamesslocum.com/post/55694754191)  
   * [Using Zenity Part 2](http://jamesslocum.com/post/61904545275)    
   * [Using Zenity Video](https://www.youtube.com/watch?v=7VeDf0_xCIU)  
-  * [Kris Occhipinti Video 1 ON Zenity](https://www.youtube.com/watch?v=9YL1GtpCDFg&index=46&list=PL465C6C735CEB7CBD)  
-  * [Kris Occhipinti Video 2 ON Zenity](https://www.youtube.com/watch?v=erIXNmF5PEU&index=44&list=PL465C6C735CEB7CBD)    
+  * [Kris Occhipinti Video 1 On Zenity](https://www.youtube.com/watch?v=9YL1GtpCDFg&index=46&list=PL465C6C735CEB7CBD)  
+  * [Kris Occhipinti Video 2 On Zenity](https://www.youtube.com/watch?v=erIXNmF5PEU&index=44&list=PL465C6C735CEB7CBD)    
   
 * Linux Deep Dives  
+  * [Check this collection of Kris Occhipinti playlists for Linux related content](https://www.youtube.com/user/metalx1000/playlists)
   * [The: Linux From Scratch, and Beyond Linux From Scratch, books online](http://www.linuxfromscratch.org/)  
   * [The: Linux From Scratch for Raspberry Pi book online](http://intestinate.com/pilfs/)  
   * [Search this website for the term **rasp**](http://what-when-how.com/)  
