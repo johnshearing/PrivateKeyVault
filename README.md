@@ -149,7 +149,7 @@ Now that people all across the world can set up their own accounts on a super se
 * [Often Used Github Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-github-commands)  
 * [Often Used GPG Commands](https://github.com/johnshearing/PrivateKeyVault#often-used-gpg-commands)    
 
-[Contact Information]()
+[Contact Information](https://github.com/johnshearing/PrivateKeyVault/blob/master/README.md#contact-information)  
 
 
 ### Physically Building the PrivateKeyVault  
