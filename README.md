@@ -1503,8 +1503,7 @@ Execute the following command at the terminal window:
 You should see a QR-Code on the screen.  
 If you scan this into you smartphone using any QR-Code scanning app you will see that this reads "hello world"  
 The QR-Code scanning app I like to use is Norton's Snap for Android.  
-Once the text is scanned into your phone you can do whatever you want with it  
-simply by pasting the text into other apps like gmail or perhaps a text editor. 
+Once the text is scanned into your phone you can do whatever you want with it simply by pasting the text into other apps like gmail or perhaps a text editor.  
 So this is basically how you get text out of the Private Key Vault without connecting to other devices.  
 
 Now we will see how to transfer an encrypted text file from one PrivateKeyVault to another using QR-Codes.  
