@@ -2336,6 +2336,7 @@ If you want to look at a png file:
 
 #### Linux Learning Resources  
 
+* [Raspberry Pi Getting Started Guide](https://www.raspberrypi.org/magpi/raspberry-pi-guide/)  
 * [Official Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/)  
 * [Non-Official Raspberry Pi Documentation](http://what-when-how.com/Tutorial/topic-1252sqnc/Learning-Raspbian-bookmark.html)  
 
