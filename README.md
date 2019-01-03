@@ -1501,7 +1501,7 @@ In this first example we will show the QR-Code representation of "hello world"
 Execute the following command at the terminal window:  
 `qrencode -t ANSIUTF8 "hello world"`  
 You should see a QR-Code on the screen.  
-If you scan this into you smartphone using any QR-Code scanning app you will see that this reads "hello world"  
+If you scan this into your smartphone using any QR-Code scanning application you will see that this reads "hello world"  
 The QR-Code scanning app I like to use is Norton's Snap for Android.  
 Once the text is scanned into your phone you can do whatever you want with it simply by pasting the text into other apps like gmail or perhaps a text editor.  
 So this is basically how you get text out of the Private Key Vault without connecting to other devices.  
