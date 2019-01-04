@@ -1490,11 +1490,28 @@ I will be covering all of this material in a video tutorial shortly.
 What is written below is the script that the video will follow.  
 So it serves as a written tutorial as well.  
 
-Not only does this tutorial cover the use of QR-Codes to cross the airgap, it is also a beginner’s tutorial on using GPG encrypted messaging. Everything you need to know in order to send and receive encrypted messages is covered here.  
-
 To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
 [This very short video shows the process](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
-Look at this first before proceeding with this topic.  
+Until the video is posted here, look at this very short video clip before proceeding with this topic.  
+
+**Video script starts here**  
+To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
+
+Not only does this tutorial cover the use of QR-Codes to cross the airgap, it is also a beginner’s tutorial on using GPG encrypted messaging. Everything you need to know in order to send and receive encrypted messages is covered here.  
+
+Let's start with an over view of the process. This is what the raspberry pi screen looks like right after you log in.  
+Pressing ctrl+alt+t brings up the Terminal Window. You can also click on the Terminal Window icon at the top of the screen.  
+Pressing alt+spacebar brings up another menu that allows you to control properties of the terminal window.  
+Pressing the letter d removes the title bar. Selecting Undecorate from the menu accomplishes the same thing.  
+Here we bring up the properties menu again with the alt+spacebar combination and then press the letter x to maximize the window.  
+Changing these properties is not required but this is how I like to set things up when working at the command line.  
+
+Now type the word **menu** and press the **Enter** button.  
+You can use this menu to launch the tasks you wish to accomplish using the PrivateKeyVault.  
+The menu is customizable to your individual needs.  
+
+
+
 
 By way of introduction, let’s try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
