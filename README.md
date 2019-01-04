@@ -1497,6 +1497,8 @@ Until the video is posted here, look at this very short video clip before procee
 **Video script starts here**  
 To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
 
+The PrivateKeyVault is the safest possible way to create and view encrypted messages because the messages are never decrypted for viewing until after they are behind the airgap on an encrypted drive where malware cannot go, where remote viewing is not possible and where the contents of the drive can not be decyphered by even the most sophisticated criminals.  
+
 Not only does this tutorial cover the use of QR-Codes to cross the airgap, it is also a beginner’s tutorial on using GPG encrypted messaging. Everything you need to know in order to send and receive encrypted messages is covered here.  
 
 Let's start with an over view of the process. This is what the raspberry pi screen looks like right after you log in.  
@@ -1510,8 +1512,20 @@ Now type the word **menu** and press the **Enter** button.
 You can use this menu to launch the tasks you wish to accomplish using the PrivateKeyVault.  
 The menu is customizable to your individual needs.  
 
+The first menu item launches MyEtherWallet which is used for commanding your accounts on the Ethereum blockchain without exposing your private keys to any other device. In the description is a link to a video which show how that is done.  
 
+The second menu option just opens a new terminal window.  
 
+The third option opens the file manager.  
+
+The fouth menu option allows you to select a text file to open with the LeafPad text editor.  
+If do not select a file when using this option then a new document will be opened for editing.  
+
+The fifth item initiates a file encryption task using GPG.  
+
+The sixth menu item reads a file and sends it to the touch screen as a parade of QR-Codes.  
+There is one QR-Code for each line in the file.  
+These
 
 By way of introduction, let’s try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
