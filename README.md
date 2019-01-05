@@ -1495,9 +1495,9 @@ To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes
 Until the video is posted here, look at this very short video clip before proceeding with this topic.  
 
 **Video script starts here**  
-To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
-
 The PrivateKeyVault is the safest possible way to create and view encrypted messages because the messages are never decrypted for viewing until after they are behind the airgap on an encrypted drive where malware cannot go, where remote viewing is not possible and where the contents of the drive can not be decyphered by even the most sophisticated criminals.  
+
+To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
 
 Not only does this tutorial cover the use of QR-Codes to cross the airgap, it is also a beginner’s tutorial on using GPG encrypted messaging. Everything you need to know in order to send and receive encrypted messages is covered here.  
 
@@ -1512,20 +1512,50 @@ Now type the word **menu** and press the **Enter** button.
 You can use this menu to launch the tasks you wish to accomplish using the PrivateKeyVault.  
 The menu is customizable to your individual needs.  
 
-The first menu item launches MyEtherWallet which is used for commanding your accounts on the Ethereum blockchain without exposing your private keys to any other device. In the description is a link to a video which show how that is done.  
+The first menu item launches MyEtherWallet which is used for commanding your accounts on the Ethereum blockchain without exposing your private keys to any other device. In the description is a [link to a video which shows how that is done](https://www.youtube.com/watch?v=_vA4tTLdL2M&).  
 
-The second menu option just opens a new terminal window.  
+The second menu option opens a new terminal window.  
 
 The third option opens the file manager.  
 
 The fouth menu option allows you to select a text file to open with the LeafPad text editor.  
-If do not select a file when using this option then a new document will be opened for editing.  
+If you do not select a file when using this option then a new document will be opened for editing.  
+Let's use the fourth menu option now to look at the file we will be sending.  
+First we are prompted to select the directory where the file we wish to examine resides.  
+It's in the **readme** folder.  
+The file we will be looking at is called MoistCake.  
+This file contains the secrets for baking a super moist and delicious cake.  
+This is the file we are going to send.  
 
-The fifth item initiates a file encryption task using GPG.  
+For the purposes of this quick overview I have taken the liberty of using memu option number 5 to encrypt the file before we pass it out of the Vault and send it across the Internet.  
 
-The sixth menu item reads a file and sends it to the touch screen as a parade of QR-Codes.  
-There is one QR-Code for each line in the file.  
-These
+Lets take a look at that file now.  
+It's called MoistCake.asc and it's right next to MoistCake.  
+This is the encrypted version of the MoistCake file.  
+
+
+Now we will use the sixth menu option to send the encrypted baking secrets to the touch screen as a parade of QR-Codes to be recorded as video on a smartphone. 
+This is what we were seeing at the beginning of this video demonstration.  
+After the recording is made we will post it to YouTube with the touch of a button where the recipent can show the video to his or her own PrivateKeyVault which will decrypt the message after it is behind the airgap where it can be viewed with the assurance of complete isolation and with the assurance that no one will be able to gain access to the file should the device be stolen.  
+
+Let's select that menu item now.  
+
+First we are prompted to select the folder where the encrypted file resides.  
+I am choosing the **readme** folder.  
+Next we are prompted to select the file we wish to send.  
+That's MoistCake.asc.
+Then we are prompted to select the duration each qr-code is displayed on the screen.  
+We accept the default of .3 seconds each.
+Finally we are presented with a button to start the parade.  
+
+Before we press the button let's look at the action from the outside.  
+We rearrange the PrivateKeyVault so that the smartphone sits on top looking down at the touch screen.  
+Then we press the record button on the smartphone to start the video recording.  
+We wait about five seconds and then press the play button on the PrivateKeyVault to start the QR-Code parade on the touchscreen.  
+
+When the parade is finished we stop the recording and post it on YouTube for the recipent to import into his or her own PrivateKeyVault.  
+
+Now we will cover the entire process in complete detail.  
 
 By way of introduction, let’s try moving text out of the PrivateKeyVault from the command line.  
 In this first example we will show the QR-Code representation of "hello world"  
