@@ -1562,7 +1562,7 @@ We rearrange the PrivateKeyVault so that the smartphone sits on top looking down
 Then we press the record button on the smartphone to start the video recording.  
 We wait about five seconds and then press the play button on the PrivateKeyVault to start the QR-Code parade on the touchscreen.  
 
-When the parade is finished we stop the recording and post it on YouTube for the recipent to import into his or her own PrivateKeyVault.  
+When the parade is finished we stop the recording and post it from the phone onto YouTube for the recipent to pick up on another smart phone and import into his or her own PrivateKeyVault as shown here where it will be decrypted and viewed in the secure isolated environment provided by the airgap.    
 
 Now we will cover the entire process in complete detail.  
 
