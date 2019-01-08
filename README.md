@@ -1495,7 +1495,16 @@ To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes
 Until the video is posted here, look at this very short video clip before proceeding with this topic.  
 
 **Video script starts here**  
-The PrivateKeyVault is the safest possible way to create and view encrypted messages because the messages are never decrypted for viewing until after they are behind the airgap on an encrypted drive where malware cannot go, where remote viewing is not possible and where the contents of the drive can not be decyphered by even the most sophisticated criminals.  
+The Private Key Vault is an airgapped computer.  
+Airgapped means isolated.  
+The Vault does not connect to any any other devices nor to the Internet.  
+Files are not transfered with USB memory sticks.  
+USB cables, ethernet cables and the like are not used for connecting to other devices nor for transfering data.  
+Radio communication is not used either -  not WiFi, not Bluetooth, nor is any other kind of radio used.  
+
+The PrivateKeyVault is the safest possible way to create and view encrypted messages because the messages are never decrypted for viewing until after they are behind the airgap on an encrypted drive where malware cannot go, where remote viewing is not possible and where the contents of the drive can not be decrypted by even the most sophisticated criminals.  
+
+Before we see how files are transfered in and out of a computer which does not connect to any other devices, lets have a quick look at how to open it, unpack it, set it up, power it up, shut it down, power it off, and pack it up again.  
 
 To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
 
