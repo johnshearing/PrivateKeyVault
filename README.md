@@ -1610,11 +1610,10 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
 ```  
 
 * First Bob needs to make a public/private keypair:   
-  * [Here is a video which shows how it's done from the command line.](https://youtu.be/ZraIkHqpxzU?t=7m4s)  
+  * In the appendix at www.privatekeyvault.com are links to tutorials which show how to work with GPG at the command line.  
   * I made an application to help you with encryption tasks so that you do not have to do all this at the command line.  
   * The application is already installed if you have been following along.  
-  * Open the terminal window and execute the following command:  
-  * `menu`  
+  * Open the terminal window and execute the command: `menu`  
   * You should see a menu of things you can do with your PrivateKeyVault.  
   * Scroll down the menu until the item **Generate a Public/Private key pair** is highlighted and press the enter button.  
   * You will be prompted for the type of key you want.  
