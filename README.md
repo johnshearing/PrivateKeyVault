@@ -1506,9 +1506,13 @@ The PrivateKeyVault is the safest possible way to create and view encrypted mess
 
 Before we see how files are transfered in and out of a computer which does not connect to any other devices, lets have a quick look at how to open it, unpack it, set it up, power it up, shut it down, power it off, and pack it up again.  
 
+You can see here that the wire for the keyboard is tucked away in the upright supports. This is only necessary when using tamper evident seals which will be covered later.  
+
 To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
 
 Not only does this tutorial cover the use of QR-Codes to cross the airgap, it is also a beginner’s tutorial on using GPG encrypted messaging. Everything you need to know in order to send and receive encrypted messages is covered here.  
+
+Before powering off the pi it is super important to shutdown at the menu first as I am doing here and then wait 15 seconds before powering off. Failure to do this will destroy you micro SD card which has all of your secrets. 
 
 Let's start with an over view of the process. This is what the raspberry pi screen looks like right after you log in.  
 Pressing ctrl+alt+t brings up the Terminal Window. You can also click on the Terminal Window icon at the top of the screen.  
@@ -1562,7 +1566,7 @@ We rearrange the PrivateKeyVault so that the smartphone sits on top looking down
 Then we press the record button on the smartphone to start the video recording.  
 We wait about five seconds and then press the play button on the PrivateKeyVault to start the QR-Code parade on the touchscreen.  
 
-When the parade is finished we stop the recording and post it from the phone onto YouTube for the recipent to pick up on another smart phone and import into his or her own PrivateKeyVault as shown here where it will be decrypted and viewed in the secure isolated environment provided by the airgap.    
+When the parade is finished we stop the recording and post it from the phone onto YouTube for the recipent to pick up on another smart phone and import into his or her own PrivateKeyVault where it will be decrypted and viewed in the secure isolated environment provided by the airgap.    
 
 Now we will cover the entire process in complete detail.  
 
@@ -1576,7 +1580,7 @@ The QR-Code scanning app I like to use is Norton's Snap for Android.
 Once the text is scanned into your phone you can do whatever you want with it simply by pasting the text into other apps like gmail or perhaps a text editor.  
 So this is basically how you get text out of the Private Key Vault without connecting to other devices.  
 
-Now we will see how to transfer an encrypted text file from one PrivateKeyVault to another using QR-Codes.  
+Now we will see how to encrypt and pass a text file from one PrivateKeyVault to another using GPG and QR-Codes.  
 This will allow us to make a secure file transfer over the Internet without losing our airgap.  
 By using this method, there will be no opportunity for attackers to access any files on either Vault because we will make the transfer without connecting to any other devices. Furthermore, there will be no chance of anyone reading our message because the message will not be decrypted until the message is safely on the other side of the airgap where spyware and keyloggers cannot go.  
 
