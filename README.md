@@ -1633,7 +1633,7 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
   * Next you will be asked for **Bob's Name**, **Bob's Email Address**, and a **Comment**.  
   * These will be used to make a unique identifier for Bob's key.  
   * Since the name must be at least five characters long, we will enter **Robert** when asked for Bob's name.  
-  * Enter **Robert** for the Name, **bob@gmail.com** for the email address, and **Bob's GPG keypair** for the comment.  
+  * Enter **Robert** for the Name, **bob@gmail.com** for the email address, and **Bob's public/private keypair** for the comment.  
   * If you are satisfied that all is correct then input the capital letter O and press **Enter** to continue.  
   * Otherwise follow the prompts to make any required changes.  
   * Don't worry if you get a message stating that the GPG agent is not available.  
