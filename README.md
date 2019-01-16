@@ -1657,24 +1657,26 @@ The excess water in margarine will evaporate in the oven's heat, leaving your ca
   * You will be prompted to enter a unique identifier like an email address but if you just hit the **back space** key to clear out the field then GPG will return information about all the private keys on your keyring. So far there is only one.  
   * The output should look something like the output shown below:  
   * The top line indicates the location and name of the secret keyring file on your pi.  
-  * The **sec** line shows the key size : 2048, the key type : r for RSA, the UniqueID : 6E477330, and the creation date.  
+  * The **sec** line shows the key size : 2048, the key type : r for RSA, the UniqueID : AB1D1BBD, and the creation date.  
   * The UniqueID is used in GPG commands to refer to that specific private key.  
   * The **uid** line shows Bob's real name, Bob's comment, and Bob's email address.  
   * The email address can also be used to uniquely identify Bob's keys when making gpg commands.  
   * The **ssb** line shows the size, type, and unique identifier of Bob's subkey. Subkeys are cool because you can have as many subkeys associated with your private key as you want but you can revoke them individually without harming your ability to use your other subkeys or the originating private key.  
   * We only see information about one secret key because so far we only have one key on the secret key ring.  
+  * Now press the Escape key and the menu will close bringing you back to the command prompt for the next topic.  
 ```
 /home/pi/.gnupg/secring.gpg
 ---------------------------
-sec   2048R/6E477330 2018-04-15
-uid                  Bob (Bob's comment) <bob@gmail.com>
-ssb   2048R/0199AA57 2018-04-15 
+sec   2048R/AB1D1BBD 2018-11-24
+uid                  Robert (Bob's comment) <bob@gmail.com>
+ssb   2048R/D886151D 2018-11-24 
 ```  
 
+
 * Lets take a look at the private key.  
-  * The menu app does this for you but you could the execute the following command at the terminal window to see the private key.
-  * `gpg2 --export-secret-key --armor bob@gmail.com`  
-  * You would see a big block of text on the pi's touch screen.  
+  * The menu app does this for you but let's execute the following command at the terminal window to see the private key.
+  * `gpg --export-secret-key --armor bob@gmail.com`  
+  * You should see a big block of text on the pi's touch screen.  
   * That's the private key.  
   * Never show anyone your private key.  
   * Here is the command to export Bob's private key to a file:  
