@@ -1679,6 +1679,7 @@ ssb   2048R/D886151D 2018-11-24
   * You should see a big block of text on the pi's touch screen.  
   * That's the private key.  
   * Never show anyone your private key.  
+  * Press Enter to continue.  
   * Here is the command to export Bob's private key to a file:  
    `gpg --export-secret-key --armor --output BobsPrivateKeyFile.asc bob@gmail.com`  
   * **gpg --export-secret-key** is the command.  
@@ -1704,6 +1705,8 @@ ssb   2048R/D886151D 2018-11-24
   * Normally, private keys should never leave your PrivateKeyVault.  
   * Although you may want to export your private keys to a file so that you can back them up or to move them to another machine.  
   * Rather than exporting your private keys, I would just clone the encrypted SD card and get a backup of everything.  
+  * Cloning SD cards is covered at www.privatekeyvault.com  
+  * Just search the contents and you will find a tutorial on that.  
   
 * Your public keys are meant to be shared with everyone.  
   * Public keys are used by others to encrypt documents that can only be decrypted by you using your private key.  
