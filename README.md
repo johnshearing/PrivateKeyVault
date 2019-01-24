@@ -1738,7 +1738,9 @@ pub   2048R/6E477330 2018-04-15
 uid       [ultimate] Bob (Bob's comment) <bob@gmail.com>
 sub   2048R/0199AA57 2018-04-15
 ```  
-* To see the fingerprint using the menu app, just highlight the menu option that says **Show fingerprints for public keys** and press the **Enter** key.  
+  * To see the fingerprint using the menu app, just highlight the menu option that says **Show fingerprints for public keys** and press the **Enter** key.  
+  * Enter a uniqueID when prompted or blank out the field to see fingerprints for all the public keys on your keyring.  
+
 
 * Now Bob needs to get his public key to Alice.  
   * First Bob needs to get his public key out of the public keyring file and into a file of its own so he can send it to Alice.  
