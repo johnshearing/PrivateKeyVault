@@ -1819,8 +1819,25 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Follow the prompts to delete Bob's public key.  
   * Verify that there are no more private keys on the key ring by highlighting the menu option which says **List private keys** and press the **Enter** key.  
   * Verify that there are no more public keys on the key ring by highlighting the menu option which says **List public keys** and press the **Enter** key.  
-  * Now that the keyring is cleared out we are ready to play the part of Alice.  
   *  
+  * Now that the keyring is cleared out we are ready to play the part of Alice.  
+  * In order to message with Bob, Alice will need a public/private keypair of her own.  
+  * Let's make one for her.  
+  * We will do it the same way we did it for Bob.  
+  * Highlight the menu option which reads **Generate a Public/Private key pair** and press the **Enter** key.  
+  * When prompted for the type of key just press the **Enter** key to accept the default.  
+  * When prompted for the key size type **Enter** again to accept the default.  
+  * When prompted for the amount of time the key will be valid, press the **Enter** key again to accept the default option which specifies that the key does not expire.  
+  * When prompted to confirm the key will not expire press the letter **y** and then press the **Enter** key.  
+  * When prompted for the real name input **Alice**.  
+  * When prompted for the email address input **alice@gmail.com**  
+  * When prompted for a comment input **Alice's public/private key pair**.  
+  * When prompted, type the letter **O** if everything has been entered correctly.  
+  * Enter a password for Alice when prompted and then enter it again to confirm.  
+  * Finally 
+  
+  
+  * 
   * Alice has just received Bob's video on her smart phone.  
   * The very first thing she does is to call Bob and ask for the finger print associated with his public key.  
   * She will need this later to be sure she actually received Bob's public key.  
