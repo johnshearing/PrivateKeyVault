@@ -1832,12 +1832,20 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * When prompted for the real name input **Alice**.  
   * When prompted for the email address input **alice@gmail.com**  
   * When prompted for a comment input **Alice's public/private key pair**.  
-  * When prompted, type the letter **O** if everything has been entered correctly.  
+  * When prompted to confirm everything is entered correctly, type the letter **O** if indeed everything is correct.  
   * Enter a password for Alice when prompted and then enter it again to confirm.  
-  * Finally 
-  
-  
+  * Finally provide random input with mouse and keyboard for the key generation process.  
+  * The process takes a few minutes.  
+  * When it is done, you will be presented with information about the key pair.  
   * 
+  * Now you may wish to verify the creation of Alice's private key.  
+  * Highlight the menu option which reads **List private keys** and press the **Enter** key.  
+  * Then follow the prompts.  
+  
+  * Now you may wish to verify the creation of Alice's public key.  
+  * Highlight the menu option which reads **List public keys** and press the **Enter** key.  
+  * Then follow the prompts.  
+  *
   * Alice has just received Bob's video on her smart phone.  
   * The very first thing she does is to call Bob and ask for the finger print associated with his public key.  
   * She will need this later to be sure she actually received Bob's public key.  
