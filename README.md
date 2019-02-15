@@ -1887,13 +1887,6 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * If all went well you should see a message in the terminal window telling you that the files are identical.  
   * Congratulations! Using QR-Codes you have just passed a file from your PrivateKeyVault out across the airgap to your phone without connecting the devices. Then you passed the file back in - all without exposing your PrivateKeyVault to any attacks from WiFi, Bluetooth, Thumbdrives, or Data cable transfers. When you work this way, no one can install malware, keyloggers, remote control or remote viewing software and no one can dig through the files on your PrivateKeyVault.  
   *  
-  * Now let's make a public/private key pair for Alice. 
-  * Do it the same way you did for Bob.  
-  * Just highlight the menu option which says **Generate a Public/Private key pair** and press the **Enter** key.  
-  * Then follow the prompts as before.  
-  * For the Unique ID, use alice@gmail.com  
-  * When you are finished, continue with the tutorial.  
-  *  
   * Now we will import Bob's public key onto Alice's keyring.  
   * Highlight the menu option which says **Import a public or private key from a text file** and press the **Enter** key.  
   * You will be prompted to select the text file containing Bob's public key.  
