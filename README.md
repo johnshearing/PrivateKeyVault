@@ -2246,7 +2246,7 @@ This text file will be smaller and therefore easier to send via Internet.
 Although posting the qr-videos on YouTube is also an option.  
 
 #### Hardware Items Todo  
-Install a momentary **Scan** button on the face of the brick.  
+Install a momentary **Scan** button on the face of the PKV.  
 Pressing the button starts the scan.  
 Releasing the button ends the scan.  
 Also achieving a good read ends the scan.  
@@ -2261,12 +2261,36 @@ My concern is that it would be possible to remotely view what is on the screen i
 Finally, I know of one attack on a trezor that captures the private key by reading spikes in the ac power as calculations are performed which use the key.  
 For all these reasons, I think it would be a good idea to provide extra space for the AC power supply in the tamper resistant case to mitigate these attack vectors. I could justify making a vesion with a bigger case if people wanted to use a larger screen and a larger keyboard. I might also make space for the hub and adaptors required for cloning the SD cards.  
 
-The keyboard might also be a central point of attack because the currently used board fits so nicely in the case. My concern is if someone inserts a hardware keylogger during manufacture or when the device is shipped. I am wondering if a we can make our own keyboard using the laser cutter. This way as people make their own devices they will be sourcing materials from various locations which will decentralize the manufacture of the keyboard.  
+The keyboard might also be a central point of attack.  
+My concern is someone could plant a hardware keylogger on the keyboard during manufacture or when the device is shipped.  
+I am wondering if a we can make our own keyboard using the laser cutter.  
+This way as people make their own devices they will be sourcing materials from various locations which will decentralize the manufacture of the keyboard.  
+Oddly, during my research on this topic I discovered that all keyboards use a computer chip to code the rows and columns into ascii codes and to send these along to the computer. So who would know if these chips were reprogrammed to store keystrokes or if the chips were switched out with something that could. This vulnerability affects every keyboard. So I asked [David Johnson-Davies of Human-Computer Interface Ltd](http://www.interface.co.uk/) for advice. He can be reached at the following email address: david@technoblogy.com  
+David invented [the Lisp Badge](http://www.technoblogy.com/show?2AEE)  
+Specifically, I asked David if it would be possible to make a keyboard on a circuit board so simple that it can be proven to be free of key loggers using only visual inspection.  
+He offered the idea of using an analog keyboard [like the one found here](http://www.technoblogy.com/show?28WK).  
+The idea is that every key puts a different voltage on the wire going to an analog to digital converter which transmits the now digital voltage reading to the pi which in turn converts the digital voltage readings into an ascii codes.  
+
+Below is response verbatim:  
+```
+I’ve had another idea, based on another project of mine:
+
+http://www.technoblogy.com/show?28WK
+
+With a series of resistors you can convert the keyboard into a voltage, such that pressing each key generates a different voltage. A typical analogue input can read a voltage as a 10-bit number, with a couple of bits of precision. That’s plenty of precision to resolve a typical computer keyboard with 50 or so keys.
+
+The simplest circuit is to have a chain of 50 equal-value resistors in series, across the supply, like a potential divider, dividing the supply into 50 equal voltage steps. Pressing any key joins the junction between two resistors to the output. Your airgapped computer would then just need to read a voltage on a two-wire input. 0V would mean no key pressed; any other voltage would designate a key.
+
+The keyboard PCB would only need to contain 50 pushbuttons and 50 surface-mount resistors.
+```
+So I will be experimenting with David's idea and will document the results in this repository.  
+Thank you David.  
 
 One also has to be concerned that the pi, camera, and touch screen has not been tampered with during manufacture or shipping.  
+Who on earth could know if these items have been tampered with during manufacture or shipping.
 
 Even though there is a touch screen, I wonder if it would also be a good idea to provide a space in the secure case for a mouse.  
-My reasons are the same as given above.  
+My reasons are the same as for the AC to DC power supply - Anything inside the box can be trusted if it was clean when it went into the box and tamper resistant seals have been used.  
 
 Consider the Raspberry Pi Module 3 for it's smaller size in future builds.   
 
