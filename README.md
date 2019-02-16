@@ -2265,7 +2265,8 @@ The keyboard might also be a central point of attack.
 My concern is someone could plant a hardware keylogger on the keyboard during manufacture or when the device is shipped.  
 I am wondering if a we can make our own keyboard using the laser cutter.  
 This way as people make their own devices they will be sourcing materials from various locations which will decentralize the manufacture of the keyboard.  
-Oddly, during my research on this topic I discovered that all keyboards use a computer chip to code the rows and columns into ascii codes and to send these along to the computer. So who would know if these chips were reprogrammed to store keystrokes or if the chips were switched out with something that could. This vulnerability affects every keyboard. So I asked [David Johnson-Davies of Human-Computer Interface Ltd](http://www.interface.co.uk/) for advice. He can be reached at the following email address: david@technoblogy.com  
+Oddly, during my research on this topic I discovered that all keyboards use a computer chip to code the rows and columns into ascii codes and to send these along to the computer. So who would know if these chips were reprogrammed to store keystrokes or if the chips were switched out with something that could. This vulnerability affects every keyboard. So I asked [David Johnson-Davies of Human-Computer Interface Ltd](http://www.interface.co.uk/) for advice.  
+He can be reached at the following email address: david@technoblogy.com  
 David invented [the Lisp Badge](http://www.technoblogy.com/show?2AEE)  
 Specifically, I asked David if it would be possible to make a keyboard on a circuit board so simple that it can be proven to be free of key loggers using only visual inspection.  
 He offered the idea of using an analog keyboard [like the one found here](http://www.technoblogy.com/show?28WK).  
