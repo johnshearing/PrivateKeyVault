@@ -1924,6 +1924,9 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Next you will be asked for the Unique ID of the recipients.  
   * It is customary to make yourself one of the recipients - otherwise only Bob will be able decrypt the file.  
   * So enter Alice's email address **alice@gmail.com** and press the **Enter** key.  
+  * You will get a warning that there is no certainty that the public key for Alice actually belongs to her.  
+  * We are certain it does, however, because we made the key ourselves.  
+  * So enter the letter **y** for **yes** and press the **Enter** key.  
   * Next enter Bob's email address **bob@gmail.com** and press the **Enter** key.  
   * You will get a warning that there is no certainty that the public key for bob actually belongs to him.  
   * Maybe Malory intercepted Bob's public key and then replaced it with his own public key so that he will be able to decrypt your baking secrets instead of Bob.  
@@ -1944,7 +1947,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Close the text editor.  
   *  
   * Alice is now going to pass her encrypted baking secrets out of the PrivateKeyVault to her phone exactly the way Bob sent his public key to Alice - using QR-Codes.  
-  * First arrange the PrivateKeyVault as shown in the photo below with the camera of your smart phone looking at the touch screen.  
+  * First arrange the PrivateKeyVault as shown.  
   * [If you click on the image it will take you to a YouTube video which shows what's supposed to happen.](https://youtu.be/3MwJOj3t8cI)  
   * <a href="https://youtu.be/3MwJOj3t8cI" target="_blank"><img src="/images/ReadmeImages/Vault2Phone.jpg"  
 alt="Image of Vault passing qr-code to phone" width="240" height="180" border="10" /></a>  
