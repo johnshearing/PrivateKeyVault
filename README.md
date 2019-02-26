@@ -1893,11 +1893,11 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Navigate to the **public_keys** folder and then select the file named **extractedTextFile.txt** and press the **Enter** key.  
   * You should get a message saying that the public key was imported.  
   *  
-  * Let's check an see if the key is there.  
+  * Let's check to see if the key is there.  
   * Highlight the menu option which says **List public keys** and then press the **Enter** key.  
   * You will see a dialog box asking which public key to show.  
   * Just hit the **Backspace** key to blank out the field and then press the **Enter** key.  
-  * Notice both Bob's and Alice's public key is displayed. That's because we didn't specify which key to show.  
+  * Notice both Bob's and Alice's public keys are displayed. That's because we didn't specify which key to show.  
   *  
   * Now let's encrypt Alice's secrets for making a cake super moist and delicious.  
   * If you remember, just before we pulled the plug on the Internet so as to airgap your PrivateKeyVault, we copied this very file that you are reading now onto your pi. It's in a folder named **readme** and the file is named readme.txt  
@@ -1912,17 +1912,8 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Open the text editor again by highlighting the menu option which says **Read or write a message** and press the **Enter** key.  
   * Instead of selecting a file to open, press the cancel button.  
   * This will open a blank document.  
-  * Press **CTRL+V** to copy the secrets on the clipboard into your blank document.  
+  * Press **CTRL+V** to paste the secrets on the clipboard into your blank document.  
   * Then save the document as **baking_secrets.txt** in the readme folder
-  *  
-  * So now we have a file containing Alice's baking secrets and we want to encrypt the file before sending it to Bob.  
-  * The first time I tried to encrypt the file it didn't work because the directory **readme** was created by the root user during a VNC session so I didn't have permission to create the new encrypted file inside the **readme** folder.  
-  * This is normally not an issue but let's see how to give ourselves full permissions to a folder.  
-  * Highlight the menu option which says **Work at the command prompt** and press the **Enter** key.  
-  * Then press the **Enter** key again to select the pi directory as your working directory.  
-  * In the new terminal window type the following command and press the **Enter** key.  
-  * `sudo chmod 777 readme`  
-  * Now GPG will be able to create an encrypted version of **baking_secrets.txt** in the **readme** folder.  
   *  
   * Finally we are ready to encrypt the file containing Alice's baking secrets.  
   * Highlight the menu option which says **Encrypt a text file** and press the **Enter** key.  
@@ -1930,7 +1921,7 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * You will be asked if you want to sign the encrypted file.  
   * Answer yes so that Bob will know for sure that the encrypted file is from Alice.  
   * Enter Alice's Password when prompted.  
-  * Next you will be asked for the Unique Id of the recipients.  
+  * Next you will be asked for the Unique ID of the recipients.  
   * It is customary to make yourself one of the recipients - otherwise only Bob will be able decrypt the file.  
   * So enter Alice's email address **alice@gmail.com** and press the **Enter** key.  
   * Next enter Bob's email address **bob@gmail.com** and press the **Enter** key.  
