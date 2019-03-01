@@ -1983,8 +1983,12 @@ alt="Image of Vault passing qr-code to phone" width="240" height="180" border="1
   * Highlight the menu option which says **Read or write a message** and press the **Enter key**.  
   * Go to the private_keys folder and open the file **alices_private_key.txt**  
   * Close the text editor after you have examined the file.  
-  * Now remove Alice's **private** key from the keyring. 
-    * There is a menu option for this operation and you have done this before.  
+  * Now remove Alice's **private** key from the keyring.  
+  * Highlight the menu option **Delete a Private Key** and press the **Enter** key.  
+  * Click through the warning dialog boxes.  
+  * Enter Alice's Unique ID.  
+  * Answer yes to two more warnings.  
+  * And press the **Enter** key to complete the operation.  
   * Bob's public key is already on the keyring. Remember he sent it to Alice via QR-Code parade?  
   * So there is no need to restore his public key.  
   * Go ahead and restore his private key.  
