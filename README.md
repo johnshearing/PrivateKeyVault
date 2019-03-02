@@ -1,7 +1,7 @@
 # PrivateKeyVault - [Click for Open Source Make Instructions](https://github.com/johnshearing/PrivateKeyVault#contents)  
 ### Airgapped raspberry pi computer with touch screen and camera  
 ### Featuring [LUKS full disk encryption](https://github.com/johnshearing/PrivateKeyVault#setup-luks-full-disk-encryption)  
-### For [secure offline blockchain transactions](https://www.youtube.com/watch?v=_vA4tTLdL2M) and for [secure encrypted messaging](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)     
+### For [secure offline blockchain transactions](https://www.youtube.com/watch?v=_vA4tTLdL2M) and for [secure encrypted messaging](https://youtu.be/qUWWuHium30)     
 ### [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
 
 <img src="/images/ReadmeImages/FiredUp.jpg">  
@@ -19,7 +19,7 @@ Use it to:
 * Securely read and edit all types of files behind the airgap where remote viewing and key logging is not possible.  
 * No WiFi, No BlueTooth, No Cables, No USB ThumbDrives  
 * [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
-* [GPG encrypted messaging is easy using this device.](https://github.com/johnshearing/PrivateKeyVault#sending-an-encrypted-message)  
+* [GPG encrypted messaging is easy using this device.](https://youtu.be/qUWWuHium30)  
 * [Crypto-Journalism:](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#crypto-journalism) Now anyone can safely create a journalistic body of work and prove that they authored the entire work and that it has not been tampered with all while allowing the author to remain anonymous if he or she so chooses. Protected sources. No more fake news.  
 * [Added Value For People In Developing Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-developing-countries) The PrivateKeyVault is the cheapest computer you can have and it does double duty as a regular Internet connected computer simply by swapping out the encrypted micro SD card containing private information with another one set up for business, education, browsing, and casual use. Now, not only can everyone with Internet reach the blockchain - Finally they can learn to use it.  
 
@@ -1483,16 +1483,16 @@ If a the root partition is fully encrypted then it shouldn't matter that the inf
 ### Using Your PrivateKeyVault  
 
 #### Sending an Offline Transaction to the Ethereum Blockchain  
-[This Video](https://www.youtube.com/watch?v=_vA4tTLdL2M) shows how an offline transaction is made on the Ethereum blockchain using the first prototype of this device. The procedure for making an offline transaction using the newer device is still the same so have a look if you want to see how an offline transaction is made.  
+[This video tutorial](https://www.youtube.com/watch?v=_vA4tTLdL2M) shows how an offline transaction is made on the Ethereum blockchain using the first prototype of this device. The procedure for making an offline transaction using the newer device is still the same so have a look if you want to see how an offline transaction is made.  
 
 #### Sending an Encrypted Message  
-I will be covering all of this material in a video tutorial shortly.  
-What is written below is the script that the video will follow.  
+[This video 48 minute tutorial](https://youtu.be/qUWWuHium30) shows how to do airgapped GPG encrypted messaging with the PrivateKeyVault.  
+What is written below is the script.  
 So it serves as a written tutorial as well.  
 
 To transfer files into or out of the PrivateKeyVault we use a parade of QR-Codes flashed across the screen which is picked up by a camera phone without the need to connect with it.  
 [This very short video shows the process](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
-Until the video is posted here, look at this very short video clip before proceeding with this topic.  
+Look at this very short video clip before proceeding with the tutorial.  
 
 **Video script starts here**  
 The Private Key Vault is an airgapped computer.  
