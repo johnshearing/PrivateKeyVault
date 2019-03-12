@@ -1090,6 +1090,13 @@ Here is the second command:
 You probably guessed that the above command is getting the sha1sum of the newly cloned SD card.  
 If the two numbers on the screen match then the contents of two cards are the same.  
 
+I have found that if the two cards have different manufacturers then the sha1sums of the cards may be different.  
+In that case you can compare the sha1sum of each partition.  
+Compare the result of `sudo dd if=/dev/sda1 | sha1sum` with the result of `sudo dd if=/dev/sdb1 | sha1sum`  
+The above compares the boot partitions.  
+Then compare the result of `sudo dd if=/dev/sda2 | sha1sum` with the result of `sudo dd if=/dev/sdb2 | sha1sum`  
+The above compares the root partitions.  
+
 For protection against tampering, it would be a very good idea to record the sha1sum result that you just got from the two cards. Take a photo of the touch screen and also write the number down by hand as well. As soon as you use the card this number will change of course. But since you will not be using the cloned card, it should have the same sha1sum until you actually use it. 
 
 Finally, it would be a good idea to try both SD cards to be sure that they work properly and that both of them can be used to access your secrets.  
