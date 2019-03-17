@@ -2239,18 +2239,27 @@ For additional protection against tampering, it would be a very good idea get th
 We can take security a step further with multisignature wallets. These are smart contracts that require a transaction from two or more accounts before funds will be moved. We will explore this option when we start studying smart contracts.  
 
 ## Conclusion:  
-QR-Code functionality airgaps the PrivateKeyVault.  
+* QR-Code functionality airgaps the PrivateKeyVault.  
 
-MyEtherWallet makes the PrivateKeyVault suitable for airgapped offline transactions on the Ethereum Blockchain.  
+* MyEtherWallet makes the PrivateKeyVault suitable for airgapped offline transactions on the Ethereum Blockchain.  
 
-Using GPG message encryption along with GPG or MEW digital signatures makes the PrivateKeyVault a complete solution for secure encrypted airgapped messaging.  
+* Using GPG message encryption along with GPG or MEW digital signatures makes the PrivateKeyVault a complete solution for secure encrypted airgapped messaging.  
 
 Full Disk Encryption makes the PrivateKeyVault suitable for cold storage of private keys, password management, and for storage of private files.  
 
 ### Todo List   
 
+#### Quantum Resistance    
+* I think Ethereum is quantum resistant as long as one never spends twice from the same address or signs a message twice using the same private key. Since those conditions are not practical, it is not resonable to consider Ethereum to be quantum resistant now.  
+* I do not think GPG is quantum resistant. If this is not addressed then a replacement must be found.  
+* IOTA is already quantum resistant if used as directed for both finacial transactions and for encrypted messaging. I am in the process of getting an airgapped offline wallet read for use with the PrivateKeyVault to handle both finacial transactions and encrypted messaging.  
+
 #### SD card
-The Unencrypted setup SD card needs to have the updated README.md and must be updated from the encrypted messaging repository.   
+The unencrypted setup SD card should always have:  
+* The updated README (this document) in both text and markdown format.  
+* Have the latest files from the encrypted messaging repository.  
+* Have the latest NodeJS and NPM installed.
+* Have the latest Web3 and IOTA.JS libraries installed.
 
 #### Phone App
 Make phone app that from OpenCV 3 python app in ecryption repository that decodes a qr-code parade back into text.  
@@ -2307,22 +2316,14 @@ My reasons are the same as for the AC to DC power supply - Anything inside the b
 
 Consider the Raspberry Pi Module 3 for it's smaller size in future builds.   
 
-Strongly consider using the PiJuice in a future build.  
-
-Tip the screen up a bit for a better viewing angle.  
+Strongly consider using the PiJuice in a future build.   
 
 
 #### OS Software Items To Add Next Time    
 
 The recvid bash script will not overwrite a file of the same name if it exists but does not warn you about this either.  
 Check if this is true and fix the problem if it exists.  
-The fix will be a warning dialog and an option to overwrite.  
-
-The qrflash bash script does not check for two identical lines of text right next to each other.  
-So while chances of this are low in a text file it must be checked and handled.  
-This will matter more if the script is used to transfer image files.  
-The `uniq` linux command should alert the user to the condition.  
-Don't know yet how to work around the issue.  
+The fix will be a warning dialog and an option to overwrite.   
 
 Make one button show up at a time for scan start and scan stop such that scan stop replaces scan start while the scan process is running and scan start replaces scan stop when the scan process has stopped. This will save on screen real estate and helps the user understand if the scan process is running or not.   
 
@@ -2333,6 +2334,7 @@ For now, enable by executing the following command at the terminal window.
 `twofing`  
 To disable twofing execute the following  
 `killall twofing`   
+Having a mouse eliminates the need for twofing.  
   
 Set up a timer to logout the user after a period of inactivity.  
 
