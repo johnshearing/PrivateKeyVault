@@ -2406,6 +2406,8 @@ or perhaps try
 `sudo grep -r -s "Enter private key here without 0x in front"`  
 The -r is for recursive and -s suppresses error messages.  
 
+**BE CAREFUL WITH THE FOLLOWING SEARCH AND DELETE COMMANDS.  
+DO NOT USE THESE COMMANDS WITH OUT THINKING VERY CAREFULLY**  
 Bash command to search SD Card for instances of private key using grep and a way to delete or overwrite those files.  
 `grep -lrIZ foo . | xargs -0 rm -f --`  
 -l prints file names of files matching the search pattern.  
