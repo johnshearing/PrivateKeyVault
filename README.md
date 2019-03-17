@@ -2249,8 +2249,8 @@ We can take security a step further with multisignature wallets. These are smart
   * Inspect offline transaction instructions before broadcasting them to be sure they have not been changed during signing.  
   * Do not have any electronic devices near your PrivateKeyVault when typing personal information or displaying private keys.  
   * When working with personal information, be in a secure private location.   
-* And one more thing. **Make encrypted backups of your important private data and don't forget the password**  
-* And one last thing. **Make encrypted backups of your important private data and don't forget the password**  
+* And one more thing: **Make encrypted backups of your important private data and don't forget the password**  
+* And one last thing: **Make encrypted backups of your important private data and don't forget the password**  
 Congratulations, you have done the best you can reasonably do to keep your private information secure.  
 
 ### Todo List   
