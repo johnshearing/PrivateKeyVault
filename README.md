@@ -2579,3 +2579,7 @@ The following links are good online resources on how to use gpg:
 Geoffrey Shearing: gshearing@radioactiverf.com  
 or  
 John Shearing: johnshearing@gmail.com    
+
+#### Other Projects  
+[Stall and Spin Awareness](https://www.youtube.com/watch?v=UJQsAxB7E4Q)  
+
