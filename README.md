@@ -388,10 +388,9 @@ It will now be possible to use the browser and to download files from the Intern
 Now start a new VNC session between this computer and your raspberry pi via Ethernet cable.  
 This will allow you to copy and paste commands from this document into the raspberry pi's command line interpreter.  
 
-#### Purge Wolfram
-Purge the Wolfram engine from your pi to save space on the SD card.  
+#### Purge Unused Applications to Save Space on the SD Card   
 Execute the following line of code in your pi's terminal window:  
-`sudo apt-get purge wolfram-engine`  
+`sudo apt-get purge bluej greenfoot games* scratch sonic* python-pygame python3-pygame python-gamera* minecraft-pi wolfram-engine claws-mail*`  
 
 Running the following command in the terminal window will get you even more free space.  
 `apt-get autoremove`  
