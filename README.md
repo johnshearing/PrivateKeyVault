@@ -1073,7 +1073,9 @@ That was some comfort during the copy process.
 
 That's it! now sdb is a clone of sda.  
 
-If you want to check that the two SD cards are exactly the same and that the copy process worked properly then you can execute the following commands one at a time.  
+**Check that the two SD cards are exactly the same and that the copy process worked properly.**  
+**Do not fail to make this check**
+Execute the following commands one at a time.  
 These commands take a long time to run and will not show any sign on the screen that they are working.  
 If your SD card to USB adaptor is like mine however, lights will flash while the command is running.  
 So when running these commands don't think that your pi is hung.  
@@ -1082,23 +1084,23 @@ This number is a unique hash of the contents on the SD card it is checking.
 After the first command is finished running then run the second command.  
 If the number from the second command matches the number from the first command then you can be sure that the clone is exactly like the original.  
 Here is the first command:  
-`sudo dd if=/dev/sda | sha1sum`  
-The command above is getting the sha1sum of the original encrypted SD card.  
+`sudo dd if=/dev/sda | sha256sum`  
+The command above is getting the sha256sum of the original encrypted SD card.  
 Here is the second command:  
-`sudo dd if=/dev/sdb | sha1sum`  
-You probably guessed that the above command is getting the sha1sum of the newly cloned SD card.  
+`sudo dd if=/dev/sdb | sha256sum`  
+You probably guessed that the above command is getting the sha256sum of the newly cloned SD card.  
 If the two numbers on the screen match then the contents of two cards are the same.  
 
-I have found that if the two cards have different manufacturers then the sha1sums of the cards may be different.  
-In that case you can compare the sha1sum of each partition.  
-Compare the result of `sudo dd if=/dev/sda1 | sha1sum` with the result of `sudo dd if=/dev/sdb1 | sha1sum`  
+I have found that if the two cards have different manufacturers then the sha256sums of the cards may be different.  
+In that case you can compare the sha256sum of each partition.  
+Compare the result of `sudo dd if=/dev/sda1 | sha256sum` with the result of `sudo dd if=/dev/sdb1 | sha256sum`  
 The above compares the boot partitions.  
-Then compare the result of `sudo dd if=/dev/sda2 | sha1sum` with the result of `sudo dd if=/dev/sdb2 | sha1sum`  
+Then compare the result of `sudo dd if=/dev/sda2 | sha256sum` with the result of `sudo dd if=/dev/sdb2 | sha256sum`  
 The above compares the root partitions.  
 
-For protection against tampering, it would be a very good idea to record the sha1sum result that you just got from the two cards. Take a photo of the touch screen and also write the number down by hand as well. As soon as you use the card this number will change of course. But since you will not be using the cloned card, it should have the same sha1sum until you actually use it. 
+For protection against tampering, it would be a very good idea to record the sha256sum result that you just got from the two cards. Take a photo of the touch screen and also write the number down by hand as well. As soon as you use the card this number will change of course. But since you will not be using the cloned card, it should have the same sha256sum until you actually use it.  
 
-Finally, it would be a good idea to try both SD cards to be sure that they work properly and that both of them can be used to access your secrets.  
+**Finally, try both SD cards to be sure that they work properly and that both of them can be used to access your secrets.**  
 
 It would be a good idea to clone 2 extra SD cards so that you are prepared in case anything happens to the SD cards you have worked so hard to setup.  
 
