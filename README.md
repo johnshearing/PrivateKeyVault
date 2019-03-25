@@ -15,7 +15,7 @@ So there is never a need to put your SD card into any other device.
 
 Use it to:  
 * [Securely move assets on the Ethereum blockchain without exposing your private keys to any other device.](https://www.youtube.com/watch?v=_vA4tTLdL2M)  
-* Support for other blockchains is coming soon.  
+* Support for the IOTA Tangle is coming soon.  
 * Securely read and edit all types of files behind the airgap where remote viewing and key logging is not possible.  
 * No WiFi, No BlueTooth, No Cables, No USB ThumbDrives  
 * [Move files across the airgap to other devices using QR-Codes](https://www.youtube.com/watch?v=3MwJOj3t8cI)  
