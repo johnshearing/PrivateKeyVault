@@ -1113,6 +1113,14 @@ I have rewritten it below, changing the wording a bit to match this particular a
 
 These instructions for encryption are unique because it shows a method of encrypting an entire partition on the SD card (your operating system) without the need of a second Linux computer. Everything is done on the raspberry pi which reduces the opportunity for a malware attack.    
 
+These instructions only work if you Raspbian version Jessie installed.  
+If you have been following along then Jessie is installed.  
+
+If you are running Raspbian version Stretch then there are different instructions for encrypting your SD card.  
+Those instructions are found here.  
+[I have not yet tried That instalation yet nor have I examined the scripts.](https://github.com/johnshearing/Luks-Encrypt-Raspbian-Stretch)  
+I will report back here after looking at the scripts and trying the install.  
+
 An overview of the process:  
 Install software on your Raspberry Pi’s Raspbian OS.  
 Build a custom initramfs and boot into it.  
