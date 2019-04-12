@@ -1122,7 +1122,7 @@ Wipe SD card and create an empty encrypted partition.
 Copy back your backed-up file system from USB on to your encrypted SD card.  
 
 **Warning**  
-This guide involves backing up your data to a USB drive and destroying all data on your SD card. Though slim there is a possibility of failure. Be sure to have proper backups of your Raspberry Pi in case something goes wrong. Also note that all data on your USB drive will be destroyed during the process since it will temporarily hold all of your Raspberry Pi’s data.  
+This guide involves backing up your data to a USB drive and destroying all data on your SD card. Though slim, there is a possibility of failure. Be sure to have proper backups of your Raspberry Pi in case something goes wrong. Also note that all data on your USB drive will be destroyed during the process since it will temporarily hold all of your Raspberry Pi’s data.  
 
 First install some software:  
 We’ll begin by installing software and creating a new initramfs for your Raspberry Pi. This new initramfs will have the cryptsetup program needed to unlock the encrypted partition on every boot. We’ll also include other tools to assist in the initial encryption of your existing data.  
