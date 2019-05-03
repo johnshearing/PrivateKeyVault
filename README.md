@@ -2544,8 +2544,9 @@ If you want to look at a png file:
 `git remote -v` Lists all the remote servers along with the URLs.  
 
 Think carefully before using these.  
-`git push origin master` Pushes from local machine to github. Think **Think upload**. **origin** represents the remote server (github). **master** represents the branch - master in this case.  
-`git pull origin master` Pulls from the github server down to your local machine. Think **download**  
+`git push origin master` Pushes from local machine to github. **Think upload your changes to GitHub**.  
+**origin** represents the remote server (github). **master** represents the branch - master in this case.  
+`git pull origin master` Pulls from github down to your local machine. **Think download changes from GitHub**  
 
 `gh-pages` To view repository as a website make a branch called **gh-pages**.  
 
