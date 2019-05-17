@@ -2594,4 +2594,6 @@ John Shearing: johnshearing@gmail.com
 
 #### Other Projects  
 [Stall and Spin Awareness](https://www.youtube.com/watch?v=UJQsAxB7E4Q)  
+[Plasma Bottle](http://www.justodians.org/SphericalMagnet/01ElecMagPic1.htm)  
+[Complex Adaptive Systems](http://www.justodians.org/RogueSystem.htm)  
 
