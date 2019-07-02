@@ -55,8 +55,6 @@ Transparent case facilitates transfer of files and transaction instructions out 
 <hr>  
 
 This is the fully open source documentation of the physical build and all the software.  
-Disk images are forthcoming but you don't need them.  
-You can build from scratch using these instructions.  
 
 [CorelDraw files are included for laser cutting the case](https://github.com/johnshearing/PrivateKeyVault/tree/master/LaserCutterFiles)  
 You don't need the transparent case for your PrivateKeyVault, but it's nice and it solves a lot of problems.  
