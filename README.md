@@ -2300,7 +2300,7 @@ Consider charging the battery with a wireless charger.
 Also condsider including a space in the box for the AC power supply.  
 My concern is that it would be possible to remotely view what is on the screen if a radio were built into the power supply which was tuned to the frequency of the touch screen.  
 Finally, I know of one attack on a trezor that captures the private key by reading spikes in the ac power as calculations are performed which use the key.  
-For all these reasons, I think it would be a good idea to provide extra space for the AC power supply in the tamper resistant case to mitigate these attack vectors. I could justify making a vesion with a bigger case if people wanted to use a larger screen and a larger keyboard. I might also make space for the hub and adaptors required for cloning the SD cards.  
+For all these reasons, I think it would be a good idea to provide extra space for the AC power supply in the tamper resistant case to mitigate these attack vectors. I could justify making a version with a bigger case if people wanted to use a larger screen and a larger keyboard. I might also make space for the hub and adaptors required for cloning the SD cards.  
 
 The keyboard might also be a central point of attack.  
 My concern is someone could plant a hardware keylogger on the keyboard during manufacture or when the device is shipped.  
