@@ -23,8 +23,8 @@ Use it to:
 * [Crypto-Journalism:](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#crypto-journalism) Now anyone can safely create a journalistic body of work and prove that they authored the entire work and that it has not been tampered with all while allowing the author to remain anonymous if he or she so chooses. Protected sources. No more fake news.  
 * [Added Value For People In Developing Countries](https://github.com/johnshearing/PrivateKeyVault/blob/master/Motivation/README.md#added-value-for-people-in-developing-countries) The PrivateKeyVault is the cheapest computer you can have and it does double duty as a regular Internet connected computer simply by swapping out the encrypted micro SD card containing private information with another one set up for business, education, browsing, and casual use. Now, not only can everyone with Internet reach our planet wide distributed public ledgers - Finally they can learn to use them.  
 
-The raspberry pi is not so much a thing as it is a community for getting the world on computers.  
-The PrivateKeyVault is not so much a thing as it is a community for getting the world on blockchains.  
+The raspberry pi is for getting the world on computers.  
+The PrivateKeyVault is for getting the world on blockchains.  
 
 [What's In It For You?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-you)-----[What's In It For Me?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-me)-----[What's In It For Us?](https://github.com/johnshearing/PrivateKeyVault/tree/master/Motivation#whats-in-it-for-us)  
 
