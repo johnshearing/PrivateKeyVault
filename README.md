@@ -2595,8 +2595,10 @@ John Shearing: johnshearing@gmail.com
 
 #### Other Projects  
 [Software That Writes Software](https://github.com/johnshearing/IOTA-Secure-Airgapped-Accounting-and-Banking-System)  
+[How CryptoCurrency Will End Corruption](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet/blob/master/README.md#security)  
 [Stall and Spin Awareness](https://www.youtube.com/watch?v=UJQsAxB7E4Q)  
 [Plasma Bottle](http://www.justodians.org/SphericalMagnet/01ElecMagPic1.htm)  
 [Weapon against Corona Virus](https://www.thingiverse.com/johnshearing/designs)  
+[Spherical Vacuum Vessel](http://www.justodians.org/SphericalVacustat/SphericalVacustat.htm)  
 [Complex Adaptive Systems and the Law](http://www.justodians.org/RogueSystem.htm)  
-[How CryptoCurrency Will End Corruption](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet/blob/master/README.md#security)  
+ 
