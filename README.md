@@ -2590,12 +2590,6 @@ Geoffrey Shearing: gshearing@radioactiverf.com
 or  
 John Shearing: johnshearing@gmail.com    
 
-#### Other Projects  
-[Software That Writes Software](https://github.com/johnshearing/IOTA-Secure-Airgapped-Accounting-and-Banking-System)  
-[How CryptoCurrency Will End Corruption](https://github.com/johnshearing/IOTA-Airgapped-NodeJS-Console-Wallet/blob/master/README.md#security)  
-[Stall and Spin Awareness](https://www.youtube.com/watch?v=UJQsAxB7E4Q)  
-[Plasma Bottle](https://johnshearing.github.io/plasma_bottle/index.html)  
-[Weapon against Corona Virus](https://www.thingiverse.com/johnshearing/designs)  
-[Spherical Vacuum Vessel](https://johnshearing.github.io/vacustat/)  
-[Complex Adaptive Systems and the Law](https://johnshearing.github.io/unseen_creatures_which_feed_on_humans/)  
+## <a href="https://johnshearing.github.io/">Click Here To See Our Other Projects</a>  
+ 
  
