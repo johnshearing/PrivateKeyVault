@@ -2326,6 +2326,9 @@ The keyboard PCB would only need to contain 50 pushbuttons and 50 surface-mount 
 So I will be experimenting with David's idea and will document the results in this repository.  
 Thank you David.  
 
+[This video shows technique for creating a David's key board on a piece of clear acrylic.](https://youtu.be/XOjwEl4Zlg4?si=WFtWDyNDOahSBSlz)  
+This makes the keyboard more secure because tampering will be more easily detected.  
+
 One also has to be concerned that the pi, camera, and touch screen has not been tampered with during manufacture or shipping.  
 Who on earth could know if these items have been tampered with during manufacture or shipping.
 
@@ -2582,6 +2585,7 @@ You can learn how to use all the commands by entering the following command into
 `man gpg`  
 
 The following links are good online resources on how to use gpg:  
+[GPG On The Private Key Vault - Full Course](https://youtu.be/qUWWuHium30?si=xo0ir7pXskCiyKfh)  
 [Super Short Quick Start Document](https://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)  
 [30 Minute QuickStart - YouTube](https://youtu.be/ZSa-d_9O5DA)  
 [In Depth Tutorials - YouTube Playlist](https://www.youtube.com/watch?v=AZZ9THLkNgY&list=PLaIoXCTxbCRbYeYpPLuYOQ7YLfnSjLJlR&index=1)  
